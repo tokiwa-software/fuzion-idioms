@@ -1,0 +1,7 @@
+t (s string, n array<i32>) is
+
+v := t "Hello, world!" [1,4,9,16,25]
+
+# v, v.s and v.n will automatically be deallocated when they are no longer
+# accessible, either statically if they can be proven to be contained to their
+# scope, or dynamically by a GC.

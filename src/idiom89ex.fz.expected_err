@@ -1,0 +1,11 @@
+
+[32m-:5:14:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
+[34m      debug: isValid x
+[33m-------------^[0m
+For call to ex89.f
+Call stack:
+ex89: [32m-:14:3:[39m
+[34m  f 8
+[33m--^[0m
+
+*** fatal errors encountered, stopping.

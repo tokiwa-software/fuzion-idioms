@@ -1,0 +1,8 @@
+ex161 is
+  elements := [1,2,3]
+  c := 2
+  say (elements.map<i32> e->e*c)
+
+  # NYI: better type inference for actual generics could make this possible:
+  #
+  #   say (elements.map e->e*c)

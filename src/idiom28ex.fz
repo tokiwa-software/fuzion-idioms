@@ -1,0 +1,12 @@
+ex28 is
+
+  item (p i32, q string) is
+    redef asString => "$p $q"
+
+  items := [ item 47 "siebenundvierzig";
+             item 11 "elf";
+             item  0 "null";
+             item  8 "acht";
+             item 15 "fünfzehn" ]
+
+  say (items.sort (a,b -> a.p <= b.p))

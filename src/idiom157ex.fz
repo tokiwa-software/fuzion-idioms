@@ -1,0 +1,4 @@
+ex157 is
+
+  planet := "Earth"
+  say planet

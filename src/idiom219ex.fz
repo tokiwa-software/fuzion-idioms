@@ -1,0 +1,24 @@
+ex219 is
+
+  s := "Hello         world"
+
+  t := s.split.asString " "
+  say t
+
+  # alternatively, using a monoid:
+  filterMultiSpace : Monoid<string> is
+    redef infix ∙ (a, b string) => if (b == " " && a.endsWith " ") a else a + b
+    redef e => ""
+
+  t := s.asCodepoints
+        .mapList<string> x->x
+        .fold filterMultiSpace
+  say t
+
+  # alternatively, using a loop
+  for
+    t := "", t + n
+    c in s.asCodepoints
+    n := if c = " " && t.endsWith c then "" else c
+  else
+    say t

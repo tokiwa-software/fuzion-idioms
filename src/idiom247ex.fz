@@ -1,0 +1,13 @@
+ex247 is
+
+  x := marray<option<i32>> 100 nil
+  for i in x.indices do
+    x[i] := i
+
+  p Function<bool,i32> is i -> i %% 6
+
+  for i in x.indices do
+    if !(p x[i].get)
+      x[i] := nil
+
+  say x

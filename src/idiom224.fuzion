@@ -1,0 +1,5 @@
+# using 'infix ++'
+items := [x] ++ items
+
+# using 'insert'
+items := items.insert 0 x

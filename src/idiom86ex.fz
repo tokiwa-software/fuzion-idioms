@@ -1,0 +1,22 @@
+ex86 is
+
+  # using feature willOverflowOnMul:
+  multiplyWillOverflow(x, y i32) => x.overflowOnMul y
+
+  # or using overflow-checking 'infix *?'
+  multiplyWillOverflow2(x, y i32) => (x *? y)!!
+
+  for x in 0x8000..0xe000 : 0x2000 do
+    for y in 0x5800..0xe800 : 0x3000 do
+      yak "{x.hex} *° {y.hex} "
+      if multiplyWillOverflow x y
+        yak "will overflow    "
+      else
+        yak "will not overflow"
+
+      yak " sum is {(x *° y).hex}"
+      if multiplyWillOverflow2 x y
+        yak ", did overflow"
+      else
+        yak ", did not overflow"
+      say

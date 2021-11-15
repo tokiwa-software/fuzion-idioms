@@ -1,0 +1,22 @@
+ex206 is
+
+  foo => say "foo"
+  bar => say "bar"
+  baz => say "baz"
+  barfl => say "barfl"
+
+  for str in ["bar",
+              "foo",
+              "barfl",
+              "baz",
+              "error" /* will cause a precondition failure! */]
+  do
+    ((orderedMap ["foo",   "bar",   "baz",   "barfl"  ]
+                 [fun foo, fun bar, fun baz, fun barfl])[str].get.call)
+
+# NYI: better syntax, e.g.,
+#
+#   switch str ["foo"   => foo
+#               "bar"   => bar
+#               "baz"   => baz
+#               "barfl" => barfl]

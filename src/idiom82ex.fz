@@ -1,0 +1,6 @@
+ex82 is
+  s := "banana bo bana bandana"
+  t := "ana"
+  x := s.count t
+  say "matches, no overlap: $x"
+  say "matches, overlap   : {(searchableList s.utf8).countMatchesOverlapping t.utf8}"

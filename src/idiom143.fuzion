@@ -1,0 +1,4 @@
+iterate_alternatively<T>(a, b List<T>, f T -> unit) unit is
+  match a.asList
+    nil    => b.forAll f
+    c Cons => f c.head; iterate_alternatively b c.tail f

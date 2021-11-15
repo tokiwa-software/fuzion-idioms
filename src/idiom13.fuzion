@@ -1,0 +1,5 @@
+mymap.items | t -> { (k,v) := t; say "$k => $v" }
+
+# NYI: with more syntactic sugar, this should become
+#
+# mymap.items | (k,v) -> say "$k => $v"

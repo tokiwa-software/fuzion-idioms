@@ -1,0 +1,7 @@
+node<T>(val T,
+        children List<node<T>>) is
+
+  traverse (f T -> unit) is
+    f val
+    for child in children do
+      child.traverse f

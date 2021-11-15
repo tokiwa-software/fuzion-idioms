@@ -1,0 +1,7 @@
+traverse (f T -> unit) unit is
+  match binTree.this
+    nil           =>
+    n binTreeNode =>
+      n.left.traverse f
+      f n.val
+      n.right.traverse f

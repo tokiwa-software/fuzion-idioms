@@ -1,0 +1,9 @@
+
+[32m-:12:3:[39m [1;31merror 1[0m[1m: Could not find called feature[0m
+[34m  set f.x := 2 * f.x  # error! assignment will not be accepted by the compiler
+[33m--^[0m
+Feature not found: '[35mf =[39m' (no arguments)
+Target feature: '[35mex90illegal[39m'
+In call: '[36mf =[39m'
+
+one error.

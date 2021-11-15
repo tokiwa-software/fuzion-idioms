@@ -1,0 +1,16 @@
+8000 *° 5800 will not overflow sum is 2c000000, did not overflow
+8000 *° 8800 will not overflow sum is 44000000, did not overflow
+8000 *° b800 will not overflow sum is 5c000000, did not overflow
+8000 *° e800 will not overflow sum is 74000000, did not overflow
+a000 *° 5800 will not overflow sum is 37000000, did not overflow
+a000 *° 8800 will not overflow sum is 55000000, did not overflow
+a000 *° b800 will not overflow sum is 73000000, did not overflow
+a000 *° e800 will overflow     sum is -6f000000, did overflow
+c000 *° 5800 will not overflow sum is 42000000, did not overflow
+c000 *° 8800 will not overflow sum is 66000000, did not overflow
+c000 *° b800 will overflow     sum is -76000000, did overflow
+c000 *° e800 will overflow     sum is -52000000, did overflow
+e000 *° 5800 will not overflow sum is 4d000000, did not overflow
+e000 *° 8800 will not overflow sum is 77000000, did not overflow
+e000 *° b800 will overflow     sum is -5f000000, did overflow
+e000 *° e800 will overflow     sum is -35000000, did overflow

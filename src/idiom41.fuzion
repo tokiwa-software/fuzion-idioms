@@ -1,0 +1,5 @@
+t := s
+  .codepointsArray
+  .reverse
+  .map<string> (c -> c)
+  .fold strings.concat

@@ -1,0 +1,7 @@
+ex57 is
+  x := [0, 8, 15, 47, 11]
+  p i32 -> bool := i -> i % 3 = 2
+  y := x |& p
+  say y
+  y := x.filter p
+  say y

@@ -1,0 +1,17 @@
+ex18 is
+
+  node<T>(val T,
+          children List<node<T>>) is
+
+    traverse (f T -> unit) unit is
+      f val
+      for child in children do
+        child.traverse f
+
+  e list<node<string>> := nil
+  t := node "lion" [node "cougar" e,
+                    node "elephant" e,
+                    node "hornet" [node "bee" e, node "ant" e],
+                    node "beatle2" e]
+
+  t.traverse (x -> say x)

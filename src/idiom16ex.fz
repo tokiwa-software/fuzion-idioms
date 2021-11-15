@@ -1,0 +1,65 @@
+# a binTreeNode is a value plus left and right sub-trees
+#
+binTreeNode<T : ordered<T>>
+  (val T,
+   left, right binTree<T>) ref
+is
+
+  # add element to this tree, return resulting tree
+  #
+  add (v T) binTree<T> is
+    l := if (v < val) (left .add v) else left
+    r := if (v > val) (right.add v) else right
+    binTreeNode val l r
+
+
+# a binTree is either a binTreeNode or an empty tree represented by nil
+#
+binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
+
+  # add element to this tree, return resulting tree
+  #
+  add (v T) binTree<T> is
+    match binTree.this
+      nil           => binTreeNode v nil nil
+      n binTreeNode => n.add v
+
+  # traverse this tree
+  #
+  traverse (f T -> unit) unit is
+    match binTree.this
+      nil           =>
+      n binTreeNode =>
+        n.left.traverse f
+        f n.val
+        n.right.traverse f
+
+animals := ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog" ]
+
+/* NYI: this does not work yet:
+
+for
+  tree binTree<string> := nil, tree.add x
+  x in animals
+else
+  tree.traverse (s -> say s)
+
+but the following code does:
+
+*/
+
+tree binTree<string> := nil
+tree.add "dog"
+    .add "elefant"
+    .add "cat"
+    .add "cat"
+    .add "cat"
+    .add "cat"
+    .add "lion"
+    .add "ant"
+    .add "bee"
+    .add "albatros"
+    .add "hyena"
+    .add "horse"
+    .add "frog"
+    .traverse (s -> say s)

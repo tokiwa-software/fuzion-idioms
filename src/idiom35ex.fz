@@ -1,0 +1,16 @@
+ex35 is
+  A(val i32) is
+  B(val bool) is
+  C(val string) is
+
+  compose(f A -> B,
+          g B -> C) A -> C is a -> g (f a)
+
+  f A -> B := a -> B (a.val > 3)
+  g B -> C := b -> C (if b.val then "T" else "F")
+
+  fog := compose f g
+
+  say (fog (A 10)).val
+  say (fog (A 2)).val
+  say (fog (A 0)).val

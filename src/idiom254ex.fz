@@ -1,0 +1,15 @@
+ex254 is
+
+  x := ["foo", "bar", "fooo", "foo", "bar", "foo"]
+
+  # NYI: inference of result type would make this
+  #
+  #  x¹ := x.map (e -> if e="foo" then "bar" else e)
+  #
+  # NYI: With support for ? |, this would be
+  #
+  #  x¹ := x.map (e -> e="foo" ? "bar" | e)
+  #
+  x¹ := x.map<string> (e -> if e="foo" then "bar" else e)
+
+  say x¹

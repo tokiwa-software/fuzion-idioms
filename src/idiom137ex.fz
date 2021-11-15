@@ -1,0 +1,11 @@
+ex137 is
+  isDigit(cp codepoint) =>
+    "012345689".asCodepoints ∃ digit -> digit = cp
+
+  s1 := "012345689"
+  b1 := s1.asCodepoints ∀ (fun isDigit)
+  say b1
+
+  s2 := "a012345689"
+  b2 := s2.asCodepoints ∀ (fun isDigit)
+  say b2

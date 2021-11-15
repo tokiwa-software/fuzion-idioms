@@ -1,0 +1,7 @@
+idiom32ex is
+
+  exp<T: integer<T>> (x, n T) => x**n
+
+  for i in 1..5 do
+    for j in 1..5 do
+      say "exp $i, $j is {exp i, j}"

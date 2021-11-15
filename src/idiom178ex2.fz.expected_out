@@ -1,0 +1,4 @@
+Point 0.3,0.6 is inside of rectangle 0.0,0.0,1.0,2.0
+Point 0.6,1.2 is inside of rectangle 0.0,0.0,1.0,2.0
+Point 0.8999999999999999,1.7999999999999998 is inside of rectangle 0.0,0.0,1.0,2.0
+Point 1.2,2.4 is not inside of rectangle 0.0,0.0,1.0,2.0

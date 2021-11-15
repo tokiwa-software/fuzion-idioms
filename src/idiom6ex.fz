@@ -1,0 +1,6 @@
+ex6 is
+
+  items := ["red", "yellow", "green", "pink"]
+
+  for x in items do
+    say "I saw $x elephants"

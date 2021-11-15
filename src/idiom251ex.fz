@@ -1,0 +1,6 @@
+ex251 is
+
+  s := "1101"
+  i := s.parseI32Binary
+
+  say i

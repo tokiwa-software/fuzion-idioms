@@ -1,0 +1,5 @@
+for item in items
+until item == "rockstar programmer"
+  say "found it!"
+else
+  say "did not find it"

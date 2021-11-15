@@ -1,0 +1,21 @@
+<h1>Idiom # 53: Join a list of strings</h1>
+
+<p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/53/join-a-list-of-strings">programming-idioms.org</a>:</p>
+
+<h2>Code</h2>
+
+<p><code>fold</code> is the feature of choice to join elements of a set into a
+  value of the element type.  For type string, such operations are defined in feature
+<code>strings</code>.  For concatenation with a separator, <code>strings.concat
+sep</code> is the operation to use.</p>
+
+<runcode file="../examples/idiom53.fuzion"/>
+
+<p>Mathematically speaking, such an operation is called a <i>monoid</i>.  This is
+why the type of the argument of <code>fold</code> is <code>Monoid</code>, while
+the operations declared in <code>strings</code> inherit
+from <code>Monoid</code>.
+
+<h2>Running Example</h2>
+
+<runcode file="../examples/idiom53ex.fz"/>

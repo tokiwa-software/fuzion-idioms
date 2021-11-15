@@ -1,0 +1,4 @@
+# this is not possible in fuzion, if x is not declared, we will get a
+# compile-time error:
+
+say x

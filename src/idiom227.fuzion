@@ -1,0 +1,3 @@
+# lists are immutable anyway, so a simple assignment is enough
+
+y := x

@@ -1,0 +1,4 @@
+t := if s.endsWith p
+       s.substring 0 s.codepointLength-p.codepointLength
+     else
+       s

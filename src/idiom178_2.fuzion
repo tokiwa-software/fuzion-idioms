@@ -1,0 +1,18 @@
+Point (x, y f64) is
+
+Rectangle(a, b Point) is
+  isInside (p Point) =>
+    (a.x < p.x < b.x &&
+     a.y < p.y < b.y)
+
+  x := 0.3
+  y := 1.1
+  p := Point x y
+
+  x1 := 0.0
+  x2 := 1.0
+  y1 := 0.0
+  y2 := 2.0
+  r := Rectangle (Point x1 y1) (Point x2 y2)
+
+  b := r.isInside p

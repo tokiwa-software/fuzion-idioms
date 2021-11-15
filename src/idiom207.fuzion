@@ -1,0 +1,7 @@
+func is
+
+  a := array<i32> n (i -> 0)
+
+  # as long as a does not escape func (by being returned or referenced within a
+  # closure that escapes func), static analysis will reclaim a's memory when
+  # leaving func.

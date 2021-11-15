@@ -1,0 +1,5 @@
+ex77 is
+
+  x := complex -2 3
+  x * complex 0 1  # NYI: complexes<i32>.i does not work yet
+  say x

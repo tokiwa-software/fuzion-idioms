@@ -1,0 +1,9 @@
+ex167 is
+
+  doit(s, p string) =>
+    t := if (s.startsWith p) s.substring p.codepointLength else s
+    say t
+
+  doit "Mah Nà Mah Nà Do doo be-do-do" "Mah Nà "
+  doit "Mah Nà Mah Nà Do doo be-do-do" "Mah Nà Mah Nà "
+  doit "Mah Nà Mah Nà Do doo be-do-do" "Do doo be-do-do"

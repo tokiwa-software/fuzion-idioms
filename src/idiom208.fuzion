@@ -1,0 +1,3 @@
+# since arrays are immutable, we create and initialize a new array:
+#
+a := array<f64> a.length (i -> e * (a[i] + b[i] + c[i] + math.cos a[i])) # NYI: No math nor math.cos yet

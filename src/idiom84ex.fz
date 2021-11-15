@@ -1,0 +1,6 @@
+ex84 is
+  for i := (u32 12345), i *° 7
+      c := i.onesCount
+      _ in 1..10
+  do
+    say "{i.hex} has $c one bits"

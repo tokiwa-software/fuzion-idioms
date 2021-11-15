@@ -1,0 +1,8 @@
+ex134 is
+  a Object := "a string"
+  b Object := true
+  c Object := 12345
+
+  items := [a, b, c]
+
+  say items

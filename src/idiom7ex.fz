@@ -1,0 +1,16 @@
+ex7 is
+
+  items := array<string> 10 i->"string#$i"
+
+  # using a loop
+  for x in items
+      i in 0..
+  do
+    say "Item $i = $x"
+
+  # using zip
+  say (items.zip<i32,string> 0.. x,i->"$i:$x")
+
+  # NYI: Type inference for zip should be improved:
+  #
+  #  say (itmes.zip 0.. x,i->"$i:$x")

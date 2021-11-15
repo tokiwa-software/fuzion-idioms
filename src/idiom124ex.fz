@@ -1,0 +1,16 @@
+ex124 is
+
+  binarySearch(a sortedArray<i32>, x i32) i32 is
+    match a.findKey x
+      nil   => -1
+      i i32 => i
+
+  unsorted := [0, 8, 15, 47, 11]
+  a := sortedArray<i32> unsorted
+
+  say "{binarySearch a, 0}"
+  say "{binarySearch a, 8}"
+  say "{binarySearch a, 11}"
+  say "{binarySearch a, 15}"
+  say "{binarySearch a, 47}"
+  say "{binarySearch a, 13}"

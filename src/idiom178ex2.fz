@@ -1,0 +1,25 @@
+ex179b is
+
+  Point (x, y f64) is
+  Rectangle(a, b Point) is
+    isInside (p Point) =>
+      (a.x < p.x < b.x &&
+       a.y < p.y < b.y)
+
+  for i := 0.3, i+0.3
+  while i < 1.3 do
+    x := i
+    y := i*2
+    p := Point x y
+
+    x1 := 0.0
+    x2 := 1.0
+    y1 := 0.0
+    y2 := 2.0
+    r := Rectangle (Point x1 y1) (Point x2 y2)
+
+    b := r.isInside p
+
+    say "Point $x,$y is {if b then "" else "not "}inside of rectangle $x1,$y1,$x2,$y2"
+
+  unit

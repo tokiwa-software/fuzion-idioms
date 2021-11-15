@@ -1,0 +1,22 @@
+ex85 is
+
+  # using feature willOverflowOnAdd:
+  addingWillOverflow(x, y i32) => x.overflowOnAdd y
+
+  # or using overflow-checking 'infix +?'
+  addingWillOverflow2(x, y i32) => (x +? y)!!
+
+  for x in 0x18000000..0x78000000 : 0x20000000 do
+    for y in 0x18000000..0x78000000 : 0x30000000 do
+      yak "{x.hex} +° {y.hex} "
+      if addingWillOverflow x y
+        yak "will overflow    "
+      else
+        yak "will not overflow"
+
+      yak " sum is {(x +° y).hex}"
+      if addingWillOverflow2 x y
+        yak ", did overflow"
+      else
+        yak ", did not overflow"
+      say

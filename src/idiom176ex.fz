@@ -1,0 +1,6 @@
+ex176 is
+
+  s := "46757a696f6e"
+  a := array<u8> s.codepointLength/2 (i -> (s.substring 2*i 2*i+2).parseI32Hex.val.as_u8)
+  say a
+  say (strings.fromBytes a)

@@ -1,0 +1,12 @@
+ex68 is
+
+  x := bitsets.empty
+  y := (x.put 134).put 12
+  z := for r := y, r.put i
+           i := (u64 3), i + 13
+       while i < 400 else
+         r
+
+  say "x is $x"
+  say "y is $y"
+  say "z is $z"

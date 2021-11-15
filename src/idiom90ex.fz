@@ -1,0 +1,13 @@
+ex90 is
+
+  Foo is
+    x := 42
+
+    doubleX is
+      set x := 2 * x
+
+  f := Foo
+  say f.x
+
+  f.doubleX
+  say f.x

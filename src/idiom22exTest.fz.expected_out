@@ -1,0 +1,1536 @@
+parsing i32 decimal: 0 results in 0
+parsing i32 binary : 0 results in 0
+parsing i32 octal  : 0 results in 0
+parsing i32 hex    : 0 results in 0
+parsing u32 decimal: 0 results in 0
+parsing u32 binary : 0 results in 0
+parsing u32 octal  : 0 results in 0
+parsing u32 hex    : 0 results in 0
+parsing i64 decimal: 0 results in 0
+parsing i64 binary : 0 results in 0
+parsing i64 octal  : 0 results in 0
+parsing i64 hex    : 0 results in 0
+parsing u64 decimal: 0 results in 0
+parsing u64 binary : 0 results in 0
+parsing u64 octal  : 0 results in 0
+parsing u64 hex    : 0 results in 0
+parsing i32 decimal: 1 results in 1
+parsing i32 binary : 1 results in 1
+parsing i32 octal  : 1 results in 1
+parsing i32 hex    : 1 results in 1
+parsing u32 decimal: 1 results in 1
+parsing u32 binary : 1 results in 1
+parsing u32 octal  : 1 results in 1
+parsing u32 hex    : 1 results in 1
+parsing i64 decimal: 1 results in 1
+parsing i64 binary : 1 results in 1
+parsing i64 octal  : 1 results in 1
+parsing i64 hex    : 1 results in 1
+parsing u64 decimal: 1 results in 1
+parsing u64 binary : 1 results in 1
+parsing u64 octal  : 1 results in 1
+parsing u64 hex    : 1 results in 1
+parsing i32 decimal: 12 results in 12
+parsing i32 binary : 12 results in --error: failed to parse '12': invalid integer digit for base 2--
+parsing i32 octal  : 12 results in 10
+parsing i32 hex    : 12 results in 18
+parsing u32 decimal: 12 results in 12
+parsing u32 binary : 12 results in --error: failed to parse '12': invalid integer digit for base 2--
+parsing u32 octal  : 12 results in 10
+parsing u32 hex    : 12 results in 18
+parsing i64 decimal: 12 results in 12
+parsing i64 binary : 12 results in --error: failed to parse '12': invalid integer digit for base 2--
+parsing i64 octal  : 12 results in 10
+parsing i64 hex    : 12 results in 18
+parsing u64 decimal: 12 results in 12
+parsing u64 binary : 12 results in --error: failed to parse '12': invalid integer digit for base 2--
+parsing u64 octal  : 12 results in 10
+parsing u64 hex    : 12 results in 18
+parsing i32 decimal: 123 results in 123
+parsing i32 binary : 123 results in --error: failed to parse '123': invalid integer digit for base 2--
+parsing i32 octal  : 123 results in 83
+parsing i32 hex    : 123 results in 291
+parsing u32 decimal: 123 results in 123
+parsing u32 binary : 123 results in --error: failed to parse '123': invalid integer digit for base 2--
+parsing u32 octal  : 123 results in 83
+parsing u32 hex    : 123 results in 291
+parsing i64 decimal: 123 results in 123
+parsing i64 binary : 123 results in --error: failed to parse '123': invalid integer digit for base 2--
+parsing i64 octal  : 123 results in 83
+parsing i64 hex    : 123 results in 291
+parsing u64 decimal: 123 results in 123
+parsing u64 binary : 123 results in --error: failed to parse '123': invalid integer digit for base 2--
+parsing u64 octal  : 123 results in 83
+parsing u64 hex    : 123 results in 291
+parsing i32 decimal: 1234 results in 1234
+parsing i32 binary : 1234 results in --error: failed to parse '1234': invalid integer digit for base 2--
+parsing i32 octal  : 1234 results in 668
+parsing i32 hex    : 1234 results in 4660
+parsing u32 decimal: 1234 results in 1234
+parsing u32 binary : 1234 results in --error: failed to parse '1234': invalid integer digit for base 2--
+parsing u32 octal  : 1234 results in 668
+parsing u32 hex    : 1234 results in 4660
+parsing i64 decimal: 1234 results in 1234
+parsing i64 binary : 1234 results in --error: failed to parse '1234': invalid integer digit for base 2--
+parsing i64 octal  : 1234 results in 668
+parsing i64 hex    : 1234 results in 4660
+parsing u64 decimal: 1234 results in 1234
+parsing u64 binary : 1234 results in --error: failed to parse '1234': invalid integer digit for base 2--
+parsing u64 octal  : 1234 results in 668
+parsing u64 hex    : 1234 results in 4660
+parsing i32 decimal: 12345 results in 12345
+parsing i32 binary : 12345 results in --error: failed to parse '12345': invalid integer digit for base 2--
+parsing i32 octal  : 12345 results in 5349
+parsing i32 hex    : 12345 results in 74565
+parsing u32 decimal: 12345 results in 12345
+parsing u32 binary : 12345 results in --error: failed to parse '12345': invalid integer digit for base 2--
+parsing u32 octal  : 12345 results in 5349
+parsing u32 hex    : 12345 results in 74565
+parsing i64 decimal: 12345 results in 12345
+parsing i64 binary : 12345 results in --error: failed to parse '12345': invalid integer digit for base 2--
+parsing i64 octal  : 12345 results in 5349
+parsing i64 hex    : 12345 results in 74565
+parsing u64 decimal: 12345 results in 12345
+parsing u64 binary : 12345 results in --error: failed to parse '12345': invalid integer digit for base 2--
+parsing u64 octal  : 12345 results in 5349
+parsing u64 hex    : 12345 results in 74565
+parsing i32 decimal: 123456 results in 123456
+parsing i32 binary : 123456 results in --error: failed to parse '123456': invalid integer digit for base 2--
+parsing i32 octal  : 123456 results in 42798
+parsing i32 hex    : 123456 results in 1193046
+parsing u32 decimal: 123456 results in 123456
+parsing u32 binary : 123456 results in --error: failed to parse '123456': invalid integer digit for base 2--
+parsing u32 octal  : 123456 results in 42798
+parsing u32 hex    : 123456 results in 1193046
+parsing i64 decimal: 123456 results in 123456
+parsing i64 binary : 123456 results in --error: failed to parse '123456': invalid integer digit for base 2--
+parsing i64 octal  : 123456 results in 42798
+parsing i64 hex    : 123456 results in 1193046
+parsing u64 decimal: 123456 results in 123456
+parsing u64 binary : 123456 results in --error: failed to parse '123456': invalid integer digit for base 2--
+parsing u64 octal  : 123456 results in 42798
+parsing u64 hex    : 123456 results in 1193046
+parsing i32 decimal: 1234567 results in 1234567
+parsing i32 binary : 1234567 results in --error: failed to parse '1234567': invalid integer digit for base 2--
+parsing i32 octal  : 1234567 results in 342391
+parsing i32 hex    : 1234567 results in 19088743
+parsing u32 decimal: 1234567 results in 1234567
+parsing u32 binary : 1234567 results in --error: failed to parse '1234567': invalid integer digit for base 2--
+parsing u32 octal  : 1234567 results in 342391
+parsing u32 hex    : 1234567 results in 19088743
+parsing i64 decimal: 1234567 results in 1234567
+parsing i64 binary : 1234567 results in --error: failed to parse '1234567': invalid integer digit for base 2--
+parsing i64 octal  : 1234567 results in 342391
+parsing i64 hex    : 1234567 results in 19088743
+parsing u64 decimal: 1234567 results in 1234567
+parsing u64 binary : 1234567 results in --error: failed to parse '1234567': invalid integer digit for base 2--
+parsing u64 octal  : 1234567 results in 342391
+parsing u64 hex    : 1234567 results in 19088743
+parsing i32 decimal: 12345678 results in 12345678
+parsing i32 binary : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 2--
+parsing i32 octal  : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 8--
+parsing i32 hex    : 12345678 results in 305419896
+parsing u32 decimal: 12345678 results in 12345678
+parsing u32 binary : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 2--
+parsing u32 octal  : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 8--
+parsing u32 hex    : 12345678 results in 305419896
+parsing i64 decimal: 12345678 results in 12345678
+parsing i64 binary : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 2--
+parsing i64 octal  : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 8--
+parsing i64 hex    : 12345678 results in 305419896
+parsing u64 decimal: 12345678 results in 12345678
+parsing u64 binary : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 2--
+parsing u64 octal  : 12345678 results in --error: failed to parse '12345678': invalid integer digit for base 8--
+parsing u64 hex    : 12345678 results in 305419896
+parsing i32 decimal: 123456789 results in 123456789
+parsing i32 binary : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 2--
+parsing i32 octal  : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 8--
+parsing i32 hex    : 123456789 results in --error: failed to parse '123456789': numerical overflow--
+parsing u32 decimal: 123456789 results in 123456789
+parsing u32 binary : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 2--
+parsing u32 octal  : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 8--
+parsing u32 hex    : 123456789 results in --error: failed to parse '123456789': numerical overflow--
+parsing i64 decimal: 123456789 results in 123456789
+parsing i64 binary : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 2--
+parsing i64 octal  : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 8--
+parsing i64 hex    : 123456789 results in 4886718345
+parsing u64 decimal: 123456789 results in 123456789
+parsing u64 binary : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 2--
+parsing u64 octal  : 123456789 results in --error: failed to parse '123456789': invalid integer digit for base 8--
+parsing u64 hex    : 123456789 results in 4886718345
+parsing i32 decimal: 1234567890 results in 1234567890
+parsing i32 binary : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 2--
+parsing i32 octal  : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 8--
+parsing i32 hex    : 1234567890 results in --error: failed to parse '1234567890': numerical overflow--
+parsing u32 decimal: 1234567890 results in 1234567890
+parsing u32 binary : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 2--
+parsing u32 octal  : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 8--
+parsing u32 hex    : 1234567890 results in --error: failed to parse '1234567890': numerical overflow--
+parsing i64 decimal: 1234567890 results in 1234567890
+parsing i64 binary : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 2--
+parsing i64 octal  : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 8--
+parsing i64 hex    : 1234567890 results in 78187493520
+parsing u64 decimal: 1234567890 results in 1234567890
+parsing u64 binary : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 2--
+parsing u64 octal  : 1234567890 results in --error: failed to parse '1234567890': invalid integer digit for base 8--
+parsing u64 hex    : 1234567890 results in 78187493520
+parsing i32 decimal: 12345678901 results in --error: failed to parse '12345678901': numerical overflow--
+parsing i32 binary : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 2--
+parsing i32 octal  : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 8--
+parsing i32 hex    : 12345678901 results in --error: failed to parse '12345678901': numerical overflow--
+parsing u32 decimal: 12345678901 results in --error: failed to parse '12345678901': numerical overflow--
+parsing u32 binary : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 2--
+parsing u32 octal  : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 8--
+parsing u32 hex    : 12345678901 results in --error: failed to parse '12345678901': numerical overflow--
+parsing i64 decimal: 12345678901 results in 12345678901
+parsing i64 binary : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 2--
+parsing i64 octal  : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 8--
+parsing i64 hex    : 12345678901 results in 1250999896321
+parsing u64 decimal: 12345678901 results in 12345678901
+parsing u64 binary : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 2--
+parsing u64 octal  : 12345678901 results in --error: failed to parse '12345678901': invalid integer digit for base 8--
+parsing u64 hex    : 12345678901 results in 1250999896321
+parsing i32 decimal: 123456789012 results in --error: failed to parse '123456789012': numerical overflow--
+parsing i32 binary : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 2--
+parsing i32 octal  : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 8--
+parsing i32 hex    : 123456789012 results in --error: failed to parse '123456789012': numerical overflow--
+parsing u32 decimal: 123456789012 results in --error: failed to parse '123456789012': numerical overflow--
+parsing u32 binary : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 2--
+parsing u32 octal  : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 8--
+parsing u32 hex    : 123456789012 results in --error: failed to parse '123456789012': numerical overflow--
+parsing i64 decimal: 123456789012 results in 123456789012
+parsing i64 binary : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 2--
+parsing i64 octal  : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 8--
+parsing i64 hex    : 123456789012 results in 20015998341138
+parsing u64 decimal: 123456789012 results in 123456789012
+parsing u64 binary : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 2--
+parsing u64 octal  : 123456789012 results in --error: failed to parse '123456789012': invalid integer digit for base 8--
+parsing u64 hex    : 123456789012 results in 20015998341138
+parsing i32 decimal: 1234567890123 results in --error: failed to parse '1234567890123': numerical overflow--
+parsing i32 binary : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 2--
+parsing i32 octal  : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 8--
+parsing i32 hex    : 1234567890123 results in --error: failed to parse '1234567890123': numerical overflow--
+parsing u32 decimal: 1234567890123 results in --error: failed to parse '1234567890123': numerical overflow--
+parsing u32 binary : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 2--
+parsing u32 octal  : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 8--
+parsing u32 hex    : 1234567890123 results in --error: failed to parse '1234567890123': numerical overflow--
+parsing i64 decimal: 1234567890123 results in 1234567890123
+parsing i64 binary : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 2--
+parsing i64 octal  : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 8--
+parsing i64 hex    : 1234567890123 results in 320255973458211
+parsing u64 decimal: 1234567890123 results in 1234567890123
+parsing u64 binary : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 2--
+parsing u64 octal  : 1234567890123 results in --error: failed to parse '1234567890123': invalid integer digit for base 8--
+parsing u64 hex    : 1234567890123 results in 320255973458211
+parsing i32 decimal: 12345678901234 results in --error: failed to parse '12345678901234': numerical overflow--
+parsing i32 binary : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 2--
+parsing i32 octal  : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 8--
+parsing i32 hex    : 12345678901234 results in --error: failed to parse '12345678901234': numerical overflow--
+parsing u32 decimal: 12345678901234 results in --error: failed to parse '12345678901234': numerical overflow--
+parsing u32 binary : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 2--
+parsing u32 octal  : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 8--
+parsing u32 hex    : 12345678901234 results in --error: failed to parse '12345678901234': numerical overflow--
+parsing i64 decimal: 12345678901234 results in 12345678901234
+parsing i64 binary : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 2--
+parsing i64 octal  : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 8--
+parsing i64 hex    : 12345678901234 results in 5124095575331380
+parsing u64 decimal: 12345678901234 results in 12345678901234
+parsing u64 binary : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 2--
+parsing u64 octal  : 12345678901234 results in --error: failed to parse '12345678901234': invalid integer digit for base 8--
+parsing u64 hex    : 12345678901234 results in 5124095575331380
+parsing i32 decimal: 123456789012345 results in --error: failed to parse '123456789012345': numerical overflow--
+parsing i32 binary : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 2--
+parsing i32 octal  : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 8--
+parsing i32 hex    : 123456789012345 results in --error: failed to parse '123456789012345': numerical overflow--
+parsing u32 decimal: 123456789012345 results in --error: failed to parse '123456789012345': numerical overflow--
+parsing u32 binary : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 2--
+parsing u32 octal  : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 8--
+parsing u32 hex    : 123456789012345 results in --error: failed to parse '123456789012345': numerical overflow--
+parsing i64 decimal: 123456789012345 results in 123456789012345
+parsing i64 binary : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 2--
+parsing i64 octal  : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 8--
+parsing i64 hex    : 123456789012345 results in 81985529205302085
+parsing u64 decimal: 123456789012345 results in 123456789012345
+parsing u64 binary : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 2--
+parsing u64 octal  : 123456789012345 results in --error: failed to parse '123456789012345': invalid integer digit for base 8--
+parsing u64 hex    : 123456789012345 results in 81985529205302085
+parsing i32 decimal: 1234567890123456 results in --error: failed to parse '1234567890123456': numerical overflow--
+parsing i32 binary : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 2--
+parsing i32 octal  : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 8--
+parsing i32 hex    : 1234567890123456 results in --error: failed to parse '1234567890123456': numerical overflow--
+parsing u32 decimal: 1234567890123456 results in --error: failed to parse '1234567890123456': numerical overflow--
+parsing u32 binary : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 2--
+parsing u32 octal  : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 8--
+parsing u32 hex    : 1234567890123456 results in --error: failed to parse '1234567890123456': numerical overflow--
+parsing i64 decimal: 1234567890123456 results in 1234567890123456
+parsing i64 binary : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 2--
+parsing i64 octal  : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 8--
+parsing i64 hex    : 1234567890123456 results in 1311768467284833366
+parsing u64 decimal: 1234567890123456 results in 1234567890123456
+parsing u64 binary : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 2--
+parsing u64 octal  : 1234567890123456 results in --error: failed to parse '1234567890123456': invalid integer digit for base 8--
+parsing u64 hex    : 1234567890123456 results in 1311768467284833366
+parsing i32 decimal: 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing i32 binary : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 2--
+parsing i32 octal  : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 8--
+parsing i32 hex    : 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing u32 decimal: 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing u32 binary : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 2--
+parsing u32 octal  : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 8--
+parsing u32 hex    : 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing i64 decimal: 12345678901234567 results in 12345678901234567
+parsing i64 binary : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 2--
+parsing i64 octal  : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 8--
+parsing i64 hex    : 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing u64 decimal: 12345678901234567 results in 12345678901234567
+parsing u64 binary : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 2--
+parsing u64 octal  : 12345678901234567 results in --error: failed to parse '12345678901234567': invalid integer digit for base 8--
+parsing u64 hex    : 12345678901234567 results in --error: failed to parse '12345678901234567': numerical overflow--
+parsing i32 decimal: 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing i32 binary : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 2--
+parsing i32 octal  : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 8--
+parsing i32 hex    : 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing u32 decimal: 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing u32 binary : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 2--
+parsing u32 octal  : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 8--
+parsing u32 hex    : 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing i64 decimal: 123456789012345678 results in 123456789012345678
+parsing i64 binary : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 2--
+parsing i64 octal  : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 8--
+parsing i64 hex    : 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing u64 decimal: 123456789012345678 results in 123456789012345678
+parsing u64 binary : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 2--
+parsing u64 octal  : 123456789012345678 results in --error: failed to parse '123456789012345678': invalid integer digit for base 8--
+parsing u64 hex    : 123456789012345678 results in --error: failed to parse '123456789012345678': numerical overflow--
+parsing i32 decimal: 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing i32 binary : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 2--
+parsing i32 octal  : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 8--
+parsing i32 hex    : 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing u32 decimal: 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing u32 binary : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 2--
+parsing u32 octal  : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 8--
+parsing u32 hex    : 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing i64 decimal: 1234567890123456789 results in 1234567890123456789
+parsing i64 binary : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 2--
+parsing i64 octal  : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 8--
+parsing i64 hex    : 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing u64 decimal: 1234567890123456789 results in 1234567890123456789
+parsing u64 binary : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 2--
+parsing u64 octal  : 1234567890123456789 results in --error: failed to parse '1234567890123456789': invalid integer digit for base 8--
+parsing u64 hex    : 1234567890123456789 results in --error: failed to parse '1234567890123456789': numerical overflow--
+parsing i32 decimal: 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing i32 binary : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 2--
+parsing i32 octal  : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 8--
+parsing i32 hex    : 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing u32 decimal: 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing u32 binary : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 2--
+parsing u32 octal  : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 8--
+parsing u32 hex    : 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing i64 decimal: 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing i64 binary : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 2--
+parsing i64 octal  : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 8--
+parsing i64 hex    : 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing u64 decimal: 12345678901234567890 results in 12345678901234567890
+parsing u64 binary : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 2--
+parsing u64 octal  : 12345678901234567890 results in --error: failed to parse '12345678901234567890': invalid integer digit for base 8--
+parsing u64 hex    : 12345678901234567890 results in --error: failed to parse '12345678901234567890': numerical overflow--
+parsing i32 decimal: 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing i32 binary : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 2--
+parsing i32 octal  : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 8--
+parsing i32 hex    : 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing u32 decimal: 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing u32 binary : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 2--
+parsing u32 octal  : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 8--
+parsing u32 hex    : 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing i64 decimal: 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing i64 binary : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 2--
+parsing i64 octal  : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 8--
+parsing i64 hex    : 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing u64 decimal: 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing u64 binary : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 2--
+parsing u64 octal  : 123456789012345678901 results in --error: failed to parse '123456789012345678901': invalid integer digit for base 8--
+parsing u64 hex    : 123456789012345678901 results in --error: failed to parse '123456789012345678901': numerical overflow--
+parsing i32 decimal: 2147483647 results in 2147483647
+parsing i32 binary : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 2--
+parsing i32 octal  : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 8--
+parsing i32 hex    : 2147483647 results in --error: failed to parse '2147483647': numerical overflow--
+parsing u32 decimal: 2147483647 results in 2147483647
+parsing u32 binary : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 2--
+parsing u32 octal  : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 8--
+parsing u32 hex    : 2147483647 results in --error: failed to parse '2147483647': numerical overflow--
+parsing i64 decimal: 2147483647 results in 2147483647
+parsing i64 binary : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 2--
+parsing i64 octal  : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 8--
+parsing i64 hex    : 2147483647 results in 142929835591
+parsing u64 decimal: 2147483647 results in 2147483647
+parsing u64 binary : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 2--
+parsing u64 octal  : 2147483647 results in --error: failed to parse '2147483647': invalid integer digit for base 8--
+parsing u64 hex    : 2147483647 results in 142929835591
+parsing i32 decimal: 2147483648 results in --error: failed to parse '2147483648': numerical overflow--
+parsing i32 binary : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 2--
+parsing i32 octal  : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 8--
+parsing i32 hex    : 2147483648 results in --error: failed to parse '2147483648': numerical overflow--
+parsing u32 decimal: 2147483648 results in 2147483648
+parsing u32 binary : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 2--
+parsing u32 octal  : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 8--
+parsing u32 hex    : 2147483648 results in --error: failed to parse '2147483648': numerical overflow--
+parsing i64 decimal: 2147483648 results in 2147483648
+parsing i64 binary : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 2--
+parsing i64 octal  : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 8--
+parsing i64 hex    : 2147483648 results in 142929835592
+parsing u64 decimal: 2147483648 results in 2147483648
+parsing u64 binary : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 2--
+parsing u64 octal  : 2147483648 results in --error: failed to parse '2147483648': invalid integer digit for base 8--
+parsing u64 hex    : 2147483648 results in 142929835592
+parsing i32 decimal: 2147483649 results in --error: failed to parse '2147483649': numerical overflow--
+parsing i32 binary : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 2--
+parsing i32 octal  : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 8--
+parsing i32 hex    : 2147483649 results in --error: failed to parse '2147483649': numerical overflow--
+parsing u32 decimal: 2147483649 results in 2147483649
+parsing u32 binary : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 2--
+parsing u32 octal  : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 8--
+parsing u32 hex    : 2147483649 results in --error: failed to parse '2147483649': numerical overflow--
+parsing i64 decimal: 2147483649 results in 2147483649
+parsing i64 binary : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 2--
+parsing i64 octal  : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 8--
+parsing i64 hex    : 2147483649 results in 142929835593
+parsing u64 decimal: 2147483649 results in 2147483649
+parsing u64 binary : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 2--
+parsing u64 octal  : 2147483649 results in --error: failed to parse '2147483649': invalid integer digit for base 8--
+parsing u64 hex    : 2147483649 results in 142929835593
+parsing i32 decimal: 4294967295 results in --error: failed to parse '4294967295': numerical overflow--
+parsing i32 binary : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 2--
+parsing i32 octal  : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 8--
+parsing i32 hex    : 4294967295 results in --error: failed to parse '4294967295': numerical overflow--
+parsing u32 decimal: 4294967295 results in 4294967295
+parsing u32 binary : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 2--
+parsing u32 octal  : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 8--
+parsing u32 hex    : 4294967295 results in --error: failed to parse '4294967295': numerical overflow--
+parsing i64 decimal: 4294967295 results in 4294967295
+parsing i64 binary : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 2--
+parsing i64 octal  : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 8--
+parsing i64 hex    : 4294967295 results in 285960729237
+parsing u64 decimal: 4294967295 results in 4294967295
+parsing u64 binary : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 2--
+parsing u64 octal  : 4294967295 results in --error: failed to parse '4294967295': invalid integer digit for base 8--
+parsing u64 hex    : 4294967295 results in 285960729237
+parsing i32 decimal: 4294967296 results in --error: failed to parse '4294967296': numerical overflow--
+parsing i32 binary : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 2--
+parsing i32 octal  : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 8--
+parsing i32 hex    : 4294967296 results in --error: failed to parse '4294967296': numerical overflow--
+parsing u32 decimal: 4294967296 results in --error: failed to parse '4294967296': numerical overflow--
+parsing u32 binary : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 2--
+parsing u32 octal  : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 8--
+parsing u32 hex    : 4294967296 results in --error: failed to parse '4294967296': numerical overflow--
+parsing i64 decimal: 4294967296 results in 4294967296
+parsing i64 binary : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 2--
+parsing i64 octal  : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 8--
+parsing i64 hex    : 4294967296 results in 285960729238
+parsing u64 decimal: 4294967296 results in 4294967296
+parsing u64 binary : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 2--
+parsing u64 octal  : 4294967296 results in --error: failed to parse '4294967296': invalid integer digit for base 8--
+parsing u64 hex    : 4294967296 results in 285960729238
+parsing i32 decimal: 4294967297 results in --error: failed to parse '4294967297': numerical overflow--
+parsing i32 binary : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 2--
+parsing i32 octal  : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 8--
+parsing i32 hex    : 4294967297 results in --error: failed to parse '4294967297': numerical overflow--
+parsing u32 decimal: 4294967297 results in --error: failed to parse '4294967297': numerical overflow--
+parsing u32 binary : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 2--
+parsing u32 octal  : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 8--
+parsing u32 hex    : 4294967297 results in --error: failed to parse '4294967297': numerical overflow--
+parsing i64 decimal: 4294967297 results in 4294967297
+parsing i64 binary : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 2--
+parsing i64 octal  : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 8--
+parsing i64 hex    : 4294967297 results in 285960729239
+parsing u64 decimal: 4294967297 results in 4294967297
+parsing u64 binary : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 2--
+parsing u64 octal  : 4294967297 results in --error: failed to parse '4294967297': invalid integer digit for base 8--
+parsing u64 hex    : 4294967297 results in 285960729239
+parsing i32 decimal: 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing i32 binary : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 2--
+parsing i32 octal  : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 8--
+parsing i32 hex    : 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing u32 decimal: 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing u32 binary : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 2--
+parsing u32 octal  : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 8--
+parsing u32 hex    : 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing i64 decimal: 9223372036854775807 results in 9223372036854775807
+parsing i64 binary : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 2--
+parsing i64 octal  : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 8--
+parsing i64 hex    : 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing u64 decimal: 9223372036854775807 results in 9223372036854775807
+parsing u64 binary : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 2--
+parsing u64 octal  : 9223372036854775807 results in --error: failed to parse '9223372036854775807': invalid integer digit for base 8--
+parsing u64 hex    : 9223372036854775807 results in --error: failed to parse '9223372036854775807': numerical overflow--
+parsing i32 decimal: 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing i32 binary : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 2--
+parsing i32 octal  : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 8--
+parsing i32 hex    : 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing u32 decimal: 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing u32 binary : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 2--
+parsing u32 octal  : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 8--
+parsing u32 hex    : 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing i64 decimal: 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing i64 binary : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 2--
+parsing i64 octal  : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 8--
+parsing i64 hex    : 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing u64 decimal: 9223372036854775808 results in 9223372036854775808
+parsing u64 binary : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 2--
+parsing u64 octal  : 9223372036854775808 results in --error: failed to parse '9223372036854775808': invalid integer digit for base 8--
+parsing u64 hex    : 9223372036854775808 results in --error: failed to parse '9223372036854775808': numerical overflow--
+parsing i32 decimal: 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing i32 binary : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 2--
+parsing i32 octal  : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 8--
+parsing i32 hex    : 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing u32 decimal: 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing u32 binary : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 2--
+parsing u32 octal  : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 8--
+parsing u32 hex    : 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing i64 decimal: 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing i64 binary : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 2--
+parsing i64 octal  : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 8--
+parsing i64 hex    : 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing u64 decimal: 9223372036854775809 results in 9223372036854775809
+parsing u64 binary : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 2--
+parsing u64 octal  : 9223372036854775809 results in --error: failed to parse '9223372036854775809': invalid integer digit for base 8--
+parsing u64 hex    : 9223372036854775809 results in --error: failed to parse '9223372036854775809': numerical overflow--
+parsing i32 decimal: 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing i32 binary : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 2--
+parsing i32 octal  : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 8--
+parsing i32 hex    : 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing u32 decimal: 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing u32 binary : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 2--
+parsing u32 octal  : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 8--
+parsing u32 hex    : 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing i64 decimal: 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing i64 binary : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 2--
+parsing i64 octal  : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 8--
+parsing i64 hex    : 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing u64 decimal: 18446744073709551615 results in 18446744073709551615
+parsing u64 binary : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 2--
+parsing u64 octal  : 18446744073709551615 results in --error: failed to parse '18446744073709551615': invalid integer digit for base 8--
+parsing u64 hex    : 18446744073709551615 results in --error: failed to parse '18446744073709551615': numerical overflow--
+parsing i32 decimal: 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing i32 binary : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 2--
+parsing i32 octal  : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 8--
+parsing i32 hex    : 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing u32 decimal: 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing u32 binary : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 2--
+parsing u32 octal  : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 8--
+parsing u32 hex    : 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing i64 decimal: 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing i64 binary : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 2--
+parsing i64 octal  : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 8--
+parsing i64 hex    : 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing u64 decimal: 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing u64 binary : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 2--
+parsing u64 octal  : 18446744073709551616 results in --error: failed to parse '18446744073709551616': invalid integer digit for base 8--
+parsing u64 hex    : 18446744073709551616 results in --error: failed to parse '18446744073709551616': numerical overflow--
+parsing i32 decimal: 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing i32 binary : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 2--
+parsing i32 octal  : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 8--
+parsing i32 hex    : 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing u32 decimal: 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing u32 binary : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 2--
+parsing u32 octal  : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 8--
+parsing u32 hex    : 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing i64 decimal: 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing i64 binary : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 2--
+parsing i64 octal  : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 8--
+parsing i64 hex    : 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing u64 decimal: 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing u64 binary : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 2--
+parsing u64 octal  : 18446744073709551617 results in --error: failed to parse '18446744073709551617': invalid integer digit for base 8--
+parsing u64 hex    : 18446744073709551617 results in --error: failed to parse '18446744073709551617': numerical overflow--
+parsing i32 decimal: -1 results in -1
+parsing i32 binary : -1 results in -1
+parsing i32 octal  : -1 results in -1
+parsing i32 hex    : -1 results in -1
+parsing u32 decimal: -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 binary : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 octal  : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 hex    : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing i64 decimal: -1 results in -1
+parsing i64 binary : -1 results in -1
+parsing i64 octal  : -1 results in -1
+parsing i64 hex    : -1 results in -1
+parsing u64 decimal: -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 binary : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 octal  : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 hex    : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing i32 decimal: -12 results in -12
+parsing i32 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing i32 octal  : -12 results in -10
+parsing i32 hex    : -12 results in -18
+parsing u32 decimal: -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u32 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing u32 octal  : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u32 hex    : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing i64 decimal: -12 results in -12
+parsing i64 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing i64 octal  : -12 results in -10
+parsing i64 hex    : -12 results in -18
+parsing u64 decimal: -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u64 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing u64 octal  : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u64 hex    : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing i32 decimal: -123 results in -123
+parsing i32 binary : -123 results in --error: failed to parse '-123': invalid integer digit for base 2--
+parsing i32 octal  : -123 results in -83
+parsing i32 hex    : -123 results in -291
+parsing u32 decimal: -123 results in --error: failed to parse '-123': numerical overflow--
+parsing u32 binary : -123 results in --error: failed to parse '-123': invalid integer digit for base 2--
+parsing u32 octal  : -123 results in --error: failed to parse '-123': numerical overflow--
+parsing u32 hex    : -123 results in --error: failed to parse '-123': numerical overflow--
+parsing i64 decimal: -123 results in -123
+parsing i64 binary : -123 results in --error: failed to parse '-123': invalid integer digit for base 2--
+parsing i64 octal  : -123 results in -83
+parsing i64 hex    : -123 results in -291
+parsing u64 decimal: -123 results in --error: failed to parse '-123': numerical overflow--
+parsing u64 binary : -123 results in --error: failed to parse '-123': invalid integer digit for base 2--
+parsing u64 octal  : -123 results in --error: failed to parse '-123': numerical overflow--
+parsing u64 hex    : -123 results in --error: failed to parse '-123': numerical overflow--
+parsing i32 decimal: -1234 results in -1234
+parsing i32 binary : -1234 results in --error: failed to parse '-1234': invalid integer digit for base 2--
+parsing i32 octal  : -1234 results in -668
+parsing i32 hex    : -1234 results in -4660
+parsing u32 decimal: -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing u32 binary : -1234 results in --error: failed to parse '-1234': invalid integer digit for base 2--
+parsing u32 octal  : -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing u32 hex    : -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing i64 decimal: -1234 results in -1234
+parsing i64 binary : -1234 results in --error: failed to parse '-1234': invalid integer digit for base 2--
+parsing i64 octal  : -1234 results in -668
+parsing i64 hex    : -1234 results in -4660
+parsing u64 decimal: -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing u64 binary : -1234 results in --error: failed to parse '-1234': invalid integer digit for base 2--
+parsing u64 octal  : -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing u64 hex    : -1234 results in --error: failed to parse '-1234': numerical overflow--
+parsing i32 decimal: -12345 results in -12345
+parsing i32 binary : -12345 results in --error: failed to parse '-12345': invalid integer digit for base 2--
+parsing i32 octal  : -12345 results in -5349
+parsing i32 hex    : -12345 results in -74565
+parsing u32 decimal: -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing u32 binary : -12345 results in --error: failed to parse '-12345': invalid integer digit for base 2--
+parsing u32 octal  : -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing u32 hex    : -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing i64 decimal: -12345 results in -12345
+parsing i64 binary : -12345 results in --error: failed to parse '-12345': invalid integer digit for base 2--
+parsing i64 octal  : -12345 results in -5349
+parsing i64 hex    : -12345 results in -74565
+parsing u64 decimal: -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing u64 binary : -12345 results in --error: failed to parse '-12345': invalid integer digit for base 2--
+parsing u64 octal  : -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing u64 hex    : -12345 results in --error: failed to parse '-12345': numerical overflow--
+parsing i32 decimal: -123456 results in -123456
+parsing i32 binary : -123456 results in --error: failed to parse '-123456': invalid integer digit for base 2--
+parsing i32 octal  : -123456 results in -42798
+parsing i32 hex    : -123456 results in -1193046
+parsing u32 decimal: -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing u32 binary : -123456 results in --error: failed to parse '-123456': invalid integer digit for base 2--
+parsing u32 octal  : -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing u32 hex    : -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing i64 decimal: -123456 results in -123456
+parsing i64 binary : -123456 results in --error: failed to parse '-123456': invalid integer digit for base 2--
+parsing i64 octal  : -123456 results in -42798
+parsing i64 hex    : -123456 results in -1193046
+parsing u64 decimal: -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing u64 binary : -123456 results in --error: failed to parse '-123456': invalid integer digit for base 2--
+parsing u64 octal  : -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing u64 hex    : -123456 results in --error: failed to parse '-123456': numerical overflow--
+parsing i32 decimal: -1234567 results in -1234567
+parsing i32 binary : -1234567 results in --error: failed to parse '-1234567': invalid integer digit for base 2--
+parsing i32 octal  : -1234567 results in -342391
+parsing i32 hex    : -1234567 results in -19088743
+parsing u32 decimal: -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing u32 binary : -1234567 results in --error: failed to parse '-1234567': invalid integer digit for base 2--
+parsing u32 octal  : -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing u32 hex    : -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing i64 decimal: -1234567 results in -1234567
+parsing i64 binary : -1234567 results in --error: failed to parse '-1234567': invalid integer digit for base 2--
+parsing i64 octal  : -1234567 results in -342391
+parsing i64 hex    : -1234567 results in -19088743
+parsing u64 decimal: -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing u64 binary : -1234567 results in --error: failed to parse '-1234567': invalid integer digit for base 2--
+parsing u64 octal  : -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing u64 hex    : -1234567 results in --error: failed to parse '-1234567': numerical overflow--
+parsing i32 decimal: -12345678 results in -12345678
+parsing i32 binary : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 2--
+parsing i32 octal  : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 8--
+parsing i32 hex    : -12345678 results in -305419896
+parsing u32 decimal: -12345678 results in --error: failed to parse '-12345678': numerical overflow--
+parsing u32 binary : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 2--
+parsing u32 octal  : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 8--
+parsing u32 hex    : -12345678 results in --error: failed to parse '-12345678': numerical overflow--
+parsing i64 decimal: -12345678 results in -12345678
+parsing i64 binary : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 2--
+parsing i64 octal  : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 8--
+parsing i64 hex    : -12345678 results in -305419896
+parsing u64 decimal: -12345678 results in --error: failed to parse '-12345678': numerical overflow--
+parsing u64 binary : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 2--
+parsing u64 octal  : -12345678 results in --error: failed to parse '-12345678': invalid integer digit for base 8--
+parsing u64 hex    : -12345678 results in --error: failed to parse '-12345678': numerical overflow--
+parsing i32 decimal: -123456789 results in -123456789
+parsing i32 binary : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 2--
+parsing i32 octal  : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 8--
+parsing i32 hex    : -123456789 results in --error: failed to parse '-123456789': numerical overflow--
+parsing u32 decimal: -123456789 results in --error: failed to parse '-123456789': numerical overflow--
+parsing u32 binary : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 2--
+parsing u32 octal  : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 8--
+parsing u32 hex    : -123456789 results in --error: failed to parse '-123456789': numerical overflow--
+parsing i64 decimal: -123456789 results in -123456789
+parsing i64 binary : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 2--
+parsing i64 octal  : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 8--
+parsing i64 hex    : -123456789 results in -4886718345
+parsing u64 decimal: -123456789 results in --error: failed to parse '-123456789': numerical overflow--
+parsing u64 binary : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 2--
+parsing u64 octal  : -123456789 results in --error: failed to parse '-123456789': invalid integer digit for base 8--
+parsing u64 hex    : -123456789 results in --error: failed to parse '-123456789': numerical overflow--
+parsing i32 decimal: -1234567890 results in -1234567890
+parsing i32 binary : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 2--
+parsing i32 octal  : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 8--
+parsing i32 hex    : -1234567890 results in --error: failed to parse '-1234567890': numerical overflow--
+parsing u32 decimal: -1234567890 results in --error: failed to parse '-1234567890': numerical overflow--
+parsing u32 binary : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 2--
+parsing u32 octal  : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 8--
+parsing u32 hex    : -1234567890 results in --error: failed to parse '-1234567890': numerical overflow--
+parsing i64 decimal: -1234567890 results in -1234567890
+parsing i64 binary : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 2--
+parsing i64 octal  : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 8--
+parsing i64 hex    : -1234567890 results in -78187493520
+parsing u64 decimal: -1234567890 results in --error: failed to parse '-1234567890': numerical overflow--
+parsing u64 binary : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 2--
+parsing u64 octal  : -1234567890 results in --error: failed to parse '-1234567890': invalid integer digit for base 8--
+parsing u64 hex    : -1234567890 results in --error: failed to parse '-1234567890': numerical overflow--
+parsing i32 decimal: -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing i32 binary : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 2--
+parsing i32 octal  : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 8--
+parsing i32 hex    : -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing u32 decimal: -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing u32 binary : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 2--
+parsing u32 octal  : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 8--
+parsing u32 hex    : -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing i64 decimal: -12345678901 results in -12345678901
+parsing i64 binary : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 2--
+parsing i64 octal  : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 8--
+parsing i64 hex    : -12345678901 results in -1250999896321
+parsing u64 decimal: -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing u64 binary : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 2--
+parsing u64 octal  : -12345678901 results in --error: failed to parse '-12345678901': invalid integer digit for base 8--
+parsing u64 hex    : -12345678901 results in --error: failed to parse '-12345678901': numerical overflow--
+parsing i32 decimal: -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing i32 binary : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 2--
+parsing i32 octal  : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 8--
+parsing i32 hex    : -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing u32 decimal: -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing u32 binary : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 2--
+parsing u32 octal  : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 8--
+parsing u32 hex    : -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing i64 decimal: -123456789012 results in -123456789012
+parsing i64 binary : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 2--
+parsing i64 octal  : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 8--
+parsing i64 hex    : -123456789012 results in -20015998341138
+parsing u64 decimal: -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing u64 binary : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 2--
+parsing u64 octal  : -123456789012 results in --error: failed to parse '-123456789012': invalid integer digit for base 8--
+parsing u64 hex    : -123456789012 results in --error: failed to parse '-123456789012': numerical overflow--
+parsing i32 decimal: -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing i32 binary : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 2--
+parsing i32 octal  : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 8--
+parsing i32 hex    : -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing u32 decimal: -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing u32 binary : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 2--
+parsing u32 octal  : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 8--
+parsing u32 hex    : -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing i64 decimal: -1234567890123 results in -1234567890123
+parsing i64 binary : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 2--
+parsing i64 octal  : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 8--
+parsing i64 hex    : -1234567890123 results in -320255973458211
+parsing u64 decimal: -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing u64 binary : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 2--
+parsing u64 octal  : -1234567890123 results in --error: failed to parse '-1234567890123': invalid integer digit for base 8--
+parsing u64 hex    : -1234567890123 results in --error: failed to parse '-1234567890123': numerical overflow--
+parsing i32 decimal: -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing i32 binary : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 2--
+parsing i32 octal  : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 8--
+parsing i32 hex    : -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing u32 decimal: -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing u32 binary : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 2--
+parsing u32 octal  : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 8--
+parsing u32 hex    : -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing i64 decimal: -12345678901234 results in -12345678901234
+parsing i64 binary : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 2--
+parsing i64 octal  : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 8--
+parsing i64 hex    : -12345678901234 results in -5124095575331380
+parsing u64 decimal: -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing u64 binary : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 2--
+parsing u64 octal  : -12345678901234 results in --error: failed to parse '-12345678901234': invalid integer digit for base 8--
+parsing u64 hex    : -12345678901234 results in --error: failed to parse '-12345678901234': numerical overflow--
+parsing i32 decimal: -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing i32 binary : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 2--
+parsing i32 octal  : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 8--
+parsing i32 hex    : -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing u32 decimal: -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing u32 binary : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 2--
+parsing u32 octal  : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 8--
+parsing u32 hex    : -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing i64 decimal: -123456789012345 results in -123456789012345
+parsing i64 binary : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 2--
+parsing i64 octal  : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 8--
+parsing i64 hex    : -123456789012345 results in -81985529205302085
+parsing u64 decimal: -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing u64 binary : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 2--
+parsing u64 octal  : -123456789012345 results in --error: failed to parse '-123456789012345': invalid integer digit for base 8--
+parsing u64 hex    : -123456789012345 results in --error: failed to parse '-123456789012345': numerical overflow--
+parsing i32 decimal: -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing i32 binary : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 2--
+parsing i32 octal  : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 8--
+parsing i32 hex    : -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing u32 decimal: -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing u32 binary : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 2--
+parsing u32 octal  : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 8--
+parsing u32 hex    : -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing i64 decimal: -1234567890123456 results in -1234567890123456
+parsing i64 binary : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 2--
+parsing i64 octal  : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 8--
+parsing i64 hex    : -1234567890123456 results in -1311768467284833366
+parsing u64 decimal: -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing u64 binary : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 2--
+parsing u64 octal  : -1234567890123456 results in --error: failed to parse '-1234567890123456': invalid integer digit for base 8--
+parsing u64 hex    : -1234567890123456 results in --error: failed to parse '-1234567890123456': numerical overflow--
+parsing i32 decimal: -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing i32 binary : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 2--
+parsing i32 octal  : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 8--
+parsing i32 hex    : -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing u32 decimal: -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing u32 binary : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 2--
+parsing u32 octal  : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 8--
+parsing u32 hex    : -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing i64 decimal: -12345678901234567 results in -12345678901234567
+parsing i64 binary : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 2--
+parsing i64 octal  : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 8--
+parsing i64 hex    : -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing u64 decimal: -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing u64 binary : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 2--
+parsing u64 octal  : -12345678901234567 results in --error: failed to parse '-12345678901234567': invalid integer digit for base 8--
+parsing u64 hex    : -12345678901234567 results in --error: failed to parse '-12345678901234567': numerical overflow--
+parsing i32 decimal: -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing i32 binary : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 2--
+parsing i32 octal  : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 8--
+parsing i32 hex    : -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing u32 decimal: -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing u32 binary : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 2--
+parsing u32 octal  : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 8--
+parsing u32 hex    : -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing i64 decimal: -123456789012345678 results in -123456789012345678
+parsing i64 binary : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 2--
+parsing i64 octal  : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 8--
+parsing i64 hex    : -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing u64 decimal: -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing u64 binary : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 2--
+parsing u64 octal  : -123456789012345678 results in --error: failed to parse '-123456789012345678': invalid integer digit for base 8--
+parsing u64 hex    : -123456789012345678 results in --error: failed to parse '-123456789012345678': numerical overflow--
+parsing i32 decimal: -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing i32 binary : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 2--
+parsing i32 octal  : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 8--
+parsing i32 hex    : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing u32 decimal: -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing u32 binary : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 2--
+parsing u32 octal  : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 8--
+parsing u32 hex    : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing i64 decimal: -1234567890123456789 results in -1234567890123456789
+parsing i64 binary : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 2--
+parsing i64 octal  : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 8--
+parsing i64 hex    : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing u64 decimal: -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing u64 binary : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 2--
+parsing u64 octal  : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': invalid integer digit for base 8--
+parsing u64 hex    : -1234567890123456789 results in --error: failed to parse '-1234567890123456789': numerical overflow--
+parsing i32 decimal: -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing i32 binary : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 2--
+parsing i32 octal  : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 8--
+parsing i32 hex    : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing u32 decimal: -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing u32 binary : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 2--
+parsing u32 octal  : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 8--
+parsing u32 hex    : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing i64 decimal: -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing i64 binary : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 2--
+parsing i64 octal  : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 8--
+parsing i64 hex    : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing u64 decimal: -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing u64 binary : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 2--
+parsing u64 octal  : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': invalid integer digit for base 8--
+parsing u64 hex    : -12345678901234567890 results in --error: failed to parse '-12345678901234567890': numerical overflow--
+parsing i32 decimal: -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing i32 binary : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 2--
+parsing i32 octal  : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 8--
+parsing i32 hex    : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing u32 decimal: -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing u32 binary : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 2--
+parsing u32 octal  : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 8--
+parsing u32 hex    : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing i64 decimal: -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing i64 binary : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 2--
+parsing i64 octal  : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 8--
+parsing i64 hex    : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing u64 decimal: -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing u64 binary : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 2--
+parsing u64 octal  : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': invalid integer digit for base 8--
+parsing u64 hex    : -123456789012345678901 results in --error: failed to parse '-123456789012345678901': numerical overflow--
+parsing i32 decimal: -2147483647 results in -2147483647
+parsing i32 binary : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 2--
+parsing i32 octal  : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 8--
+parsing i32 hex    : -2147483647 results in --error: failed to parse '-2147483647': numerical overflow--
+parsing u32 decimal: -2147483647 results in --error: failed to parse '-2147483647': numerical overflow--
+parsing u32 binary : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 2--
+parsing u32 octal  : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 8--
+parsing u32 hex    : -2147483647 results in --error: failed to parse '-2147483647': numerical overflow--
+parsing i64 decimal: -2147483647 results in -2147483647
+parsing i64 binary : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 2--
+parsing i64 octal  : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 8--
+parsing i64 hex    : -2147483647 results in -142929835591
+parsing u64 decimal: -2147483647 results in --error: failed to parse '-2147483647': numerical overflow--
+parsing u64 binary : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 2--
+parsing u64 octal  : -2147483647 results in --error: failed to parse '-2147483647': invalid integer digit for base 8--
+parsing u64 hex    : -2147483647 results in --error: failed to parse '-2147483647': numerical overflow--
+parsing i32 decimal: -2147483648 results in -2147483648
+parsing i32 binary : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 2--
+parsing i32 octal  : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 8--
+parsing i32 hex    : -2147483648 results in --error: failed to parse '-2147483648': numerical overflow--
+parsing u32 decimal: -2147483648 results in --error: failed to parse '-2147483648': numerical overflow--
+parsing u32 binary : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 2--
+parsing u32 octal  : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 8--
+parsing u32 hex    : -2147483648 results in --error: failed to parse '-2147483648': numerical overflow--
+parsing i64 decimal: -2147483648 results in -2147483648
+parsing i64 binary : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 2--
+parsing i64 octal  : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 8--
+parsing i64 hex    : -2147483648 results in -142929835592
+parsing u64 decimal: -2147483648 results in --error: failed to parse '-2147483648': numerical overflow--
+parsing u64 binary : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 2--
+parsing u64 octal  : -2147483648 results in --error: failed to parse '-2147483648': invalid integer digit for base 8--
+parsing u64 hex    : -2147483648 results in --error: failed to parse '-2147483648': numerical overflow--
+parsing i32 decimal: -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing i32 binary : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 2--
+parsing i32 octal  : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 8--
+parsing i32 hex    : -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing u32 decimal: -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing u32 binary : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 2--
+parsing u32 octal  : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 8--
+parsing u32 hex    : -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing i64 decimal: -2147483649 results in -2147483649
+parsing i64 binary : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 2--
+parsing i64 octal  : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 8--
+parsing i64 hex    : -2147483649 results in -142929835593
+parsing u64 decimal: -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing u64 binary : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 2--
+parsing u64 octal  : -2147483649 results in --error: failed to parse '-2147483649': invalid integer digit for base 8--
+parsing u64 hex    : -2147483649 results in --error: failed to parse '-2147483649': numerical overflow--
+parsing i32 decimal: -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing i32 binary : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 2--
+parsing i32 octal  : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 8--
+parsing i32 hex    : -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing u32 decimal: -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing u32 binary : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 2--
+parsing u32 octal  : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 8--
+parsing u32 hex    : -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing i64 decimal: -4294967295 results in -4294967295
+parsing i64 binary : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 2--
+parsing i64 octal  : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 8--
+parsing i64 hex    : -4294967295 results in -285960729237
+parsing u64 decimal: -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing u64 binary : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 2--
+parsing u64 octal  : -4294967295 results in --error: failed to parse '-4294967295': invalid integer digit for base 8--
+parsing u64 hex    : -4294967295 results in --error: failed to parse '-4294967295': numerical overflow--
+parsing i32 decimal: -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing i32 binary : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 2--
+parsing i32 octal  : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 8--
+parsing i32 hex    : -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing u32 decimal: -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing u32 binary : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 2--
+parsing u32 octal  : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 8--
+parsing u32 hex    : -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing i64 decimal: -4294967296 results in -4294967296
+parsing i64 binary : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 2--
+parsing i64 octal  : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 8--
+parsing i64 hex    : -4294967296 results in -285960729238
+parsing u64 decimal: -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing u64 binary : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 2--
+parsing u64 octal  : -4294967296 results in --error: failed to parse '-4294967296': invalid integer digit for base 8--
+parsing u64 hex    : -4294967296 results in --error: failed to parse '-4294967296': numerical overflow--
+parsing i32 decimal: -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing i32 binary : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 2--
+parsing i32 octal  : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 8--
+parsing i32 hex    : -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing u32 decimal: -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing u32 binary : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 2--
+parsing u32 octal  : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 8--
+parsing u32 hex    : -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing i64 decimal: -4294967297 results in -4294967297
+parsing i64 binary : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 2--
+parsing i64 octal  : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 8--
+parsing i64 hex    : -4294967297 results in -285960729239
+parsing u64 decimal: -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing u64 binary : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 2--
+parsing u64 octal  : -4294967297 results in --error: failed to parse '-4294967297': invalid integer digit for base 8--
+parsing u64 hex    : -4294967297 results in --error: failed to parse '-4294967297': numerical overflow--
+parsing i32 decimal: -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing i32 binary : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 2--
+parsing i32 octal  : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 8--
+parsing i32 hex    : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing u32 decimal: -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing u32 binary : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 2--
+parsing u32 octal  : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 8--
+parsing u32 hex    : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing i64 decimal: -9223372036854775807 results in -9223372036854775807
+parsing i64 binary : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 2--
+parsing i64 octal  : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 8--
+parsing i64 hex    : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing u64 decimal: -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing u64 binary : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 2--
+parsing u64 octal  : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': invalid integer digit for base 8--
+parsing u64 hex    : -9223372036854775807 results in --error: failed to parse '-9223372036854775807': numerical overflow--
+parsing i32 decimal: -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing i32 binary : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 2--
+parsing i32 octal  : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 8--
+parsing i32 hex    : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing u32 decimal: -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing u32 binary : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 2--
+parsing u32 octal  : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 8--
+parsing u32 hex    : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing i64 decimal: -9223372036854775808 results in -9223372036854775808
+parsing i64 binary : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 2--
+parsing i64 octal  : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 8--
+parsing i64 hex    : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing u64 decimal: -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing u64 binary : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 2--
+parsing u64 octal  : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': invalid integer digit for base 8--
+parsing u64 hex    : -9223372036854775808 results in --error: failed to parse '-9223372036854775808': numerical overflow--
+parsing i32 decimal: -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing i32 binary : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 2--
+parsing i32 octal  : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 8--
+parsing i32 hex    : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing u32 decimal: -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing u32 binary : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 2--
+parsing u32 octal  : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 8--
+parsing u32 hex    : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing i64 decimal: -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing i64 binary : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 2--
+parsing i64 octal  : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 8--
+parsing i64 hex    : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing u64 decimal: -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing u64 binary : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 2--
+parsing u64 octal  : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': invalid integer digit for base 8--
+parsing u64 hex    : -9223372036854775809 results in --error: failed to parse '-9223372036854775809': numerical overflow--
+parsing i32 decimal: -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing i32 binary : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 2--
+parsing i32 octal  : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 8--
+parsing i32 hex    : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing u32 decimal: -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing u32 binary : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 2--
+parsing u32 octal  : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 8--
+parsing u32 hex    : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing i64 decimal: -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing i64 binary : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 2--
+parsing i64 octal  : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 8--
+parsing i64 hex    : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing u64 decimal: -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing u64 binary : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 2--
+parsing u64 octal  : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': invalid integer digit for base 8--
+parsing u64 hex    : -18446744073709551615 results in --error: failed to parse '-18446744073709551615': numerical overflow--
+parsing i32 decimal: -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing i32 binary : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 2--
+parsing i32 octal  : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 8--
+parsing i32 hex    : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing u32 decimal: -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing u32 binary : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 2--
+parsing u32 octal  : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 8--
+parsing u32 hex    : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing i64 decimal: -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing i64 binary : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 2--
+parsing i64 octal  : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 8--
+parsing i64 hex    : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing u64 decimal: -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing u64 binary : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 2--
+parsing u64 octal  : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': invalid integer digit for base 8--
+parsing u64 hex    : -18446744073709551616 results in --error: failed to parse '-18446744073709551616': numerical overflow--
+parsing i32 decimal: -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing i32 binary : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 2--
+parsing i32 octal  : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 8--
+parsing i32 hex    : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing u32 decimal: -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing u32 binary : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 2--
+parsing u32 octal  : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 8--
+parsing u32 hex    : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing i64 decimal: -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing i64 binary : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 2--
+parsing i64 octal  : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 8--
+parsing i64 hex    : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing u64 decimal: -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing u64 binary : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 2--
+parsing u64 octal  : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': invalid integer digit for base 8--
+parsing u64 hex    : -18446744073709551617 results in --error: failed to parse '-18446744073709551617': numerical overflow--
+parsing i32 decimal: +0 results in 0
+parsing i32 binary : +0 results in 0
+parsing i32 octal  : +0 results in 0
+parsing i32 hex    : +0 results in 0
+parsing u32 decimal: +0 results in 0
+parsing u32 binary : +0 results in 0
+parsing u32 octal  : +0 results in 0
+parsing u32 hex    : +0 results in 0
+parsing i64 decimal: +0 results in 0
+parsing i64 binary : +0 results in 0
+parsing i64 octal  : +0 results in 0
+parsing i64 hex    : +0 results in 0
+parsing u64 decimal: +0 results in 0
+parsing u64 binary : +0 results in 0
+parsing u64 octal  : +0 results in 0
+parsing u64 hex    : +0 results in 0
+parsing i32 decimal: -0 results in 0
+parsing i32 binary : -0 results in 0
+parsing i32 octal  : -0 results in 0
+parsing i32 hex    : -0 results in 0
+parsing u32 decimal: -0 results in 0
+parsing u32 binary : -0 results in 0
+parsing u32 octal  : -0 results in 0
+parsing u32 hex    : -0 results in 0
+parsing i64 decimal: -0 results in 0
+parsing i64 binary : -0 results in 0
+parsing i64 octal  : -0 results in 0
+parsing i64 hex    : -0 results in 0
+parsing u64 decimal: -0 results in 0
+parsing u64 binary : -0 results in 0
+parsing u64 octal  : -0 results in 0
+parsing u64 hex    : -0 results in 0
+parsing i32 decimal: +1 results in 1
+parsing i32 binary : +1 results in 1
+parsing i32 octal  : +1 results in 1
+parsing i32 hex    : +1 results in 1
+parsing u32 decimal: +1 results in 1
+parsing u32 binary : +1 results in 1
+parsing u32 octal  : +1 results in 1
+parsing u32 hex    : +1 results in 1
+parsing i64 decimal: +1 results in 1
+parsing i64 binary : +1 results in 1
+parsing i64 octal  : +1 results in 1
+parsing i64 hex    : +1 results in 1
+parsing u64 decimal: +1 results in 1
+parsing u64 binary : +1 results in 1
+parsing u64 octal  : +1 results in 1
+parsing u64 hex    : +1 results in 1
+parsing i32 decimal: -1 results in -1
+parsing i32 binary : -1 results in -1
+parsing i32 octal  : -1 results in -1
+parsing i32 hex    : -1 results in -1
+parsing u32 decimal: -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 binary : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 octal  : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u32 hex    : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing i64 decimal: -1 results in -1
+parsing i64 binary : -1 results in -1
+parsing i64 octal  : -1 results in -1
+parsing i64 hex    : -1 results in -1
+parsing u64 decimal: -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 binary : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 octal  : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing u64 hex    : -1 results in --error: failed to parse '-1': numerical overflow--
+parsing i32 decimal: +12 results in 12
+parsing i32 binary : +12 results in --error: failed to parse '+12': invalid integer digit for base 2--
+parsing i32 octal  : +12 results in 10
+parsing i32 hex    : +12 results in 18
+parsing u32 decimal: +12 results in 12
+parsing u32 binary : +12 results in --error: failed to parse '+12': invalid integer digit for base 2--
+parsing u32 octal  : +12 results in 10
+parsing u32 hex    : +12 results in 18
+parsing i64 decimal: +12 results in 12
+parsing i64 binary : +12 results in --error: failed to parse '+12': invalid integer digit for base 2--
+parsing i64 octal  : +12 results in 10
+parsing i64 hex    : +12 results in 18
+parsing u64 decimal: +12 results in 12
+parsing u64 binary : +12 results in --error: failed to parse '+12': invalid integer digit for base 2--
+parsing u64 octal  : +12 results in 10
+parsing u64 hex    : +12 results in 18
+parsing i32 decimal: -12 results in -12
+parsing i32 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing i32 octal  : -12 results in -10
+parsing i32 hex    : -12 results in -18
+parsing u32 decimal: -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u32 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing u32 octal  : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u32 hex    : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing i64 decimal: -12 results in -12
+parsing i64 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing i64 octal  : -12 results in -10
+parsing i64 hex    : -12 results in -18
+parsing u64 decimal: -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u64 binary : -12 results in --error: failed to parse '-12': invalid integer digit for base 2--
+parsing u64 octal  : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing u64 hex    : -12 results in --error: failed to parse '-12': numerical overflow--
+parsing i32 decimal: ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i32 binary : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i32 octal  : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i32 hex    : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u32 decimal: ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u32 binary : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u32 octal  : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u32 hex    : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i64 decimal: ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i64 binary : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i64 octal  : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i64 hex    : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u64 decimal: ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u64 binary : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u64 octal  : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing u64 hex    : ++0 results in --error: failed to parse '++0': non-digit found--
+parsing i32 decimal: --0 results in --error: failed to parse '--0': non-digit found--
+parsing i32 binary : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i32 octal  : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i32 hex    : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u32 decimal: --0 results in --error: failed to parse '--0': non-digit found--
+parsing u32 binary : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u32 octal  : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u32 hex    : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i64 decimal: --0 results in --error: failed to parse '--0': non-digit found--
+parsing i64 binary : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i64 octal  : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i64 hex    : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u64 decimal: --0 results in --error: failed to parse '--0': non-digit found--
+parsing u64 binary : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u64 octal  : --0 results in --error: failed to parse '--0': non-digit found--
+parsing u64 hex    : --0 results in --error: failed to parse '--0': non-digit found--
+parsing i32 decimal: 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i32 binary : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i32 octal  : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i32 hex    : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u32 decimal: 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u32 binary : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u32 octal  : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u32 hex    : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i64 decimal: 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i64 binary : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i64 octal  : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i64 hex    : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u64 decimal: 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u64 binary : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u64 octal  : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing u64 hex    : 0+ results in --error: failed to parse '0+': non-digit found--
+parsing i32 decimal: 0- results in --error: failed to parse '0-': non-digit found--
+parsing i32 binary : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i32 octal  : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i32 hex    : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u32 decimal: 0- results in --error: failed to parse '0-': non-digit found--
+parsing u32 binary : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u32 octal  : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u32 hex    : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i64 decimal: 0- results in --error: failed to parse '0-': non-digit found--
+parsing i64 binary : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i64 octal  : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i64 hex    : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u64 decimal: 0- results in --error: failed to parse '0-': non-digit found--
+parsing u64 binary : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u64 octal  : 0- results in --error: failed to parse '0-': non-digit found--
+parsing u64 hex    : 0- results in --error: failed to parse '0-': non-digit found--
+parsing i32 decimal: + results in 0
+parsing i32 binary : + results in 0
+parsing i32 octal  : + results in 0
+parsing i32 hex    : + results in 0
+parsing u32 decimal: + results in 0
+parsing u32 binary : + results in 0
+parsing u32 octal  : + results in 0
+parsing u32 hex    : + results in 0
+parsing i64 decimal: + results in 0
+parsing i64 binary : + results in 0
+parsing i64 octal  : + results in 0
+parsing i64 hex    : + results in 0
+parsing u64 decimal: + results in 0
+parsing u64 binary : + results in 0
+parsing u64 octal  : + results in 0
+parsing u64 hex    : + results in 0
+parsing i32 decimal: - results in 0
+parsing i32 binary : - results in 0
+parsing i32 octal  : - results in 0
+parsing i32 hex    : - results in 0
+parsing u32 decimal: - results in 0
+parsing u32 binary : - results in 0
+parsing u32 octal  : - results in 0
+parsing u32 hex    : - results in 0
+parsing i64 decimal: - results in 0
+parsing i64 binary : - results in 0
+parsing i64 octal  : - results in 0
+parsing i64 hex    : - results in 0
+parsing u64 decimal: - results in 0
+parsing u64 binary : - results in 0
+parsing u64 octal  : - results in 0
+parsing u64 hex    : - results in 0
+parsing i32 decimal:  results in --error: failed to parse '': empty string--
+parsing i32 binary :  results in --error: failed to parse '': empty string--
+parsing i32 octal  :  results in --error: failed to parse '': empty string--
+parsing i32 hex    :  results in --error: failed to parse '': empty string--
+parsing u32 decimal:  results in --error: failed to parse '': empty string--
+parsing u32 binary :  results in --error: failed to parse '': empty string--
+parsing u32 octal  :  results in --error: failed to parse '': empty string--
+parsing u32 hex    :  results in --error: failed to parse '': empty string--
+parsing i64 decimal:  results in --error: failed to parse '': empty string--
+parsing i64 binary :  results in --error: failed to parse '': empty string--
+parsing i64 octal  :  results in --error: failed to parse '': empty string--
+parsing i64 hex    :  results in --error: failed to parse '': empty string--
+parsing u64 decimal:  results in --error: failed to parse '': empty string--
+parsing u64 binary :  results in --error: failed to parse '': empty string--
+parsing u64 octal  :  results in --error: failed to parse '': empty string--
+parsing u64 hex    :  results in --error: failed to parse '': empty string--
+parsing i32 decimal: abc results in --error: failed to parse 'abc': invalid integer digit for base 10--
+parsing i32 binary : abc results in --error: failed to parse 'abc': invalid integer digit for base 2--
+parsing i32 octal  : abc results in --error: failed to parse 'abc': invalid integer digit for base 8--
+parsing i32 hex    : abc results in 2748
+parsing u32 decimal: abc results in --error: failed to parse 'abc': invalid integer digit for base 10--
+parsing u32 binary : abc results in --error: failed to parse 'abc': invalid integer digit for base 2--
+parsing u32 octal  : abc results in --error: failed to parse 'abc': invalid integer digit for base 8--
+parsing u32 hex    : abc results in 2748
+parsing i64 decimal: abc results in --error: failed to parse 'abc': invalid integer digit for base 10--
+parsing i64 binary : abc results in --error: failed to parse 'abc': invalid integer digit for base 2--
+parsing i64 octal  : abc results in --error: failed to parse 'abc': invalid integer digit for base 8--
+parsing i64 hex    : abc results in 2748
+parsing u64 decimal: abc results in --error: failed to parse 'abc': invalid integer digit for base 10--
+parsing u64 binary : abc results in --error: failed to parse 'abc': invalid integer digit for base 2--
+parsing u64 octal  : abc results in --error: failed to parse 'abc': invalid integer digit for base 8--
+parsing u64 hex    : abc results in 2748
+parsing i32 decimal:   results in --error: failed to parse ' ': non-digit found--
+parsing i32 binary :   results in --error: failed to parse ' ': non-digit found--
+parsing i32 octal  :   results in --error: failed to parse ' ': non-digit found--
+parsing i32 hex    :   results in --error: failed to parse ' ': non-digit found--
+parsing u32 decimal:   results in --error: failed to parse ' ': non-digit found--
+parsing u32 binary :   results in --error: failed to parse ' ': non-digit found--
+parsing u32 octal  :   results in --error: failed to parse ' ': non-digit found--
+parsing u32 hex    :   results in --error: failed to parse ' ': non-digit found--
+parsing i64 decimal:   results in --error: failed to parse ' ': non-digit found--
+parsing i64 binary :   results in --error: failed to parse ' ': non-digit found--
+parsing i64 octal  :   results in --error: failed to parse ' ': non-digit found--
+parsing i64 hex    :   results in --error: failed to parse ' ': non-digit found--
+parsing u64 decimal:   results in --error: failed to parse ' ': non-digit found--
+parsing u64 binary :   results in --error: failed to parse ' ': non-digit found--
+parsing u64 octal  :   results in --error: failed to parse ' ': non-digit found--
+parsing u64 hex    :   results in --error: failed to parse ' ': non-digit found--
+parsing i32 decimal: 	 results in --error: failed to parse '	': non-digit found--
+parsing i32 binary : 	 results in --error: failed to parse '	': non-digit found--
+parsing i32 octal  : 	 results in --error: failed to parse '	': non-digit found--
+parsing i32 hex    : 	 results in --error: failed to parse '	': non-digit found--
+parsing u32 decimal: 	 results in --error: failed to parse '	': non-digit found--
+parsing u32 binary : 	 results in --error: failed to parse '	': non-digit found--
+parsing u32 octal  : 	 results in --error: failed to parse '	': non-digit found--
+parsing u32 hex    : 	 results in --error: failed to parse '	': non-digit found--
+parsing i64 decimal: 	 results in --error: failed to parse '	': non-digit found--
+parsing i64 binary : 	 results in --error: failed to parse '	': non-digit found--
+parsing i64 octal  : 	 results in --error: failed to parse '	': non-digit found--
+parsing i64 hex    : 	 results in --error: failed to parse '	': non-digit found--
+parsing u64 decimal: 	 results in --error: failed to parse '	': non-digit found--
+parsing u64 binary : 	 results in --error: failed to parse '	': non-digit found--
+parsing u64 octal  : 	 results in --error: failed to parse '	': non-digit found--
+parsing u64 hex    : 	 results in --error: failed to parse '	': non-digit found--
+parsing i32 decimal: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing i32 binary : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i32 octal  : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing i32 hex    : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing u32 decimal: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing u32 binary : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u32 octal  : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing u32 hex    : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing i64 decimal: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing i64 binary : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i64 octal  : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing i64 hex    : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing u64 decimal: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing u64 binary : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u64 octal  : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing u64 hex    : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing i32 decimal: +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing i32 binary : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '+0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i32 octal  : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing i32 hex    : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing u32 decimal: +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing u32 binary : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '+0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u32 octal  : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing u32 hex    : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing i64 decimal: +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing i64 binary : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '+0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i64 octal  : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing i64 hex    : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing u64 decimal: +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 123
+parsing u64 binary : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '+0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u64 octal  : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 83
+parsing u64 hex    : +0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in 291
+parsing i32 decimal: -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -123
+parsing i32 binary : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i32 octal  : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -83
+parsing i32 hex    : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -291
+parsing u32 decimal: -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing u32 binary : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u32 octal  : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing u32 hex    : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing i64 decimal: -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -123
+parsing i64 binary : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing i64 octal  : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -83
+parsing i64 hex    : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in -291
+parsing u64 decimal: -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing u64 binary : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': invalid integer digit for base 2--
+parsing u64 octal  : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing u64 hex    : -0000000000000000000000000000000000000000000000000000000000000000000000000000000000123 results in --error: failed to parse '-0000000000000000000000000000000000000000000000000000000000000000000000000000000000123': numerical overflow--
+parsing i32 decimal: deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 10--
+parsing i32 binary : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 2--
+parsing i32 octal  : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 8--
+parsing i32 hex    : deadbeef results in --error: failed to parse 'deadbeef': numerical overflow--
+parsing u32 decimal: deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 10--
+parsing u32 binary : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 2--
+parsing u32 octal  : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 8--
+parsing u32 hex    : deadbeef results in 3735928559
+parsing i64 decimal: deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 10--
+parsing i64 binary : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 2--
+parsing i64 octal  : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 8--
+parsing i64 hex    : deadbeef results in 3735928559
+parsing u64 decimal: deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 10--
+parsing u64 binary : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 2--
+parsing u64 octal  : deadbeef results in --error: failed to parse 'deadbeef': invalid integer digit for base 8--
+parsing u64 hex    : deadbeef results in 3735928559
+parsing i32 decimal: BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 10--
+parsing i32 binary : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 2--
+parsing i32 octal  : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 8--
+parsing i32 hex    : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 16--
+parsing u32 decimal: BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 10--
+parsing u32 binary : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 2--
+parsing u32 octal  : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 8--
+parsing u32 hex    : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 16--
+parsing i64 decimal: BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 10--
+parsing i64 binary : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 2--
+parsing i64 octal  : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 8--
+parsing i64 hex    : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 16--
+parsing u64 decimal: BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 10--
+parsing u64 binary : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 2--
+parsing u64 octal  : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 8--
+parsing u64 hex    : BadCodeFacadeOff results in --error: failed to parse 'BadCodeFacadeOff': invalid integer digit for base 16--
+parsing i32 decimal: 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 10--
+parsing i32 binary : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 2--
+parsing i32 octal  : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 8--
+parsing i32 hex    : 7fffffff results in 2147483647
+parsing u32 decimal: 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 10--
+parsing u32 binary : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 2--
+parsing u32 octal  : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 8--
+parsing u32 hex    : 7fffffff results in 2147483647
+parsing i64 decimal: 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 10--
+parsing i64 binary : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 2--
+parsing i64 octal  : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 8--
+parsing i64 hex    : 7fffffff results in 2147483647
+parsing u64 decimal: 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 10--
+parsing u64 binary : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 2--
+parsing u64 octal  : 7fffffff results in --error: failed to parse '7fffffff': invalid integer digit for base 8--
+parsing u64 hex    : 7fffffff results in 2147483647
+parsing i32 decimal: ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 10--
+parsing i32 binary : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 2--
+parsing i32 octal  : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 8--
+parsing i32 hex    : ffffffff results in --error: failed to parse 'ffffffff': numerical overflow--
+parsing u32 decimal: ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 10--
+parsing u32 binary : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 2--
+parsing u32 octal  : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 8--
+parsing u32 hex    : ffffffff results in 4294967295
+parsing i64 decimal: ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 10--
+parsing i64 binary : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 2--
+parsing i64 octal  : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 8--
+parsing i64 hex    : ffffffff results in 4294967295
+parsing u64 decimal: ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 10--
+parsing u64 binary : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 2--
+parsing u64 octal  : ffffffff results in --error: failed to parse 'ffffffff': invalid integer digit for base 8--
+parsing u64 hex    : ffffffff results in 4294967295
+parsing i32 decimal: 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 10--
+parsing i32 binary : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 2--
+parsing i32 octal  : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 8--
+parsing i32 hex    : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': numerical overflow--
+parsing u32 decimal: 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 10--
+parsing u32 binary : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 2--
+parsing u32 octal  : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 8--
+parsing u32 hex    : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': numerical overflow--
+parsing i64 decimal: 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 10--
+parsing i64 binary : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 2--
+parsing i64 octal  : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 8--
+parsing i64 hex    : 7fffffffffffffff results in 9223372036854775807
+parsing u64 decimal: 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 10--
+parsing u64 binary : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 2--
+parsing u64 octal  : 7fffffffffffffff results in --error: failed to parse '7fffffffffffffff': invalid integer digit for base 8--
+parsing u64 hex    : 7fffffffffffffff results in 9223372036854775807
+parsing i32 decimal: ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 10--
+parsing i32 binary : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 2--
+parsing i32 octal  : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 8--
+parsing i32 hex    : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': numerical overflow--
+parsing u32 decimal: ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 10--
+parsing u32 binary : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 2--
+parsing u32 octal  : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 8--
+parsing u32 hex    : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': numerical overflow--
+parsing i64 decimal: ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 10--
+parsing i64 binary : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 2--
+parsing i64 octal  : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 8--
+parsing i64 hex    : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': numerical overflow--
+parsing u64 decimal: ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 10--
+parsing u64 binary : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 2--
+parsing u64 octal  : ffffffffffffffff results in --error: failed to parse 'ffffffffffffffff': invalid integer digit for base 8--
+parsing u64 hex    : ffffffffffffffff results in 18446744073709551615
+parsing i32 decimal: 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i32 binary : 01010101010101010101010101010101 results in 1431655765
+parsing i32 octal  : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i32 hex    : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u32 decimal: 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u32 binary : 01010101010101010101010101010101 results in 1431655765
+parsing u32 octal  : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u32 hex    : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i64 decimal: 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i64 binary : 01010101010101010101010101010101 results in 1431655765
+parsing i64 octal  : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i64 hex    : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u64 decimal: 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u64 binary : 01010101010101010101010101010101 results in 1431655765
+parsing u64 octal  : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing u64 hex    : 01010101010101010101010101010101 results in --error: failed to parse '01010101010101010101010101010101': numerical overflow--
+parsing i32 decimal: 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i32 binary : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i32 octal  : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i32 hex    : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u32 decimal: 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u32 binary : 10101010101010101010101010101010 results in 2863311530
+parsing u32 octal  : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u32 hex    : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i64 decimal: 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i64 binary : 10101010101010101010101010101010 results in 2863311530
+parsing i64 octal  : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i64 hex    : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u64 decimal: 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u64 binary : 10101010101010101010101010101010 results in 2863311530
+parsing u64 octal  : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing u64 hex    : 10101010101010101010101010101010 results in --error: failed to parse '10101010101010101010101010101010': numerical overflow--
+parsing i32 decimal: 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i32 binary : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i32 octal  : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i32 hex    : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u32 decimal: 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u32 binary : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u32 octal  : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u32 hex    : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i64 decimal: 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i64 binary : 0101010101010101010101010101010101010101010101010101010101010101 results in 6148914691236517205
+parsing i64 octal  : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i64 hex    : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u64 decimal: 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u64 binary : 0101010101010101010101010101010101010101010101010101010101010101 results in 6148914691236517205
+parsing u64 octal  : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing u64 hex    : 0101010101010101010101010101010101010101010101010101010101010101 results in --error: failed to parse '0101010101010101010101010101010101010101010101010101010101010101': numerical overflow--
+parsing i32 decimal: 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i32 binary : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i32 octal  : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i32 hex    : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u32 decimal: 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u32 binary : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u32 octal  : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u32 hex    : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i64 decimal: 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i64 binary : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i64 octal  : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing i64 hex    : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u64 decimal: 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u64 binary : 1010101010101010101010101010101010101010101010101010101010101010 results in 12297829382473034410
+parsing u64 octal  : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--
+parsing u64 hex    : 1010101010101010101010101010101010101010101010101010101010101010 results in --error: failed to parse '1010101010101010101010101010101010101010101010101010101010101010': numerical overflow--

@@ -1,0 +1,66 @@
+found 'allo' in 'Hallo' at index 1
+found 'allô' in 'Hallo' at index --nil--
+found 'aaaaaaab' in 'aaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaab' in 'aaaaaaaaaaaaaaaab' at index 9
+found 'aaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' at index 17
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' at index 33
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' at index 65
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' at index 129
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' at index --nil--
+found 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' in 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab' at index 257
+found 'a' at index 36: the quick brown fox jumps over the lazy dog
+-----------------------------------------------------------^
+found 'b' at index 10: the quick brown fox jumps over the lazy dog
+---------------------------------^
+found 'c' at index 7: the quick brown fox jumps over the lazy dog
+-----------------------------^
+found 'd' at index 40: the quick brown fox jumps over the lazy dog
+---------------------------------------------------------------^
+found 'e' at index 2: the quick brown fox jumps over the lazy dog
+------------------------^
+found 'f' at index 16: the quick brown fox jumps over the lazy dog
+---------------------------------------^
+found 'g' at index 42: the quick brown fox jumps over the lazy dog
+-----------------------------------------------------------------^
+found 'h' at index 1: the quick brown fox jumps over the lazy dog
+-----------------------^
+found 'i' at index 6: the quick brown fox jumps over the lazy dog
+----------------------------^
+found 'j' at index 20: the quick brown fox jumps over the lazy dog
+-------------------------------------------^
+found 'k' at index 8: the quick brown fox jumps over the lazy dog
+------------------------------^
+found 'l' at index 35: the quick brown fox jumps over the lazy dog
+----------------------------------------------------------^
+found 'm' at index 22: the quick brown fox jumps over the lazy dog
+---------------------------------------------^
+found 'n' at index 14: the quick brown fox jumps over the lazy dog
+-------------------------------------^
+found 'o' at index 12: the quick brown fox jumps over the lazy dog
+-----------------------------------^
+found 'p' at index 23: the quick brown fox jumps over the lazy dog
+----------------------------------------------^
+found 'q' at index 4: the quick brown fox jumps over the lazy dog
+--------------------------^
+found 'r' at index 11: the quick brown fox jumps over the lazy dog
+----------------------------------^
+found 's' at index 24: the quick brown fox jumps over the lazy dog
+-----------------------------------------------^
+found 't' at index 0: the quick brown fox jumps over the lazy dog
+----------------------^
+found 'u' at index 5: the quick brown fox jumps over the lazy dog
+---------------------------^
+found 'v' at index 27: the quick brown fox jumps over the lazy dog
+--------------------------------------------------^
+found 'w' at index 13: the quick brown fox jumps over the lazy dog
+------------------------------------^
+found 'x' at index 18: the quick brown fox jumps over the lazy dog
+-----------------------------------------^
+found 'y' at index 38: the quick brown fox jumps over the lazy dog
+-------------------------------------------------------------^
+found 'z' at index 37: the quick brown fox jumps over the lazy dog
+------------------------------------------------------------^

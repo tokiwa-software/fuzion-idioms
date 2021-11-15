@@ -1,0 +1,8 @@
+ex170 is
+
+  mymap := (psMap ["one", "two", "three", "four", "five"]
+                  ["一", "二", "三", "四", "五"]
+           )
+
+  n := mymap.size
+  say "size is $n"

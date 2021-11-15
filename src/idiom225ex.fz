@@ -1,0 +1,16 @@
+ex225 is
+
+  f<T>(x option<T>) =>
+    x ? t T => say "x is present $t"
+      | nil => say "x is not present"
+
+  f 42
+  f "some text"
+  f<string> nil
+
+  # the following does not work yet, see https://github.com/fridis/fuzion/issues/121
+  # f nil
+  # f<nil> nil
+
+  f -1⁄12
+  f "Die Würde des Menschen ist unantastbar.".split

@@ -1,0 +1,22 @@
+<h1>Idiom # 86: Check if integer multiplication will overflow</h1>
+
+<p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/86/check-if-integer-multiplication-will-overflow">programming-idioms.org</a>:</p>
+
+<h2>Code</h2>
+
+<p>For all integers with wrap-around semantics (i.e. all the standard types i32,
+u64, etc.), there are two ways to check for overflow on multiplication.  First,
+the predicate <code>overflowOnMul</code> checks if a multiplication of two
+values would overflow.  Next, there is a multiplication operator <code>infix
+*?</code> that performs overflow checking and returns a <code>numOption</code>
+that can be checked afterwards.</p>
+
+<p>Note that <code>infix *</code> would result in a runtime error in case of an
+overflow if debug checks are enabled.  If overflow semantics are desired,
+operator <code>infix *°</code> has to be used.</p>
+
+<runcode file="../examples/idiom86.fuzion"/>
+
+<h2>Running Example</h2>
+
+<runcode file="../examples/idiom86ex.fz"/>

@@ -1,0 +1,6 @@
+ex166 is
+
+  a := ["to", "be", "or"]
+  b := ["not", "to", "be"]
+  a := a ++ b
+  say (a.asString " ")

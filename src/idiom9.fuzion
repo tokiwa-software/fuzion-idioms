@@ -1,0 +1,10 @@
+# a binTreeNode is a value plus left and right sub-trees
+#
+binTreeNode<T : ordered<T>>
+  (val T,
+   left, right binTree<T>) ref
+is
+
+# a binTree is either a binTreeNode or an empty tree represented by nil
+#
+binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is

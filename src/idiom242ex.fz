@@ -1,0 +1,7 @@
+ex242 is
+
+  x := setOf [0, 8, 15, 47, 11]
+
+  f(x i32) => say "element is $x"
+
+  x | (a -> f a)

@@ -1,0 +1,16 @@
+ex203 is
+
+  a := [0.0, 8.0, 15.0, 47.0, 11.0]
+
+  mean(a List<f64>) => (sum a) / a.count.as_f64
+
+  stddev²(a List<f64>) =>
+    m := mean a
+    mean (a.mapList<f64> x->(x - m)**2)
+
+  # NYI: no sqrt yet:
+  #
+  # stddev := stddev².sqrt
+
+  say "mean of $a is {mean a}"
+  say "stddev² of $a is {stddev² a}"

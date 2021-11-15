@@ -1,0 +1,1 @@
+x¹ := x.map<string> (e -> if e="foo" then "bar" else e)

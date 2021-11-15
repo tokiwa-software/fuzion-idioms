@@ -1,0 +1,11 @@
+ex172 is
+
+  m := (psMap [1,      2,      3,      4     ]
+              ["eins", "zwei", "drei", "vier"])
+  k := 5
+  v := "fünf"
+
+  m¹ := m.add k v
+
+  say m
+  say m¹

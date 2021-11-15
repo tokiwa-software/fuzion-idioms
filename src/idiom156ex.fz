@@ -1,0 +1,10 @@
+ex156 is
+
+  test(i i32) =>
+    s := i.dec 3
+    say s
+
+  test 7
+  test 42
+  test 666
+  test 4711

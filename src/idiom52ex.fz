@@ -1,0 +1,13 @@
+m := orderedMap<string,string>( [ "Hund", "Katze", "Maus" ] , [ "dog", "cat", "mouse" ] )
+
+v := "cat"
+if (for x in m.values until v = x)
+  say "$v was found"
+else
+  say "$v not found"
+
+v := "budgie"
+if (for x in m.values until v = x)
+  say "$v was found"
+else
+  say "$v not found"

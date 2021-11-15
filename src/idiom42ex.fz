@@ -1,0 +1,9 @@
+ex42 is
+  a := ["a", "b", "c", "d", "e", "f", "g" ]
+  b := ["b", "d", "e", "g" ]
+
+  for v in a do
+    for u in b
+    until v = u
+    else
+      say v

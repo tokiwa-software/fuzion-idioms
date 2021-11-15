@@ -1,0 +1,18 @@
+<h1>Idiom # 43: Break outer loop</h1>
+
+<p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/43/break-outer-loop">programming-idioms.org</a>:</p>
+
+<h2>Code</h2>
+
+<p>There is no <code>break</code> or <code>goto</code> in Funsion, so we have to
+help ourselves differenty.  In Fuzion, a loop that may execute successfully
+(until condition become <code>true</code>) or not (until the iterated set is
+exhausted) can be used as a boolean expression. Its value is <code>true</code>
+on success.  Consequently, we can use the complete inner loop as the until
+condition of the outer loop:</p>
+
+<runcode file="../examples/idiom43.fuzion"/>
+
+<h2>Running Example</h2>
+
+<runcode file="../examples/idiom43ex.fz"/>

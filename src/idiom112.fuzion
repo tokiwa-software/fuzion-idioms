@@ -1,0 +1,2 @@
+for k in sortedArray<T> map.keys do
+  say "$k => {map[k]}"

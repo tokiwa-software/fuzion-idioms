@@ -1,0 +1,2 @@
+n := s.codepointLength
+t := s.substring n-5 n

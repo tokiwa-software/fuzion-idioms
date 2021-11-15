@@ -1,0 +1,16 @@
+ex179 is
+
+  Point (x, y f64) is
+    redef asString => "($x, $y)"
+
+  Rectangle(a, b Point) is
+    center => Point (a.x+b.x)/2 (a.y+b.y)/2
+
+  x1 := 0.0
+  x2 := 1.0
+  y1 := 0.0
+  y2 := 2.0
+  r := Rectangle (Point x1 y1) (Point x2 y2)
+  c := r.center
+
+  say c

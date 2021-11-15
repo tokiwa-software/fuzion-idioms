@@ -1,0 +1,7 @@
+ex215 is
+
+  s := "融合слияниеذوب"
+  c := "❗"
+  m := 15
+  s2 := c * ((m - s.codepointLength).max 0) + s
+  say s2

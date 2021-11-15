@@ -1,0 +1,5 @@
+for v in a do
+  for u in b
+  until v = u
+  else
+    say v

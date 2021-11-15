@@ -1,0 +1,29 @@
+<h1>Idiom # 182: Quine program</h1>
+
+<p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/182/quine-program">programming-idioms.org</a>:</p>
+
+<p>A quine is a program that prints its own source code.</p>
+
+<h2>Code</h2>
+
+<p>A quine defined as a feature:</p>
+
+<runcode file="../examples/idiom182.fz"/>
+
+<p>The idea in this code is that it contains a list <code>a</code> of strings of
+all the lines of its source code and then prints this list up to the start of
+the list contents, then prints the whole list wrapped in quotes and separated by
+commas, and finally prints the tail of the list, which is the code ending the
+  list declaration and the following code.</p>
+
+<p>A trick used in this code is to define features <code>q</code>
+and <code>c</code> that returns constant strings containing a double
+quote <code>"\""</code> and a comma <code>","</code>,
+respectively. Using <code>q</code> and <code>c</code> avoids the need for quotes
+in the code, which would need special handling to create the correct escape
+sequences.</p>
+
+<p>A quine can be slightly smaller if it is not wrapped in a feature, but runs
+directly in the universe and if some redundant whitespace is removed:</p>
+
+<runcode file="../examples/idiom182mini.fz"/>

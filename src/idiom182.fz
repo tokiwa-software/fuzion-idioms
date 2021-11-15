@@ -1,0 +1,14 @@
+quine is
+ q => codepoint 0x22
+ c => codepoint 0x2c
+ a := [
+  "quine is",
+  " q => codepoint 0x22",
+  " c => codepoint 0x2c",
+  " a := [",
+  "  c]",
+  " for i in 0..13 do",
+  "  say (if 3<i<11 (codepoint 0x20)*2+q+a[i-4]+q+c else a[i%7])",
+  c]
+ for i in 0..13 do
+  say (if 3<i<11 (codepoint 0x20)*2+q+a[i-4]+q+c else a[i%7])

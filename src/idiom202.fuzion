@@ -1,0 +1,19 @@
+# using sum and map
+sum := sum (a.map<i32> x->x*x)
+
+# using map and fold
+sum := a.map<i32> x->x*x
+        .fold i32.sum
+
+# using a loop
+for
+  sum := 0, sum + q
+  v in a
+  q := v*v
+else
+  sum
+
+# using a tail-recursive function
+sumOfSquares (sum i32, s list<i32>) i32 is
+  s ? nil    => sum
+    | c Cons => sumOfSquares (sum + c.head**2) c.tail

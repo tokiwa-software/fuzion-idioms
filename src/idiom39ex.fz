@@ -1,0 +1,10 @@
+ex39 is
+
+  checkContains(s string, word string) =>
+    ok := s.contains word
+    say "'$s'.contains '$word' is $ok"
+
+  checkContains "Fuzion" "zia"
+  checkContains "Fuzion" "tío"
+  checkContains "Fuzion" "zio"
+  checkContains "Fuzion" "mio"

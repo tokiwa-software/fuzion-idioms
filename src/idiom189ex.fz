@@ -1,0 +1,14 @@
+ex189 is
+
+  x := 0..                                 # all non-negative integers
+
+  P Function<bool,   i32> := i -> i %% 3   # divisible by 3
+  T Function<string, i32> := i -> "{i}² = {i*i}"
+
+  y := (x.filter P).map T
+
+  # NYI: This should be possible using pipe:
+  #
+  # y := x |& P | T
+
+  y | e -> say e

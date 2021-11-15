@@ -1,0 +1,10 @@
+p(x u32)=>codepoint x
+q=>p 34
+a:=[
+ "p(x u32)=>codepoint x",
+ "q=>p 34",
+ "a:=[",
+ " q]",
+ "for i in 0..9 do say (if 2<i<8(p 32)+q+a[i-3]+q+(p 44)else a[i%5])",
+ q]
+for i in 0..9 do say (if 2<i<8(p 32)+q+a[i-3]+q+(p 44)else a[i%5])

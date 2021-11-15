@@ -1,0 +1,14 @@
+ex223 is
+
+  find(items array<string>) =>
+    for item in items
+    until item == "rockstar programmer"
+      say "found it!"
+    else
+      say "did not find it"
+
+  fill := fun(i i32) => if i == 666 "rockstar programmer" else "n00b"
+  find (array<string> 0 fill)
+  find (array<string> 10 fill)
+  find (array<string> 100 fill)
+  find (array<string> 1000 fill)

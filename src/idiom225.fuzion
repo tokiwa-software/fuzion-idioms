@@ -1,0 +1,3 @@
+f(x option<T>) =>
+  x ? t T => say "x is present $t"
+    | nil => say "x is not present"

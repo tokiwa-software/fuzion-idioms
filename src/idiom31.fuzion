@@ -1,0 +1,5 @@
+f(n i32) => if n = 0 1 else n * f n-1
+
+/* or */
+
+f(n i32) => n = 0 ? 1 : n * f n-1   // NYI

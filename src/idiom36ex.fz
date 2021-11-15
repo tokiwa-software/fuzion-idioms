@@ -1,0 +1,12 @@
+ex36 is
+  compose<A,B,C> (f A -> B,
+                  g B -> C) A -> C is a -> g (f a)
+
+  f i32 -> bool := a -> a > 3
+  g bool -> string := b -> if b then "T" else "F"
+
+  fog := compose<i32, bool, string> f g
+
+  say (fog 10)
+  say (fog 2)
+  say (fog 0)

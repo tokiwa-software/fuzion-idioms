@@ -1,0 +1,11 @@
+ex63 is
+
+  x := "Fusion is super cool and not for n00bs!"
+  y := "s"
+  z := "z"
+  x2 := x.replace y z
+  say x2
+  x3 := x.replace y "zzz"
+  say x3
+  x4 := x.replace "and not for n00bs" "for everyone!"
+  say x4

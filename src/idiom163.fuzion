@@ -1,0 +1,2 @@
+for i in list.indices : 2 do
+  say "{list[i]}, {list[i+1]}"

@@ -1,0 +1,13 @@
+ex8 is
+
+  x := mapOf ["one", "two"] [1, 2]
+
+/* NYI: with better syntactic sugar, this should become
+
+  x := [ "one" => 1,
+         "two" => 2 ]
+
+*/
+
+  for s in ["one", "two", "three"] do
+    say "$s maps to {x[s]}"

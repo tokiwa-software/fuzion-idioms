@@ -1,0 +1,21 @@
+((orderedMap ["foo",   "bar",   "baz",   "barfl"  ]
+             [fun foo, fun bar, fun baz, fun barfl])[str].unwrap.call)
+
+# NYI: This will need some syntax improvements:
+#
+#      1. better syntax for inline maps
+#      2. better syntax for inline funtions
+#      3. automatic unwrap and call
+#
+# example:
+#
+#   switch str ["foo"   => foo
+#               "bar"   => bar
+#               "baz"   => baz
+#               "barfl" => barfl]
+#
+# where 'switch' is a feature declared similar to
+#
+#  switch<T, U> (on T, m map<T, () -> U) =>
+#    m[on].unwrap.call
+#

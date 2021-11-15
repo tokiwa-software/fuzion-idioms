@@ -1,0 +1,2 @@
+finish(name string) =>
+  say "My job here is done. Goodbye $name"

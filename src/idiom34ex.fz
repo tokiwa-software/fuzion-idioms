@@ -1,0 +1,7 @@
+idiom34ex is
+
+  x := psSet<string>
+  x := x.add "A"
+  x := x.add "B"
+  x := x.add "C"
+  say x

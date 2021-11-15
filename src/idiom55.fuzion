@@ -1,0 +1,6 @@
+s := $i
+
+# other alternatives with the same effect
+s := i.asString
+s := "$i"
+s := "{i+0*i}"

@@ -1,0 +1,9 @@
+ex21 is
+  a := 33
+  b := 77
+
+  show => say "a is $a b is $b"
+
+  show
+  set (a,b) := (b,a)
+  show

@@ -1,0 +1,4 @@
+items := mymap.items.asArray.sort (a,b -> a.values.1 <= b.values.1)
+for i in items do
+  (k,x) := i
+  say "$k => $x"

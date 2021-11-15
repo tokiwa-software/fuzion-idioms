@@ -1,0 +1,5 @@
+ex152 is
+
+  c := u32 70       # 70 is the ASCII code for 'F'
+  s := codepoint c
+  say s

@@ -1,0 +1,1 @@
+s := s.take i ++ [x] ++ s.drop i

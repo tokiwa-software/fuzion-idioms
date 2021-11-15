@@ -1,0 +1,3 @@
+for e in items.reverse.enumerate do
+  (i, x) := e
+  say "$i = $x"

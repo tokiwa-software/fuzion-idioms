@@ -1,0 +1,82 @@
+ex159 is
+
+  Trie<V>
+    (
+
+    # the codepoint of this tree node, '#' for root. Not strictly needed.
+    c codepoint,
+
+    # children of this node: maps codepoint at this position to sub-Trie
+    children orderedMap<codepoint, Trie<V>>,
+
+    # value of this node if it contains a value
+    val option<V>
+    )
+
+  is
+
+    # create a new Trie by adding or replacing mapping (from => to)
+    add(from string, to V) =>
+      c := cp from
+      n :=
+        if from.codepointLength = 1
+          ch := children[c] ? nil => orderedMap<codepoint, Trie<V>>
+                            | e Trie => e.children
+          Trie<V> c ch to
+        else
+          e := children[c] ? nil => Trie<V> c
+                           | e Trie => e
+          e.add (from.substring 1) to
+      Trie<V> c (children.add c n) val
+
+    # find the value 's' is mapped to by this Trie
+    find(s string) option<V> is
+      if s.isEmpty
+        val
+      else
+        children[cp s] ? nil    => nil
+                       | t Trie => t.find (s.substring 1)
+
+  # convenience routine to create empty Trie for codepoint 'c'
+  Trie<V>(c codepoint) => Trie<V> c (orderedMap<codepoint, Trie<V>>) nil
+
+  # convenience routine to create empty Trie
+  Trie<V> => Trie<V> (cp "#")
+
+  # convenience routine to get the first code point from a non-empty string
+  cp (s string)
+    pre
+      debug: !s.isEmpty
+   => s.asCodepoints.first
+
+  # create a dictionary from English to German and fill it with vocabulatry from
+  # "one" to "ten":
+  #
+  e := Trie<string>
+  e := e.add "one"   "eins"
+  e := e.add "two"   "zwei"
+  e := e.add "three" "drei"
+  e := e.add "four"  "vier"
+  e := e.add "five"  "fünf"
+  e := e.add "six"   "sechs"
+  e := e.add "seven" "sieben"
+  e := e.add "eight" "acht"
+  e := e.add "nine"  "neun"
+  e := e.add "ten"   "zehn"
+
+  # show the entry for 's' in the dictionary 'e'
+  show (s string) => say "$s \t=> {e.find s}"
+
+  # test the dictionary with valid and invalid lookups:
+  show "eleven"
+  show "ten"
+  show "nine"
+  show "eight"
+  show "seven"
+  show "six"
+  show "five"
+  show "four"
+  show "three"
+  show "two"
+  show "one"
+  show "zero"

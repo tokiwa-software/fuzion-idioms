@@ -1,0 +1,3 @@
+match ((searchableList items).find [x])
+  i i32 => items.take(i) ++ items.drop i+1
+  nil   => items

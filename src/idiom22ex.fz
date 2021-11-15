@@ -1,0 +1,4 @@
+idiom22ex is
+
+  i := "123".parseI32
+  say "parse result is $i"

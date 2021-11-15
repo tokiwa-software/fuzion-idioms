@@ -1,0 +1,70 @@
+# a binTreeNode is a value plus left and right sub-trees
+#
+binTreeNode<T : ordered<T>>
+  (val T,
+   left, right binTree<T>) ref
+is
+
+  # add element to this tree, return resulting tree
+  #
+  add (v T) binTree<T> is
+    l := if (v < val) (left .add v) else left
+    r := if (v > val) (right.add v) else right
+    binTreeNode val l r
+
+
+  # print this tree
+  #
+  show =>
+    left.show
+    say val
+    right.show
+
+
+# a binTree is either a binTreeNode or an empty tree represented by nil
+#
+binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
+
+  # add element to this tree, return resulting tree
+  #
+  add (v T) binTree<T> is
+    match binTree.this
+      nil           => binTreeNode v nil nil
+      n binTreeNode => n.add v
+
+  # print this tree
+  #
+  show unit is
+    match binTree.this
+      nil           =>
+      n binTreeNode => n.show
+
+
+/* NYI: This currently causes a strange problem during type inference:
+
+animals := ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog" ]
+for
+  tree binTree<string> := nil, tree.add x
+  x in animals
+else
+  tree.show
+
+so I do it manually instead:
+
+*/
+
+tree binTree<string> := nil
+tree.add "dog"
+    .add "elephant"
+    .add "cat"
+    .add "cat"
+    .add "cat"
+    .add "cat"
+    .add "lion"
+    .add "ant"
+    .add "bee"
+    .add "albatros"
+    .add "hyena"
+    .add "horse"
+    .add "frog"
+    .show

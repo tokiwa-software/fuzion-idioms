@@ -1,0 +1,18 @@
+ex256 is
+
+  # using pipe and lambda
+  (5..0 : -1) | x -> say x
+
+  # using a loop
+  for x in 5..0 : -1 do
+    say x
+
+  # using tail-recursion
+  f(n i32) =>
+    say n
+    if n > 0
+      f n-1
+  f 5
+
+  # using asString
+  say ((5..0 : -1).asString "\n")

@@ -1,0 +1,5 @@
+ex193 is
+
+  a := matrix (array2<i32> 2 3 i,j->i+10*j)
+  b := a.transpose
+  say "{a}ᵀ = {b}"

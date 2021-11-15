@@ -1,0 +1,9 @@
+mean(a List<f64>) => (sum a) / a.count.as_f64
+
+stddev²(a List<f64>) =>
+  m := mean a
+  mean (a.mapList<f64> x->(x - m)**2)
+
+# NYI: no sqrt yet:
+#
+# stddev := stddev².sqrt

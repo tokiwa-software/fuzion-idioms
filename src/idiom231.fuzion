@@ -1,0 +1,2 @@
+string isb := strings.fromBytes s
+                     .codepointsAndErrors ∀ x -> x.ok

@@ -1,0 +1,2 @@
+for x in items do
+  do_something x

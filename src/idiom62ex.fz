@@ -1,0 +1,35 @@
+ex62 is
+
+  find (x, y string) is
+    i := x.find y
+    say "found '$y' in '$x' at index $i"
+
+  find "Hallo", "allo"
+  find "Hallo", "allô"
+
+  find("a" *  16      , "a" * 7 + "b")
+  find("a" *  16 + "b", "a" * 7 + "b")
+  find("a" *  32      , "a" * 15 + "b")
+  find("a" *  32 + "b", "a" * 15 + "b")
+  find("a" *  64      , "a" * 31 + "b")
+  find("a" *  64 + "b", "a" * 31 + "b")
+  find("a" * 128      , "a" * 63 + "b")
+  find("a" * 128 + "b", "a" * 63 + "b")
+  find("a" * 256      , "a" * 127 + "b")
+  find("a" * 256 + "b", "a" * 127 + "b")
+  find("a" * 512      , "a" * 255 + "b")
+  find("a" * 512 + "b", "a" * 255 + "b")
+
+  abc := "abcdefghijklmnopqrstuvwxyz"
+  str := "the quick brown fox jumps over the lazy dog"
+  for
+    i in 0..(abc.byteLength-1)
+  do
+    s := abc.substring i i+1
+    i := str.find s
+    match i
+      nil => say "$s not found"
+      ix i32 =>
+        m := "found '$s' at index $ix: "
+        say (m + str)
+        say "{ "-" * (m.codepointLength + ix) }^"

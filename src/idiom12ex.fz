@@ -1,0 +1,8 @@
+ex12 is
+
+  squares := setOf ((1..100).map<i32> i->i*i)
+  1..100 | x ->
+    if x ∈ squares
+      say "$x in squares"
+    else
+      say "$x not in squares"

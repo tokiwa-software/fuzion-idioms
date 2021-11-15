@@ -1,0 +1,13 @@
+ex90illegal is
+
+  Foo is
+    x := 42
+
+    doubleX is
+      set x := 2 * x
+
+  f := Foo
+  say f.x
+
+  set f.x := 2 * f.x  # error! assignment will not be accepted by the compiler
+  say f.x

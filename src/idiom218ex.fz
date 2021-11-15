@@ -1,0 +1,8 @@
+ex218 is
+  intersection<T> (s1, s2 Set<T>) =>  # NYI: intersection missing from stdlib
+    s1.asList.filter (x -> s2.contains x)
+
+  a := ["eins", "zwei", "drei"]
+  b := ["drei", "vier", "fünf"]
+  c := intersection (setOf a) (setOf b)
+  say c

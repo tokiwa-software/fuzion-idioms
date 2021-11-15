@@ -1,0 +1,8 @@
+ex246 is
+
+  items := (0..1000:6).map<i32> (i -> i % 72)
+
+  c := (setOf items).count
+
+  say items
+  say c

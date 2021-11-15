@@ -1,0 +1,7 @@
+ex96 is
+  startsWith(s, prefx string) =>
+    b := s.startsWith prefx
+    b
+
+  say "{startsWith "Fuzion is great!", "Fuzion"}"
+  say "{startsWith "Fuzion is great!", "Java"}"

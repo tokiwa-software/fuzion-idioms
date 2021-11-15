@@ -1,0 +1,4 @@
+binarySearch(a sortedArray<T>, x T) i32 is
+  match a.findKey x
+    nil   => -1
+    i i32 => i

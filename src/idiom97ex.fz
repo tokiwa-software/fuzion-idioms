@@ -1,0 +1,7 @@
+ex97 is
+  endsWith(s, suffix string) =>
+    b := s.endsWith suffix
+    b
+
+  say "{endsWith "Fuzion is great!", "great!"}"
+  say "{endsWith "Fuzion is great!", "n00b."}"

@@ -1,0 +1,25 @@
+vertex(id i32)
+  : ordered<vertex>     # must be ordered such that we can add it to a Set
+is
+
+  # extract neighbors from edges in given graph
+  neighbors(g graph) Set<vertex> is
+    for
+      r := psSet<vertex>, if      (e.a = vertex.this) r.add e.b
+                          else if (e.b = vertex.this) r.add e.a
+                          else                        r
+      e in g.edges
+    else
+      r
+
+  # redefine 'infix <=' for parent feature 'ordered'
+  redef infix <= (b vertex) => id <= b.id
+
+  # string representation
+  redef asString => "v$id"
+
+# edge connecting 'a' and 'b'
+edge(a, b vertex) is
+
+# a graph is just a collection o edges
+graph(edges List<edge>) is

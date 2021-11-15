@@ -1,0 +1,2 @@
+using array: [A,B,C,D] reversed is [D,C,B,A]
+using lazy list: [A,B,C,D] reversed is [D,C,B,A]

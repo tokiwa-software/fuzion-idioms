@@ -1,0 +1,13 @@
+ex196 is
+
+  foo (a marray<i32>, i i32) unit is
+    a[i] := 42
+
+  a := marray 10 0
+  a.indices | (i -> a[i] := i)
+
+  say a
+
+  a.indices |& (i -> !(i%%2)) | (i -> foo a i)
+
+  say a

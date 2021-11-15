@@ -1,0 +1,6 @@
+search(m array2<i32>, x i32) option<tuple<i32, i32>> is
+  for i in m.indices0 until
+    for j in m.indices1 until m[i,j] = x
+      set result := (i, j)
+  else
+    set result := nil

@@ -1,0 +1,4 @@
+# the equality relation divides elements into disjoint sets:
+a = b
+
+# NYI: how to define different equality relations?

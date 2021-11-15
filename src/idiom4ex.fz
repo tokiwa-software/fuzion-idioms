@@ -1,0 +1,4 @@
+square(x i32) => x * x
+
+for i in 0 .. 10 do
+  say "square $i is {square i}"

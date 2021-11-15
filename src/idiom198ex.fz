@@ -1,0 +1,4 @@
+ex198 is
+
+  x := 4
+  fuzion.std.exit x

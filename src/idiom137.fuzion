@@ -1,0 +1,5 @@
+isDigit(cp codepoint) =>
+    "012345689".asCodepoints ∃ digit -> digit = codepoint
+
+s := "012345689"
+b := s.asCodepoints ∀ (fun isDigit)

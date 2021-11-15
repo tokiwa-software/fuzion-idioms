@@ -1,0 +1,3 @@
+t := s.asCodepoints
+      .filter (cp -> "0" <= cp <= "9")
+      .asString ""

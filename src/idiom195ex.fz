@@ -1,0 +1,22 @@
+ex195 is
+
+  a := array2<f64> 5 7 i,j->3.14
+
+  foo a
+
+  foo (a array2<f64>) unit is
+    say "array size {a.length0}×{a.length1}"
+
+    for
+      s := 0.0, s + v * (i.as_f64 + 1) * (j.as_f64 + 1)
+
+      # NYI syntax sugar for tuples not supported, should be
+      #
+      # (i,j,v) in a.enumerate2
+      e in a.enumerate2
+      i := e.values.0
+      j := e.values.1
+      v := e.values.2
+
+    else
+      say "sum is $s"

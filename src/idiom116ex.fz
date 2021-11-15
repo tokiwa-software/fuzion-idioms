@@ -1,0 +1,5 @@
+ex82 is
+  s1 := "banana bo bana bandana"
+  w := "ana"
+  s2 := s1.replace w ""
+  say "$s2"

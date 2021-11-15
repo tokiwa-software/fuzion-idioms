@@ -1,0 +1,16 @@
+# fuzion.debugLevel=0
+ex89noDebug is
+
+  f(x i32)
+    pre
+      debug: isValid x
+   =>
+    say "got $x"
+
+
+  isValid(i i32) => i ∈ 0..7
+
+  f 0
+  f 3
+  f 7
+  f 8

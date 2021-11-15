@@ -1,0 +1,8 @@
+# using a loop
+for x in items
+    i in 0..
+do
+  say "Item $i = $x"
+
+# using zip
+say (items.zip<i32,string> 0.. x,i->"$i:$x")

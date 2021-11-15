@@ -1,0 +1,1 @@
+t := if (s.startsWith p) s.substring p.codepointLength else s

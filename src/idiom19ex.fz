@@ -1,0 +1,6 @@
+x := ["A", "B", "C", "D"]
+say "using array: $x reversed is {x.reverse}"
+
+l := x.asList
+r := l.reverse
+say "using lazy list: $l reversed is $r"

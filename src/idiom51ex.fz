@@ -1,0 +1,13 @@
+m := orderedMap<string,string> [ "Hund", "Katze", "Maus" ] [ "dog", "cat", "mouse" ]
+
+k := "Katze"
+if m.has k
+  say "$k was found"
+else
+  say "$k not found"
+
+k := "Wellensittich"
+if m.has k
+  say "$k was found"
+else
+  say "$k not found"

@@ -1,0 +1,27 @@
+ex20 is
+
+  search(m array2<i32>, x i32) option<tuple<i32, i32>> is
+    for i in m.indices0 until
+      for j in m.indices1 until m[i,j] = x
+        set result := (i, j)
+    else
+      set result := nil
+
+/* NYI: if return was supported, this could look as follows:
+
+  search(m array2<i32>, x i32) option<tuple(i32, i32)> is
+    for i in m.indices0 do
+      for j in m.indices1 until m[i,j] = x
+        return (i,j)
+    return nil
+
+*/
+
+
+  data := array2<i32> 10 10 (i, j -> i*j)
+  (1..100 : 4) | x ->
+      match search data x
+        nil    => say "$x not found"
+//      (i, j) => say "$x found at ($i,$j)" // NYI: unpack in match not supported yet
+        t tuple => (i, j) := t
+                   say "$x found at ($i,$j)"

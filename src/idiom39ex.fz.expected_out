@@ -1,0 +1,4 @@
+'Fuzion'.contains 'zia' is false
+'Fuzion'.contains 'tío' is false
+'Fuzion'.contains 'zio' is true
+'Fuzion'.contains 'mio' is false
