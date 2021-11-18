@@ -6,21 +6,21 @@
 
 <p>All fields are automatically write-protected from the outside:</p>
 
-<runcode file="../examples/idiom90.fuzion"/>
+<runcode file="../src/idiom90.fuzion"/>
 
 <h2>Running Example</h2>
 
 <p>Updating the field from inside does work:</p>
 
-<runcode file="../examples/idiom90ex.fz"/>
+<runcode file="../src/idiom90ex.fz"/>
 
 <p>Updating the field from outside will cause a compile-time error:</p>
 
-<runcode file="../examples/idiom90ex2.fz"/>
+<runcode file="../src/idiom90ex2.fz"/>
 
 <p>In any case, the preferred way is not to update a field at all, but to create a new instance:</p>
 
-<runcode file="../examples/idiom90ex3.fz"/>
+<runcode file="../src/idiom90ex3.fz"/>
 
 <p>Note that field <code>f</code> is not updated (which would require
 the <code>set</code> keyword, but there are two fields called <code>f</code>
