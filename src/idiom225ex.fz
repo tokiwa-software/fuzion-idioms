@@ -8,7 +8,7 @@ ex225 is
   f "some text"
   f<string> nil
 
-  # the following does not work yet, see https://github.com/fridis/fuzion/issues/121
+  # the following does not work yet, see https://github.com/tokiwa-software/fuzion/issues/121
   # f nil
   # f<nil> nil
 
