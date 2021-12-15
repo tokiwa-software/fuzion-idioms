@@ -1,0 +1,26 @@
+ex128 is
+
+  node(name string, children List<node>) is
+
+  BreadthFirstTraverse(f node -> unit, root node) =>
+    queue := [root].asList
+    BreadthFirstTraverse f queue
+    BreadthFirstTraverse(f node -> unit, queue List<node>) =>
+      if queue.count > 0 then
+        f queue.first
+        BreadthFirstTraverse f (queue.drop 1 ++ queue.first.children)
+
+  # World
+  # ├─Europe
+  # │ ├─Belarous
+  # │ ├─Portugal
+  # ├─Asia
+  # ├─Oceania
+  five := node "Belarus" Lists.empty<node>
+  six := node "Portugal" Lists.empty<node>
+  two := node "Europe" [five,six].asList
+  three := node "Asia" Lists.empty<node>
+  four := node "Oceania" Lists.empty<node>
+  one := node "World" [two, three, four].asList
+
+  BreadthFirstTraverse (node -> say node.name), one
