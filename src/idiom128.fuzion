@@ -1,8 +1,8 @@
 BreadthFirstTraverse(f node -> unit, root node) =>
-  queue := [root].asList
-  BreadthFirstTraverse f queue
-  BreadthFirstTraverse(f node -> unit, queue List<node>) =>
-    if queue.count > 0 then
-      t := queue.first
-      f t
-      BreadthFirstTraverse f (queue.drop 1 ++ t.children)
+  _BreadthFirstTraverse(queue List<node>) unit is
+    match queue.asList
+      nil =>
+      c Cons =>
+        f c.head
+        _BreadthFirstTraverse (c.tail ++ c.head.children)
+  _BreadthFirstTraverse [root].asList
