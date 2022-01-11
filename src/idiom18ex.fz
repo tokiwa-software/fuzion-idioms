@@ -1,7 +1,7 @@
 ex18 is
 
   node<T>(val T,
-          children List<node<T>>) is
+          children Sequence<node<T>>) is
 
     traverse (f T -> unit) unit is
       f val
