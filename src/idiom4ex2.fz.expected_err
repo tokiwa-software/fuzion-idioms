@@ -1,7 +1,7 @@
 
-[32m$FUZION/lib/wrappingInteger.fz:98:11:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
+[32m$FUZION/lib/wrappingInteger.fz:97:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
 [34m      debug: !overflowOnMul(other),
-[33m----------^[0m
+[33m-----------^[0m
 For call to wrappingInteger.infix *
 Call stack:
 square<i32>: [32m-:1:34:[39m

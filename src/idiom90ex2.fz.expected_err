@@ -1,9 +1,26 @@
 
-[32m-:12:3:[39m [1;31merror 1[0m[1m: Could not find called feature[0m
+[32m-:12:3:[39m [1;31merror 1[0m[1m: Qualified declaration not allowed for field[0m
 [34m  set f.x := 2 * f.x  # error! assignment will not be accepted by the compiler
 [33m--^[0m
-Feature not found: '[35mf =[39m' (no arguments)
-Target feature: '[35mex90illegal[39m'
-In call: '[36mf =[39m'
+All fields have to be declared textually within the source of their outer features.
+Field declared: '[36mf =.x[39m'
+To fix this, you could move the declaration into the implementation of feature '[36mf =[39m'.  Alternatively, you can declare a routine instead. 
 
-one error.
+
+[32m-:12:3:[39m [1;31merror 2[0m[1m: Type not found[0m
+[34m  set f.x := 2 * f.x  # error! assignment will not be accepted by the compiler
+[33m--^[0m
+Type '[33mf =[39m' was not found, no corresponding feature nor formal generic argument exists
+Type that was not found: '[33mf =[39m'
+in feature: '[35m#universe[39m'
+within feature: '[35mex90illegal[39m'
+To solve this, check the spelling of the type you have used.
+
+
+[32m-:12:3:[39m [1;31merror 3[0m[1m: Initial value not allowed for feature not embedded in outer feature[0m
+[34m  set f.x := 2 * f.x  # error! assignment will not be accepted by the compiler
+[33m--^[0m
+Fuzion currently does not know when to execute this initializer, so it is forbidden.
+To solve this, move the declaration inside another feature or ask the Fuzion team for help.
+
+3 errors.
