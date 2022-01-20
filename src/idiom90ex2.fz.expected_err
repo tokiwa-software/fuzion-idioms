@@ -12,8 +12,7 @@ To fix this, you could move the declaration into the implementation of feature '
 [33m--^[0m
 Type '[33mf =[39m' was not found, no corresponding feature nor formal generic argument exists
 Type that was not found: '[33mf =[39m'
-in feature: '[35m#universe[39m'
-within feature: '[35mex90illegal[39m'
+in feature: '[35mex90illegal[39m'
 To solve this, check the spelling of the type you have used.
 
 
