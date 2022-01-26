@@ -39,32 +39,8 @@ binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
       nil           =>
       n binTreeNode => n.show
 
-
-/* NYI: This currently causes a strange problem during type inference:
-
-animals := ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog" ]
 for
   tree binTree<string> := nil, tree.add x
-  x in animals
+  x in ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
 else
   tree.show
-
-so I do it manually instead:
-
-*/
-
-tree binTree<string> := nil
-tree.add "dog"
-    .add "elephant"
-    .add "cat"
-    .add "cat"
-    .add "cat"
-    .add "cat"
-    .add "lion"
-    .add "ant"
-    .add "bee"
-    .add "albatros"
-    .add "hyena"
-    .add "horse"
-    .add "frog"
-    .show
