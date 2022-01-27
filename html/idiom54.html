@@ -4,16 +4,7 @@
 
 <h2>Code</h2>
 
-<p><code>fold</code> is the feature of choice to join elements of a set into a
-  value of the element type.  For type <code>i32</code>, such operations are
-  defined in the unit type returned by feature <code>i32</code>.  To build the
-  sum, <code>i32.sum</code> is the operation to use.</p>
-
 <runcode file="../src/idiom54.fuzion"/>
-
-<p>Mathematically speaking, such an operation is called a <i>monoid</i>.  This is
-why the type of the argument of <code>fold</code> is <code>Monoid</code>, while
-the operations declared for <code>i32</code> inherit from <code>Monoid</code>.</p>
 
 <h2>Running Example</h2>
 
