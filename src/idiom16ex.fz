@@ -34,32 +34,8 @@ binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
         f n.val
         n.right.traverse f
 
-animals := ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog" ]
-
-/* NYI: this does not work yet:
-
 for
   tree binTree<string> := nil, tree.add x
-  x in animals
+  x in ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
 else
   tree.traverse (s -> say s)
-
-but the following code does:
-
-*/
-
-tree binTree<string> := nil
-tree.add "dog"
-    .add "elefant"
-    .add "cat"
-    .add "cat"
-    .add "cat"
-    .add "cat"
-    .add "lion"
-    .add "ant"
-    .add "bee"
-    .add "albatros"
-    .add "hyena"
-    .add "horse"
-    .add "frog"
-    .traverse (s -> say s)
