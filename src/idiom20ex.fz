@@ -9,7 +9,7 @@ ex20 is
 
 /* NYI: if return was supported, this could look as follows:
 
-  search(m array2<i32>, x i32) option<tuple(i32, i32)> is
+  search(m array2<i32>, x i32) option<tuple<i32, i32>> is
     for i in m.indices0 do
       for j in m.indices1 until m[i,j] = x
         return (i,j)
@@ -22,6 +22,6 @@ ex20 is
   (1..100 : 4) | x ->
       match search data x
         nil    => say "$x not found"
-//      (i, j) => say "$x found at ($i,$j)" // NYI: unpack in match not supported yet
+#       (i, j) => say "$x found at ($i,$j)" // NYI: destructure in match not supported yet
         t tuple => (i, j) := t
                    say "$x found at ($i,$j)"
