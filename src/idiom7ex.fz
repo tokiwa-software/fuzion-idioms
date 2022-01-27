@@ -13,4 +13,4 @@ ex7 is
 
   # NYI: Type inference for zip should be improved:
   #
-  #  say (itmes.zip 0.. x,i->"$i:$x")
+  #  say (items.zip 0.. x,i->"$i:$x")
