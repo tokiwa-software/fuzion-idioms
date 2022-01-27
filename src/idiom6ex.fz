@@ -1,6 +1,22 @@
-ex6 is
+ex6 =>
 
   items := ["red", "yellow", "green", "pink"]
 
-  for x in items do
+  something(x string) =>
     say "I saw $x elephants"
+
+  # using a loop
+  for x in items do
+    something x
+
+  # using a pipe and a lambda
+  items | x -> something x
+
+  # using a pipe and a function
+  items | fun something
+
+  # using map and a lambda
+  items.map<unit> (x -> something x)
+
+  # using map and a function
+  items.map<unit> (fun something)
