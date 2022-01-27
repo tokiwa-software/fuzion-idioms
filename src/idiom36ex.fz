@@ -5,7 +5,7 @@ ex36 is
   f i32 -> bool := a -> a > 3
   g bool -> string := b -> if b then "T" else "F"
 
-  fog := compose<i32, bool, string> f g
+  fog := compose f g
 
   say (fog 10)
   say (fog 2)
