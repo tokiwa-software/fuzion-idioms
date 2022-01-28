@@ -1,5 +1,4 @@
 s := a.zip<string,tuple<string,string>> b x,y->(x,y)
-      .asArray
       .sort (x,y -> x.values.0 <= y.values.0)
 a := s.map<string> v->v.values.0
 b := s.map<string> v->v.values.1
