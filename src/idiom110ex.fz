@@ -1,11 +1,11 @@
 ex110 is
 
-  bl (s string) =>
+  blank (s string) =>
     blank := s.trim.isEmpty
     blank
 
-  say "{bl "abc"}"
-  say "{bl ""}"
-  say "{bl "   "}"
-  say "{bl "\t\n\r\f"}"
-  say "{bl "\t\n x\r\f "}"
+  say "{blank "abc"}"
+  say "{blank ""}"
+  say "{blank "   "}"
+  say "{blank "\t\n\r\f"}"
+  say "{blank "\t\n x\r\f "}"
