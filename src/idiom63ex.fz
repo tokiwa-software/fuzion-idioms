@@ -8,4 +8,5 @@ ex63 is
   x3 := x.replace y "zzz"
   say x3
   x4 := x.replace "and not for n00bs" "for everyone!"
+         .replace y z
   say x4
