@@ -1,6 +1,6 @@
 ex117 is
 
-  x := [ "ball", "telephone", "scissors", "rubic's cube"]
+  x := [ "⚽", "🕿", "✀", "rubic's cube"]
 
   n := x.length
   say n
