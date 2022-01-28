@@ -4,5 +4,5 @@ ex97 is
     b := s.endsWith suffix
     b
 
-  say "{endsWith "Fuzion is great!", "great!"}"
-  say "{endsWith "Fuzion is great!", "n00b."}"
+  say "{endsWith "Fuzion is great!" "great!"}"
+  say "{endsWith "Fuzion is great!" "n00b."}"
