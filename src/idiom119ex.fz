@@ -1,20 +1,19 @@
 ex119 is
 
   # preserving order
+  #
   x := [ "b", "a", "b", "c" ]
   x := for
-         r list<string> := nil, if (s.has e) r else cons e, r
-         s ref psSet<string> := psSet<string>, s.add e
+         r list<string> := nil, if e ∈ s then r
+                                         else cons e r
+         s := setOf<string>, s.add e
          e in x
        else
          r.reverse
   say x
 
   # not preserving order
+  #
   x := [ "b", "a", "b", "c" ]
-  x := for
-         s ref psSet<string> := psSet<string>, s.add e
-         e in x
-       else
-         s.asArray
+  x := setOf x
   say x
