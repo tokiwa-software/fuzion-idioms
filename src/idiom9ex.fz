@@ -41,6 +41,6 @@ binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
 
 for
   tree binTree<string> := nil, tree.add x
-  x in ["dog", "elefant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
+  x in ["dog", "elephant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
 else
   tree.show
