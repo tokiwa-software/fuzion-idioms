@@ -1,4 +1,5 @@
 ex31 is
+
   f(n i32) => if n = 0 1 else n * f n-1
 
   1..10 | n -> say "f $n is {f n}"

@@ -1,4 +1,5 @@
 ex110 is
+
   bl (s string) =>
     blank := s.trim.isEmpty
     blank

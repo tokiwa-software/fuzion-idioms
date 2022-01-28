@@ -1,4 +1,5 @@
 ex93 is
+
   control(f () -> unit) => f()
 
   control (() -> yak "Hello ")

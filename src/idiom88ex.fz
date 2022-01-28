@@ -1,3 +1,4 @@
 ex88 is
+
   size := 1_000  # NYI: since interpreter is slow, not using 1_000_000 here
   buf := array<u8> size (i -> 0)

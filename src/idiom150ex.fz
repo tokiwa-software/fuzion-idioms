@@ -1,4 +1,5 @@
 ex150 is
+
   p := "path/"
   p := if (p.endsWith "/") (p.substring 0 p.codepointLength-1) else p
   say p

@@ -1,4 +1,5 @@
 ex117 is
+
   x := [ "ball", "telephone", "scissors", "rubic's cube"]
 
   n := x.length

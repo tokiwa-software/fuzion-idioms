@@ -1,4 +1,5 @@
 ex137 is
+
   isDigit(cp codepoint) =>
     "012345689".asCodepoints ∃ digit -> digit = cp
 

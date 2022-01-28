@@ -1,4 +1,5 @@
 ex55 is
+
   for i in [0, 8, 15, 47, 11] do
     s := $i
     say s

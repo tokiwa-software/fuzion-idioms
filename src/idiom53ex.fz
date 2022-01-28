@@ -1,4 +1,5 @@
 ex53 is
+
   x := ["eggs", "butter", "milk"]
   y := x.fold (strings.concat ", ")
   say y

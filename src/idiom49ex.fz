@@ -1,4 +1,5 @@
 ex49 is
+
   s := "what a  mess"
   l := s.split
   say l

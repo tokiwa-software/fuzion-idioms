@@ -1,3 +1,4 @@
 ex226 is
+
   items := ["eins", "zwei", "drei"]
   say (items.take items.count-1)

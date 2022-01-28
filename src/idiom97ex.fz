@@ -1,4 +1,5 @@
 ex97 is
+
   endsWith(s, suffix string) =>
     b := s.endsWith suffix
     b

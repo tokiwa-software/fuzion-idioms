@@ -1,4 +1,5 @@
 ex126 is
+
   foo => ("bar", true)
 
   (a,b) := foo

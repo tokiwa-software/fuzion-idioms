@@ -1,4 +1,5 @@
 ex112 is
+
   map := (orderedMap<string,string>
     [ "un", "deux", "trois", "quatre", "cinq" ]
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )

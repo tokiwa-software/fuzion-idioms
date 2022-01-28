@@ -1,4 +1,5 @@
 ex191 is
+
   f => yak "yes, f called"
 
   test(a Sequence<i32>, x i32) =>
