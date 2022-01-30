@@ -3,4 +3,4 @@
 foo (a marray<i32>, i i32) unit is
   a[i] := 42
 
-a.indices |& (i -> !(i%%2)) | (i -> foo a i)
+a.indices & (i -> !(i%%2)) | (i -> foo a i)
