@@ -2,7 +2,7 @@ ex143 is
 
   iterate_alternatively<T>(a, b Sequence<T>, f T -> unit) unit is
     match a.asList
-      nil    => b.forAll f
+      nil    => b | f
       c Cons => f c.head; iterate_alternatively b c.tail f
 
   items1 := [0, 2, 4]
