@@ -7,7 +7,7 @@ ex223 is
     else
       say "did not find it"
 
-  fill := fun(i i32) => if i == 666 "rockstar programmer" else "n00b"
+  fill i32 -> string := i -> if i == 666 "rockstar programmer" else "n00b"
   find (array<string> 0 fill)
   find (array<string> 10 fill)
   find (array<string> 100 fill)
