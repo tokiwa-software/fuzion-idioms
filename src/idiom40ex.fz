@@ -16,7 +16,7 @@ ex40 is
 
     redef asString => "v$id"
 
-    redef orderedThis => vertex.this  # NYI: may be removed when type 'like this' is supported
+    redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
 
   edge(a, b vertex) is
 
