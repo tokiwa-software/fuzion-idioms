@@ -1,0 +1,8 @@
+breadth_first_traverse(f node -> unit, root node) =>
+  breadth_first_traverse(queue Sequence<node>) unit is
+    match queue.asList
+      nil =>
+      c Cons =>
+        f c.head
+        breadth_first_traverse (c.tail ++ c.head.children)
+  breadth_first_traverse [root]
