@@ -1,4 +1,5 @@
 ex100 is
+
   items := [ "siebenundvierzig";
              "elf";
              "null";
@@ -7,3 +8,8 @@ ex100 is
 
   c (string, string) -> bool := a,b -> a.byteLength <= b.byteLength
   say (items.sort c)
+
+  # passing the lambda directly to sort avoids
+  # specifying its type:
+  #
+  say (items.sort (a,b -> a.byteLength <= b.byteLength))

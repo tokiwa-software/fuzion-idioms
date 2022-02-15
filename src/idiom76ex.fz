@@ -1,4 +1,5 @@
 ex76 is
+
   x := 13
   s := x.bin
   say s

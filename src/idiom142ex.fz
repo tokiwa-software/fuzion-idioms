@@ -1,4 +1,5 @@
 ex142 is
+
   x := 999
   s := x.hex
   say s

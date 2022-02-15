@@ -1,4 +1,5 @@
 ex118 is
+
   x := [ "a", "b", "c", "b" ]
 
   y := setOf x

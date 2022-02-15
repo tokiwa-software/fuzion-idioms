@@ -1,4 +1,5 @@
 ex47 is
+
   s := "🐖🐶🐣🐸🐝🐟🕷🐍"
   for i in 0..s.codepointLength do
     n := s.codepointLength

@@ -4,7 +4,7 @@ ex247 is
   for i in x.indices do
     x[i] := i
 
-  p Function<bool,i32> is i -> i %% 6
+  p i32 -> bool is i -> i %% 6
 
   for i in x.indices do
     if !(p x[i].get)

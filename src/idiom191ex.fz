@@ -1,7 +1,8 @@
 ex191 is
+
   f => yak "yes, f called"
 
-  test(a List<i32>, x i32) =>
+  test(a Sequence<i32>, x i32) =>
     for e in a until e > x
       f
 

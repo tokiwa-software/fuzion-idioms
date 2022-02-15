@@ -1,0 +1,16 @@
+ex78 is
+
+  # let's print the 3x+1 sequence starting at 27
+  # (see https://mathworld.wolfram.com/CollatzProblem.html):
+  #
+  start := 27
+  for
+    n in 1..
+    x := start, if x %% 2 then x/2 else 3*x+1
+    mx := x, mx.max x
+  do
+    say "$n: $x {if x=mx then "new max" else ""}"
+  until !(x > 1)
+    say "total $n steps, maximum reached was $mx"
+
+  unit

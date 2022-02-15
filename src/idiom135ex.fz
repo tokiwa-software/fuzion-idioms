@@ -1,22 +1,10 @@
 ex135 is
 
-  items := ["a","b","c","b","c","a"]
+  items := ["a","b","c","b","c","a"].asList
 
   x := "b"
-  items2 List<string> := match ((searchableList items).find [x])
-    i i32 => items.take(i) ++ items.drop i+1
+  items := match Sequences.indexIn items x
+    i i32 => items.take i ++ items.drop i+1
     nil   => items
 
-  say items2
-
-  # NYI: This must be improved significantly. At least, this should be
-  # reduced to
-  #
-  #   items := ["a","b","c","b","c","a"]
-  #
-  #   x := "b"
-  #   items := match searchableList.find items, [x]
-  #     i i32 => items.take(i) ++ items.drop i+1
-  #     nil   => items
-  #
-  #   say items
+  say items

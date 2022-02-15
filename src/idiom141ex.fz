@@ -1,4 +1,5 @@
 ex141 is
+
   items1 := [0,1,2]
   items2 := [3,4,5]
   say items1++items2

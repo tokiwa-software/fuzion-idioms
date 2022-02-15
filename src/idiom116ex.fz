@@ -1,4 +1,5 @@
-ex82 is
+ex116 is
+
   s1 := "banana bo bana bandana"
   w := "ana"
   s2 := s1.replace w ""

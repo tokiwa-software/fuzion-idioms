@@ -1,9 +1,10 @@
 ex112 is
-  map := (orderedMap<string,string>
+
+  map := (orderedMap
     [ "un", "deux", "trois", "quatre", "cinq" ]
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )
 
-  for k in sortedArray<string> map.keys.asArray do
+  for k in sortedArray map.keys do
     say "$k => {map[k]}"
 
   # since map is already orderedMap, map.keys are already ordered

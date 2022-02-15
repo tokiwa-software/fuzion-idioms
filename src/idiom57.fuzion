@@ -1,4 +1,4 @@
-y := x |& p
+y := x & p
 
-# alternative, using a call to 'filter' instead of 'infix |&'
+# alternative, using a call to 'filter' instead of 'infix &'
 y := x.filter p

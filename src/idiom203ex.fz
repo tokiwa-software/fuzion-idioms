@@ -2,11 +2,11 @@ ex203 is
 
   a := [0.0, 8.0, 15.0, 47.0, 11.0]
 
-  mean(a List<f64>) => (sum a) / a.count.as_f64
+  mean(a Sequence<f64>) => (sum a) / a.count.as_f64
 
-  stddev²(a List<f64>) =>
+  stddev²(a Sequence<f64>) =>
     m := mean a
-    mean (a.mapList<f64> x->(x - m)**2)
+    mean (a.mapSequence<f64> x->(x - m)**2)
 
   # NYI: no sqrt yet:
   #

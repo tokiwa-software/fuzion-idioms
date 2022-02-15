@@ -1,1 +1,1 @@
-items := (items.take i) ++ items.drop i + 1
+items := items.take i ++ items.drop i+1

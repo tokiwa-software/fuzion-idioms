@@ -1,4 +1,5 @@
 ex35 is
+
   A(val i32) is
   B(val bool) is
   C(val string) is

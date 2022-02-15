@@ -22,4 +22,4 @@ is
 edge(a, b vertex) is
 
 # a graph is just a collection o edges
-graph(edges List<edge>) is
+graph(edges Sequence<edge>) is

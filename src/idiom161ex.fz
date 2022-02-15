@@ -1,4 +1,5 @@
 ex161 is
+
   elements := [1,2,3]
   c := 2
   say (elements.map<i32> e->e*c)

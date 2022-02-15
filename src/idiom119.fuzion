@@ -1,14 +1,13 @@
 # preserving order
+#
 x := for
-       r list<string> := nil, if (s.has e) r else cons e, r
-       s := psSet<string>, s.add e
+       r list<string> := nil, if e ∈ s then r
+                                       else cons e r
+       s := setOf<string>, s.add e
        e in x
      else
        r.reverse
 
 # not preserving order
-x := for
-       s := psSet<string>, s.add e
-       e in x
-     else
-       s.asArray
+#
+x := setOf x

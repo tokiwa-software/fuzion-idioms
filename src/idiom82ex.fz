@@ -1,4 +1,5 @@
 ex82 is
+
   s := "banana bo bana bandana"
   t := "ana"
   x := s.count t

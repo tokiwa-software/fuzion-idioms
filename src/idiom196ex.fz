@@ -8,6 +8,6 @@ ex196 is
 
   say a
 
-  a.indices |& (i -> !(i%%2)) | (i -> foo a i)
+  a.indices & (i -> !(i%%2)) | (i -> foo a i)
 
   say a
