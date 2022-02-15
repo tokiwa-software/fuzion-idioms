@@ -9,7 +9,7 @@ ex128 is
         c Cons =>
           f c.head
           breadth_first_traverse (c.tail ++ c.head.children)
-    breadth_first_traverse [root].asList
+    breadth_first_traverse [root]
 
   # World
   # ├─Europe
