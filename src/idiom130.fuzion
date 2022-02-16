@@ -1,0 +1,11 @@
+depth_first_traverse(g graph, queue Sequence<vertex>, visited Sequence<vertex>) Sequence<vertex> is
+traverse(v vertex) =>
+    if visited ∃ (x -> x.id == v.id)
+    visited
+    else
+    depth_first_traverse g (v.neighbors g) (visited ++ [v])
+
+match queue.asList
+    nil => visited
+    c Cons =>
+    depth_first_traverse g c.tail (traverse c.head)
