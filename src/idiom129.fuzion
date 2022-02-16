@@ -1,0 +1,12 @@
+breadth_first_traverse(g graph, queue Sequence<vertex>, visited Set<vertex>) Sequence<vertex> is
+match queue.asList
+    nil => visited
+    c Cons =>
+    host := c.head
+    if visited.contains host
+        breadth_first_traverse g c.tail visited
+    else
+        n := host.neighbors g
+        breadth_first_traverse g (c.tail ++ n) (visited.add host)
+
+(breadth_first_traverse g [v1] psSet<vertex>.empty) | (vertex) -> say vertex

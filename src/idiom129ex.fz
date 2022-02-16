@@ -1,0 +1,46 @@
+ex129 is
+  vertex(id i32): ordered<vertex> is
+    neighbors(g graph) Set<vertex> is
+        for
+          r ref psSet<vertex> := psSet<vertex>, if      (vertex.this = e.a) r.add e.b
+                                                  else if (vertex.this = e.b) r.add e.a
+                                                  else                        r
+          e in g.edges
+        else
+          r
+
+    redef infix <= (b vertex) => id <= b.id
+
+    redef asString => "v$id"
+
+    redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
+
+  edge(a, b vertex) is
+
+  graph(edges Sequence<edge>) is
+
+  v1 := vertex 1
+  v2 := vertex 2
+  v3 := vertex 3
+  v4 := vertex 4
+  v5 := vertex 5
+  edges := [ edge v1 v2;
+             edge v1 v3;
+             edge v2 v4;
+             edge v3 v4;
+             edge v3 v4;
+             edge v4 v5 ]
+  g := graph edges
+
+  breadth_first_traverse(g graph, queue Sequence<vertex>, visited Set<vertex>) Sequence<vertex> is
+    match queue.asList
+      nil => visited
+      c Cons =>
+        host := c.head
+        if visited.contains host
+          breadth_first_traverse g c.tail visited
+        else
+          n := host.neighbors g
+          breadth_first_traverse g (c.tail ++ n) (visited.add host)
+
+  (breadth_first_traverse g [v1] psSet<vertex>.empty) | (vertex) -> say vertex
