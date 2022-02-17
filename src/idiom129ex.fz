@@ -32,15 +32,14 @@ ex129 is
              edge v4 v5 ]
   g := graph edges
 
-  breadth_first_traverse(g graph, queue Sequence<vertex>, visited Sequence<vertex>) Sequence<vertex> is
-    match queue.asList
-      nil => visited
+  breadth_first_traverse(queue list<vertex>, visited ref psSet<vertex>) list<vertex> is
+    match queue
+      nil => lists.empty<vertex>
       c Cons =>
-        host := c.head
-        if visited ∃ (x -> x.id == host.id)
-          breadth_first_traverse g c.tail visited
+        if visited.contains c.head
+          breadth_first_traverse c.tail visited
         else
-          n := host.neighbors g
-          breadth_first_traverse g (c.tail ++ n) (visited ++ [host])
+          neighbors := c.head.neighbors g
+          ([c.head].asList ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head))
 
-  (breadth_first_traverse g [v1] psSet<vertex>.empty) | (vertex) -> say vertex
+  (breadth_first_traverse [v1].asList psSet<vertex>.empty) | (vertex) -> say vertex
