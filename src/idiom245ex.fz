@@ -7,5 +7,5 @@ ex245 is
   x := T
 
   # NYI: The output is currently dependent on the backend's implementation
-  # of intrinsic Object.asStrig.  The output coulde be more useful.
+  # of intrinsic Object.asString.  The output coulde be more useful.
   say x
