@@ -36,10 +36,12 @@ ex129 =>
     match queue
       nil => lists.empty<vertex>
       c Cons =>
+        # already visited? => skip adding to result
         if visited.contains c.head
           depth_first_traverse c.tail visited
         else
           neighbors := c.head.neighbors g
-          ([c.head].asList ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head))
+          # result is the current element, the neighbors and the rest of the visitation queue
+          [c.head].asList ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 
-  (depth_first_traverse [v1].asList psSet<vertex>.empty) | (vertex -> say vertex)
+  depth_first_traverse [v1].asList psSet<vertex>.empty | vertex -> say vertex
