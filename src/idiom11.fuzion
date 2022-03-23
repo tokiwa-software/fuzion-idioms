@@ -1,0 +1,1 @@
+x.drop(random.nextI32 x.length)).head
