@@ -1,7 +1,25 @@
-<h1>NYI: Idiom # 69: Seed random generator</h1>
+<h1>Idiom # 69: Seed random generator</h1>
 
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/69/seed-random-generator">programming-idioms.org</a>:</p>
+
+<p>Random numbers generators in Fuzion are effects.  To use a random number
+generator with a particular seed, we have to create an instance
+of <code>simpleRandomProvider</code> with the given seed and run code with this
+this effect in its environment.  The standard library
+feature <code>simpleRandom</code> create such a random provider with the given
+seed and installs it as the environment for running the code provided with the
+function parameter <code>f</code>.
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom69.fuzion"/>
+
+<h2>Running Example</h2>
+
+<p>The following example provides a feature <code>seed</code> that executes a
+function <code>f</code> with in an environment with a seeded random numer
+generator. For illustration, <code>showRandom</code> is called in this context
+and also in the default random provider and an explicitly time seeded random
+provider:</p>
+
+<runcode file="../src/idiom69ex.fz"/>

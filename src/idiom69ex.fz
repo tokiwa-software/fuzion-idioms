@@ -1,0 +1,19 @@
+ex69 is
+
+  seed(s u64, f ()->unit) =>
+    simpleRandom s f
+
+  showRandom (msg string) =>
+    for i in 0..5 do
+      say "$msg random is {random.nextU32 100}"
+
+  showRandom "default"
+
+  seed 777 ()->
+    showRandom "seeded with 777"
+
+  timeSeededRandom (()->
+    showRandom "seeded with time")
+
+  seed 777 ()->
+    showRandom "seeded with 777"
