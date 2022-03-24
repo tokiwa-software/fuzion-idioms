@@ -1,5 +1,5 @@
 x := ["red", "pink", "lilac", "purple", "rose", "lavender", "mauve", "violet", "plum" ]
 
 for i in 1..10 do
-  c := (x.drop(random.nextI32 x.length)).headx
+  c := (x.drop(random.nextI32 x.length)).head
   say "color: $c"
