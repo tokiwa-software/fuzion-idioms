@@ -1,0 +1,4 @@
+ex60 is
+
+  x := envir.args[1]  # will cause error if called without cmd line argument
+  say "arg#1 is $x"

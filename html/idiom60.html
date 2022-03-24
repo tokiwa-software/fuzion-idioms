@@ -1,7 +1,26 @@
-<h1>NYI: Idiom # 60: Read command line argument</h1>
+<h1>Idiom # 60: Read command line argument</h1>
 
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/60/read-command-line-argument">programming-idioms.org</a>:</p>
+
+<p>Since Fuzion does not have global variables, the command line arguments are
+implemented as an <code>effect</code> with a default implementation that returns
+the arguments provided to the application:</p>
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom60.fuzion"/>
+
+<h2>Running Example</h2>
+
+<p>The simple example printing the first argument will cause an error if called without an argument:</p>
+
+<runcode file="../src/idiom60ex.fz"/>
+
+<p>With arguments implemented as an <code>effect</code>, code that accesses the
+arguments will be detected by the fuzion tool, the access will be reported as a
+side-effect.  Furthermore, it is possible to create new environments and call
+code with different argument lists, as shown here:</p>
+
+<h2>Running Example</h2>
+
+<runcode file="../src/idiom60ex2.fz"/>
