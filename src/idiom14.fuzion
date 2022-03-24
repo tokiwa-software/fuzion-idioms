@@ -1,0 +1,1 @@
+pick(a, b f64) => a + random.nextF64 * (b-a)

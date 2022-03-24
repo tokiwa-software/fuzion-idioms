@@ -1,0 +1,8 @@
+pick(a, b f64) => a + random.nextF64 * (b-a)
+
+for i in 1..10
+    a := i.as_f64 * 3
+    b := i.as_f64 * 4
+    x := pick a b
+do
+  say "$x {if a <= x < b then "ok" else "not ok!"}"
