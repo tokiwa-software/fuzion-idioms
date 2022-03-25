@@ -1,7 +1,21 @@
-<h1>NYI: Idiom # 70: Use clock as random generator seed</h1>
+<h1>Idiom # 70: Use clock as random generator seed</h1>
 
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/70/use-clock-as-random-generator-seed">programming-idioms.org</a>:</p>
+
+<p>Random numbers generators in Fuzion are effects.  To use a random number
+generator seeded by a clock, we have to create an instance
+of <code>timeSeededRandomProvider</code> and run code with this this effect in
+its environment.  The standard library feature <code>timeSeededRandom</code>
+creates such a random provider and installs it as the environment for running
+the code provided with the function parameter <code>f</code>.
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom70.fuzion"/>
+
+<h2>Running Example</h2>
+
+<p>The following example calls <code>showRandom</code> in the context of an
+explicitly time seeded random provider:</p>
+
+<runcode file="../src/idiom70ex.fz"/>
