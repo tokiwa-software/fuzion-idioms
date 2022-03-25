@@ -1,0 +1,7 @@
+parentFactory (str string) Parent is
+  if      str = "A"     then A
+  else if str = "XYZ"   then XYZ
+  else if str = "heir1" then heir1
+  else if str = "heir2" then heir2
+  else
+    fuzion.std.panic "heir '$str' not known by parentFactory"

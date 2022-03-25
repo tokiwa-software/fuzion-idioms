@@ -1,0 +1,25 @@
+ex73 is
+
+  parentFactory (str string) Parent is
+    if      str = "A"     then A
+    else if str = "XYZ"   then XYZ
+    else if str = "heir1" then heir1
+    else if str = "heir2" then heir2
+    else
+      fuzion.std.panic "heir '$str' not known by parentFactory"
+
+  # define Parent
+  Parent ref is
+
+  # define heirs
+  A     : Parent is
+  XYZ   : Parent is
+  heir1 : Parent is
+  heir2 : Parent is
+
+
+  for
+    s in ["A", "XYZ", "heir1", "heir2", "error"]
+    h := parentFactory s
+  do
+    say "created $s: $h"
