@@ -1,0 +1,6 @@
+# Pick uniformly a random integer in [a..b] (both inclusive)
+pick(a,b i32)
+pre a<b
+  =>
+  rand := random.nextI32 (b - a + 1)
+  rand + a

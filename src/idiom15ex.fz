@@ -1,0 +1,10 @@
+ex15 is
+  # Pick uniformly a random integer in [a..b] (both inclusive)
+  pick(a,b i32)
+  pre a<b
+    =>
+    rand := random.nextI32 (b - a + 1)
+    rand + a
+
+  for i in 0..10 do
+    say (pick -1 1)
