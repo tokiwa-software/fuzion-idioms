@@ -1,5 +1,4 @@
-created A: instance[ex73.ref A]615634843
-created XYZ: instance[ex73.ref XYZ]2109874862
-created heir1: instance[ex73.ref heir1]1607305514
-created heir2: instance[ex73.ref heir2]1686369710
-*** panic: heir 'error' not known by parentFactory
+created A: instance[ex73.ref A]2074185499
+created XYZ: instance[ex73.ref XYZ]1218593486
+created heir1: instance[ex73.ref heir1]1330754528
+created heir2: instance[ex73.ref heir2]1582785598
