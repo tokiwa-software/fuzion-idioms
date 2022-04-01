@@ -1,5 +1,5 @@
 shuffle<T>(x Sequence<T>) =>
   if x.count < 2 then x else
-    (l,t) := x.splitAt (random.nextI32 x.count)
+    (l,t) := x.splitAt (random.next_i32 x.count)
     (m,r) := t.splitAt 1
     m ++ shuffle l++r

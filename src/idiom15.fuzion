@@ -1,1 +1,1 @@
-pick(a, b i32) => a + random.nextI32 b-a+1
+pick(a, b i32) => a + random.next_i32 b-a+1

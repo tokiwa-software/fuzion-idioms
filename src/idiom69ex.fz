@@ -5,7 +5,7 @@ ex69 is
 
   showRandom (msg string) =>
     for i in 0..5 do
-      say "$msg random is {random.nextU32 100}"
+      say "$msg random is {random.next_u32 100}"
 
   showRandom "default"
 

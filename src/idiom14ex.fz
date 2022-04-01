@@ -1,4 +1,4 @@
-pick(a, b f64) => a + random.nextF64 * (b-a)
+pick(a, b f64) => a + random.next_f64 * (b-a)
 
 for i in 1..10
     a := i.as_f64 * 3
