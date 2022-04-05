@@ -4,4 +4,4 @@ ex82 is
   t := "ana"
   x := s.count t
   say "matches, no overlap: $x"
-  say "matches, overlap   : {(searchableList s.utf8).countMatchesOverlapping t.utf8}"
+  say "matches, overlap   : {(searchableSequence s.utf8).countMatchesOverlapping t.utf8}"
