@@ -4,9 +4,6 @@
 [33m------------^[0m
 For call to array.index [ ]
 Call stack:
-envir.args.index [ ]: [32m$FUZION/lib/envir/args.fz:42:8:[39m
-[34m    all[i]
-[33m-------^[0m
 ex60: [32m-:3:18:[39m
 [34m  x := envir.args[1]  # will cause error if called without cmd line argument
 [33m-----------------^[0m
