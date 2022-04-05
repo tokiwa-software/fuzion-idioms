@@ -4,4 +4,4 @@ idiom32ex is
 
   for i in 1..5 do
     for j in 1..5 do
-      say "exp $i, $j is {exp i, j}"
+      say "exp $i $j is {exp i j}"
