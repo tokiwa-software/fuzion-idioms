@@ -1,0 +1,5 @@
+ex45 : time.durations is
+
+  say "pausing..."
+  time.nano.sleep (s 5)
+  say "...running!"
