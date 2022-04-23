@@ -1,5 +1,5 @@
 # using array initialization
-c := array<u8> a.length (i -> a[i] ^ b[i])
+c := array a.length (i -> a[i] ^ b[i])
 
-# using list.zip
-c := (a.zip<u8,u8> b (x,y -> x ^ y)).asArray
+# using Sequence.zip
+c := (a.zip b x,y->x^y).asArray
