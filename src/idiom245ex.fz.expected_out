@@ -1,1 +1,2 @@
-instance[ex245.ref T]
+instance[ex245.ref T1]
+T 42 Hello

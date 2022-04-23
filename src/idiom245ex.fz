@@ -1,11 +1,17 @@
 ex245 is
 
-  T is
+  T1 is
     a := 42
     b := "Hello"
 
-  x := T
+  x := T1
+  say x
 
-  # NYI: The output is currently dependent on the backend's implementation
-  # of intrinsic Object.asString.  The output coulde be more useful.
+  # output is much more useful if asString is redefined
+  T2 is
+    a := 42
+    b := "Hello"
+    redef asString => "T $a $b"
+
+  x := T2
   say x
