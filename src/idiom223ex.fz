@@ -8,7 +8,7 @@ ex223 is
       say "did not find it"
 
   fill i32 -> string := i -> if i=666 then "rockstar programmer" else "n00b"
-  find (array<string> 0 fill)
-  find (array<string> 10 fill)
-  find (array<string> 100 fill)
-  find (array<string> 1000 fill)
+  find (array 0 fill)
+  find (array 10 fill)
+  find (array 100 fill)
+  find (array 1000 fill)
