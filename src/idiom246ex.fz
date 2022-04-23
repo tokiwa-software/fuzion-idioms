@@ -1,6 +1,15 @@
 ex246 is
 
-  items := (0..1000:6).map<i32> (i -> i % 72)
+  items := ["Lies", "lies", "lies", "lies",
+            "Gold", "gold", "gold", "gold",
+            "Guns", "guns", "guns", "guns",
+            "Fire", "fire", "fire", "oh!",
+
+            "Gold", "gold", "gold", "gold",
+            "Church", "church", "church", "church",
+            "Guns", "guns", "guns", "guns",
+            "Fire", "fire", "fire", "oh!",
+            "Oh!"]
 
   c := (setOf items).count
 
