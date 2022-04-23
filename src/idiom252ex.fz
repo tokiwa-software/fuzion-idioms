@@ -1,17 +1,6 @@
 ex252 is
 
-  counter := 0
-
-  condition =>
-    # an ugly side-effect (NYI: Use monad instead!)
-    set counter := counter + 1
-    counter %% 3
-
-  x := if condition then "a" else "b"
-  say x
-  x := if condition then "a" else "b"
-  say x
-  x := if condition then "a" else "b"
-  say x
-  x := if condition then "a" else "b"
-  say x
+  for counter in 1..4 do
+    condition => counter %% 3
+    x := if condition then "a" else "b"
+    say x
