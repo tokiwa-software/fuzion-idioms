@@ -7,5 +7,4 @@ ex224 is
   say items
 
   items := items.insert 0 x
-
   say items
