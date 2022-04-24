@@ -1,0 +1,18 @@
+ex198a is
+
+  f is
+    say "in f, perform exit:"
+    x := 4
+    exit x
+    say "** not reachable code **"
+
+  myExit : exitHandler is
+    exit(code i32) void is
+      io.err.println "*** user defined exit handler diverting exit $code ***"
+      exit.env.abort
+
+  exit myExit ()->
+    f
+    say "** not reachable code **"
+
+  say "exit normally"

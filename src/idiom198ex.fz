@@ -1,4 +1,10 @@
 ex198 is
 
-  x := 4
-  fuzion.std.exit x
+  f is
+    say "in f, perform exit:"
+    x := 4
+    exit x
+    say "** not reachable code **"
+
+  f
+  say "** not reachable code **"
