@@ -6,9 +6,12 @@ ex189 is
   T i32 -> string := i -> "{i}² = {i*i}"
 
   y := (x.filter P).mapSequence T  # NYI: should be 'map', not 'mapSequence, see Fuzion #252'
+  y.take 20 | e -> say e
 
-  # NYI: This should be possible using pipe:
+  # alternatively, we can use 'infix &' instead of 'filter'
+  y := (x & P).mapSequence T
+  y.take 20 | e -> say e
+
+  # NYI: This should be possible using pipe instead of 'map'
   #
   # y := x & P | T
-
-  y.take 20 | e -> say e
