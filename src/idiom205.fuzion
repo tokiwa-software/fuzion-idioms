@@ -1,0 +1,1 @@
+foo := envir.vars.get "FOO" "none"
