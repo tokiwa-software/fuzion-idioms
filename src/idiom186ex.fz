@@ -1,0 +1,9 @@
+ex186 is
+
+  f is
+    say "perform exit:"
+    exit 0
+    say "** not reachable code **"
+
+  f
+  say "** not reachable code **"
