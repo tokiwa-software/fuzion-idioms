@@ -1,6 +1,6 @@
 ex251 is
 
   s := "1101"
-  i := s.parseI32Binary
+  i := s.parse_i32_binary
 
   say i

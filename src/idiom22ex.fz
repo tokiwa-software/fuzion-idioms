@@ -1,4 +1,4 @@
 idiom22ex is
 
-  i := "123".parseI32
+  i := "123".parse_i32
   say "parse result is $i"

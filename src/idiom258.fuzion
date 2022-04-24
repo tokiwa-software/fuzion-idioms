@@ -1,1 +1,1 @@
-b := a.map s->s.parseI32.val
+b := a.map s->s.parse_i32.val
