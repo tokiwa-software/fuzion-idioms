@@ -1,6 +1,6 @@
 ex195 is
 
-  a := array2<f64> 5 7 i,j->3.14
+  a := array2 5 7 i,j->3.14
 
   foo a
 

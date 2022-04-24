@@ -1,11 +1,11 @@
 ex194 is
 
-  a := array2<i32> 5 5 i,j->i*10+j
+  a := array2 5 5 i,j->i*10+j
   n := 2
 
   l0 := a.length0
   l1 := a.length1
-  b := array2<i32> l0 l1 (i,j -> a[i, (j+n) % l1])
+  b := array2 l0 l1 (i,j -> a[i, (j+n) % l1])
 
   say "a is $a"
   say "b is $b"
