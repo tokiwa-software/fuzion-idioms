@@ -2,4 +2,8 @@ ex81 =>
   x := -2.5
   y := (x + 0.5).floor.as_i64
 
-  say y
+  say y         # -2
+
+# there is also round which rounds with ties to away from zero
+  say x.round   # -3
+  say -x.round  #  3
