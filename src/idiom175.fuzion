@@ -1,5 +1,5 @@
 s := for
-       r := "", r + (b.hex 2)
+       r := "", r + b.hex 2
        b in a
      else
        r
