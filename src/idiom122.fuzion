@@ -1,10 +1,1 @@
-# declare 4 unit types
-SPADES is
-HEARTS is
-DIAMONDS is
-CLUBS is
-
-# and make Suit a choice of these 4 unit types
-Suit : choice<SPADES, HEARTS, DIAMONDS, CLUBS> is
-
-# NYI: better syntactic sugar for enum declarations still missing
+Suit : choice of SPADES, HEARTS, DIAMONDS, CLUBS.
