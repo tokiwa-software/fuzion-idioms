@@ -1,1 +1,1 @@
-elements.map<i32> e->e*c
+elements.map e->e*c
