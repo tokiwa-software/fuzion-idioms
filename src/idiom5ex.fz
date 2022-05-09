@@ -1,7 +1,7 @@
 ex5 is
 
-  Point(x, y f64) is
+  point(x, y f64).
 
-  p1 := Point 3 4
-  p2 := tuple 3.0 4.0
-  p3 := Point p2.values.0 p2.values.1
+  p1 := point 3 4
+  p2 := (3.0, 4.0)
+  p3 := point p2.values.0 p2.values.1
