@@ -1,0 +1,23 @@
+node(T type,
+     val T,
+     children Sequence (node T)) is
+
+  redef asString => (asStrings 0).asString "\n"
+
+  asStrings(d i32) =>
+    ["+-" + $val] ++ (children.flatMapSequence<string> (c->c.asStrings d+1)).map s->"| $s"
+
+feuille(val string) => node val (lists.empty (node string))
+
+t := node "C" [feuille "C++",
+               feuille "C#" ,
+               feuille "Go" ,
+               node "Java" [feuille "Scala",
+                            feuille "Kotlin"],
+               node "Perl" [feuille "Ruby",
+                            feuille "Raku"],
+               node "Python" [feuille "Julia",
+                              feuille "Nim"  ]
+              ]
+
+say t

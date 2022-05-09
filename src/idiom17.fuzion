@@ -1,2 +1,3 @@
-node<T>(val T,
-        children Sequence<node<T>>) is
+node(T type,
+     val T,
+     children Sequence (node T)) is
