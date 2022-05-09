@@ -1,4 +1,4 @@
 finish(name string) =>
-  say "My job here is done. Goodbye, $name"
+  say "My job here is done. Goodbye, $name!"
 
-finish "schöne Welt!"
+finish "schöne Welt"
