@@ -9,7 +9,7 @@ items | x -> something x
 items | fun something
 
 # using map and a lambda
-items.map<unit> (x -> something x)
+items.map (x -> something x)
 
 # using map and a function
-items.map<unit> (fun something)
+items.map (fun something)
