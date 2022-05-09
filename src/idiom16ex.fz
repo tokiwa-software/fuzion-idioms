@@ -1,13 +1,13 @@
 # a binTreeNode is a value plus left and right sub-trees
 #
-binTreeNode<T : ordered<T>>
-  (val T,
-   left, right binTree<T>) ref
+binTreeNode(T ordered T .type,
+            val T,
+            left, right binTree T) ref
 is
 
   # add element to this tree, return resulting tree
   #
-  add (v T) binTree<T> is
+  add (v T) binTree T is
     l := if (v < val) (left .add v) else left
     r := if (v > val) (right.add v) else right
     binTreeNode val l r
@@ -15,11 +15,11 @@ is
 
 # a binTree is either a binTreeNode or an empty tree represented by nil
 #
-binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
+binTree(T ordered T .type) : choice<binTreeNode T, nil> is
 
   # add element to this tree, return resulting tree
   #
-  add (v T) binTree<T> is
+  add (v T) binTree T is
     match binTree.this
       nil           => binTreeNode v nil nil
       n binTreeNode => n.add v
@@ -35,7 +35,7 @@ binTree<T : ordered<T>> : choice<binTreeNode<T>, nil> is
         n.right.traverse f
 
 for
-  tree binTree<string> := nil, tree.add x
+  tree binTree string := nil, tree.add x
   x in ["dog", "elephant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
 else
   tree.traverse (s -> say s)
