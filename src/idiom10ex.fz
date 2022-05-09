@@ -1,6 +1,6 @@
 x := [1,2,3,4,5,6,7,8,9,10]
 
-shuffle<T>(x Sequence<T>) =>
+shuffle(T type, x Sequence T) =>
   if x.count < 2 then x else
     (l,t) := x.splitAt (random.next_i32 x.count)
     (m,r) := t.splitAt 1
