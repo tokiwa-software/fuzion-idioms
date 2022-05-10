@@ -4,4 +4,4 @@ parentFactory (str string) Parent is
   else if str = "heir1" then heir1
   else if str = "heir2" then heir2
   else
-    fuzion.std.panic "heir '$str' not known by parentFactory"
+    panic "heir '$str' not known by parentFactory"
