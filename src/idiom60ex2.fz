@@ -12,10 +12,11 @@ ex60 is
   # show args we are called with
   showArgs
 
-  # run showArgs in a different environment using a different instance of the envir.args effect
+  # run showArgs in a different environment using a different instance of the
+  # envir.args effect
   envir.args ["cmd","arg0","arg1"] ()->
     showArgs
 
   # run showArgs in another environment
-  envir.args (array<string> 20 i->"a$i") ()->
+  envir.args (array 20 i->"a$i") ()->
     showArgs
