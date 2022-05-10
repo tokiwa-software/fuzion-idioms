@@ -1,13 +1,12 @@
-vertex(id i32)
-  : ordered<vertex>     # must be ordered such that we can add it to a Set
+vertex(id i32) : ordered vertex     # must be ordered such that we can add it to a Set
 is
 
   # extract neighbors from edges in given graph
-  neighbors(g graph) Set<vertex> is
+  neighbors(g graph) Set vertex  is
     for
-      r := psSet<vertex>, if      (e.a = vertex.this) r.add e.b
-                          else if (e.b = vertex.this) r.add e.a
-                          else                        r
+      r := psSet (lists.empty vertex), if      (vertex.this = e.a) r.add e.b
+                                       else if (vertex.this = e.b) r.add e.a
+                                       else                        r
       e in g.edges
     else
       r
@@ -22,4 +21,4 @@ is
 edge(a, b vertex) is
 
 # a graph is just a collection o edges
-graph(edges Sequence<edge>) is
+graph(edges Sequence edge) is
