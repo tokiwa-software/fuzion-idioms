@@ -1,8 +1,8 @@
-ex36 is
+ex36a is
 
   compose(A,B,C type,
           f A -> B,
-          g B -> C) A -> C is a -> g (f a)
+          g B -> C) => Functions.compose f g
 
   f i32  -> bool   := a -> a > 3
   g bool -> string := b -> if b then "T" else "F"
