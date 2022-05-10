@@ -1,1 +1,1 @@
-x := array3<f64> m n p (i, j, k -> 0)
+x := array3 m n p i,j,k->0
