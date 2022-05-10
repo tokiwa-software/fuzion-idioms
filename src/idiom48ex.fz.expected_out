@@ -1,4 +1,4 @@
-Strings extending over several lines are currenlty not well supported
+Strings extending over several lines are currently not well supported
 in Fuzion.  They can be constructed out of several shorter strings
 that are concatenated using 'infix +'.  Line feeds are inserted using
 a backslash followed by an 'n', i.e, '\n'.  Additionally, the string

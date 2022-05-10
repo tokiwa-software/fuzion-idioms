@@ -1,6 +1,6 @@
 ex48 is
 
-  s := ("Strings extending over several lines are currenlty not well supported\n" +
+  s := ("Strings extending over several lines are currently not well supported\n" +
         "in Fuzion.  They can be constructed out of several shorter strings\n" +
         "that are concatenated using 'infix +'.  Line feeds are inserted using\n" +
         "a backslash followed by an 'n', i.e, '\\n'.  Additionally, the string\n" +
