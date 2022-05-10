@@ -14,8 +14,14 @@ sep</code> is the operation to use.</p>
 <p>Mathematically speaking, such an operation is called a <i>monoid</i>.  This is
 why the type of the argument of <code>fold</code> is <code>Monoid</code>, while
 the operations declared in <code>strings</code> inherit
-from <code>Monoid</code>.
+  from <code>Monoid</code>.</p>
+
+<p>Since joining the elements of a list into a string using a given separator is a common operation, there is a convenience function to do this directly.</p>
+
+<runcode file="../src/idiom53a.fuzion"/>
 
 <h2>Running Example</h2>
+
+<p>Using <code>fold</code>.</p>
 
 <runcode file="../src/idiom53ex.fz"/>
