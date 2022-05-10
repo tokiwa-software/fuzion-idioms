@@ -1,7 +1,8 @@
-node<T>(val T,
-        children Sequence<node<T>>) is
+node(T type,
+     val T,
+     children Sequence (node T)) is
 
-  traverse (f T -> unit) is
+  traverse (f T -> unit) unit is
     f val
     for child in children do
       child.traverse f

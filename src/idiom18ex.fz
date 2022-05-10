@@ -1,17 +1,18 @@
 ex18 is
 
-  node<T>(val T,
-          children Sequence<node<T>>) is
+  node(T type,
+       val T,
+       children Sequence (node T)) is
 
     traverse (f T -> unit) unit is
       f val
       for child in children do
         child.traverse f
 
-  e list<node<string>> := nil
-  t := node "lion" [node "cougar" e,
-                    node "elephant" e,
-                    node "hornet" [node "bee" e, node "ant" e],
-                    node "beatle2" e]
+  blatt(val string) => node val (lists.empty (node string))
+  t := node "lion" [blatt "cougar",
+                    blatt "elephant",
+                    node "hornet" [blatt "bee", blatt "ant"],
+                    blatt "beatle2"]
 
   t.traverse (x -> say x)
