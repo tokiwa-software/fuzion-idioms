@@ -1,1 +1,1 @@
-x := psSet<T>    # T must inherit from ordered
+x := setOf (lists.empty T)  # T must inherit from ordered

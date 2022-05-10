@@ -1,6 +1,6 @@
 idiom34ex is
 
-  x := psSet<string>
+  x := setOf (lists.empty string)
   x := x.add "A"
   x := x.add "B"
   x := x.add "C"
