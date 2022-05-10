@@ -1,4 +1,4 @@
-m := orderedMap<string,string>( [ "Hund", "Katze", "Maus" ] , [ "dog", "cat", "mouse" ] )
+m := orderedMap [ "Hund", "Katze", "Maus" ] [ "dog", "cat", "mouse" ]
 
 v := "cat"
 if (for x in m.values until v = x)
