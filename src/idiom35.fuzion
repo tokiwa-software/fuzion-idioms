@@ -1,2 +1,2 @@
 compose(f A -> B,
-        g b -> C) A -> B is a -> g (f a)
+        g B -> C) A -> B is a -> g (f a)
