@@ -1,6 +1,10 @@
-search(m array2<i32>, x i32) option<tuple<i32, i32>> is
-  for i in m.indices0 until
-    for j in m.indices1 until m[i,j] = x
-      set result := (i, j)
+search(m array2 i32, x i32) =>
+  for
+    # (i,j) in m.indexPairs   // NYI: destructure syntax sugar still missing
+    ij in m.indexPairs
+    i := ij.values.0
+    j := ij.values.1
+  until m[i,j] = x
+    option (i, j)
   else
-    set result := nil
+    nil
