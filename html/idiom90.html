@@ -4,7 +4,11 @@
 
 <h2>Code</h2>
 
-<p>All fields are automatically write-protected from the outside:</p>
+<p>All fields in Fuzion are automatically read-only from inside and form
+  outside.  So the task here is more to define a field that is mutable and a way to read this from the outside.</p>
+
+<p>A mutable value has to be created using the <code>mutate</code>
+effect. <code>mut</code> is a convenience feature to create a mutable value using the current mutate effect.</p>
 
 <runcode file="../src/idiom90.fuzion"/>
 
@@ -13,6 +17,9 @@
 <p>Updating the field from inside does work:</p>
 
 <runcode file="../src/idiom90ex.fz"/>
+
+<p>If you analyse the effects used by this code by hitting 'Effects!', you will
+see that this code uses the <code>mutate</code> effect.</p>
 
 <p>Updating the field from outside will cause a compile-time error:</p>
 
