@@ -1,0 +1,3 @@
+tmp := a.get
+a <- b.get
+b <- tmp

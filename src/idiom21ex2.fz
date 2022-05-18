@@ -1,0 +1,9 @@
+ex21 is
+
+  a := mut 33
+  b := mut 77
+  say "a is {a.get} b is {b.get}"
+  tmp := a.get
+  a <- b.get
+  b <- tmp
+  say "a is {a.get} b is {b.get}"

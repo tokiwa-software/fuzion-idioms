@@ -2,9 +2,6 @@ ex21 is
 
   a := 33
   b := 77
-
-  show => say "a is $a b is $b"
-
-  show
-  set (a,b) := (b,a)
-  show
+  say "a is $a b is $b"
+  (a¹,b¹) := (b,a)
+  say "a¹ is $a¹ b¹ is $b¹"
