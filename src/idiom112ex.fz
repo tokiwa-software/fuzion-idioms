@@ -4,7 +4,7 @@ ex112 is
     [ "un", "deux", "trois", "quatre", "cinq" ]
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )
 
-  for k in sortedArray map.keys do
+  for k in sortedArrayOf map.keys do
     say "$k => {map[k]}"
 
   # since map is already orderedMap, map.keys are already ordered

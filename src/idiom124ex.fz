@@ -6,7 +6,7 @@ ex124 is
       i i32 => i
 
   unsorted := [0, 8, 15, 47, 11]
-  a := sortedArray unsorted
+  a := sortedArrayOf unsorted
 
   say (binarySearch a 0)
   say (binarySearch a 8)
