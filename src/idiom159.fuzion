@@ -1,5 +1,6 @@
-Trie<V>(
+Trie(
+  V type,
   c codepoint,
-  children map<codepoint, Trie>,
-  val option<V>)
+  children orderedMap codepoint (Trie V),
+  val option V)
 is

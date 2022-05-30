@@ -1,16 +1,17 @@
 ex159 is
 
-  Trie<V>
+  Trie
     (
+    V type,
 
     # the codepoint of this tree node, '#' for root. Not strictly needed.
     c codepoint,
 
     # children of this node: maps codepoint at this position to sub-Trie
-    children orderedMap<codepoint, Trie<V>>,
+    children orderedMap codepoint (Trie V),
 
     # value of this node if it contains a value
-    val option<V>
+    val option V
     )
 
   is
@@ -20,17 +21,17 @@ ex159 is
       c := cp from
       n :=
         if from.codepointLength = 1
-          ch := children[c] ? nil => orderedMap<codepoint, Trie<V>>
+          ch := children[c] ? nil => (orderedMaps<codepoint, Trie V>).empty
                             | e Trie => e.children
           Trie c ch to
         else
-          e := children[c] ? nil => Trie<V> c
+          e := children[c] ? nil    => Trie V c
                            | e Trie => e
           e.add (from.substring 1) to
       Trie c (children.add c n) val
 
     # find the value 's' is mapped to by this Trie
-    find(s string) option<V> is
+    find(s string) option V is
       if s.isEmpty
         val
       else
@@ -38,10 +39,10 @@ ex159 is
                        | t Trie => t.find (s.substring 1)
 
   # convenience routine to create empty Trie for codepoint 'c'
-  Trie<V>(c codepoint) => Trie<V> c (orderedMap<codepoint, Trie<V>>) nil
+  Trie(V type, c codepoint) => Trie V c (orderedMaps<codepoint, Trie V>).empty nil
 
   # convenience routine to create empty Trie
-  Trie<V> => Trie<V> (cp "#")
+  Trie(V type) => Trie V (cp "#")
 
   # convenience routine to get the first code point from a non-empty string
   cp (s string)
@@ -52,7 +53,7 @@ ex159 is
   # create a dictionary from English to German and fill it with vocabulatry from
   # "one" to "ten":
   #
-  e := Trie<string>
+  e := Trie string
   e := e.add "one"   "eins"
   e := e.add "two"   "zwei"
   e := e.add "three" "drei"

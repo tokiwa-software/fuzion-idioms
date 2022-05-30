@@ -1,6 +1,6 @@
 ex247 is
 
-  x := marray<option<i32>> 100 nil
+  x := marrays<option<i32>>.new 100 nil
   for i in x.indices do
     x[i] := i
 
