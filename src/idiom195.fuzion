@@ -1,6 +1,6 @@
 foo a
 
-foo (a array2<f64>) unit is
+foo (a array2 f64) unit is
   say "array size {a.length0}×{a.length1}"
 
   for
