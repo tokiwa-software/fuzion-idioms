@@ -1,7 +1,7 @@
 ex43 is
 
   // m is array of intervals [100..300, 80..300, 60..300, etc., -80..300]
-  m := array< i32.infix .. > 10 (i -> (100 - 20*i)..300)
+  m := array 10 (i -> (100 - 20*i)..300)
 
   for v in m until
     for i in v until i < 0

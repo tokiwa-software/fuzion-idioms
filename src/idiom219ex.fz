@@ -6,12 +6,12 @@ ex219 is
   say t
 
   # alternatively, using a monoid:
-  filterMultiSpace : Monoid<string> is
+  filterMultiSpace : Monoid string is
     redef infix ∙ (a, b string) => if b=" " && a.endsWith " " then a else a + b
     redef e => ""
 
   t := s.asCodepoints
-        .mapSequence<string> x->x
+        .mapSequence x->($x)
         .fold filterMultiSpace
   say t
 

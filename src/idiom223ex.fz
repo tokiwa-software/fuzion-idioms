@@ -1,6 +1,6 @@
 ex223 is
 
-  find(items array<string>) =>
+  find(items array string) =>
     for item in items
     until item = "rockstar programmer"
       say "found it!"

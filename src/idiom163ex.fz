@@ -1,6 +1,6 @@
 ex163 is
 
-  list := array<i32> 50 (i -> i*i)
+  list := array 50 i->i*i
 
   for i in list.indices : 2 do
     say "{list[i]}, {list[i+1]}"

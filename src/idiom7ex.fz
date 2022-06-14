@@ -1,6 +1,6 @@
 ex7 is
 
-  items := array<string> 10 i->"string#$i"
+  items := array 10 i->"string#$i"
 
   # using a loop
   for x in items
