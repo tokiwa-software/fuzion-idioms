@@ -1,6 +1,6 @@
 ex196 is
 
-  foo (a marray<i32>, i i32) unit is
+  foo (a marray i32, i i32) unit is
     a[i] := 42
 
   a := (marrays i32).new 10 0
