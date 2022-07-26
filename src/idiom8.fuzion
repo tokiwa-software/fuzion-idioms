@@ -1,4 +1,4 @@
-x := mapOf ["one", "two"] [1, 2]
+x := mapOf [("one", 1), ("two", 2)]
 
 /* NYI: with better syntactic sugar, this should become
 
