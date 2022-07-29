@@ -1,0 +1,2 @@
+file := fuzion.std.fileio
+p := strings.fromBytes(file.read "/home/user/file.xyz")
