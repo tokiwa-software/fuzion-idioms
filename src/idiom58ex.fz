@@ -1,0 +1,5 @@
+ex58 is
+  
+  file := fuzion.std.fileio # shorthand to call the fileio features
+  p := strings.fromBytes(file.read "/home/user/file.xyz") # read takes a relative or an absolute file name
+  say p
