@@ -1,0 +1,1 @@
+n := io.stdin.read_line.val.parse_i32.val
