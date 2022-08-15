@@ -21,12 +21,12 @@ ex159 is
       c := cp from
       n :=
         if from.codepointLength = 1
-          ch := children[c] ? nil => (orderedMaps codepoint (Trie V)).empty
-                            | e Trie => e.children
+          ch := (children[c] ? nil => (orderedMaps codepoint (Trie V)).empty
+                             | e Trie => e.children)
           Trie c ch to
         else
-          e := children[c] ? nil    => Trie V c
-                           | e Trie => e
+          e := (children[c] ? nil    => Trie V c
+                            | e Trie => e)
           e.add (from.substring 1) to
       Trie c (children.add c n) val
 
