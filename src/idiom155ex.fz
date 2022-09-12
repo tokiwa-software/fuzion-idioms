@@ -1,0 +1,5 @@
+path := "path/to/file"
+ex155 is
+  match io.file.delete path
+    _ unit => say "$path has been successfully deleted" # logic in case of success
+    err error => say err # error handling logic
