@@ -1,3 +1,5 @@
 ex74 is
-  x := (int 18).gcd (int 12)
+  a := int 18
+  b := int 12
+  x := a.gcd b
   say x
