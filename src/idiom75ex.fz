@@ -1,0 +1,9 @@
+ex75 is
+  lcm (a,b int) int is
+    a * b / (a.gcd b)
+
+  a := int 140
+  b := int 72
+  x := lcm a b
+
+  say x
