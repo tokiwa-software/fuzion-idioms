@@ -1,0 +1,7 @@
+ex58 is
+  
+  path := "path/to/file"
+  reader := io.file.read
+  match reader.read_all path
+    content array u8 => say (strings.fromBytes content) # logic in case of success
+    err error => say err # error handling logic

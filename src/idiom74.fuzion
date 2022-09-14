@@ -1,0 +1,3 @@
+a := int 18
+b := int 12
+x := a.gcd b

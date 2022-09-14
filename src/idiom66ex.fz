@@ -1,0 +1,8 @@
+ex66 is
+
+  x := int 5
+  n := int 7
+
+  z := x ** n
+
+  say z
