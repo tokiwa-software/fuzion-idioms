@@ -1,0 +1,5 @@
+ex165 is
+  i := 42
+  parity := if i.onesCount %% 2 then 0 else 1
+
+  say parity
