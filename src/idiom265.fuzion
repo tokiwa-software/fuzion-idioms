@@ -1,0 +1,2 @@
+i := 42
+parity := i.onesCount % 2
