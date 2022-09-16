@@ -1,0 +1,6 @@
+ex266 is
+  v := "abc"
+  n := 5
+  s := v * n
+
+  say s
