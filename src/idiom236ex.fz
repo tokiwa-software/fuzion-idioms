@@ -1,0 +1,6 @@
+ex226 is
+  a := int 2 ** int 65
+  b := int 2 ** int 65
+  q := a ⁄ b
+
+  say q
