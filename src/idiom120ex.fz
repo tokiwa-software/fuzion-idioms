@@ -1,0 +1,8 @@
+ex120 is
+  say "please type a number:"
+
+  # no error handling is performed here
+  # program crashes if user does not type a number
+  n := io.stdin.read_line.val.parse_int.val
+
+  say "got $n"
