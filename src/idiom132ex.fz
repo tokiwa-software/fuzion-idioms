@@ -1,0 +1,4 @@
+ex132 is
+  f =>
+    time.nano.sleep (time.durations.seconds 1)
+  say (time.stopwatch (() -> f))
