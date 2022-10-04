@@ -1,7 +1,7 @@
 ex66 is
 
-  x := int 5
-  n := int 7
+  x := int 42
+  n := 42.as_int
 
   z := x ** n
 

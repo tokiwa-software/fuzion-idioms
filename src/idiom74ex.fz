@@ -1,5 +1,5 @@
 ex74 is
-  a := int 18
-  b := int 12
+  a := int 3 ** int 142
+  b := int 3 ** int 242
   x := a.gcd b
   say x

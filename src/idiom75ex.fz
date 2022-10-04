@@ -2,8 +2,8 @@ ex75 is
   lcm (a,b int) int is
     a * b / (a.gcd b)
 
-  a := int 140
-  b := int 72
+  a := int 2147483647             # is the eighth Mersenne prime, equal to 231^-1
+  b := int 2305843009213693951    # another Mersenne prime
   x := lcm a b
 
   say x
