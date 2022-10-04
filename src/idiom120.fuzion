@@ -1,0 +1,1 @@
+n := io.stdin.read_line.val.parse_int.val
