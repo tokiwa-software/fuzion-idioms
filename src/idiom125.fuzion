@@ -1,0 +1,1 @@
+t := (time.stopwatch (() -> foo)).nanos
