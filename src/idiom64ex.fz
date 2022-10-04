@@ -1,0 +1,3 @@
+ex64 is
+  x := int 3 ** int 247
+  say x
