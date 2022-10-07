@@ -1,0 +1,7 @@
+ex226 is
+  # all numbers are prime numbers
+  a := int 7 * int 688846502588399
+  b := int 7 * "162259276829213363391578010288127".parse_int.val
+  q := a ⁄ b
+
+  say q
