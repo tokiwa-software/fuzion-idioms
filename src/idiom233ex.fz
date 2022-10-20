@@ -1,0 +1,12 @@
+ex233 is
+  country =>
+    for
+      a1 := "", a2
+      a2 in envir.args.drop 1
+    until a1 = "-country"
+      a2
+    else
+      "Canada"
+
+  say country
+
