@@ -1,0 +1,2 @@
+ex232 is
+  say "verbose is {"-v" ∈ setOf envir.args}"
