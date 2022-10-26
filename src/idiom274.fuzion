@@ -1,0 +1,1 @@
+t := strings.fromBytes (s.utf8 & (c -> !s.isAsciiWhiteSpace c))
