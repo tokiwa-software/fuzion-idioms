@@ -3,11 +3,11 @@ ex202 is
   a := [0, 8, 15, 47, 11]
 
   # using sum and map
-  sum := sum (a.map i32 x->x*x)
+  sum := sum (a.map x->x*x)
   say "sum is $sum"
 
   # using map and fold
-  sum := a.map i32 x->x*x
+  sum := a.map x->x*x
           .fold i32.sum
   say "sum is $sum"
 
