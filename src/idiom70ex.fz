@@ -4,5 +4,5 @@ ex70 is
     for i in 0..5 do
       say "$msg random is {random.next_u32 100}"
 
-  timeSeededRandom (()->
+  time_seeded_random (()->
     showRandom "seeded with time")
