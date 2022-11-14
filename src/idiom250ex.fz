@@ -1,0 +1,8 @@
+ex250 is
+  m := mapOf [(1, "red"), (2, "pink"), (3, "lilac"), (4, "purple"), (5, "rose")]
+
+  x := m.values
+        .drop (random.next_i32 m.size)
+        .head
+
+  say x
