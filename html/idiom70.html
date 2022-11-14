@@ -3,11 +3,10 @@
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/70/use-clock-as-random-generator-seed">programming-idioms.org</a>:</p>
 
 <p>Random numbers generators in Fuzion are effects.  To use a random number
-generator seeded by a clock, we have to create an instance
-of <code>timeSeededRandomProvider</code> and run code with this this effect in
-its environment.  The standard library feature <code>timeSeededRandom</code>
-creates such a random provider and installs it as the environment for running
-the code provided with the function parameter <code>f</code>.
+generator seeded by a clock, we can use the standard library feature
+<code>time_seeded_random</code> which installs a time seeded random number
+generator into the current environment for running the code provided with
+the function parameter <code>f</code>.
 
 <h2>Code</h2>
 

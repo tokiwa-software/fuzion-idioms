@@ -1,7 +1,7 @@
 ex69 is
 
   seed(s u64, f ()->unit) =>
-    simpleRandom s f
+    simple_random s f
 
   showRandom (msg string) =>
     for i in 0..5 do
@@ -12,7 +12,7 @@ ex69 is
   seed 777 ()->
     showRandom "seeded with 777"
 
-  timeSeededRandom (()->
+  time_seeded_random (()->
     showRandom "seeded with time")
 
   seed 777 ()->
