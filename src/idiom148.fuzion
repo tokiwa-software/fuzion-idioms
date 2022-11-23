@@ -1,0 +1,6 @@
+# aborts when the first string that can't be
+# parsed as i32 is encountered
+l := streams.generate i32 (() ->
+  (io.stdin.read_line.val "NaN")
+    .parse_i32
+    .as_option)
