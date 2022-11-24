@@ -4,6 +4,6 @@ ex30 is
     say "**$i**"
 
   (1..1000).mapSequence (i-> concur.thread.spawn (() -> f i))
-    .forAll x->unit
+    .for_each x->unit
 
   time.nano.sleep (time.durations.s 2)
