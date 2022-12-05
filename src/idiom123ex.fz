@@ -1,0 +1,13 @@
+ex123 is
+
+  # assert that n is lower than 10
+  assert_n_lt_10(n i32)
+  pre n < 10
+  is
+    say "assertion passed for: $n"
+
+  for i in 0..9 do
+    assert_n_lt_10 i
+
+  for i in 0..10 do
+    assert_n_lt_10 i
