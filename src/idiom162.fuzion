@@ -1,0 +1,8 @@
+for
+  arg in envir.args.drop 1
+do
+  if arg = "b"
+    bat
+
+  if arg = "f"
+    fox

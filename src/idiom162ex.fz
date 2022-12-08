@@ -1,0 +1,15 @@
+ex162 is
+  bat =>
+    say "bat"
+
+  fox =>
+    say "fox"
+
+  for
+    arg in envir.args.drop 1
+  do
+    if arg = "b"
+      bat
+
+    if arg = "f"
+      fox
