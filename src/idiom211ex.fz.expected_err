@@ -1,1 +1,4 @@
-*** error: unsafe feature fuzion.std.fileio.create_dir disabled
+
+[1;31merror 1[0m[1m: *** error: unsafe feature fuzion.std.fileio.create_dir disabled[0m
+
+*** fatal errors encountered, stopping.

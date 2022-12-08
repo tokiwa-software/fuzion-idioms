@@ -1,1 +1,4 @@
-*** error: unsafe feature fuzion.std.fileio.delete disabled
+
+[1;31merror 1[0m[1m: *** error: unsafe feature fuzion.std.fileio.delete disabled[0m
+
+*** fatal errors encountered, stopping.
