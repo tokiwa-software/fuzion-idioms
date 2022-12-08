@@ -1,0 +1,5 @@
+# assert that n is lower than 10
+assert_n_lt_10(n i32)
+pre n < 10
+is
+  say "assertion passed for: $n"
