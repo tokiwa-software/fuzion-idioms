@@ -1,0 +1,11 @@
+# usage: $ echo -e "1\n2\n3\n" | fz src/idiom148ex.fz
+ex =>
+
+  # aborts when the first string that can't be
+  # parsed as i32 is encountered
+  l := streams.generate i32 (() ->
+    (io.stdin.read_line.val "NaN")
+      .parse_i32
+      .as_option
+  )
+  say l
