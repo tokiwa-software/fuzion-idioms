@@ -1,9 +1,9 @@
 idiom32ex2 is
 
-  exp     (T integer         T .type, x, n T) => x **  n
-  expWrap (T wrappingInteger T .type, x, n T) => x **° n
-  expMax  (T integer         T .type, x, n T) => x **^ n
-  expCheck(T integer         T .type, x, n T) => x **? n
+  exp     (T (integer         T).type, x, n T) => x **  n
+  expWrap (T (wrappingInteger T).type, x, n T) => x **° n
+  expMax  (T (integer         T).type, x, n T) => x **^ n
+  expCheck(T (integer         T).type, x, n T) => x **? n
 
   for i in 0..15 do
     for j in 0..15 do
