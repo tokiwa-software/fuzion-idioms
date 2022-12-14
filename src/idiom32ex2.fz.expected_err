@@ -4,9 +4,9 @@
 [33m-----------^[0m
 For call to wrappingInteger.infix **
 Call stack:
-idiom32ex2.exp<i32>: [32m-:3:52:[39m
-[34m  exp     (T integer         T .type, x, n T) => x **  n
-[33m---------------------------------------------------^[0m
+idiom32ex2.exp<i32>: [32m-:3:53:[39m
+[34m  exp     (T (integer         T).type, x, n T) => x **  n
+[33m----------------------------------------------------^[0m
 idiom32ex2.#loop5.#loop4: [32m-:19:26:[39m
 [34m      say "exp $i $j is {exp i j}"
 [33m-------------------------^[0m

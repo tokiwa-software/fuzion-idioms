@@ -5,4 +5,4 @@ exp(x, n i32) => x**n
 
 # using a type parameter to work for any integer type
 #
-exp(T integer T .type, x, n T) => x**n
+exp(T (integer T).type, x, n T) => x**n
