@@ -1,1 +1,1 @@
-a := array s.codepointLength/2 (i -> (s.substring 2*i 2*i+2).parse_i32_hex.val.as_u8)
+a := array s.byteLength/2 (i -> (s.substring 2*i 2*i+2).parse_i32_hex.val.as_u8)

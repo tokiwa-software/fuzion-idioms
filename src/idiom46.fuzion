@@ -1,1 +1,1 @@
-t := s.substring 0 5
+t := s.substring_codepoint 0 5

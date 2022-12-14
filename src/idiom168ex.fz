@@ -1,8 +1,8 @@
-ex168 is
+ex168 isbyte
 
   doit(s, p string) =>
     t := if s.endsWith p
-           s.substring 0 s.codepointLength-p.codepointLength
+           s.substring 0 s.byteLength-p.byteLength
          else
            s
     say t
