@@ -1,1 +1,1 @@
-t := s.substring i j
+t := s.substring_codepoint i j
