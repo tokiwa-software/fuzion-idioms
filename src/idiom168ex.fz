@@ -1,4 +1,4 @@
-ex168 isbyte
+ex168 is
 
   doit(s, p string) =>
     t := if s.endsWith p
