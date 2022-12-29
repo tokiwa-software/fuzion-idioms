@@ -1,1 +1,1 @@
-square(T (integer T).type, x T) => x * x
+square(T type : integer T, x T) => x * x

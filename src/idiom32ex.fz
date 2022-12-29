@@ -1,6 +1,6 @@
 idiom32ex is
 
-  exp(T (integer T).type, x, n T) => x**n
+  exp(T type : integer T, x, n T) => x**n
 
   for i in 1..5 do
     for j in 1..5 do
