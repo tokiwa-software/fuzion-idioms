@@ -1,4 +1,4 @@
-square(T (integer T).type, x T) => x * x
+square(T type : integer T, x T) => x * x
 
 for i in 0 .. 10 do
   say "square $i is {square i}"
