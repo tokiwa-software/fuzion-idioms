@@ -1,5 +1,5 @@
 ex244 is
 
-  m := mapOf [("lundi", "月曜日"), ("mardi", "火曜日"), ("mercredi", "水曜日")]
+  m := map_of [("lundi", "月曜日"), ("mardi", "火曜日"), ("mercredi", "水曜日")]
 
   say m
