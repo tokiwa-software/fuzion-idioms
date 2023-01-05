@@ -3,7 +3,7 @@
 #
 idiom22exTest is
 
-  test(s string) =>
+  test(s String) =>
     say "parsing i32 decimal: $s results in {s.parse_i32}"
     say "parsing i32 binary : $s results in {s.parse_i32_binary}"
     say "parsing i32 octal  : $s results in {s.parse_i32_octal}"

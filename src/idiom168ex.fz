@@ -1,6 +1,6 @@
 ex168 is
 
-  doit(s, p string) =>
+  doit(s, p String) =>
     t := if s.endsWith p
            s.substring 0 s.byteLength-p.byteLength
          else

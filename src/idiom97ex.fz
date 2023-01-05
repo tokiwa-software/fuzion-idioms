@@ -1,6 +1,6 @@
 ex97 is
 
-  endsWith(s, suffix string) =>
+  endsWith(s, suffix String) =>
     b := s.endsWith suffix
     b
 

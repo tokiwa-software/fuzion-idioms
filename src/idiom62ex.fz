@@ -1,6 +1,6 @@
 ex62 is
 
-  find (x, y string) is
+  find (x, y String) is
     i := x.find y
     say "found '$y' in '$x' at index $i"
 

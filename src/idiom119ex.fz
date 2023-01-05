@@ -4,9 +4,9 @@ ex119 is
   #
   x := [ "b", "a", "b", "c" ]
   x := for
-         r list string := nil, if e ∈ s then r
+         r list String := nil, if e ∈ s then r
                                         else cons e r
-         s := setOf (Sequences.empty string), s.add e
+         s := setOf (Sequences.empty String), s.add e
          e in x
        else
          r.reverse

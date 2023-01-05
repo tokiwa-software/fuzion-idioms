@@ -5,9 +5,9 @@ node(T type,
   redef asString => (asStrings 0).asString "\n"
 
   asStrings(d i32) =>
-    ["+-" + $val] ++ (children.flatMapSequence string (c->c.asStrings d+1)).map s->"| $s"
+    ["+-" + $val] ++ (children.flatMapSequence String (c->c.asStrings d+1)).map s->"| $s"
 
-feuille(val string) => node val (lists.empty (node string))
+feuille(val String) => node val (lists.empty (node String))
 
 t := node "C" [feuille "C++",
                feuille "C#" ,

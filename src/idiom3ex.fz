@@ -1,4 +1,4 @@
-finish(name string) =>
+finish(name String) =>
   say "My job here is done. Goodbye, $name!"
 
 finish "schöne Welt"

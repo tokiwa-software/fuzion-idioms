@@ -3,7 +3,7 @@ ex69 is
   seed(s u64, f ()->unit) =>
     simple_random s f
 
-  showRandom (msg string) =>
+  showRandom (msg String) =>
     for i in 0..5 do
       say "$msg random is {random.next_u32 100}"
 

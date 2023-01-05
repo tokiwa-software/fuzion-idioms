@@ -6,8 +6,8 @@ ex219 is
   say t
 
   # alternatively, using a monoid:
-  filterMultiSpace : Monoid string is
-    redef infix ∙ (a, b string) => if b=" " && a.endsWith " " then a else a + b
+  filterMultiSpace : Monoid String is
+    redef infix ∙ (a, b String) => if b=" " && a.endsWith " " then a else a + b
     redef e => ""
 
   t := s.asCodepoints

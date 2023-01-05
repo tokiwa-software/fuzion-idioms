@@ -1,6 +1,6 @@
 ex96 is
 
-  startsWith(s, prefx string) =>
+  startsWith(s, prefx String) =>
     b := s.startsWith prefx
     b
 

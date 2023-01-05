@@ -1,6 +1,6 @@
 ex128 is
 
-  node(name string, children Sequence node) is
+  node(name String, children Sequence node) is
 
   breadth_first_traverse(f node -> unit, root node) =>
     breadth_first_traverse(queue Sequence node) unit is

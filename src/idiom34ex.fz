@@ -1,6 +1,6 @@
 idiom34ex is
 
-  x := setOf (lists.empty string)
+  x := setOf (lists.empty String)
   x := x.add "A"
   x := x.add "B"
   x := x.add "C"

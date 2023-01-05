@@ -9,7 +9,7 @@ ex18 is
       for child in children do
         child.traverse f
 
-  blatt(val string) => node val (lists.empty (node string))
+  blatt(val String) => node val (lists.empty (node String))
   t := node "lion" [blatt "cougar",
                     blatt "elephant",
                     node "hornet" [blatt "bee", blatt "ant"],

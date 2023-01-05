@@ -6,7 +6,7 @@ ex225 is
 
   f 42
   f "some text"
-  f string nil
+  f String nil
 
   # the following does not work yet, see https://github.com/tokiwa-software/fuzion/issues/121
   # f nil

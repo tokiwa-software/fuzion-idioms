@@ -2,7 +2,7 @@ ex35 is
 
   A(val i32) is
   B(val bool) is
-  C(val string) is
+  C(val String) is
 
   compose(f A -> B,
           g B -> C) A -> C is a -> g (f a)

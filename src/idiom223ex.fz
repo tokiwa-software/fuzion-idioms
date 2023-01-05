@@ -1,13 +1,13 @@
 ex223 is
 
-  find(items array string) =>
+  find(items array String) =>
     for item in items
     until item = "rockstar programmer"
       say "found it!"
     else
       say "did not find it"
 
-  fill i32 -> string := i -> if i=666 then "rockstar programmer" else "n00b"
+  fill i32 -> String := i -> if i=666 then "rockstar programmer" else "n00b"
   find (array 0 fill)
   find (array 10 fill)
   find (array 100 fill)

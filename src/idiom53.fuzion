@@ -1,1 +1,1 @@
-y := x.fold strings.concat ", "
+y := x.fold Strings.concat ", "

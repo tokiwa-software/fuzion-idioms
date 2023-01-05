@@ -1,6 +1,6 @@
 ex39 is
 
-  checkContains(s string, word string) =>
+  checkContains(s String, word String) =>
     ok := s.contains word
     say "'$s'.contains '$word' is $ok"
 

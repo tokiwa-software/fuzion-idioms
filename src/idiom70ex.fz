@@ -1,6 +1,6 @@
 ex70 is
 
-  showRandom (msg string) =>
+  showRandom (msg String) =>
     for i in 0..5 do
       say "$msg random is {random.next_u32 100}"
 

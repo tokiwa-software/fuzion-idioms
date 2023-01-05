@@ -6,7 +6,7 @@ ex100 is
              "acht";
              "fünfzehn" ]
 
-  c (string, string) -> bool := a,b -> a.byteLength <= b.byteLength
+  c (String, String) -> bool := a,b -> a.byteLength <= b.byteLength
   say (items.sort c)
 
   # passing the lambda directly to sort avoids
