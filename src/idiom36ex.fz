@@ -5,7 +5,7 @@ ex36 is
           g B -> C) A -> C is a -> g (f a)
 
   f i32  -> bool   := a -> a > 3
-  g bool -> string := b -> if b then "T" else "F"
+  g bool -> String := b -> if b then "T" else "F"
 
   fog := compose f g
 

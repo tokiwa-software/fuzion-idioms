@@ -1,6 +1,6 @@
 ex110 is
 
-  blank (s string) =>
+  blank (s String) =>
     blank := s.isBlank
     blank
 

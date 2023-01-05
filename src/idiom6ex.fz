@@ -2,7 +2,7 @@ ex6 =>
 
   items := ["red", "yellow", "green", "pink"]
 
-  something(x string) =>
+  something(x String) =>
     say "I saw $x elephants"
 
   # using a loop

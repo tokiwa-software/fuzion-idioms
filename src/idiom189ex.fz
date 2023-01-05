@@ -3,7 +3,7 @@ ex189 is
   x := 0..                                 # all non-negative integers
 
   P i32 -> bool   := i -> i %% 3   # divisible by 3
-  T i32 -> string := i -> "{i}² = {i*i}"
+  T i32 -> String := i -> "{i}² = {i*i}"
 
   y := (x.filter P).mapSequence T  # NYI: should be 'map', not 'mapSequence, see Fuzion #252'
   y.take 20 | e -> say e

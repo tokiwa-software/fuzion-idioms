@@ -1,8 +1,8 @@
 ex134 is
 
-  a Object := "a string"
-  b Object := true
-  c Object := 12345
+  a Any := "a string"
+  b Any := true
+  c Any := 12345
 
   items := [a, b, c]
 

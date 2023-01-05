@@ -17,7 +17,7 @@ ex159 is
   is
 
     # create a new Trie by adding or replacing mapping (from => to)
-    add(from string, to V) =>
+    add(from String, to V) =>
       c := cp from
       n :=
         if from.codepointLength = 1
@@ -31,7 +31,7 @@ ex159 is
       Trie c (children.add c n) val
 
     # find the value 's' is mapped to by this Trie
-    find(s string) option V is
+    find(s String) option V is
       if s.isEmpty
         val
       else
@@ -45,7 +45,7 @@ ex159 is
   Trie(V type) => Trie V (cp "#")
 
   # convenience routine to get the first code point from a non-empty string
-  cp (s string)
+  cp (s String)
     pre
       debug: !s.isEmpty
    => s.asCodepoints.first
@@ -53,7 +53,7 @@ ex159 is
   # create a dictionary from English to German and fill it with vocabulatry from
   # "one" to "ten":
   #
-  e := Trie string
+  e := Trie String
   e := e.add "one"   "eins"
   e := e.add "two"   "zwei"
   e := e.add "three" "drei"
@@ -66,7 +66,7 @@ ex159 is
   e := e.add "ten"   "zehn"
 
   # show the entry for 's' in the dictionary 'e'
-  show (s string) => say "$s \t=> {e.find s}"
+  show (s String) => say "$s \t=> {e.find s}"
 
   # test the dictionary with valid and invalid lookups:
   show "eleven"

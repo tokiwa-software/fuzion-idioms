@@ -2,7 +2,7 @@ ex35a is
 
   A(val i32) is
   B(val bool) is
-  C(val string) is
+  C(val String) is
 
   f A -> B := a -> B (a.val > 3)
   g B -> C := b -> C (if b.val then "T" else "F")

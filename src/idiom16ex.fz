@@ -35,7 +35,7 @@ binTree(T type : ordered T) : choice (binTreeNode T) nil is
         n.right.traverse f
 
 for
-  tree binTree string := nil, tree.add x
+  tree binTree String := nil, tree.add x
   x in ["dog", "elephant", "cat", "cat", "cat", "cat", "lion", "ant", "bee", "albatros", "hyena", "horse", "frog"]
 else
   tree.traverse (s -> say s)

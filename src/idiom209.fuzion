@@ -1,4 +1,4 @@
-t (s string, n array<i32>) is
+t (s String, n array<i32>) is
 
 v := t "Hello, world!" [1,4,9,16,25]
 

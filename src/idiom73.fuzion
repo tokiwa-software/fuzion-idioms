@@ -1,4 +1,4 @@
-parentFactory (str string) Parent is
+parentFactory (str String) Parent is
   if      str = "A"     then A
   else if str = "XYZ"   then XYZ
   else if str = "heir1" then heir1

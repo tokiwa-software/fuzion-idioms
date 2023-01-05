@@ -2,6 +2,6 @@ s := "👋🌍❗"
 t := s
   .codepointsArray
   .reverse
-  .map string c->c
-  .fold strings.concat
+  .map String c->c
+  .fold Strings.concat
 say "$s -> $t"
