@@ -1,1 +1,1 @@
-t := if s.startsWith p then s.substring p.byteLength else s
+t := if s.starts_with p then s.substring p.byteLength else s

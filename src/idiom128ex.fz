@@ -17,12 +17,12 @@ ex128 is
   # │ ├─Portugal
   # ├─Asia
   # ├─Oceania
-  # NYI type inference: [] should work for (Sequences.empty node)
-  five := node "Belarus" (Sequences.empty node)
-  six := node "Portugal" (Sequences.empty node)
+  # NYI type inference: [] should work for (Sequence node).type.empty
+  five := node "Belarus" (Sequence node).type.empty
+  six := node "Portugal" (Sequence node).type.empty
   two := node "Europe" [five, six]
-  three := node "Asia" (Sequences.empty node)
-  four := node "Oceania" (Sequences.empty node)
+  three := node "Asia" (Sequence node).type.empty
+  four := node "Oceania" (Sequence node).type.empty
   one := node "World" [two, three, four]
 
   breadth_first_traverse (node -> say node.name) one

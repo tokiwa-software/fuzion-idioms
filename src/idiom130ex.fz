@@ -17,7 +17,7 @@ ex129 =>
 
   edge(a, b vertex) is
 
-  graph(edges Sequence<edge>) is
+  graph(edges Sequence edge) is
 
   v1 := vertex 1
   v2 := vertex 2

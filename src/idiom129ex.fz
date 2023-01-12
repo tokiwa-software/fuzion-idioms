@@ -17,7 +17,7 @@ ex129 is
 
   edge(a, b vertex) is
 
-  graph(edges Sequence<edge>) is
+  graph(edges Sequence edge) is
 
   v1 := vertex 1
   v2 := vertex 2
@@ -45,4 +45,3 @@ ex129 is
           [c.head].asList ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
   breadth_first_traverse [v1].asList (psSets vertex).empty | (vertex) -> say vertex
-
