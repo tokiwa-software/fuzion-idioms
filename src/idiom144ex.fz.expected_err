@@ -1,4 +1,1 @@
-
-[1;31merror 1[0m[1m: *** error: unsafe feature fuzion.std.fileio.exists disabled[0m
-
-*** fatal errors encountered, stopping.
+*** error: unsafe feature fuzion.sys.fileio.stats disabled

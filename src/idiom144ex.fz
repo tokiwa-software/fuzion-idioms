@@ -1,7 +1,6 @@
 ex144 is
 
   path := "path/to/file"
-  stats := io.file.stat
-  match stats.exists path
-    b bool => say "$path exists: $b" # logic in case of success
+  match io.file.stat path true
+    md io.file.meta_data => say "$path exists: $md" # logic in case of success
     err error => say err # error handling logic
