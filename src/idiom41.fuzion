@@ -2,4 +2,4 @@ t := s
   .codepointsArray
   .reverse
   .as_Strings
-  .fold Strings.concat
+  .fold String.type.concat

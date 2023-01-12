@@ -4,11 +4,11 @@ ex231 is
   bytesNotOk := [u8 200; u8 1; u8 201; u8 2; u8 203]
 
   s := bytesOk
-  b := Strings.fromBytes s
-              .codepointsAndErrors ∀ x -> x.ok
+  b := String.type.fromBytes s
+                  .codepointsAndErrors ∀ x -> x.ok
   say "utf8? $s: $b"
 
   s := bytesNotOk
-  b := Strings.fromBytes s
-              .codepointsAndErrors ∀ x -> x.ok
+  b := String.type.fromBytes s
+                  .codepointsAndErrors ∀ x -> x.ok
   say "utf8? $s: $b"

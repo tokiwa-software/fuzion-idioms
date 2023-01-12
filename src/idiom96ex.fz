@@ -1,7 +1,7 @@
 ex96 is
 
   startsWith(s, prefx String) =>
-    b := s.startsWith prefx
+    b := s.starts_with prefx
     b
 
   say "{startsWith "Fuzion is great!" "Fuzion"}"
