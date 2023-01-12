@@ -1,2 +1,2 @@
-for k in sortedArrayOf map.keys do
+for k in sorted_array_of map.keys do
   say "$k => {map[k]}"
