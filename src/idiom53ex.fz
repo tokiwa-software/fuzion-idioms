@@ -1,5 +1,5 @@
 ex53 is
 
   x := ["eggs", "butter", "milk"]
-  y := x.fold (Strings.concat ", ")
+  y := x.fold (String.type.concat ", ")
   say y

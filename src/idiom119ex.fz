@@ -6,7 +6,7 @@ ex119 is
   x := for
          r list String := nil, if e ∈ s then r
                                         else cons e r
-         s := setOf (Sequences.empty String), s.add e
+         s := setOf ((Sequence String).type.empty), s.add e
          e in x
        else
          r.reverse

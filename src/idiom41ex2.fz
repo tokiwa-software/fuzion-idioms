@@ -3,5 +3,5 @@ t := s
   .codepointsArray
   .reverse
   .map String c->c
-  .fold Strings.concat
+  .fold String.type.concat
 say "$s -> $t"
