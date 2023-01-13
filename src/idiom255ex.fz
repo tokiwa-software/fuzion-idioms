@@ -1,5 +1,7 @@
 ex255 is
 
-  x := setOf ["The", "quick", "brown", "fox", "jumps", "over", "a", "lazy", "dog."]
+  x := set_of_ordered ["The", "quick", "brown", "fox",
+                       "jumps", "over", "a", "lazy",
+                       "dog."]
 
   say x

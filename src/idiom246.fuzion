@@ -1,1 +1,1 @@
-c := (setOf items).count
+c := (set_of_ordered items).count

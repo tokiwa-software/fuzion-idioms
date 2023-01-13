@@ -1,7 +1,7 @@
 ex172 is
 
-  m := (psMap [1,      2,      3,      4     ]
-              ["eins", "zwei", "drei", "vier"])
+  m := (ps_map [1,      2,      3,      4     ]
+               ["eins", "zwei", "drei", "vier"])
   k := 5
   v := "fünf"
 

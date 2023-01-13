@@ -1,12 +1,12 @@
 ex112 is
 
-  map := (orderedMap
+  map := (ordered_map
     [ "un", "deux", "trois", "quatre", "cinq" ]
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )
 
   for k in sorted_array_of map.keys do
     say "$k => {map[k]}"
 
-  # since map is already orderedMap, map.keys are already ordered
+  # since map is already ordered_map, map.keys are already ordered
   for k in map.keys do
     say "$k => {map[k]}"
