@@ -11,8 +11,8 @@ ex206 is
               "baz",
               "error" /* will cause a precondition failure! */]
   do
-    ((orderedMap ["foo",   "bar",   "baz",   "barfl"  ]
-                 [fun foo, fun bar, fun baz, fun barfl])[str].get.call)
+    ((ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
+                  [fun foo, fun bar, fun baz, fun barfl])[str].get.call)
 
 # NYI: better syntax, e.g.,
 #

@@ -4,9 +4,9 @@ is
   # extract neighbors from edges in given graph
   neighbors(g graph) Set vertex  is
     for
-      r := psSet (lists.empty vertex), if      (vertex.this = e.a) r.add e.b
-                                       else if (vertex.this = e.b) r.add e.a
-                                       else                        r
+      r := ps_set (lists.empty vertex), if      (vertex.this = e.a) r.add e.b
+                                        else if (vertex.this = e.b) r.add e.a
+                                        else                        r
       e in g.edges
     else
       r

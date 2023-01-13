@@ -1,1 +1,1 @@
-x := setOf (lists.empty T)  # T must inherit from ordered
+x := set_of_ordered (lists.empty T)  # T must inherit from ordered

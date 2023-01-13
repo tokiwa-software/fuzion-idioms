@@ -11,7 +11,7 @@ ex246 is
             "Fire", "fire", "fire", "oh!",
             "Oh!"]
 
-  c := (setOf items).count
+  c := (set_of_ordered items).count
 
   say items
   say c

@@ -1,3 +1,3 @@
-mymap := orderedMap ["one", "two"] [1, 2]
+mymap := ordered_map ["one", "two"] [1, 2]
 
 mymap.items | t -> { (k,v) := t; say "$k => $v" }

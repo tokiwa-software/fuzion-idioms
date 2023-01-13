@@ -2,9 +2,9 @@ ex129 is
   vertex(id i32): ordered vertex is
     neighbors(g graph) Set vertex is
         for
-          r ref psSet vertex := (psSets vertex).empty, if      (vertex.this = e.a) r.add e.b
-                                                  else if (vertex.this = e.b) r.add e.a
-                                                  else                        r
+          r ref ps_set vertex := (ps_sets vertex).empty, if      (vertex.this = e.a) r.add e.b
+                                                         else if (vertex.this = e.b) r.add e.a
+                                                         else                        r
           e in g.edges
         else
           r
@@ -32,7 +32,7 @@ ex129 is
              edge v4 v5 ]
   g := graph edges
 
-  breadth_first_traverse(queue list vertex, visited ref psSet vertex) list vertex is
+  breadth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex is
     match queue
       nil => lists.empty vertex
       c Cons =>
@@ -44,4 +44,4 @@ ex129 is
           # result is the current element, the rest of the visitation queue and the neighbors
           [c.head].asList ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
-  breadth_first_traverse [v1].asList (psSets vertex).empty | (vertex) -> say vertex
+  breadth_first_traverse [v1].asList (ps_sets vertex).empty | (vertex) -> say vertex

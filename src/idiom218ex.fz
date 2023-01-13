@@ -5,5 +5,5 @@ ex218 is
 
   a := ["eins", "zwei", "drei"]
   b := ["drei", "vier", "fünf"]
-  c := intersection (setOf a) (setOf b)
+  c := intersection (set_of_ordered a) (set_of_ordered b)
   say c

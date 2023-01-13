@@ -6,7 +6,7 @@ ex119 is
   x := for
          r list String := nil, if e ∈ s then r
                                         else cons e r
-         s := setOf (Sequence String).type.empty, s.add e
+         s := set_of_ordered (Sequence String).type.empty, s.add e
          e in x
        else
          r.reverse
@@ -15,5 +15,5 @@ ex119 is
   # not preserving order
   #
   x := [ "b", "a", "b", "c" ]
-  x := setOf x
+  x := set_of_ordered x
   say x
