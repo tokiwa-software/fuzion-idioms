@@ -1,1 +1,1 @@
-b := s.endsWith suffix
+b := s.ends_with suffix

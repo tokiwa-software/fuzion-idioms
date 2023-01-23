@@ -2,15 +2,15 @@ ex219 is
 
   s := "Hello         world"
 
-  t := s.split.asString " "
+  t := s.split.as_string " "
   say t
 
   # alternatively, using a monoid:
   filterMultiSpace : Monoid String is
-    redef infix ∙ (a, b String) => if b=" " && a.endsWith " " then a else a + b
+    redef infix ∙ (a, b String) => if b=" " && a.ends_with " " then a else a + b
     redef e => ""
 
-  t := s.asCodepoints
+  t := s.as_codepoint_sequence
         .mapSequence x->($x)
         .fold filterMultiSpace
   say t
@@ -18,7 +18,7 @@ ex219 is
   # alternatively, using a loop
   for
     t := "", t + n
-    c in s.asCodepoints
-    n := if c = " " && t.endsWith c then "" else c
+    c in s.as_codepoint_sequence
+    n := if c = " " && t.ends_with c then "" else c
   else
     say t

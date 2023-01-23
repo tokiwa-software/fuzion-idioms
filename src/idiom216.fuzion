@@ -1,2 +1,2 @@
-p := c * (((m - s.codepointLength + 1).max 0) / 2)
+p := c * (((m - s.codepoint_length + 1).max 0) / 2)
 p + s + p

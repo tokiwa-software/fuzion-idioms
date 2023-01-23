@@ -1,7 +1,7 @@
 ex124 is
 
   binarySearch(a sorted_array i32, x i32) i32 is
-    match a.findKey x
+    match a.find_key x
       nil   => -1
       i i32 => i
 

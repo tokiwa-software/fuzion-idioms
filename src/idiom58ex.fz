@@ -6,5 +6,5 @@ ex58 is
       res := reader.read_file fd
       fuzion.sys.fileio.close fd
       res)
-    content array u8 => say (String.type.fromBytes content) # logic in case of success
+    content array u8 => say (String.type.from_bytes content) # logic in case of success
     err error => say err # error handling logic

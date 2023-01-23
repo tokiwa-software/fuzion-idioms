@@ -1,5 +1,5 @@
 ex274 is
   s := "hello world!\nthis is an example with white      spaces\nline breaks and\t\t\t\ttabs"
   say s
-  t := String.type.fromBytes (s.utf8 & (c -> !s.isAsciiWhiteSpace c))
+  t := String.type.from_bytes (s.utf8 & (c -> !s.is_ascii_white_space c))
   say t

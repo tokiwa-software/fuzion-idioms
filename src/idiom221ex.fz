@@ -1,8 +1,8 @@
 ex221 is
 
   s := "Create string t from string s, keeping only digit characters 0, 1, 2, 3, 4, 5, 6, 7, 8, 9."
-  t := s.asCodepoints
+  t := s.as_codepoint_sequence
         .filter (cp -> "0" <= cp <= "9")
-        .asString ""
+        .as_string ""
 
   say t

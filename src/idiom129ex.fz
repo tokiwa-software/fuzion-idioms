@@ -11,7 +11,7 @@ ex129 is
 
     redef infix <= (b vertex) => id <= b.id
 
-    redef asString => "v$id"
+    redef as_string => "v$id"
 
     redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
 
@@ -42,6 +42,6 @@ ex129 is
         else
           neighbors := c.head.neighbors g
           # result is the current element, the rest of the visitation queue and the neighbors
-          [c.head].asList ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
+          [c.head].as_list ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
-  breadth_first_traverse [v1].asList (ps_sets vertex).empty | (vertex) -> say vertex
+  breadth_first_traverse [v1].as_list (ps_sets vertex).empty | (vertex) -> say vertex

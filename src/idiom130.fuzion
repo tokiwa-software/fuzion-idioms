@@ -8,6 +8,6 @@ depth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex i
       else
         neighbors := c.head.neighbors g
         # result is the current element, the neighbors and the rest of the visitation queue
-        [c.head].asList ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
+        [c.head].as_list ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 
-depth_first_traverse [v1].asList (ps_sets vertex).empty | vertex -> say vertex
+depth_first_traverse [v1].as_list (ps_sets vertex).empty | vertex -> say vertex

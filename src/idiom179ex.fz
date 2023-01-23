@@ -1,7 +1,7 @@
 ex179 is
 
   point (x, y f64) is
-    redef asString => "($x, $y)"
+    redef as_string => "($x, $y)"
 
   rectangle(a, b point) is
     center => point (a.x+b.x)/2 (a.y+b.y)/2

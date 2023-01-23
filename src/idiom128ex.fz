@@ -4,7 +4,7 @@ ex128 is
 
   breadth_first_traverse(f node -> unit, root node) =>
     breadth_first_traverse(queue Sequence node) unit is
-      match queue.asList
+      match queue.as_list
         nil =>
         c Cons =>
           f c.head

@@ -23,7 +23,7 @@ ex62 is
   abc := "abcdefghijklmnopqrstuvwxyz"
   str := "the quick brown fox jumps over the lazy dog"
   for
-    i in 0..(abc.byteLength-1)
+    i in 0..(abc.byte_length-1)
   do
     s := abc.substring i i+1
     i := str.find s
@@ -32,4 +32,4 @@ ex62 is
       ix i32 =>
         m := "found '$s' at index $ix: "
         say (m + str)
-        say "{ "-" * (m.codepointLength + ix) }^"
+        say "{ "-" * (m.codepoint_length + ix) }^"

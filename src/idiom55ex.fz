@@ -3,7 +3,7 @@ ex55 is
   for i in [0, 8, 15, 47, 11] do
     s := $i
     say s
-    s := i.asString
+    s := i.as_string
     say s
     s := "$i"
     say s

@@ -1,8 +1,8 @@
 ex97 is
 
-  endsWith(s, suffix String) =>
-    b := s.endsWith suffix
+  ends_with(s, suffix String) =>
+    b := s.ends_with suffix
     b
 
-  say "{endsWith "Fuzion is great!" "great!"}"
-  say "{endsWith "Fuzion is great!" "n00b."}"
+  say "{ends_with "Fuzion is great!" "great!"}"
+  say "{ends_with "Fuzion is great!" "n00b."}"

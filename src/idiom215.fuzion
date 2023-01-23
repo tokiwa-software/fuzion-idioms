@@ -1,1 +1,1 @@
-c * ((m - s.codepointLength).max 0) + s
+c * ((m - s.codepoint_length).max 0) + s

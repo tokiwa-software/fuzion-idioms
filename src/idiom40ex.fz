@@ -13,7 +13,7 @@ ex40 is
 
     redef infix <= (b vertex) => id <= b.id
 
-    redef asString => "v$id"
+    redef as_string => "v$id"
 
     redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
 

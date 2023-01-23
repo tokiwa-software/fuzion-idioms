@@ -1,1 +1,1 @@
-t := s.split.asString " "  # replace all ws and trim beginning and end.
+t := s.split.as_string " "  # replace all ws and trim beginning and end.

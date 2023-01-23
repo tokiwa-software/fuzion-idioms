@@ -20,7 +20,7 @@ ex159 is
     add(from String, to V) =>
       c := cp from
       n :=
-        if from.codepointLength = 1
+        if from.codepoint_length = 1
           ch := (children[c] ? nil => (ordered_maps codepoint (Trie V)).empty
                              | e Trie => e.children)
           Trie c ch to
@@ -32,7 +32,7 @@ ex159 is
 
     # find the value 's' is mapped to by this Trie
     find(s String) option V is
-      if s.isEmpty
+      if s.is_empty
         val
       else
         children[cp s] ? nil    => nil
@@ -47,8 +47,8 @@ ex159 is
   # convenience routine to get the first code point from a non-empty string
   cp (s String)
     pre
-      debug: !s.isEmpty
-   => s.asCodepoints.first
+      debug: !s.is_empty
+   => s.as_codepoint_sequence.first
 
   # create a dictionary from English to German and fill it with vocabulatry from
   # "one" to "ten":

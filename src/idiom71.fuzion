@@ -1,1 +1,1 @@
-say ((envir.args.drop 1).asString " ")
+say ((envir.args.drop 1).as_string " ")

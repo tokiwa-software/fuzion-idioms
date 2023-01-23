@@ -14,5 +14,5 @@ ex256 is
       f n-1
   f 5
 
-  # using asString
-  say ((5..0 : -1).asString "\n")
+  # using as_string
+  say ((5..0 : -1).as_string "\n")

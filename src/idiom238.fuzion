@@ -2,4 +2,4 @@
 c := array a.length (i -> a[i] ^ b[i])
 
 # using Sequence.zip
-c := (a.zip b x,y->x^y).asArray
+c := (a.zip b x,y->x^y).as_array

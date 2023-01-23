@@ -1,5 +1,5 @@
 ex53a is
 
   x := ["eggs", "butter", "milk"]
-  y := x.asString ", "
+  y := x.as_string ", "
   say y

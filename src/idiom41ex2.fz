@@ -1,6 +1,6 @@
 s := "👋🌍❗"
 t := s
-  .codepointsArray
+  .codepoint_array
   .reverse
   .map String c->c
   .fold String.type.concat

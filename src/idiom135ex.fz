@@ -1,6 +1,6 @@
 ex135 is
 
-  items := ["a","b","c","b","c","a"].asList
+  items := ["a","b","c","b","c","a"].as_list
 
   x := "b"
   items := match Sequences.indexIn items x
