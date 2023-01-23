@@ -1,7 +1,7 @@
 ex47 is
 
   s := "🐖🐶🐣🐸🐝🐟🕷🐍"
-  for i in 0..s.codepointLength do
-    n := s.codepointLength
+  for i in 0..s.codepoint_length do
+    n := s.codepoint_length
     t := s.substring_codepoint n-i n
     say "'$t'"

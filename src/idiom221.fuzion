@@ -1,3 +1,3 @@
-t := s.asCodepoints
+t := s.as_codepoint_sequence
       .filter (cp -> "0" <= cp <= "9")
-      .asString ""
+      .as_string ""

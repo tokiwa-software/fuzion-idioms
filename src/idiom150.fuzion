@@ -1,1 +1,1 @@
-p := if p.endsWith "/" then p.substring 0 p.byteLength-1 else p
+p := if p.ends_with "/" then p.substring 0 p.byte_length-1 else p

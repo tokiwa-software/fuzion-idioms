@@ -3,6 +3,6 @@ ex216 is
   s := "融合слияниеذوب"
   c := "❗"
   m := 15
-  p := c * (((m - s.codepointLength + 1).max 0) / 2)
+  p := c * (((m - s.codepoint_length + 1).max 0) / 2)
   s2 := p + s + p
   say s2

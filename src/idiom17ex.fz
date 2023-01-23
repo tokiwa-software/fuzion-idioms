@@ -2,10 +2,10 @@ node(T type,
      val T,
      children Sequence (node T)) is
 
-  redef asString => (asStrings 0).asString "\n"
+  redef as_string => (as_strings 0).as_string "\n"
 
-  asStrings(d i32) =>
-    ["+-" + $val] ++ (children.flatMapSequence String (c->c.asStrings d+1)).map s->"| $s"
+  as_strings(d i32) =>
+    ["+-" + $val] ++ (children.flatMapSequence String (c->c.as_strings d+1)).map s->"| $s"
 
 feuille(val String) => node val (lists.empty (node String))
 

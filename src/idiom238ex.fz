@@ -6,5 +6,5 @@ ex238 is
   c := array a.length (i -> a[i] ^ b[i])
   say c
 
-  c := (a.zip b x,y->x^y).asArray
+  c := (a.zip b x,y->x^y).as_array
   say c

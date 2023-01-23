@@ -1,1 +1,1 @@
-y := x.asString ", "
+y := x.as_string ", "

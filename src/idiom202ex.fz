@@ -24,4 +24,4 @@ ex202 is
     s ? nil    => sum
       | c Cons => sumOfSquares (sum + c.head**2) c.tail
 
-  say "sum is {sumOfSquares 0 a.asList}"
+  say "sum is {sumOfSquares 0 a.as_list}"

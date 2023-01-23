@@ -1,7 +1,7 @@
 ex167 is
 
   doit(s, p String) =>
-    t := if s.starts_with p then s.substring p.byteLength else s
+    t := if s.starts_with p then s.substring p.byte_length else s
     say t
 
   doit "Mah Nà Mah Nà Do doo be-do-do" "Mah Nà "

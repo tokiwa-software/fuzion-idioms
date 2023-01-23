@@ -15,7 +15,7 @@ is
   redef infix <= (b vertex) => id <= b.id
 
   # string representation
-  redef asString => "v$id"
+  redef as_string => "v$id"
 
 # edge connecting 'a' and 'b'
 edge(a, b vertex) is

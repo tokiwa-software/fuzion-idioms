@@ -1,7 +1,7 @@
 ex110 is
 
   blank (s String) =>
-    blank := s.isBlank
+    blank := s.is_blank
     blank
 
   say "{blank "abc"}"

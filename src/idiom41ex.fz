@@ -1,6 +1,6 @@
 s := "café"
 t := s
-  .codepointsArray
+  .codepoint_array
   .reverse
   .as_Strings
   .fold String.type.concat

@@ -7,11 +7,11 @@ ex245 is
   x := T1
   say x
 
-  # output is much more useful if asString is redefined
+  # output is much more useful if as_string is redefined
   T2 is
     a := 42
     b := "Hello"
-    redef asString => "T $a $b"
+    redef as_string => "T $a $b"
 
   x := T2
   say x

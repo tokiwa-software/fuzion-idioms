@@ -1,1 +1,1 @@
-say x     # it usually helps if x's type redefined 'asString'
+say x     # it usually helps if x's type redefined 'as_string'
