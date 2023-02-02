@@ -1,23 +1,22 @@
-ex130 =>
-  vertex(id i32): ordered vertex is
-    neighbors(g graph) Set vertex is
-        for
-          r ref ps_set vertex := (ps_sets vertex).empty, if      (vertex.this = e.a) r.add e.b
-                                                         else if (vertex.this = e.b) r.add e.a
-                                                         else                        r
-          e in g.edges
-        else
-          r
-
-    redef infix <= (b vertex) => id <= b.id
+ex130 is
+  vertex(id i32): has_total_order is
+    # redefine `lteq` for parent feature's 'has_total_order' type feature
+    fixed type.lteq    (a, b ex130.vertex) bool is a.id <= b.id
+    fixed type.equality(a, b ex130.vertex) bool is a.id =  b.id
 
     redef as_string => "v$id"
-
-    redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
 
   edge(a, b vertex) is
 
   graph(edges Sequence edge) is
+    neighbors(v vertex) Set vertex is
+      for
+        r ref ps_set vertex := (ps_sets vertex).empty, if      (v = e.a) r.add e.b
+                                                       else if (v = e.b) r.add e.a
+                                                       else              r
+        e in g.edges
+      else
+        r
 
   v1 := vertex 1
   v2 := vertex 2
@@ -40,7 +39,7 @@ ex130 =>
         if visited.contains c.head
           depth_first_traverse c.tail visited
         else
-          neighbors := c.head.neighbors g
+          neighbors := g.neighbors c.head
           # result is the current element, the neighbors and the rest of the visitation queue
           [c.head].as_list ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 

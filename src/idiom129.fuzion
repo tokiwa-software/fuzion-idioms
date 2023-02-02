@@ -6,7 +6,7 @@ breadth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex
       if visited.contains c.head
         breadth_first_traverse c.tail visited
       else
-        neighbors := c.head.neighbors g
+        neighbors := g.neighbors c.head
         # result is the current element, the rest of the visitation queue and the neighbors
         [c.head].as_list ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
