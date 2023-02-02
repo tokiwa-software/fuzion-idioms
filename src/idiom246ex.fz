@@ -11,8 +11,6 @@ ex246 is
             "Fire", "fire", "fire", "oh!",
             "Oh!"]
 
-  c := (set_of_ordered items).count
-  say (set_of_ordered items)
-
   say items
+  c := (set_of_ordered items).count
   say c
