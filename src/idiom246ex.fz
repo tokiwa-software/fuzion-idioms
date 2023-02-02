@@ -12,6 +12,7 @@ ex246 is
             "Oh!"]
 
   c := (set_of_ordered items).count
+  say (set_of_ordered items)
 
   say items
   say c

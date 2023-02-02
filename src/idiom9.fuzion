@@ -1,10 +1,10 @@
 # a binTreeNode is a value plus left and right sub-trees
 #
-binTreeNode(T type : ordered T,
+binTreeNode(T type : has_total_order,
             val T,
             left, right binTree T) ref
 is
 
 # a binTree is either a binTreeNode or an empty tree represented by nil
 #
-binTree(T type : ordered T) : choice<binTreeNode T, nil> is
+binTree(T type : has_total_order) : choice<binTreeNode T, nil> is

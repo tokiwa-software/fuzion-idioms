@@ -1,25 +1,24 @@
 ex40 is
 
-  vertex(id i32) : ordered vertex
+  vertex(id i32) : has_total_order
   is
-    neighbors(g graph) Set vertex  is
-      for
-        r := ps_set (lists.empty vertex), if      (vertex.this = e.a) r.add e.b
-                                          else if (vertex.this = e.b) r.add e.a
-                                          else                        r
-        e in g.edges
-      else
-        r
-
-    redef infix <= (b vertex) => id <= b.id
+    # redefine `lteq` for parent feature's 'has_total_order' type feature
+    fixed type.lteq    (a, b ex40.vertex) bool is a.id <= b.id
+    fixed type.equality(a, b ex40.vertex) bool is a.id =  b.id
 
     redef as_string => "v$id"
-
-    redef orderedThis => vertex id  # NYI: may be removed when type 'like this' is supported
 
   edge(a, b vertex) is
 
   graph(edges Sequence edge) is
+    neighbors(v vertex) Set vertex  is
+      for
+        r := ps_set (lists.empty vertex), if      (v = e.a) r.add e.b
+                                          else if (v = e.b) r.add e.a
+                                          else                        r
+        e in edges
+      else
+        r
 
   v1 := vertex 1
   v2 := vertex 2
@@ -34,4 +33,4 @@ ex40 is
              edge v4 v5 ]
   g := graph edges
 
-  say (v3.neighbors g)
+  say (g.neighbors v3)
