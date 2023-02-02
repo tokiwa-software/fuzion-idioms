@@ -2,6 +2,6 @@ ex136 is
 
   items := ["a","b","c","b","c","a"]
   x := "b"
-  items := items & e -> e /= x
+  items := items & e -> e != x
 
   say items

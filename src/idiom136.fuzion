@@ -1,1 +1,1 @@
-items := items & e -> e /= x
+items := items & e -> e != x
