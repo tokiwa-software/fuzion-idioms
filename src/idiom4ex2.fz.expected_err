@@ -4,7 +4,7 @@
 [33m-----------^[0m
 For call to wrapping_integer.infix *
 Call stack:
-square<i32>: [32m-:1:38:[39m
+square i32: [32m-:1:38:[39m
 [34msquare(T type : integer T, x T) => x * x
 [33m-------------------------------------^[0m
 #loop2: [32m-:11:22:[39m
