@@ -1,7 +1,7 @@
 bits := f.castTo_u64
-fract_bits := f.significandBits.as_u64 - 1
-bias := (u64 2 ** (f.exponentBits.as_u64 - 1) - 1)
-mask := u64 2 ** f.exponentBits.as_u64 - 1
+fract_bits := f64.type.significand_bits.as_u64 - 1
+bias := (u64 2 ** (f64.type.exponent_bits.as_u64 - 1) - 1)
+mask := u64 2 ** f64.type.exponent_bits.as_u64 - 1
 e := ((bits >> fract_bits) & mask).as_i32 - bias.as_i32 + 1
 bits2 := bits & (~(mask << fract_bits))
 bits3 := bits2 | ((bias - 1) << fract_bits)
