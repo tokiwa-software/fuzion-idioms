@@ -21,7 +21,7 @@ ex159 is
       c := cp from
       n :=
         if from.codepoint_length = 1
-          ch := (children[c] ? nil => (ordered_maps codepoint (Trie V)).empty
+          ch := (children[c] ? nil => (ordered_map codepoint (Trie V)).type.empty
                              | e Trie => e.children)
           Trie c ch to
         else
@@ -39,7 +39,7 @@ ex159 is
                        | t Trie => t.find (s.substring 1)
 
   # convenience routine to create empty Trie for codepoint 'c'
-  Trie(V type, c codepoint) => Trie V c (ordered_maps codepoint (Trie V)).empty nil
+  Trie(V type, c codepoint) => Trie V c (ordered_map codepoint (Trie V)).type.empty nil
 
   # convenience routine to create empty Trie
   Trie(V type) => Trie V (cp "#")
