@@ -4,6 +4,6 @@
 [33m--------------^[0m
 Feature not found: '[35msize[39m' (one argument)
 Target feature: '[35mio.file.stat[39m'
-In call: '[36mex95.this.stats.size(path)[39m'
+In call: '[36mex95.this.stats.size path[39m'
 
 one error.

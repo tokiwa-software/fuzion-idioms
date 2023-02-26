@@ -4,7 +4,7 @@
 [33m-----------^[0m
 For call to wrapping_integer.infix **
 Call stack:
-idiom32ex2.exp<i32>: [32m-:3:54:[39m
+idiom32ex2.exp i32: [32m-:3:54:[39m
 [34m  exp     (T type : integer          T, x, n T) => x **  n
 [33m-----------------------------------------------------^[0m
 idiom32ex2.#loop5.#loop4: [32m-:19:26:[39m
