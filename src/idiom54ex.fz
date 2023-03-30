@@ -7,5 +7,5 @@ ex54 is
   say s
 
   # using fold with monoid i32.sum
-  s := x.fold i32.sum
+  s := x.fold i32.type.sum
   say s
