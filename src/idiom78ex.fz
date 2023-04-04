@@ -10,7 +10,7 @@ ex78 is
     mx := x, max mx x
   do
     say "$n: $x {if x=mx then "new max" else ""}"
-  until !(x > 1)
+  until x <= 1
     say "total $n steps, maximum reached was $mx"
 
   unit
