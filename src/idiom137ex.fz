@@ -4,9 +4,9 @@ ex137 is
     "012345689".as_codepoint_sequence ∃ digit -> digit = cp
 
   s1 := "012345689"
-  b1 := s1.as_codepoint_sequence ∀ (fun isDigit)
+  b1 := s1.as_codepoint_sequence ∀ (x -> isDigit x)
   say b1
 
   s2 := "a012345689"
-  b2 := s2.as_codepoint_sequence ∀ (fun isDigit)
+  b2 := s2.as_codepoint_sequence ∀ (x -> isDigit x)
   say b2

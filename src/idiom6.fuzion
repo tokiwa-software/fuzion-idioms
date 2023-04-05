@@ -5,11 +5,5 @@ for x in items do
 # using a pipe and a lambda
 items | x -> something x
 
-# using a pipe and a function
-items | fun something
-
 # using map and a lambda
 items.map (x -> something x)
-
-# using map and a function
-items.map (fun something)

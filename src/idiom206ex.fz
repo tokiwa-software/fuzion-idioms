@@ -1,9 +1,9 @@
 ex206 is
 
-  foo => say "foo"
-  bar => say "bar"
-  baz => say "baz"
-  barfl => say "barfl"
+  foo Function unit is ()->say "foo"
+  bar Function unit is ()->say "bar"
+  baz Function unit is ()->say "baz"
+  barfl Function unit is ()->say "barfl"
 
   for str in ["bar",
               "foo",
@@ -12,7 +12,7 @@ ex206 is
               "error" /* will cause a precondition failure! */]
   do
     ((ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-                  [fun foo, fun bar, fun baz, fun barfl])[str].get.call)
+                  [foo, bar, baz, barfl])[str].get.call)
 
 # NYI: better syntax, e.g.,
 #
