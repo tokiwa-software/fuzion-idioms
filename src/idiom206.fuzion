@@ -1,5 +1,5 @@
 ((ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-              [fun foo, fun bar, fun baz, fun barfl])[str].unwrap.call)
+              [foo, bar, baz, barfl])[str].unwrap.call)
 
 # NYI: This will need some syntax improvements:
 #
