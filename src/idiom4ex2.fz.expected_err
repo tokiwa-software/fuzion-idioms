@@ -1,6 +1,6 @@
 
 [32m$FUZION/lib/wrapping_integer.fz:103:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
-[34m      debug: !overflowOnMul(other),
+[34m      debug: !overflow_on_mul(other),
 [33m-----------^[0m
 For call to wrapping_integer.infix *
 Call stack:

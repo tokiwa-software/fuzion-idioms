@@ -1,7 +1,7 @@
 ex85 is
 
   # using feature willOverflowOnAdd:
-  addingWillOverflow(x, y i32) => x.overflowOnAdd y
+  addingWillOverflow(x, y i32) => x.overflow_on_add y
 
   # or using overflow-checking 'infix +?'
   addingWillOverflow2(x, y i32) => (x +? y)!!

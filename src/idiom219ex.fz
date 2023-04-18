@@ -11,7 +11,7 @@ ex219 is
     redef e => ""
 
   t := s.as_codepoint_sequence
-        .mapSequence x->($x)
+        .map_sequence x->($x)
         .fold filterMultiSpace
   say t
 
