@@ -2,6 +2,6 @@ s := "café"
 t := s
   .codepoint_array
   .reverse
-  .as_Strings
+  .as_strings
   .fold String.type.concat
 say "$s -> $t"

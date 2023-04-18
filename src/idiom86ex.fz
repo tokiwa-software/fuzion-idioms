@@ -1,7 +1,7 @@
 ex86 is
 
   # using feature willOverflowOnMul:
-  multiplyWillOverflow(x, y i32) => x.overflowOnMul y
+  multiplyWillOverflow(x, y i32) => x.overflow_on_mul y
 
   # or using overflow-checking 'infix *?'
   multiplyWillOverflow2(x, y i32) => (x *? y)!!
