@@ -11,5 +11,5 @@ ex263 is
   for
     n in 1..12
   do
-    f := f64s.from_u32 n.castTo_u32
+    f := f64s.from_u32 n.cast_to_u32
     say "{n} {log2d f} {log2u f}"
