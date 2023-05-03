@@ -1,6 +1,6 @@
 ex204 is
   frexp (f f64) tuple f64 i32 is
-    bits := f.castTo_u64
+    bits := f.cast_to_u64
     # bits is f in the following representation
     # seeeeeeeeeeeffffffffffffffffffffffffffffffffffffffffffffffffffff
     # where s = sign, e = exponent, f = fraction
@@ -32,9 +32,9 @@ ex204 is
     # s01111111110ffffffffffffffffffffffffffffffffffffffffffffffffffff
     # the last step is to "normalize" the exponent of the fraction
     if ((bits >> fract_bits) & mask) = 0 then
-      (bits3.castTo_f64, e - 51)
+      (bits3.cast_to_f64, e - 51)
     else
-      (bits3.castTo_f64, e)
+      (bits3.cast_to_f64, e)
 
   a f64 := 3.14
   (b, c) := frexp a
