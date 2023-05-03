@@ -1,0 +1,5 @@
+ex262 =>
+  n := 112
+  t := n.trailing_zeros
+
+  say t

@@ -1,0 +1,2 @@
+foo (two_dim_arr array2 i32) is
+  say "{two_dim_arr.length0}, {two_dim_arr.length1}"

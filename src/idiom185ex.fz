@@ -1,0 +1,9 @@
+ex185 =>
+
+  f(n i32) is
+
+  concur.thread.spawn ()->
+    time.nano.sleep (time.durations.seconds 30)
+    _ := f 42
+
+  # NYI wait for thread to finish
