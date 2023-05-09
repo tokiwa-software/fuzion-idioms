@@ -7,7 +7,7 @@ node(T type,
   as_strings(d i32) =>
     ["+-" + $val] ++ (children.flat_map_sequence String (c->c.as_strings d+1)).map s->"| $s"
 
-feuille(val String) => node val (lists.empty (node String))
+feuille(val String) => node val (list (node String)).type.empty
 
 t := node "C" [feuille "C++",
                feuille "C#" ,

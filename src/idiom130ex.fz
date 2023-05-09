@@ -33,7 +33,7 @@ ex130 is
 
   depth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex is
     match queue
-      nil => lists.empty vertex
+      nil => (list vertex).type.empty
       c Cons =>
         # already visited? => skip adding to result
         if visited.contains c.head

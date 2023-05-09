@@ -13,7 +13,7 @@ ex40 is
   graph(edges Sequence edge) is
     neighbors(v vertex) Set vertex  is
       for
-        r := ps_set (lists.empty vertex), if      (v = e.a) r.add e.b
+        r := ps_set (list vertex).type.empty, if      (v = e.a) r.add e.b
                                           else if (v = e.b) r.add e.a
                                           else                        r
         e in edges
