@@ -1,0 +1,7 @@
+vector (x, y, z f64) is
+
+  infix ⨯ (other vector) vector is
+    vector
+      (vector.this.y*other.z - vector.this.z*other.y)
+      (vector.this.z*other.x - vector.this.x*other.z)
+      (vector.this.x*other.y - vector.this.y*other.x)

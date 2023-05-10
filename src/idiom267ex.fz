@@ -1,0 +1,9 @@
+ex267 is
+
+  foo (x Any) is
+    if x.dynamic_type.name = "conststring"
+      say x
+
+  foo "Hello, world!"
+  _ := foo 42
+
