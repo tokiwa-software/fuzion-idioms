@@ -1,5 +1,5 @@
 t := s
-  .codepointsArray
+  .codepoints_array
   .reverse
   .as_Strings
   .fold String.type.concat

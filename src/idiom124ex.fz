@@ -1,6 +1,6 @@
 ex124 is
 
-  binarySearch(a sorted_array i32, x i32) i32 is
+  binary_search(a sorted_array i32, x i32) i32 is
     match a.find_key x
       nil   => -1
       i i32 => i
@@ -8,9 +8,9 @@ ex124 is
   unsorted := [0, 8, 15, 47, 11]
   a := sorted_array_of unsorted
 
-  say (binarySearch a 0)
-  say (binarySearch a 8)
-  say (binarySearch a 11)
-  say (binarySearch a 15)
-  say (binarySearch a 47)
-  say (binarySearch a 13)
+  say (binary_search a 0)
+  say (binary_search a 8)
+  say (binary_search a 11)
+  say (binary_search a 15)
+  say (binary_search a 47)
+  say (binary_search a 13)

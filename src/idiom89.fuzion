@@ -1,2 +1,2 @@
 pre
-  debug: isValid x
+  debug: is_valid x

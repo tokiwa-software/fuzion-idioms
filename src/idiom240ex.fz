@@ -22,6 +22,6 @@ ex240 is
   # NYI: With more syntax sugar for tuples, this should be:
   #
   #  s := a.zip b x,y->(x,y)
-  #        .sortBy x->x.0
+  #        .sort_by x->x.0
   #  a := s.map v->v.0
   #  b := s.map v->v.1

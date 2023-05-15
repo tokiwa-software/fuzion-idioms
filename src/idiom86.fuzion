@@ -1,5 +1,5 @@
-# using feature willOverflowOnMul:
-multiplyWillOverflow(x, y i32) => x.overflowOnMul y
+# using feature will_overflow_on_mul:
+multiply_will_overflow(x, y i32) => x.overflow_on_mul y
 
 # or using overflow-checking 'infix *?'
-multiplyWillOverflow2(x, y i32) => (x *? y)!!
+multiply_will_overflow2(x, y i32) => (x *? y)!!

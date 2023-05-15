@@ -1,7 +1,7 @@
 point (x, y f64) is
 
 rectangle(a, b point) is
-  isInside (p point) =>
+  is_inside (p point) =>
     (a.x < p.x < b.x &&
      a.y < p.y < b.y)
 
@@ -15,4 +15,4 @@ rectangle(a, b point) is
   y2 := 2.0
   r := rectangle (point x1 y1) (point x2 y2)
 
-  b := r.isInside p
+  b := r.is_inside p

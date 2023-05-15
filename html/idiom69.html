@@ -4,9 +4,9 @@
 
 <p>Random numbers generators in Fuzion are effects.  To use a random number
 generator with a particular seed, we have to create an instance
-of <code>simpleRandomProvider</code> with the given seed and run code with this
+of <code>simple_random_provider</code> with the given seed and run code with this
 this effect in its environment.  The standard library
-feature <code>simpleRandom</code> creates such a random provider with the given
+feature <code>simple_random</code> creates such a random provider with the given
 seed and installs it as the environment for running the code provided with the
 function parameter <code>f</code>.
 
@@ -18,7 +18,7 @@ function parameter <code>f</code>.
 
 <p>The following example provides a feature <code>seed</code> that executes a
 function <code>f</code> with in an environment with a seeded random number
-generator. For illustration, <code>showRandom</code> is called in this context
+generator. For illustration, <code>show_random</code> is called in this context
 and also in the default random provider and an explicitly time seeded random
 provider:</p>
 

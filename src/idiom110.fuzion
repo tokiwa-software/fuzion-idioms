@@ -1,1 +1,1 @@
-blank := s.isBlank
+blank := s.is_blank

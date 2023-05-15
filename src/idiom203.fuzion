@@ -1,8 +1,8 @@
-mean(a Sequence<f64>) => (sum a) / a.count.as_f64
+mean(a Sequence f64) => (sum a) / a.count.as_f64
 
-stddev²(a Sequence<f64>) =>
+stddev²(a Sequence f64) =>
   m := mean a
-  mean (a.mapSequence<f64> x->(x - m)**2)
+  mean (a.map_sequence f64 x->(x - m)**2)
 
 # NYI: no sqrt yet:
 #

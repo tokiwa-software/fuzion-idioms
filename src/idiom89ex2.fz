@@ -1,14 +1,14 @@
-# fuzion.debugLevel=0
-ex89noDebug is
+# fuzion.debug_level=0
+ex89no_debug is
 
   f(x i32)
     pre
-      debug: isValid x
+      debug: is_valid x
    =>
     say "got $x"
 
 
-  isValid(i i32) => i ∈ 0..7
+  is_valid(i i32) => i ∈ 0..7
 
   f 0
   f 3

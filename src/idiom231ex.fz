@@ -1,14 +1,14 @@
 ex231 is
 
-  bytesOk := [u8 1; u8 2; u8 3; u8 4; u8 5]
-  bytesNotOk := [u8 200; u8 1; u8 201; u8 2; u8 203]
+  bytes_ok := [u8 1; u8 2; u8 3; u8 4; u8 5]
+  bytes_not_ok := [u8 200; u8 1; u8 201; u8 2; u8 203]
 
-  s := bytesOk
+  s := bytes_ok
   b := String.type.from_bytes s
                   .codepoints_and_errors ∀ x -> x.ok
   say "utf8? $s: $b"
 
-  s := bytesNotOk
+  s := bytes_not_ok
   b := String.type.from_bytes s
                   .codepoints_and_errors ∀ x -> x.ok
   say "utf8? $s: $b"
