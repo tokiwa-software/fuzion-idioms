@@ -6,12 +6,12 @@ ex198a is
     exit x
     say "** not reachable code **"
 
-  myExit : Exit_Handler is
+  my_exit : Exit_Handler is
     exit(code i32) void is
       io.err.println "*** user defined exit handler diverting exit $code ***"
       exit.env.abort
 
-  exit myExit ()->
+  exit my_exit ()->
     f
     say "** not reachable code **"
 

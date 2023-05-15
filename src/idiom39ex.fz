@@ -1,10 +1,10 @@
 ex39 is
 
-  checkContains(s String, word String) =>
+  check_contains(s String, word String) =>
     ok := s.contains word
     say "'$s'.contains '$word' is $ok"
 
-  checkContains "Fuzion" "zia"
-  checkContains "Fuzion" "tío"
-  checkContains "Fuzion" "zio"
-  checkContains "Fuzion" "mio"
+  check_contains "Fuzion" "zia"
+  check_contains "Fuzion" "tío"
+  check_contains "Fuzion" "zio"
+  check_contains "Fuzion" "mio"

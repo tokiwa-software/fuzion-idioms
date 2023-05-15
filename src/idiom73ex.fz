@@ -1,12 +1,12 @@
 ex73 is
 
-  parentFactory (str String) Parent is
+  parent_factory (str String) Parent is
     if      str = "A"     then A
     else if str = "XYZ"   then XYZ
     else if str = "heir1" then heir1
     else if str = "heir2" then heir2
     else
-      panic "heir '$str' not known by parentFactory"
+      panic "heir '$str' not known by parent_factory"
 
   # define Parent
   Parent ref is
@@ -20,6 +20,6 @@ ex73 is
 
   for
     s in ["A", "XYZ", "heir1", "heir2", "error"]
-    h := parentFactory s
+    h := parent_factory s
   do
     say "created $s: $h"

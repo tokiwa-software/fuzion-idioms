@@ -1,7 +1,7 @@
 # This is a test that covers quite many cases of parsing strings as integers
 # of different sizes
 #
-idiom22exTest is
+idiom22ex_test is
 
   test(s String) =>
     say "parsing i32 decimal: $s results in {s.parse_i32}"

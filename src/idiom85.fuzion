@@ -1,8 +1,8 @@
-# using feature willOverflowOnAdd:
-addingWillOverflow(x, y i32) => x.overflowOnAdd y
+# using feature will_overflow_on_add:
+adding_will_overflow(x, y i32) => x.overflow_on_add y
 
 # or using overflow-checking 'infix +?'
-addingWillOverflow2(x, y i32)
+adding_will_overflow2(x, y i32)
 => match x +? y
   nil   => say "$x + $y: overflow!"
   r i32 => say "$x + $y: ok, result is $r"

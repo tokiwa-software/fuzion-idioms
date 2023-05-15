@@ -1,7 +1,7 @@
 traverse (f T -> unit) unit is
-  match binTree.this
+  match bin_tree.this
     nil           =>
-    n binTreeNode =>
+    n Bin_Tree_Node =>
       n.left.traverse f
       f n.val
       n.right.traverse f

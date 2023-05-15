@@ -2,8 +2,8 @@
 # types, so there is also no equality operator for deep equality.
 
 # Equality is something that must be defined for a particular feature by
-# implementing hasEquals, e.g., strings define equality as equality of all the
+# implementing `equatable`, e.g., strings define equality as equality of all the
 # bytes in the utf8 stream associated to a string.  A heir feauture of string
 # may, however, define equality differently, it may even inherit repeatedly from
-# hasEquals and rename 'infix =' to have several, different ways to partition
+# `equatable` and rename 'infix =' to have several, different ways to partition
 # instances into equivalence classes.

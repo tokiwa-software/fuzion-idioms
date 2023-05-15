@@ -3,7 +3,7 @@ sum := sum (a.map x->x*x)
 
 # using map and fold
 sum := a.map x->x*x
-        .fold i32.sum
+        .fold i32.type.sum
 
 # using a loop
 for
@@ -11,9 +11,9 @@ for
   v in a
   q := v*v
 else
-  sum
+  say "sum is $sum"
 
 # using a tail-recursive function
-sumOfSquares (sum i32, s list i32) i32 is
+sum_of_squares (sum i32, s list i32) i32 is
   s ? nil    => sum
-    | c Cons => sumOfSquares (sum + c.head**2) c.tail
+    | c Cons => sum_of_squares (sum + c.head**2) c.tail

@@ -6,9 +6,9 @@
 
 <p>For all integers with wrap-around semantics (i.e. all the standard types i32,
 u64, etc.), there are two ways to check for overflow on addition.  First, the
-predicate <code>overflowOnAdd</code> checks if an addition of two values would
+predicate <code>overflow_on_add</code> checks if an addition of two values would
 overflow.  Next, there is an addition operator <code>infix +?</code> that
-performs overflow checking and returns a <code>numOption</code> that can be
+performs overflow checking and returns a <code>num_option</code> that can be
   checked afterwards.</p>
 
 <p>Note that <code>infix +</code> would result in a runtime error in case of an

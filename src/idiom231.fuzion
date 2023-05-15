@@ -1,2 +1,2 @@
-String isb := String.type.fromBytes s
-                         .codepointsAndErrors ∀ x -> x.ok
+String isb := String.type.from_bytes s
+                         .codepoints_and_errors ∀ x -> x.ok
