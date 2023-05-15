@@ -1,7 +1,7 @@
 ex267 is
 
   foo (x Any) is
-    if x.dynamic_type.name = "conststring"
+    if x.dynamic_type.name = "Const_String"
       say x
 
   foo "Hello, world!"
