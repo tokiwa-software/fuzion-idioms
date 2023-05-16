@@ -1,4 +1,4 @@
-# fuzion.debug_level=0
+# fuzion.debugLevel=0
 ex89no_debug is
 
   f(x i32)
