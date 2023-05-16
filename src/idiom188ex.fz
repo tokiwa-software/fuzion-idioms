@@ -1,6 +1,6 @@
 ex188 is
 
-  a := matrix (array2 2 3 i,j->i+10*j)
-  b := matrix (array2 3 2 i,j->10*i+j)
+  a := num.matrix (array2 2 3 i,j->i+10*j)
+  b := num.matrix (array2 3 2 i,j->10*i+j)
   c := a * b
   say c
