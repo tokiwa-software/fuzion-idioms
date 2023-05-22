@@ -1,5 +1,5 @@
 is_digit(cp codepoint) =>
-    "012345689".as_codepoint_sequence ∃ digit -> digit = codepoint
+    "012345689".as_codepoints ∃ digit -> digit = codepoint
 
 s := "012345689"
-b := s.as_codepoint_sequence ∀ (x -> is_digit x)
+b := s.as_codepoints ∀ (x -> is_digit x)

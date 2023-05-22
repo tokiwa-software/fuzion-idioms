@@ -1,7 +1,7 @@
 ex147 is
 
   s := "abcϢϕρ"
-  t := s.as_codepoint_sequence
+  t := s.as_codepoints
         .filter cp->cp.is_ascii
         .as_string ""
   say t
