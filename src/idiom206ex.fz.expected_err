@@ -4,9 +4,9 @@
 [33m------------^[0m
 For call to option.get
 Call stack:
-ex206.#loop0: [32m-:15:48:[39m
-[34m                  [foo, bar, baz, barfl])[str].get.call)
-[33m-----------------------------------------------^[0m
+ex206.#loop0: [32m-:15:58:[39m
+[34m                            [foo, bar, baz, barfl])[str].get.call)
+[33m---------------------------------------------------------^[0m
 ex206.#loop0: [32m-:8:3:[39m
 [34m  for str in ["bar",
 [33m--^[0m

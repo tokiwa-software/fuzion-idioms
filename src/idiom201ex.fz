@@ -1,4 +1,4 @@
 ex =>
-  data := float_sequence [3.0, 4.0]
+  data := container.float_sequence [3.0, 4.0]
   n := data.euclidean_norm
   say n
