@@ -1,4 +1,4 @@
-intersection(T type: has_equality, s1, s2 Set T) =>  # NYI: intersection missing from stdlib
+intersection(T type: has_equality, s1, s2 container.Set T) =>  # NYI: intersection missing from stdlib
   s1.as_list.filter (x -> s2.contains x)
 
 c := intersection a b

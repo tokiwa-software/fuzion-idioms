@@ -1,2 +1,2 @@
 ex232 is
-  say "verbose is {"-v" ∈ set_of_ordered envir.args}"
+  say "verbose is {"-v" ∈ container.set_of_ordered envir.args}"

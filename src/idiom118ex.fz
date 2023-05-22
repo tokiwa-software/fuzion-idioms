@@ -2,6 +2,6 @@ ex118 is
 
   x := [ "a", "b", "c", "b" ]
 
-  y := set_of_ordered x
+  y := container.set_of_ordered x
 
   say y

@@ -12,5 +12,5 @@ ex246 is
             "Oh!"]
 
   say items
-  c := (set_of_ordered items).count
+  c := (container.set_of_ordered items).count
   say c

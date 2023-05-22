@@ -1,6 +1,6 @@
 ex113 is
 
-  mymap := (ordered_map
+  mymap := (container.ordered_map
     [ "un",   "une",  "deux", "trois", "quatre" , "cinq" ]
     [ "ichi", "ichi", "ni",   "san"  , "shi/yon", "go"   ] )
 

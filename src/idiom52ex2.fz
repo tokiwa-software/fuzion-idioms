@@ -1,5 +1,5 @@
-m := (ordered_map [ "Hund", "Katze", "Maus" ]
-                  [ "dog",  "cat",  "mouse" ])
+m := (container.ordered_map [ "Hund", "Katze", "Maus" ]
+                            [ "dog",  "cat",  "mouse" ])
 
 v := "mouse"
 for x in m.values until v = x

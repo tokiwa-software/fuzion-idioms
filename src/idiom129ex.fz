@@ -9,11 +9,11 @@ ex129 is
   edge(a, b vertex) is
 
   graph(edges Sequence edge) is
-    neighbors(v vertex) Set vertex is
+    neighbors(v vertex) container.Set vertex is
       for
-        r ref ps_set vertex := (ps_sets vertex).empty, if      (v = e.a) r.add e.b
-                                                       else if (v = e.b) r.add e.a
-                                                       else              r
+        r ref container.ps_set vertex := (container.ps_sets vertex).empty, if      (v = e.a) r.add e.b
+                                                                           else if (v = e.b) r.add e.a
+                                                                           else              r
         e in g.edges
       else
         r
@@ -31,7 +31,7 @@ ex129 is
              edge v4 v5 ]
   g := graph edges
 
-  breadth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex is
+  breadth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex is
     match queue
       nil => (list vertex).type.empty
       c Cons =>
@@ -43,4 +43,4 @@ ex129 is
           # result is the current element, the rest of the visitation queue and the neighbors
           [c.head].as_list ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
-  breadth_first_traverse [v1].as_list (ps_sets vertex).empty | (vertex) -> say vertex
+  breadth_first_traverse [v1].as_list (container.ps_sets vertex).empty | (vertex) -> say vertex

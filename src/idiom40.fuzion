@@ -2,11 +2,11 @@ vertex(id i32) : has_total_order     # must be ordered such that we can add it t
 is
 
   # extract neighbors from edges in given graph
-  neighbors(g graph) Set vertex  is
+  neighbors(g graph) container.Set vertex  is
     for
-      r := ps_set (list vertex).type.empty, if      (vertex.this = e.a) r.add e.b
-                                        else if (vertex.this = e.b) r.add e.a
-                                        else                        r
+      r := container.ps_set (list vertex).type.empty, if      (vertex.this = e.a) r.add e.b
+                                                      else if (vertex.this = e.b) r.add e.a
+                                                      else                        r
       e in g.edges
     else
       r

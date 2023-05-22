@@ -1,6 +1,6 @@
 idiom34ex is
 
-  x := set_of_ordered (list String).type.empty
+  x := container.set_of_ordered (list String).type.empty
   x := x.add "A"
   x := x.add "B"
   x := x.add "C"

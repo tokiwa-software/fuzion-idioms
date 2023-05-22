@@ -1,6 +1,6 @@
 ex242 is
 
-  x := set_of_ordered [0, 8, 15, 47, 11]
+  x := container.set_of_ordered [0, 8, 15, 47, 11]
 
   f(x i32) => say "element is $x"
 

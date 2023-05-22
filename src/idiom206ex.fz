@@ -11,8 +11,8 @@ ex206 is
               "baz",
               "error" /* will cause a precondition failure! */]
   do
-    ((ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-                  [foo, bar, baz, barfl])[str].get.call)
+    ((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
+                            [foo, bar, baz, barfl])[str].get.call)
 
 # NYI: better syntax, e.g.,
 #

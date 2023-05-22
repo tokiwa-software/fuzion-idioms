@@ -1,4 +1,4 @@
-breadth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex is
+breadth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex is
   match queue
     nil => (list vertex).type.empty
     c Cons =>
@@ -10,4 +10,4 @@ breadth_first_traverse(queue list vertex, visited ref ps_set vertex) list vertex
         # result is the current element, the rest of the visitation queue and the neighbors
         [c.head].as_list ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
-breadth_first_traverse [v1].as_list (ps_sets vertex).empty | (vertex) -> say vertex
+breadth_first_traverse [v1].as_list (container.ps_sets vertex).empty | (vertex) -> say vertex
