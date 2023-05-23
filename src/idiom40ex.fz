@@ -13,9 +13,10 @@ ex40 is
   graph(edges Sequence edge) is
     neighbors(v vertex) container.Set vertex  is
       for
+        # NYI use (ps_set vertex).type.empty, see #152
         r := container.ps_set (list vertex).type.empty, if      (v = e.a) r.add e.b
                                                         else if (v = e.b) r.add e.a
-                                                        else                        r
+                                                        else    r
         e in edges
       else
         r
