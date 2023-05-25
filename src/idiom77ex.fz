@@ -1,5 +1,5 @@
 ex77 is
 
   x := num.complex -2 3
-  x := x * x.i  # NYI: (complex i32).type.i does not work yet
+  x := x * (num.complex i32).type.i
   say x

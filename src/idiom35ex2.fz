@@ -7,7 +7,7 @@ ex35a is
   f A -> B := a -> B (a.val > 3)
   g B -> C := b -> C (if b.val then "T" else "F")
 
-  fog := Functions.compose g f
+  fog := g ∘ f
 
   say (fog (A 10)).val
   say (fog (A 2)).val

@@ -1,1 +1,1 @@
-t := String.type.from_bytes (s.utf8 & (c -> !s.is_ascii_white_space c))
+t := String.type.from_bytes (s.utf8 & (c -> !c.is_ascii_white_space))

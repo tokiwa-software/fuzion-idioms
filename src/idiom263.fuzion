@@ -1,5 +1,5 @@
 log2 (n f64) f64 is
-  f64s.log n / f64s.log 2
+  f64.type.log n / f64.type.log 2
 
 log2d (n f64) f64 is
   (log2 n).floor
