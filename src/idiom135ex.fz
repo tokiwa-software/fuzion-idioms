@@ -3,7 +3,7 @@ ex135 is
   items := ["a","b","c","b","c","a"].as_list
 
   x := "b"
-  items := match Sequences.index_in items x
+  items := match (container.searchable_sequence items).index_of x
     i i32 => items.take i ++ items.drop i+1
     nil   => items
 

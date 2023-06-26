@@ -3,12 +3,12 @@ ex222 is
   x := 5
   items := [1,2,3,4,5,6,7]
 
-  i := (Sequences.index_in items x).get -1
+  i := ((container.searchable_sequence items).index_of x).get -1
 
   say "found $x at index $i"
 
   x := 55
 
-  i := (Sequences.index_in items x).get -1
+  i := ((container.searchable_sequence items).index_of x).get -1
 
   say "found $x at index $i"

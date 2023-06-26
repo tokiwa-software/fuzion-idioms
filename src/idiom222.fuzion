@@ -1,1 +1,1 @@
-i := (Sequences.index_in items x).get -1
+i := ((container.searchable_sequence items).index_of x).get -1
