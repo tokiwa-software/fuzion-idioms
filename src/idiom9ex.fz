@@ -1,6 +1,6 @@
 # a Bin_Tree_Node is a value plus left and right sub-trees
 #
-Bin_Tree_Node(T type : has_total_order,
+Bin_Tree_Node(T type : property.orderable,
             val T,
             left, right bin_tree T) ref
 is
@@ -23,7 +23,7 @@ is
 
 # a bin_tree is either a Bin_Tree_Node or an empty tree represented by nil
 #
-bin_tree(T type : has_total_order) : choice (Bin_Tree_Node T) nil is
+bin_tree(T type : property.orderable) : choice (Bin_Tree_Node T) nil is
 
   # add element to this tree, return resulting tree
   #

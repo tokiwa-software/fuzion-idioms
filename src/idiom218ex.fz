@@ -1,6 +1,6 @@
 ex218 is
 
-  intersection(T type: equatable, s1, s2 container.Set T) =>  # NYI: intersection missing from stdlib
+  intersection(T type: property.equatable, s1, s2 container.Set T) =>  # NYI: intersection missing from stdlib
     s1.as_list.filter (x -> s2.contains x)
 
   a := ["eins", "zwei", "drei"]
