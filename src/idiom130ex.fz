@@ -11,9 +11,9 @@ ex130 is
   graph(edges Sequence edge) is
     neighbors(v vertex) container.Set vertex is
       for
-        r ref container.ps_set vertex := (container.ps_sets vertex).empty, if      (v = e.a) r.add e.b
-                                                                           else if (v = e.b) r.add e.a
-                                                                           else              r
+        r container.Set vertex := (container.ps_sets vertex).empty, if      (v = e.a) r.add e.b
+                                                                    else if (v = e.b) r.add e.a
+                                                                    else              r
         e in g.edges
       else
         r
@@ -31,7 +31,7 @@ ex130 is
             ]
   g := graph edges
 
-  depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex is
+  depth_first_traverse(queue list vertex, visited container.Set vertex) list vertex is
     match queue
       nil => (list vertex).type.empty
       c Cons =>
