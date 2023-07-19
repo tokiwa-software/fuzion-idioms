@@ -1,7 +1,7 @@
 idiom32ex2 is
 
   exp     (T type : integer, x, n T) => x **  n
-  exp_wrap (T type : wrapping_integer, x, n T) => x **° n
+  exp_wrap (T type : num.wrap_around, x, n T) => x **° n
   exp_max  (T type : integer, x, n T) => x **^ n
   exp_check(T type : integer, x, n T) => x **? n
 
