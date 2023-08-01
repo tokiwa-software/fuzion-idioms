@@ -1,7 +1,8 @@
 ex172 is
 
-  m := (container.ps_map [1,      2,      3,      4     ]
-                         ["eins", "zwei", "drei", "vier"])
+  m := ((container.ps_map i32 String).type.from_sequence
+         [1,      2,      3,      4     ]
+         ["eins", "zwei", "drei", "vier"])
   k := 5
   v := "fünf"
 

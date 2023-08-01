@@ -1,7 +1,8 @@
 ex170 is
 
-  mymap := (container.ps_map ["one", "two", "three", "four", "five"]
-                             ["一", "二", "三", "四", "五"]
+  mymap := ((container.ps_map String String).type.from_sequence
+              ["one", "two", "three", "four", "five"]
+              ["一", "二", "三", "四", "五"]
            )
 
   n := mymap.size
