@@ -1,10 +1,13 @@
 ex58 is
   
   path := "path/to/file"
-  reader := io.file.read
-  match (fuzion.sys.fileio.open path (i8 0)).bind (array u8) (fd->
-      res := reader.read_file fd
-      fuzion.sys.fileio.close fd
-      res)
-    content array u8 => say (String.type.from_bytes content) # logic in case of success
+
+  # type parameter used by the io.file effects to
+  # distinguish different files
+  some_type.
+
+  x := io.file.use some_type (array u8) path io.file.mode.read (()->(io.file.open some_type).read)
+
+  match x
+    content array => yak (String.type.from_bytes content) # logic in case of success
     err error => say err # error handling logic
