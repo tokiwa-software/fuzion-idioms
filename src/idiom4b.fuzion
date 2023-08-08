@@ -1,0 +1,1 @@
+square(x _ : numeric) => x * x
