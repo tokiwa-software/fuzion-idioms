@@ -1,0 +1,5 @@
+square(x _ : numeric) => x * x
+
+say (square 0.2)
+say (square 3/-/4)
+say (square (num.complex 0.5 0.5))

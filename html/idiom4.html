@@ -19,3 +19,15 @@
 <p>The version with type parameter can be called with different types:<p>
 
 <runcode file="../src/idiom4ex2.fz"/>
+
+<p>We could also use a more general type constraint <code>numeric</code> and
+then call this on floats, fractions or complex numbers:<p>
+
+<runcode file="../src/idiom4ex3.fz"/>
+
+<p>Finally, we could just leave out the type. In this case, the type is inferred
+from the actual arguments given in the call, u16 in this example. So this
+version is not type parametric and should be used only for local helper
+functions where the type is obvious.<p>
+
+<runcode file="../src/idiom4ex4.fz"/>
