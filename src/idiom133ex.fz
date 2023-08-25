@@ -1,0 +1,8 @@
+ex133 =>
+
+  word := "word"
+  s := "A sentence containing WoRd."
+
+  ok := s.lower_case.contains word.lower_case
+
+  say ok

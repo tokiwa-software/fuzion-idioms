@@ -1,0 +1,10 @@
+ex61 =>
+
+  # using custom date_time provider to make sure output
+  # is always the same
+  (time.now ()->
+    time.date_time 2000 1 0 0 0 0)
+    .use ()->
+
+      d := time.now.get
+      say d
