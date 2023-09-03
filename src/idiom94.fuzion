@@ -1,0 +1,7 @@
+type_of x
+
+x.dynamic_type
+
+# For value instances `x`, this is equal to `type_of x`, but for `x`
+# with a  `ref` type `x.dynamic_type` gives the actual runtime type,
+# while `type_of x` results in the static compile-time type.

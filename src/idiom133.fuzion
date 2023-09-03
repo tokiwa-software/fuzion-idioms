@@ -1,0 +1,1 @@
+ok := s.lower_case.contains word.lower_case
