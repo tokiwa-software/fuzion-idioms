@@ -1,0 +1,6 @@
+ex115 =>
+  d1 := time.now.get
+  time.nano.sleep (time.duration 10)
+  d2 := time.now.get
+  b := d1 < d2
+  say b

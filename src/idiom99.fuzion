@@ -1,0 +1,1 @@
+x := "{d.year.as_string 4 10}-{d.month.as_string 2 10}-{d.day_of_month.as_string 2 10}"
