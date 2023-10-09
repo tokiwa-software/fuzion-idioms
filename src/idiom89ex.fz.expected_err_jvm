@@ -1,0 +1,8 @@
+
+[1;31merror 1[0m[1m: CONTRACT FAILED: pre-condition on call to 'ex89.f'[0m
+Call stack:
+precondition of ex89__1f
+ex89
+universe
+
+*** fatal errors encountered, stopping.

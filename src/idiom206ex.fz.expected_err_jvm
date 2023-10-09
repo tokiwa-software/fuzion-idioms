@@ -1,0 +1,9 @@
+
+[1;31merror 1[0m[1m: CONTRACT FAILED: pre-condition on call to '(option (Function unit)).get'[0m
+Call stack:
+precondition of option__Function_unit__get
+ex206__1INTERN_loop0
+ex206
+universe
+
+*** fatal errors encountered, stopping.

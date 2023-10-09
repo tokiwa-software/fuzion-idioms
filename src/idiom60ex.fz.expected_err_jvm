@@ -1,0 +1,9 @@
+
+[1;31merror 1[0m[1m: CONTRACT FAILED: pre-condition on call to '(option String).get'[0m
+Call stack:
+precondition of option_String__get
+envir__1args__1index__
+ex60
+universe
+
+*** fatal errors encountered, stopping.
