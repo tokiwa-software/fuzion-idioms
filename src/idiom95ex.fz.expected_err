@@ -1,9 +1,4 @@
 
-[32m-:5:15:[39m [1;31merror 1[0m[1m: Could not find called feature[0m
-[34m  match stats.size path
-[33m--------------^^^^[0m
-Feature not found: '[35msize[39m' (one argument)
-Target feature: '[35mio.file.stat[39m'
-In call: '[36mex95.this.stats.size path[39m'
+[1;31merror 1[0m[1m: *** error: unsafe feature fuzion.sys.fileio.open disabled[0m
 
-one error.
+*** fatal errors encountered, stopping.

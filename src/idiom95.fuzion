@@ -1,1 +1,1 @@
-io.file.stat.size path
+x := (io.file.stat path true).bind i64 x->x.size
