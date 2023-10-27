@@ -1,0 +1,1 @@
+x := (io.file.stat path true).val.size
