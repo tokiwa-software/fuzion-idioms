@@ -10,7 +10,7 @@ ex206.#loop0: [32m-:15:58:[39m
 ex206.#loop0: [32m-:8:3:[39m
 [34m  for str in ["bar",
 [33m--^[0m
-...  repeated 3 times  ...
+... repeated 3 times ...
 
 ex206: [32m-:8:3:[39m
 [34m  for str in ["bar",
