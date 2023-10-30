@@ -13,7 +13,7 @@ idiom32ex2.#loop5.#loop4: [32m-:19:26:[39m
 idiom32ex2.#loop5.#loop4: [32m-:18:5:[39m
 [34m    for j in 0..15 do
 [33m----^[0m
-...  repeated 13 times  ...
+... repeated 13 times ...
 
 idiom32ex2.#loop5: [32m-:18:5:[39m
 [34m    for j in 0..15 do
@@ -21,7 +21,7 @@ idiom32ex2.#loop5: [32m-:18:5:[39m
 idiom32ex2.#loop5: [32m-:17:3:[39m
 [34m  for i in 0..15 do
 [33m--^[0m
-...  repeated 4 times  ...
+... repeated 4 times ...
 
 idiom32ex2: [32m-:17:3:[39m
 [34m  for i in 0..15 do
