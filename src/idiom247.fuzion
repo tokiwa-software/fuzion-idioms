@@ -1,6 +1,6 @@
 # Fuzion lists are immutable, but Fuzion has some mutable data
-# types as well.  One is 'marray' that provides a mutable array.
-# Using 'marray (option T)', we can remove elements by setting
+# types as well.  One is 'mutate.array' that provides a mutable array.
+# Using 'mutate.array (option T)', we can remove elements by setting
 # them to 'nil':
 #
 for i in x.indices do

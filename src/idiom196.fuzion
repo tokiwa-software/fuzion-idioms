@@ -1,6 +1,9 @@
-# fuzion arrays are immutable, we need to use marray instead
+# fuzion arrays are immutable, we need to use mutate.array instead
 
-a := (marray i32).type.new 10 0
-a.indices | (i -> a[i] := i)
+mi : mutate is
+mi.go ()->
 
-a.indices & (i -> !(i%%2)) | (i -> foo a i)
+  a := (mutate.array i32).type.new mi 10 0
+  a.indices | (i -> a[i] := i)
+
+  a.indices & (i -> !(i%%2)) | (i -> foo a i)
