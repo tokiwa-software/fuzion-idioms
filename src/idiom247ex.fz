@@ -1,13 +1,16 @@
 ex247 is
 
-  x := (marray (option i32)).type.new 100 nil
-  for i in x.indices do
-    x[i] := i
+  mi : mutate is
+  mi.go ()->
 
-  p i32 -> bool is i -> i %% 6
+    x := (mutate.array (option i32)).type.new mi 100 nil
+    for i in x.indices do
+      x[i] := i
 
-  for i in x.indices do
-    if !(p x[i].get)
-      x[i] := nil
+    p i32 -> bool is i -> i %% 6
 
-  say x
+    for i in x.indices do
+      if !(p x[i].get)
+        x[i] := nil
+
+    say x

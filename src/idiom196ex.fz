@@ -1,13 +1,16 @@
 ex196 is
 
-  foo (a marray i32, i i32) unit is
-    a[i] := 42
+  mi : mutate is
+  mi.go ()->
 
-  a := (marray i32).type.new 10 0
-  a.indices | (i -> a[i] := i)
+    foo (a Mutable_Array i32, i i32) unit is
+      a[i] := 42
 
-  say a
+    a := (mutate.array i32).type.new mi 10 0
+    a.indices | (i -> a[i] := i)
 
-  a.indices & (i -> !(i%%2)) | (i -> foo a i)
+    say a
 
-  say a
+    a.indices & (i -> !(i%%2)) | (i -> foo a i)
+
+    say a
