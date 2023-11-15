@@ -3,4 +3,4 @@ ex144 is
   path := "path/to/file"
   match io.file.stat path true
     md io.file.meta_data => say "$path exists: $md" # logic in case of success
-    err error => say err # error handling logic
+    error => say "an error happened when trying to stat: $path" # error handling logic
