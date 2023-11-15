@@ -1,1 +1,1 @@
-error: stat error 5 for path/to/file
+an error happened when trying to stat: path/to/file
