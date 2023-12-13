@@ -3,7 +3,7 @@ ex30 is
   f(i i32) =>
     say "**$i**"
 
-  (1..1000).map_sequence (i-> concur.thread.spawn (() -> f i))
+  (1..1000).map (i-> concur.thread.spawn (() -> f i))
     .for_each x->unit
 
   time.nano.sleep (time.durations.s 2)

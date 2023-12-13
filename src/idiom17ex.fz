@@ -5,7 +5,7 @@ node(T type,
   redef as_string => (as_strings 0).as_string "\n"
 
   as_strings(d i32) =>
-    ["+-" + $val] ++ (children.flat_map_sequence String (c->c.as_strings d+1)).map s->"| $s"
+    ["+-" + $val] ++ (children.flat_map String (c->c.as_strings d+1)).map s->"| $s"
 
 feuille(val String) => node val (list (node String)).type.empty
 

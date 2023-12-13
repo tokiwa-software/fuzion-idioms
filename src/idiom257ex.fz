@@ -2,6 +2,6 @@ ex257 is
 
   items := ["a", "b", "c"]
 
-  for e in items.reverse.enumerate do
+  for e in items.reverse.indexed do
     (i, x) := e
     say "$i = $x"
