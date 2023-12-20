@@ -5,11 +5,11 @@ ex189 is
   P i32 -> bool   := i -> i %% 3   # divisible by 3
   T i32 -> String := i -> "{i}² = {i*i}"
 
-  y := (x.filter P).map_sequence T  # NYI: should be 'map', not 'map_sequence, see Fuzion #252'
+  y := (x.filter P).map T
   y.take 20 | e -> say e
 
   # alternatively, we can use 'infix &' instead of 'filter'
-  y := (x & P).map_sequence T
+  y := (x & P).map T
   y.take 20 | e -> say e
 
   # NYI: This should be possible using pipe instead of 'map'

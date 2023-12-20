@@ -6,11 +6,10 @@ ex203 is
 
   stddev²(a Sequence f64) =>
     m := mean a
-    mean (a.map_sequence f64 x->(x - m)**2)
+    mean (a.map f64 x->(x - m)**2)
 
-  # NYI: no sqrt yet:
-  #
-  # stddev := stddev².sqrt
+  stddev(a Sequence f64) => f64.type.sqrt (stddev² a)
 
   say "mean of $a is {mean a}"
   say "stddev² of $a is {stddev² a}"
+  say "stddev of $a is {stddev a}"
