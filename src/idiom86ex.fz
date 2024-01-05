@@ -19,4 +19,4 @@ ex86 is
         yak ", did overflow"
       else
         yak ", did not overflow"
-      say
+      say ""
