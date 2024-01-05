@@ -6,7 +6,7 @@ ex203 is
 
   stddev²(a Sequence f64) =>
     m := mean a
-    mean (a.map f64 x->(x - m)**2)
+    mean (a.map x->(x - m)**2)
 
   stddev(a Sequence f64) => f64.type.sqrt (stddev² a)
 

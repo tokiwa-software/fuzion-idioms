@@ -10,7 +10,9 @@ ex6 =>
     something x
 
   # using a pipe and a lambda
-  items | x -> something x
+  items | something
 
   # using map and a lambda
-  items.map (x -> something x)
+  items.map something
+       # map is lazy! To see side effects, force execution, eg., using by fold
+      .fold unit.type.monoid
