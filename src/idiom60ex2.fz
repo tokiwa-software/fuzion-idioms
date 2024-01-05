@@ -7,7 +7,7 @@ ex60 is
       x := envir.args[i]
     do
       say "arg#$i is $x"
-    say
+    say ""
 
   # show args we are called with
   show_args
