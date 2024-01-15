@@ -1,5 +1,5 @@
 ex75 is
-  lcm (a,b int) int is
+  lcm (a,b int) int =>
     a * b / (a.gcd b)
 
   a := int 2147483647             # is the eighth Mersenne prime, equal to 231^-1

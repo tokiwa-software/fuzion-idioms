@@ -3,7 +3,7 @@ ex89 is
   f(x i32) unit
     pre
       debug: is_valid x
-  is
+  =>
     say "got $x"
 
   is_valid(i i32) => i ∈ 0..7

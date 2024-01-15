@@ -2,7 +2,7 @@ node(T type,
      val T,
      children Sequence (node T)) is
 
-  traverse (f T -> unit) unit is
+  traverse (f T -> unit) unit =>
     f val
     for child in children do
       child.traverse f

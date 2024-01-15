@@ -20,7 +20,7 @@ ex202 is
     say "sum is $sum"
 
   # using a tail-recursive function
-  sum_of_squares (sum i32, s list i32) i32 is
+  sum_of_squares (sum i32, s list i32) i32 =>
     s ? nil    => sum
       | c Cons => sum_of_squares (sum + c.head**2) c.tail
 

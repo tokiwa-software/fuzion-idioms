@@ -1,8 +1,8 @@
-log2 (n f64) f64 is
+log2 (n f64) f64 =>
   f64.type.log n / f64.type.log 2
 
-log2d (n f64) f64 is
+log2d (n f64) f64 =>
   (log2 n).floor
 
-log2u (n f64) f64 is
+log2u (n f64) f64 =>
   (log2 n).ceil

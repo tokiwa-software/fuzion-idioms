@@ -7,7 +7,7 @@ is
 
   # add element to this tree, return resulting tree
   #
-  add (v T) bin_tree T is
+  add (v T) bin_tree T =>
     l := if (v < val) (left .add v) else left
     r := if (v > val) (right.add v) else right
     Bin_Tree_Node val l r
@@ -19,14 +19,14 @@ bin_tree(T type : property.orderable) : choice (Bin_Tree_Node T) nil is
 
   # add element to this tree, return resulting tree
   #
-  add (v T) bin_tree T is
+  add (v T) bin_tree T =>
     match bin_tree.this
       nil           => Bin_Tree_Node v nil nil
       n Bin_Tree_Node => n.add v
 
   # traverse this tree
   #
-  traverse (f T -> unit) unit is
+  traverse (f T -> unit) unit =>
     match bin_tree.this
       nil           =>
       n Bin_Tree_Node =>

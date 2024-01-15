@@ -1,15 +1,15 @@
 ex130 is
   public vertex(id i32): property.orderable is
     # redefine `lteq` for parent feature's 'has_total_order' type feature
-    fixed type.lteq    (a, b ex130.vertex) bool is a.id <= b.id
-    fixed type.equality(a, b ex130.vertex) bool is a.id =  b.id
+    fixed type.lteq    (a, b ex130.vertex) bool => a.id <= b.id
+    fixed type.equality(a, b ex130.vertex) bool => a.id =  b.id
 
     redef as_string => "v$id"
 
   edge(a, b vertex) is
 
   graph(edges Sequence edge) is
-    neighbors(v vertex) container.Set vertex is
+    neighbors(v vertex) container.Set vertex =>
       for
         r container.Set vertex := (container.ps_set vertex).type.empty, if      (v = e.a) r.add e.b
                                                                         else if (v = e.b) r.add e.a
@@ -31,7 +31,7 @@ ex130 is
             ]
   g := graph edges
 
-  depth_first_traverse(queue list vertex, visited container.Set vertex) list vertex is
+  depth_first_traverse(queue list vertex, visited container.Set vertex) list vertex =>
     match queue
       nil => (list vertex).type.empty
       c Cons =>

@@ -1,4 +1,4 @@
-traverse (f T -> unit) unit is
+traverse (f T -> unit) unit =>
   match bin_tree.this
     nil           =>
     n Bin_Tree_Node =>

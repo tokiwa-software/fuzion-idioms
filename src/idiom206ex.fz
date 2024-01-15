@@ -1,9 +1,9 @@
 ex206 is
 
-  foo Function unit is ()->say "foo"
-  bar Function unit is ()->say "bar"
-  baz Function unit is ()->say "baz"
-  barfl Function unit is ()->say "barfl"
+  foo Function unit => ()->say "foo"
+  bar Function unit => ()->say "bar"
+  baz Function unit => ()->say "baz"
+  barfl Function unit => ()->say "barfl"
 
   for str in ["bar",
               "foo",

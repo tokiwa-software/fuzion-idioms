@@ -1,4 +1,4 @@
-depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex is
+depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex =>
   match queue
     nil => (list vertex).type.empty
     c Cons =>

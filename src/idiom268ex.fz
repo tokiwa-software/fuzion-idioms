@@ -2,7 +2,7 @@ ex268 is
 
   vector (x, y, z f64) is
 
-    infix ⨯ (other vector) vector is
+    infix ⨯ (other vector) vector =>
       vector
         (vector.this.y*other.z - vector.this.z*other.y)
         (vector.this.z*other.x - vector.this.x*other.z)

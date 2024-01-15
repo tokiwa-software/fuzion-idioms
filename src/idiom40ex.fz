@@ -3,15 +3,15 @@ ex40 is
   public vertex(id i32) : property.orderable
   is
     # redefine `lteq` for parent feature's 'has_total_order' type feature
-    fixed type.lteq    (a, b ex40.vertex) bool is a.id <= b.id
-    fixed type.equality(a, b ex40.vertex) bool is a.id =  b.id
+    fixed type.lteq    (a, b ex40.vertex) bool => a.id <= b.id
+    fixed type.equality(a, b ex40.vertex) bool => a.id =  b.id
 
     redef as_string => "v$id"
 
   edge(a, b vertex) is
 
   graph(edges Sequence edge) is
-    neighbors(v vertex) container.Set vertex  is
+    neighbors(v vertex) container.Set vertex =>
       for
         # NYI use (ps_set vertex).type.empty, see #152
         r container.Set vertex := (container.ps_set vertex).type.from_sequence (list vertex).type.empty, if      (v = e.a) r.add e.b

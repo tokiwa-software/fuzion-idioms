@@ -31,7 +31,7 @@ ex159 is
       Trie c (children.add c n) val
 
     # find the value 's' is mapped to by this Trie
-    find(s String) option V is
+    find(s String) option V =>
       if s.is_empty
         val
       else
