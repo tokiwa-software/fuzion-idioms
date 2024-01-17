@@ -1,0 +1,8 @@
+ex320 is
+
+  s := "Hello"
+  b := s.is_empty
+  say b
+
+  s2 := ""
+  say s2.is_empty
