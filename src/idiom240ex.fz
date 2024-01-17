@@ -12,9 +12,9 @@ ex240 is
          "15" ]
 
   s := a.zip b x,y->(x,y)
-        .sort (a,b -> a.values.0 <= b.values.0)
-  a := s.map v->v.values.0
-  b := s.map v->v.values.1
+        .sort (a,b -> a.0 <= b.0)
+  a := s.map v->v.0
+  b := s.map v->v.1
 
   say a
   say b

@@ -10,9 +10,9 @@ foo (a array2 f64) unit =>
     #
     # (i,j,v) in a.enumerate2
     e in a.enumerate2
-    i := e.values.0
-    j := e.values.1
-    v := e.values.2
+    i := e.0
+    j := e.1
+    v := e.2
 
   else
     say "sum is $s"
