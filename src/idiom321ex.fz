@@ -1,0 +1,7 @@
+ex321 is
+
+  s := "hell☃"
+  i := 4
+  c := s.as_codepoints[i]
+
+  say c
