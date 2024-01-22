@@ -5,14 +5,7 @@ ex220 is
   (a,b,c) := t
   say "t consists of $a, $b, $c"
 
-  p := t.values.0
-  q := t.values.1
-  r := t.values.2
+  p := t.0
+  q := t.1
+  r := t.2
   say "t consists of $p, $q, $r"
-
-  # NYI: syntactic sugar that does not work yet:
-  #
-  #  s := t.0
-  #  t := t.1
-  #  u := t.2
-  #  say "t consists of $s, $t, $u"
