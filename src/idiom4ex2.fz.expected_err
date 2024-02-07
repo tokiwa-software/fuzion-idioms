@@ -1,6 +1,6 @@
 
 [32m$FUZION/lib/num/wrap_around.fz:103:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
-[34m      debug: !overflow_on_mul(other),
+[34m      debug: !(overflow_on_mul other),
 [33m-----------^[0m
 For call to num.wrap_around.infix *
 Call stack:
