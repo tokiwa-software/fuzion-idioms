@@ -4,4 +4,4 @@ ex242 is
 
   f(x i32) => say "element is $x"
 
-  x | (a -> f a)
+  x ! f

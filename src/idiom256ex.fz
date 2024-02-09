@@ -1,7 +1,10 @@
 ex256 is
 
-  # using pipe and lambda
-  (5..0 : -1) | x -> say x
+  # using pipe and partially applied call
+  (5..0 : -1) ! say
+
+  # using reverse, pipe and partially applied call
+  (0..5).reverse ! say
 
   # using a loop
   for x in 5..0 : -1 do
@@ -14,5 +17,5 @@ ex256 is
       f n-1
   f 5
 
-  # using as_string
+  # using as_string on a Sequence
   say ((5..0 : -1).as_string "\n")

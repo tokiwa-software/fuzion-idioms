@@ -2,10 +2,10 @@ ex143 is
 
   iterate_alternatively(T type, a, b Sequence T, f T -> unit) unit =>
     match a.as_list
-      nil    => b | f
+      nil    => b ! f
       c Cons => f c.head; iterate_alternatively b c.tail f
 
   items1 := [0, 2, 4]
   items2 := [1, 3]
 
-  iterate_alternatively items1 items2 (x -> say x)
+  iterate_alternatively items1 items2 say

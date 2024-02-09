@@ -10,7 +10,7 @@ ex6 =>
     something x
 
   # using a pipe and a lambda
-  items | something
+  items ! something
 
   # using map and a lambda
   items.map something

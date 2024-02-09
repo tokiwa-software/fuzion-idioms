@@ -1,1 +1,2 @@
-y := (x.filter P).map T
+y := x.filter P
+      .map T

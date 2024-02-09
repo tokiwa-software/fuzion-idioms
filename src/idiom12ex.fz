@@ -1,7 +1,7 @@
 ex12 is
 
   squares := container.set_of_ordered ((1..100).map i->i*i)
-  1..100 | x ->
+  1..100 ! x ->
     if x ∈ squares
       say "$x in squares"
     else
