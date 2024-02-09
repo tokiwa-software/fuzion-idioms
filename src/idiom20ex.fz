@@ -12,9 +12,7 @@ ex20 is
       nil
 
   data := array2 10 10 i,j->i*j
-  (1..100 : 4) | x ->
+  (1..100 : 4) ! x ->
       match search data x
-        nil    => say "$x not found"
-#       (i, j) => say "$x found at ($i,$j)" // NYI: destructure in match not supported yet
-        t tuple => (i, j) := t
-                   say "$x found at ($i,$j)"
+        nil     => say "$x not found"
+        t tuple => say "$x found at ({t.0},{t.1})"
