@@ -1,5 +1,5 @@
 
-[32m$FUZION/lib/option.fz:107:11:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
+[32m$FUZION/lib/option.fz:120:11:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
 [34m    safety: (option.this??)
 [33m----------^[0m
 For call to option.get
