@@ -3,7 +3,7 @@
 Call stack:
 precondition of 1i32__1infix_times
 1square_i32
-1INTERN_loop2
+2INTERN_loop2
 universe
 
 *** fatal errors encountered, stopping.
