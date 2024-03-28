@@ -3,7 +3,7 @@ ex196 is
   n := 20
   m := 13
 
-  foo (a Mutable_Array i32, i i32) =>
+  foo (a container.Mutable_Array i32, i i32) =>
     a[i] := 42
 
   mi : mutate is
