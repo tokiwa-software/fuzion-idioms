@@ -2,7 +2,7 @@
 [32m-:5:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
 [34m      debug: is_valid x
 [33m-----------^[0m
-For call to ex89.f
+For call to ex89.f#1
 Call stack:
 ex89: [32m-:14:3:[39m
 [34m  f 8

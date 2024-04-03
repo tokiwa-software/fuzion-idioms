@@ -2,23 +2,23 @@
 [32m$MODULE/num/wrap_around.fz:128:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
 [34m      debug: (!overflow_on_exp other)
 [33m-----------^[0m
-For call to num.wrap_around.infix **
+For call to i32.infix **#1
 Call stack:
-idiom32ex2.exp i32: [32m-:3:43:[39m
+idiom32ex2.exp#3 i32: [32m-:3:43:[39m
 [34m  exp     (T type : integer, x, n T) => x **  n
 [33m------------------------------------------^^[0m
-idiom32ex2.#loop5.#loop4: [32m-:19:26:[39m
+idiom32ex2.#loop5#2.#loop4#2: [32m-:19:26:[39m
 [34m      say "exp $i $j is {exp i j}"
 [33m-------------------------^^^[0m
-idiom32ex2.#loop5.#loop4: [32m-:18:5:[39m
+idiom32ex2.#loop5#2.#loop4#2: [32m-:18:5:[39m
 [34m    for j in 0..15 do
 [33m----^[0m
 ... repeated 13 times ...
 
-idiom32ex2.#loop5: [32m-:18:5:[39m
+idiom32ex2.#loop5#2: [32m-:18:5:[39m
 [34m    for j in 0..15 do
 [33m----^[0m
-idiom32ex2.#loop5: [32m-:17:3:[39m
+idiom32ex2.#loop5#2: [32m-:17:3:[39m
 [34m  for i in 0..15 do
 [33m--^[0m
 ... repeated 4 times ...

@@ -2,12 +2,12 @@
 [32m$MODULE/num/wrap_around.fz:103:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
 [34m      debug: !(overflow_on_mul other)
 [33m-----------^[0m
-For call to num.wrap_around.infix *
+For call to i32.infix *#1
 Call stack:
-square i32: [32m-:1:28:[39m
+square#1 i32: [32m-:1:28:[39m
 [34msquare(x _ : integer) => x * x
 [33m---------------------------^[0m
-#loop2: [32m-:11:22:[39m
+#loop2#2: [32m-:11:22:[39m
 [34m  say "square $i is {square i}"
 [33m---------------------^^^^^^[0m
 universe#0: [32m-:10:1:[39m
