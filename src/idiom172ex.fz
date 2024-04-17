@@ -1,6 +1,6 @@
 ex172 is
 
-  m := ((container.ps_map i32 String).type.from_sequence
+  m := ((container.ps_map i32 String).type.new
          [1,      2,      3,      4     ]
          ["eins", "zwei", "drei", "vier"])
   k := 5

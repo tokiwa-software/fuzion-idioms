@@ -1,6 +1,6 @@
 ex170 is
 
-  mymap := ((container.ps_map String String).type.from_sequence
+  mymap := ((container.ps_map String String).type.new
               ["one", "two", "three", "four", "five"]
               ["一", "二", "三", "四", "五"]
            )
