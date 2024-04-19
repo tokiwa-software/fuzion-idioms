@@ -2,7 +2,7 @@ ex119 is
 
   # preserving order
   #
-  x := [ "b", "a", "b", "c" ]
+  x := [ $"b", "a", "b", "c" ]
   x := for
          r list String := nil, if e ∈ s then r
                                         else cons e r
