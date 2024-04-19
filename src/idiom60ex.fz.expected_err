@@ -6,7 +6,7 @@ For call to (option String).get#0
 Call stack:
 envir.args.index [ ]#1: [32m$MODULE/Sequence.fz:564:13:[39m
 [34m    (nth i).get
-[33m------------^[0m
+[33m------------^^^[0m
 ex60: [32m-:3:18:[39m
 [34m  x := envir.args[1]  # will cause error if called without cmd line argument
 [33m-----------------^[0m
