@@ -1,18 +1,18 @@
 ex196 is
 
-  n := 20
-  m := 13
+  n i64 := 20
+  m i64 := 13
 
-  foo (a container.Mutable_Array i32, i i32) =>
+  foo (E type : effect, a container.Mutable_Array i64 E, i i64) =>
     a[i] := 42
 
   mi : mutate is
   mi.go ()->
-    a := (mi.array i32).type.new mi n 0
+    a := (mi.array i64).type.new mi n 0
     a.indices ! i -> a[i] := i
 
     say a
 
-    (1..m : 2) ! i -> foo a i
+    ((i64 1)..m : 2) ! i -> foo a i
 
     say a
