@@ -3,11 +3,11 @@ ex247 is
   mi : mutate is
   mi.go ()->
 
-    x := (mutate.array (option i32)).type.new mi 100 nil
+    x := (mutate.array (option i64)).type.new mi 100 nil
     for i in x.indices do
       x[i] := i
 
-    p i32 -> bool => i -> i %% 6
+    p i64 -> bool => i -> i %% 6
 
     for i in x.indices do
       if !(p x[i].get)
