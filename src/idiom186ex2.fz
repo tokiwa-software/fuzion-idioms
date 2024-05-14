@@ -6,7 +6,7 @@ ex186a is
     say "** not reachable code **"
 
   my_exit : Exit_Handler is
-    exit(code i32) void =>
+    exit(code u8) void =>
       io.err.println "*** user defined exit handler diverting exit $code ***"
       exit.env.abort
 
