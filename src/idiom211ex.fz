@@ -1,7 +1,6 @@
 ex211 is
 
   path := "path/to/dir"
-  writer := io.file.write
-  match writer.create_dir path
+  match io.dir.make path
     unit => say "$path was created successfully" # logic in case of success
     err error => say err # error handling logic

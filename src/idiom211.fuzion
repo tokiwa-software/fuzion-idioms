@@ -1,1 +1,1 @@
-io.file.write.create_dir path
+io.dir.make path
