@@ -1,9 +1,9 @@
 ex267 is
 
-  foo (x Any) is
+  foo (x Any) =>
     if x.dynamic_type.name = "Const_String"
       say x
 
   foo "Hello, world!"
-  _ := foo 42
+  foo 42
 

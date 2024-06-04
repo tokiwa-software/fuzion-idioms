@@ -1,6 +1,6 @@
 ex186 is
 
-  f is
+  f =>
     say "perform exit:"
     exit 0
     say "** not reachable code **"

@@ -1,6 +1,6 @@
 ex198a is
 
-  f is
+  f =>
     say "in f, perform exit:"
     x := u8 4
     exit x

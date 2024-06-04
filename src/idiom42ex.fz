@@ -4,7 +4,7 @@ ex42 is
   b := ["b", "d", "e", "g" ]
 
   for v in a do
-    for u in b
+    _ := for u in b
     until v = u
     else
       say v

@@ -4,7 +4,7 @@ ex90 is
     getX => x.get
     private x := mut 42
 
-    doubleX is
+    doubleX =>
       x <- 2 * x.get
 
   f := Foo
