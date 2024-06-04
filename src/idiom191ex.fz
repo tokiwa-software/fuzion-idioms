@@ -3,8 +3,8 @@ ex191 is
   f => yak "yes, f called"
 
   test(a Sequence i32, x i32) =>
-    for e in a until e > x
-      f
+    _ := for e in a until e > x
+           f
 
   yak "test on 1..10 if any larger  7: "; test 1..10  7; say ""
   yak "test on 1..10 if any larger 17: "; test 1..10 17; say ""

@@ -4,7 +4,7 @@ ex78 is
   # (see https://mathworld.wolfram.com/CollatzProblem.html):
   #
   start := 27
-  for
+  _ := for
     n in 1..
     x := start, if x %% 2 then x/2 else 3*x+1
     mx := x, max mx x
