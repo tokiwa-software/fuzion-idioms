@@ -4,7 +4,5 @@ ex43 is
   m := array 10 (i -> (100 - 20*i)..300)
 
   _ := for v in m until
-    for i in v until i < 0
-      say "Found $i"
-
-  unit   # needed since loop has implicit bool result
+         for i in v until i < 0
+           say "Found $i"

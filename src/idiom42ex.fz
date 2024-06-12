@@ -5,6 +5,6 @@ ex42 is
 
   for v in a do
     _ := for u in b
-    until v = u
-    else
-      say v
+         until v = u
+         else
+           say v
