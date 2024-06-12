@@ -5,12 +5,10 @@ ex78 is
   #
   start := 27
   _ := for
-    n in 1..
-    x := start, if x %% 2 then x/2 else 3*x+1
-    mx := x, max mx x
-  do
-    say "$n: $x {if x=mx then "new max" else ""}"
-  until x <= 1
-    say "total $n steps, maximum reached was $mx"
-
-  unit
+         n in 1..
+         x := start, if x %% 2 then x/2 else 3*x+1
+         mx := x, max mx x
+       do
+         say "$n: $x {if x=mx then "new max" else ""}"
+       until x <= 1
+         say "total $n steps, maximum reached was $mx"
