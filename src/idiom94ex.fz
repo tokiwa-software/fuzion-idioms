@@ -2,7 +2,7 @@ ex94 =>
 
   x := "a string"
   y String := ref : String
-                utf8 => x.utf8
+                redef utf8 => x.utf8
 
   say (type_of x)
   say (type_of y)

@@ -3,8 +3,8 @@ ex40 is
   public vertex(id i32) : property.orderable
   is
     # redefine `lteq` for parent feature's 'has_total_order' type feature
-    fixed type.lteq    (a, b ex40.vertex) bool => a.id <= b.id
-    fixed type.equality(a, b ex40.vertex) bool => a.id =  b.id
+    fixed redef type.lteq    (a, b ex40.vertex) bool => a.id <= b.id
+    fixed redef type.equality(a, b ex40.vertex) bool => a.id =  b.id
 
     redef as_string => "v$id"
 
