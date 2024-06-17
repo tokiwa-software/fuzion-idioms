@@ -1,2 +1,5 @@
 a := f64.type.quiet_NaN
 b := f64.type.NaN
+
+say "a is $a"
+say "b is $b"
