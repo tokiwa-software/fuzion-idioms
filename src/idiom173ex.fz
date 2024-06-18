@@ -1,21 +1,20 @@
-# Example that returns the formatted string instead of printing it directly
-
-format(x T : integer)  String =>
+format(x T : integer) String =>
 
     str:= x.as_string
 
     len := str.byte_length
 
     first :=
-        if x < T.zero && ((len%3) = 1) then 4   # avoid seperator right after minus
-        else if (len%3) > 0 then len%3 else 3   # determin size of first group
+        if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
+        else if len%3 > 0          then len%3  # determine size of first group
+        else                            3
     
     groups(start i32, str String) String =>
         if start > (str.byte_length - 3)
         then ""
         else "," + (str.substring start (start + 3)) + groups (start + 3) str
 
-    ((str.substring (0) (first)) + (groups first str))
+    (str.substring (0) (first)) + (groups first str)
 
 
 numbers := [1, 42, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
@@ -26,5 +25,6 @@ do say "$n -> {format n}"
 for n in numbers
 do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
 
-a int := int i64.max
-say (format (a*a))
+a := int i64.max
+say (format a*a)
+

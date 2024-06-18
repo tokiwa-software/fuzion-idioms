@@ -1,20 +1,17 @@
-print_formatted 1000
+format(x T : integer) String =>
 
-print_formatted(x) =>
-    xstr:= x.as_string
+    str:= x.as_string
 
-    len := xstr.byte_length
+    len := str.byte_length
 
     first :=
-        if x < 0 && ((len%3) = 1) then 4
-        else if (len%3) > 0 then len%3 else 3
+        if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
+        else if len%3 > 0          then len%3  # determine size of first group
+        else                            3
     
-    yak (xstr.substring (0) (first))
-    
-    _ := 
-        for
-            i := (first), i + 3
-        while i <= (len - 3)
-            yak ","
-            yak "{xstr.substring (i) (i+3)}"
-    say ""
+    groups(start i32, str String) String =>
+        if start > (str.byte_length - 3)
+        then ""
+        else "," + (str.substring start (start + 3)) + groups (start + 3) str
+
+    (str.substring (0) (first)) + (groups first str)
