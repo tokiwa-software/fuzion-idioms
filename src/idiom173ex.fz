@@ -27,4 +27,3 @@ do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
 
 a := int i64.max
 say (format a*a)
-
