@@ -1,0 +1,1 @@
+d := (if s then -1.0 else 1.0) * m * (2 ** e).as_f64

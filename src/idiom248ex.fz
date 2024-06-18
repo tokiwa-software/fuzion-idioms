@@ -1,0 +1,9 @@
+construct_float(s bool, m f64, e i32) f64 =>
+    (if s then -1.0 else 1.0) * m * (2 ** e).as_f64
+
+
+test_vals := [(false, 1.0, 10),(false, 13.0, 7),(true, 17.0, 5),(true, 42.0, 8),(true, 0.66, 7),(false, 100.99, 12)]
+
+_ := for t in test_vals do
+        (s,m,e) := t
+        say "s=$s m=$m e=$e : {construct_float s m e}"
