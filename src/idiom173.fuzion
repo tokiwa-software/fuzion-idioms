@@ -1,0 +1,20 @@
+print_formatted 1000
+
+print_formatted(x) =>
+    xstr:= x.as_string
+
+    len := xstr.byte_length
+
+    first :=
+        if x < 0 && ((len%3) = 1) then 4
+        else if (len%3) > 0 then len%3 else 3
+    
+    yak (xstr.substring (0) (first))
+    
+    _ := 
+        for
+            i := (first), i + 3
+        while i <= (len - 3)
+            yak ","
+            yak "{xstr.substring (i) (i+3)}"
+    say ""
