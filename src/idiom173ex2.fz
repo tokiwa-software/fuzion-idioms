@@ -1,0 +1,17 @@
+format(x i32) String => # NYI: how to treat case i32.min? Trying to format it is a valid intent, but it fails becaus of abs()
+    abs(x i32) i32 =>
+        if x < 0 then -x else x
+
+    if abs(x) < 1E3
+    then $x
+    else format(x/1E3) + "," + $abs(x%1E3)
+
+
+
+numbers := [1, 42, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
+
+for n in numbers
+do say "$n -> {format n}"
+
+for n in numbers
+do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
