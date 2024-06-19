@@ -1,0 +1,1 @@
+array (s.byte_length / 8) i->s.substring((i*8),(i*8+8)).parse_integer(u8, 2)

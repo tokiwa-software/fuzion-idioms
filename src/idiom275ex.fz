@@ -1,0 +1,11 @@
+ex275 is
+
+  s := """
+       00000000\
+       11111111\
+       01111111\
+       00000001\
+       00101010
+       """
+
+  say (array (s.byte_length / 8) i->s.substring((i*8),(i*8+8)).parse_integer(u8, 2))
