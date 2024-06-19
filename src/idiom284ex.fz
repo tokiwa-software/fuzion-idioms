@@ -1,0 +1,4 @@
+ex284 is
+  n := 5
+  a := array n i->0
+  say a
