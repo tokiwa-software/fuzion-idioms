@@ -1,4 +1,5 @@
-strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
+ex259 is
+  strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
 
-_ := for s in strings do
-        say "\"$s\" : {s.replace("_", ",").replace("-", ",").split(",")}"
+  _ := for s in strings do
+          say "\"$s\" : {s.replace("_", ",").replace("-", ",").split(",")}"
