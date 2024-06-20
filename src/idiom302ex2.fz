@@ -1,0 +1,3 @@
+ex302a is
+
+  say "A kibibyte consists of {2**10} bytes, which corresponds to {2**10 * 8} bits."
