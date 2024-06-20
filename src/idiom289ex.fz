@@ -1,0 +1,6 @@
+ex289 is
+  a := "Hello"
+  b := " World!"
+  s := a+b
+
+  say s
