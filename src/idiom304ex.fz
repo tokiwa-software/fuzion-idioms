@@ -1,0 +1,4 @@
+ex304 is
+  s := "Café"
+  data := s.utf8.as_array
+  say data
