@@ -1,0 +1,9 @@
+ex287 is
+  s := "abc123"
+  n := s.byte_length
+
+  s2 := "🌎️"
+  n2 := s2.byte_length
+
+  say "'$s' has $n bytes"
+  say "'$s2' has $n2 bytes"
