@@ -1,0 +1,12 @@
+ex296 is
+  x := "AAbbAAbbAAbb"
+  y := "AA"
+  z := "XX"
+
+  x2 := if !x.contains y then x
+        else
+          i := (x.find_last y).get
+          x.substring(0, i) + (x.substring(i).replace(y, z))
+
+  say x
+  say x2
