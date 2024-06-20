@@ -1,0 +1,13 @@
+ex301a is
+
+  fib(n i32) =>
+    fib_acc(n1, n2, n i32) =>
+      if n=0 then n1
+      else fib_acc n2 (n1+n2) (n-1)
+
+    fib_acc 0 1 n
+
+  for
+    i in 0..10
+  do
+    say "fib $i = {fib i}"
