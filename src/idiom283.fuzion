@@ -1,1 +1,1 @@
-parts := s.split(sep)
+parts := s.split sep
