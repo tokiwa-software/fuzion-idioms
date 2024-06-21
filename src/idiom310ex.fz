@@ -1,0 +1,9 @@
+ex310 is
+
+  rand_bytes => (random.next_u32 255).as_u8 : rand_bytes
+
+  n := 5
+
+  a := rand_bytes.take n
+                 .as_array
+  say a

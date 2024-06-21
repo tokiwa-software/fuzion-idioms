@@ -1,0 +1,4 @@
+rand_bytes => (random.next_u32 255).as_u8 : rand_bytes
+
+a := rand_bytes.take n
+                .as_array
