@@ -1,4 +1,3 @@
-x2 := if !x.contains y then x
-      else
-        i := (x.find_last y).get
-        x.substring(0, i) + (x.substring(i).replace(y, z))
+x2 := match x.find_last y
+        nil => x
+        i i32 => (x.substring 0 i) + (x.substring i).replace y z
