@@ -1,6 +1,8 @@
 ex301a is
 
-  fib(n i32) =>
+  fib(n i32)
+    pre n >= 0
+  =>
     fib_acc(n1, n2, n i32) =>
       if n=0 then n1
       else fib_acc n2 (n1+n2) (n-1)
