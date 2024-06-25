@@ -1,0 +1,9 @@
+ex316 is
+
+  x := "Hello World!".as_codepoints
+
+  p codepoint -> bool := ="l"
+
+  c := x.filter(p).count
+
+  say c
