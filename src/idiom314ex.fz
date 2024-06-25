@@ -1,0 +1,12 @@
+ex314 is
+
+  # Arrays in Fuzion are immutable, creating a new array instead
+
+  x := [1,2,3,4,5]
+  v := 0
+
+  x1 := (v :: x->x).take x.length
+                   .as_array
+
+  say x
+  say x1

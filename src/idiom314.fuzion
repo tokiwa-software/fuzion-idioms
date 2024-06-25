@@ -1,0 +1,2 @@
+x1 := (v :: x->x).take x.length
+                   .as_array
