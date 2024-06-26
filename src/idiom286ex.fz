@@ -1,8 +1,8 @@
 ex286 is
   s := "Hello 🌏!"
 
-  _ := for
-          c in s.as_codepoints
-          i := 0, i + 1
-        do
-          say "Char $i is $c"
+  for
+    c in s.as_codepoints
+    i := 0, i + 1
+  do
+    say "Char $i is $c"
