@@ -1,4 +1,5 @@
 ex65 is
   x := 0.15625
 
+  # NYI: UNDER DEVELOPMENT: formatting for floating points missing
   say "\"{(x * 1000).as_i32.as_f64 / 10.0}%\""
