@@ -1,0 +1,6 @@
+"a-b_c,d" : [a, b, c, d]
+"-a--cc_,eee,ffff_" : [, a, cc, eee, ffff]
+"---" : []
+",_-" : []
+"abcd" : [abcd]
+"" : []
