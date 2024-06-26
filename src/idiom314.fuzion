@@ -1,2 +1,1 @@
-x1 := (v :: x->x).take x.length
-                   .as_array
+x1 := x.map_to_array _->v
