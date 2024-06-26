@@ -1,0 +1,19 @@
+ex314a is
+
+  # Using mutate.array T, creating a new effect mi which inherits from mutate
+  # elements of this array can be mutated while the effect is installed
+
+  mi : mutate is
+  mi.go ()->
+
+    x := (mutate.array i64).type.new mi 5 42
+
+    say x
+
+    for
+      e in x
+      i i64 := 0, i + 1
+    do
+      x[i] := 0
+
+    say x

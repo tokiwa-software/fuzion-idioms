@@ -1,0 +1,11 @@
+ex314 is
+
+  # Arrays in Fuzion are immutable, creating a new array instead
+
+  x := [1,2,3,4,5]
+  v := 0
+
+  x1 := x.map_to_array _->v
+
+  say x
+  say x1
