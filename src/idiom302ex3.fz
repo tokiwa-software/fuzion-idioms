@@ -1,0 +1,24 @@
+ex302b is
+
+  # Installing custom handler for the time.now effect
+  # this produces deterministic output, which is also good for testing purpose
+  (time.now ()->
+    time.date_time 2024 179 11 46 5 0).go ()->
+
+    now := time.now.get
+    h := now.hour
+    m0 := now.minute
+    s0 := now.second
+
+    m := if m0 < 10 then "0$m0" else $m0
+    s := if s0 < 10 then "0$s0" else $s0
+
+    say """
+        Hello World!
+        This example was written on \
+        the {(now.day_of_month.as_string + "."
+              + now.month.as_string + "."
+              + now.year.as_string)}
+        The local time was \
+        $h:$m:$s (CEST)\
+        """

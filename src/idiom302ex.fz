@@ -1,0 +1,6 @@
+ex302 is
+
+  x := 8
+  s := "Our sun has $x planets"
+
+  say s
