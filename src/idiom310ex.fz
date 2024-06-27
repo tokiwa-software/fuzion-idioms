@@ -1,0 +1,13 @@
+ex310 is
+
+  # Create a random provider with the given seed
+  # ensures deterministic sequence of random output for testing
+  simple_random 3523248709069810085 ()->
+    rand_bytes => (random.next_u32 255).as_u8 : rand_bytes
+
+    n := 5
+
+    for _ in 0..2 do
+      a := rand_bytes.take n
+                    .as_array
+      say a
