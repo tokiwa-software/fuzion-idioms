@@ -7,11 +7,11 @@ ex302b is
 
     now := time.now.get
     h := now.hour
-    m := now.minute
-    s := now.second
+    m0 := now.minute
+    s0 := now.second
 
-    m := if m < 10 then "0$m" else $m
-    s := if s < 10 then "0$s" else $s
+    m := if m0 < 10 then "0$m0" else $m0
+    s := if s0 < 10 then "0$s0" else $s0
 
     say """
         Hello World!
