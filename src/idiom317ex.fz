@@ -5,12 +5,16 @@ ex317 is
                "n","o","p","q","r","s","t","u","v","w","x","y","z",
                "0","1","2","3","4","5","6","7","8","9"]
 
-  random_string(n) =>
-    if n = 0 ""
-    else     alphanum[random.next_i32 alphanum.length] + random_string n-1
+  # Create a random provider with the given seed
+  # ensures deterministic sequence of random output for testing
+  simple_random 5945074330984974151 ()->
 
-  n := 50
+    random_string(n) =>
+      if n = 0 ""
+      else     alphanum[random.next_i32 alphanum.length] + random_string n-1
 
-  s := random_string n
+    n := 50
 
-  say s
+    for i in 0..2 do
+      s := random_string n
+      say s
