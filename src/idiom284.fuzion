@@ -1,1 +1,1 @@
-a := array n i->0
+a :=  (0 : nil).cycle.take n

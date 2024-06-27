@@ -1,0 +1,19 @@
+ex284 is
+
+  n := 5
+
+  # This is another approach defining the list
+  b := (0 :: x->x).take n
+  say b
+
+  # This is another approach defining the list
+  zeros => 0 : zeros
+  c := zeros.take n
+  say c
+
+
+  # The standard list type in Fuzion is Sequence, array inherits from Sequence,
+  # so the following does also work, but it doesn't have lazy evaluation
+  # so performance can be worse
+  d := array n i->0
+  say d

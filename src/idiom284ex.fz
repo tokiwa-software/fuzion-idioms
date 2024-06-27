@@ -1,4 +1,6 @@
 ex284 is
+
   n := 5
-  a := array n i->0
+  a :=  (0 : nil).cycle.take n
+
   say a
