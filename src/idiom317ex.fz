@@ -15,6 +15,6 @@ ex317 is
 
     n := 50
 
-    for i in 0..2 do
+    for _ in 0..2 do
       s := random_string n
       say s
