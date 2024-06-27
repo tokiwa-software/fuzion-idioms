@@ -5,9 +5,9 @@ ex275 is
        11111111\
        01111111\
        00000001\
-       00101010
+       00101010\
        """
 
-  say (array s.byte_length/8 i->
-         s.substring i*8 i*8+8
-          .parse_integer u8 2)
+  say (s.as_codepoints
+        .chunk 8
+        .map (x -> (x.foldf (+) "").parse_integer u8 2) )
