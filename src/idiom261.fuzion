@@ -1,0 +1,5 @@
+h :=  date.hour
+m := if date.minute < 10 then "0$date.minute" else $date.minute
+s := if date.second < 10 then "0$date.second" else $date.second
+
+x := "$h:$m:$s"

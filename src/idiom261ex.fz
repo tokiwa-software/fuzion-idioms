@@ -1,0 +1,13 @@
+ex261 =>
+
+    date := time.date_time 2024 179 16 27 10 0
+    # replace the line above with this to get the current time
+    # date := time.now.get
+
+    h :=  date.hour
+    m := if date.minute < 10 then "0$date.minute" else $date.minute
+    s := if date.second < 10 then "0$date.second" else $date.second
+
+    x := "$h:$m:$s"
+
+    say x
