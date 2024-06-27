@@ -1,0 +1,13 @@
+ex275 is
+
+  s := """
+       00000000\
+       11111111\
+       01111111\
+       00000001\
+       00101010\
+       """
+
+  say (s.as_codepoints
+        .chunk 8
+        .map (x -> (x.foldf (+) "").parse_integer u8 2) )
