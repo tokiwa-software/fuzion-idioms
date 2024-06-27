@@ -1,0 +1,3 @@
+parts := s.replace "_"  ","
+          .replace "-"  ","
+          .split ","

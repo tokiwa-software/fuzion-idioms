@@ -1,0 +1,9 @@
+ex259 is
+  strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
+
+  for s in strings do
+    parts := s.replace "_"  ","
+              .replace "-"  ","
+              .split ","
+
+    say "\"$s\" : $parts"

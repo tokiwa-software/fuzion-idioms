@@ -1,0 +1,10 @@
+ex259 is
+  strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
+
+  seperators := container.set_of_ordered String [",", "-", "_"]
+
+  for s in strings do
+
+    parts := s.fields_func (∈ seperators)
+
+    say "\"$s\" : $parts"

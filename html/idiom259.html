@@ -1,7 +1,18 @@
-<h1>NYI: Idiom # 259: Split on several separators</h1>
+<h1>Idiom # 259: Split on several separators</h1>
 
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/259/split-on-several-separators">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom259.fuzion"/>
+
+<h2>Running Example</h2>
+
+<p>Using string manipulation</p>
+
+<runcode file="../src/idiom259ex.fz"/>
+
+<p>Alternative, more elegant, approach using <code>String.fields_func</code><br>
+  Note that this treats multiple neighboring seperators as one, so no empty strings are added in that case.</p>
+
+<runcode file="../src/idiom259ex2.fz"/>
