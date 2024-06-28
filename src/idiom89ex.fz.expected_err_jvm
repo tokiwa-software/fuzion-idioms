@@ -1,7 +1,14 @@
 
-[1;31merror 1[0m[1m: CONTRACT FAILED: pre-condition on call to 'ex89.f'[0m
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
 Call stack:
-precondition of ex89__1f
+fuzion__sys__2fatal_fault
+fuzion_INT__t__install_default__INTERN_fun264__1call
+fuzion__runtime__1fault__1cause
+fuzion_INT__t__install_default__INTERN_fun266__1call
+fuzion__runtime__1pre_fault__1cause
+fuzion__runtime__1precondition_fault
+ex89__1INTERN_pre1_f
+ex89__1INTERN_preandcall2_f
 ex89
 
 *** fatal errors encountered, stopping.

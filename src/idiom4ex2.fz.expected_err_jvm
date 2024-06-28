@@ -1,7 +1,14 @@
 
-[1;31merror 1[0m[1m: CONTRACT FAILED: pre-condition on call to 'i32.infix *'[0m
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
 Call stack:
-precondition of 1i32__1infix_times
+fuzion__sys__2fatal_fault
+fuzion_INT__t__install_default__INTERN_fun264__1call
+fuzion__runtime__1fault__1cause
+fuzion_INT__t__install_default__INTERN_fun266__1call
+fuzion__runtime__1pre_fault__1cause
+fuzion__runtime__1precondition_fault
+1i32__1INTERN_pre21_infix_times
+1i32__1INTERN_preandcall22_infix_times
 1square_i32
 2INTERN_loop2
 universe

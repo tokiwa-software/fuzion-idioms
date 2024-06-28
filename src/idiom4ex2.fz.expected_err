@@ -1,9 +1,29 @@
 
-[32m$MODULE/num/wrap_around.fz:103:12:[39m [1;31merror 1[0m[1m: Precondition does not hold[0m
-[34m      debug: !(overflow_on_mul other)
-[33m-----------^[0m
-For call to i32.infix *#1
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
 Call stack:
+fuzion.type.runtime.type.fault.type.install_default#0.#fun264.call#1: [32m$MODULE/fuzion/runtime/fault.fz:38:18:[39m
+[34m      fuzion.sys.fatal_fault kind msg
+[33m-----------------^^^^^^^^^^^[0m
+fuzion.runtime.fault.cause#1: [32m$MODULE/eff/fallible.fz:35:6:[39m
+[34m  => h e
+[33m-----^[0m
+fuzion.type.runtime.type.pre_fault.type.install_default#0.#fun266.call#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:39:28:[39m
+[34m      fuzion.runtime.fault.cause ("precondition", msg)).default
+[33m---------------------------^^^^^[0m
+fuzion.runtime.pre_fault.cause#1: [32m$MODULE/eff/fallible.fz:35:6:[39m
+[34m  => h e
+[33m-----^[0m
+fuzion.runtime.precondition_fault#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:58:52:[39m
+[34mpublic precondition_fault(msg String) => pre_fault.cause msg
+[33m---------------------------------------------------^^^^^[0m
+i32.#pre21_infix *#1: [32m$MODULE/numeric.fz:60:13:[39m
+[34m      safety: (numeric.this *! other)
+[33m------------^[0m
+i32.#preandcall22_infix *#1: [32m$MODULE/numeric.fz:59:5:[39m
+[34m    pre
+[33m----^^^
+[34m      safety: (numeric.this *! other)
+[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
 square#1 i32: [32m-:1:28:[39m
 [34msquare(x _ : integer) => x * x
 [33m---------------------------^[0m
