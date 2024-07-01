@@ -1,0 +1,6 @@
+ex283 is
+  s :="HellofooWorld !foofoodone"
+  sep := "foo"
+
+  parts := s.split(sep)
+  say parts
