@@ -1,1 +1,1 @@
-s := n.as_string b.as_u32
+s := n.as_string b
