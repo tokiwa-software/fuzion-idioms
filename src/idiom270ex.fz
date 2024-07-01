@@ -1,0 +1,6 @@
+ex270 is
+
+  numbers := [f64.NaN, f64.quiet_NaN, (0.0/0.0), 42.0, (1.0/0.0)]
+
+  for n in numbers do
+    if f64.is_NaN n then say "This is a NaN" else say "$n is a number"
