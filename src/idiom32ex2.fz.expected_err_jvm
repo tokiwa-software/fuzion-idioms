@@ -1,5 +1,5 @@
 
-[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: debug: (numeric.this **! other)[0m
 Call stack:
 fuzion__sys__2fatal_fault
 fuzion_INT__t__install_default__INTERN_fun264__1call
