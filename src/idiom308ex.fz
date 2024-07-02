@@ -1,0 +1,14 @@
+ex308 is
+
+  test_pairs := [(2, 2),
+                 (3, 3),
+                 (65535, 2),
+                 (11259375, 16),
+                 (8191, 8),
+                 (1057, 23),
+                 (42, 10),]
+
+  for t in test_pairs do
+    (n, b) := t
+    s := n.as_string b.as_u32
+    say "$n in base $b is $s"
