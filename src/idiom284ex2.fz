@@ -3,6 +3,10 @@ ex284 is
   n := 5
 
   # This is another approach defining the list
+  a := (0 : nil).cycle.take n
+  say a
+
+  # This is another approach defining the list
   b := (0 :: x->x).take n
   say b
 
