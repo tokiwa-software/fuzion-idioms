@@ -1,0 +1,6 @@
+ex284 is
+
+  n := 5
+  a := [0].cycle.take n
+
+  say a
