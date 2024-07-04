@@ -1,32 +1,32 @@
 
-[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: safety: (option.this??)[0m
 Call stack:
-fuzion.type.runtime.type.fault.type.install_default#0.#fun264.call#1: [32m$MODULE/fuzion/runtime/fault.fz:38:18:[39m
+fuzion.type.runtime.type.fault.type.install_default#0.#fun266.call#1: [32m$MODULE/fuzion/runtime/fault.fz:38:7:[39m
 [34m      fuzion.sys.fatal_fault kind msg
-[33m-----------------^^^^^^^^^^^[0m
+[33m------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
 fuzion.runtime.fault.cause#1: [32m$MODULE/eff/fallible.fz:35:6:[39m
 [34m  => h e
 [33m-----^[0m
-fuzion.type.runtime.type.pre_fault.type.install_default#0.#fun266.call#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:39:28:[39m
+fuzion.type.runtime.type.pre_fault.type.install_default#0.#fun268.call#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:39:7:[39m
 [34m      fuzion.runtime.fault.cause ("precondition", msg)).default
-[33m---------------------------^^^^^[0m
+[33m------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
 fuzion.runtime.pre_fault.cause#1: [32m$MODULE/eff/fallible.fz:35:6:[39m
 [34m  => h e
 [33m-----^[0m
-fuzion.runtime.precondition_fault#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:58:52:[39m
+fuzion.runtime.precondition_fault#1: [32m$MODULE/fuzion/runtime/pre_fault.fz:58:42:[39m
 [34mpublic precondition_fault(msg String) => pre_fault.cause msg
-[33m---------------------------------------------------^^^^^[0m
-(option String).#pre62_get#0: [32m$MODULE/option.fz:134:11:[39m
+[33m-----------------------------------------^^^^^^^^^^^^^^^^^^^[0m
+(option String).#pre62_get#0: [32m$MODULE/option.fz:134:5:[39m
 [34m    safety: (option.this??)
-[33m----------^[0m
+[33m----^^^^^^^^^^^^^^^^^^^^^^^[0m
 (option String).#preandcall63_get#0: [32m$MODULE/option.fz:133:3:[39m
 [34m  pre
 [33m--^^^
 [34m    safety: (option.this??)
 [33m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
-envir.args.index [ ]#1: [32m$MODULE/Sequence.fz:578:13:[39m
+envir.args.index [ ]#1: [32m$MODULE/Sequence.fz:578:5:[39m
 [34m    (nth i).get
-[33m------------^^^[0m
+[33m----^^^^^^^^^^^[0m
 envir.args.#preandcall206_index [ ]#1: [32m$MODULE/Sequence.fz:575:5:[39m
 [34m    pre
 [33m----^^^
