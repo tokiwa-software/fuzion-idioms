@@ -1,15 +1,15 @@
 
-[1;31merror 1[0m[1m: FATAL FAULT `precondition`: :[0m
+[1;31merror 1[0m[1m: FATAL FAULT `precondition`: safety: (option.this??)[0m
 Call stack:
-fuzion__sys__2fatal_fault
-fuzion_INT__t__install_default__INTERN_fun264__1call
-fuzion__runtime__1fault__1cause
-fuzion_INT__t__install_default__INTERN_fun266__1call
-fuzion__runtime__1pre_fault__1cause
-fuzion__runtime__1precondition_fault
-option__Function_unit__INTERN_pre62_get
-option__Function_unit__INTERN_preandcall63_get
-ex206__2INTERN_loop0
+fuzion.sys.fatal_fault
+fuzion.type.runtime.type.fault.type.install_default.fun.call
+fuzion.runtime.fault.cause
+fuzion.type.runtime.type.pre_fault.type.install_default.fun.call
+fuzion.runtime.pre_fault.cause
+fuzion.runtime.precondition_fault
+(option (Function unit)).pre get
+(option (Function unit)).precall get
+ex206.loop
   ... repeated 5 times ...ex206
 
 *** fatal errors encountered, stopping.

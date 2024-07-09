@@ -1,17 +1,17 @@
 
 [1;31merror 1[0m[1m: FATAL FAULT `precondition`: debug: (numeric.this *! other)[0m
 Call stack:
-fuzion__sys__2fatal_fault
-fuzion_INT__t__install_default__INTERN_fun264__1call
-fuzion__runtime__1fault__1cause
-fuzion_INT__t__install_default__INTERN_fun266__1call
-fuzion__runtime__1pre_fault__1cause
-fuzion__runtime__1precondition_fault
-1i32__1INTERN_pre21_infix_times
-1i32__1INTERN_preandcall22_infix_times
-1square_i32
-2INTERN_loop2
-universe
+fuzion.sys.fatal_fault
+fuzion.type.runtime.type.fault.type.install_default.fun.call
+fuzion.runtime.fault.cause
+fuzion.type.runtime.type.pre_fault.type.install_default.fun.call
+fuzion.runtime.pre_fault.cause
+fuzion.runtime.precondition_fault
+i32.pre infix *
+i32.precall infix *
+square i32
+loop
+universe#0
 
 *** fatal errors encountered, stopping.
 one error.
