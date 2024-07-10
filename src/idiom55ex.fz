@@ -1,11 +1,11 @@
 ex55 is
 
   for i in [0, 8, 15, 47, 11] do
-    s := $i
-    say s
-    s := i.as_string
-    say s
-    s := "$i"
-    say s
-    s := "{i+0*i}"
-    say s
+    s0 := $i
+    say s0
+    s1 := i.as_string
+    say s1
+    s2 := "$i"
+    say s2
+    s3 := "{i+0*i}"
+    say s3

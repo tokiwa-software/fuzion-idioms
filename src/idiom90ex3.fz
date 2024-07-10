@@ -1,12 +1,12 @@
 ex90immutable is
 
-  Foo (x i32) is
-    doubleX => Foo 2*x
+  foo (x i32) is
+    double_x => foo 2*x
 
-  Foo => Foo 42
+  foo => foo 42
 
-  f := Foo
-  say f.x
+  f0 := foo
+  say f0.x
 
-  f := f.doubleX
-  say f.x
+  f1 := f0.double_x
+  say f1.x

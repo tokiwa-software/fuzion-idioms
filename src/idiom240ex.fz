@@ -1,23 +1,23 @@
 ex240 is
 
-  a := [ "siebenundvierzig",
+  a0 := [ "siebenundvierzig",
          "elf",
          "null",
          "acht",
          "fünfzehn" ]
-  b := [ "47",
+  b0 := [ "47",
          "11",
          "0",
          "8",
          "15" ]
 
-  s := a.zip b x,y->(x,y)
+  s := a0.zip b0 x,y->(x,y)
         .sort (a,b -> a.0 <= b.0)
-  a := s.map v->v.0
-  b := s.map v->v.1
+  a1 := s.map v->v.0
+  b1 := s.map v->v.1
 
-  say a
-  say b
+  say a1
+  say b1
 
   # NYI: With more syntax sugar for tuples, this should be:
   #

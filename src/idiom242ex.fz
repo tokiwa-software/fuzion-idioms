@@ -2,6 +2,6 @@ ex242 is
 
   x := container.set_of_ordered [0, 8, 15, 47, 11]
 
-  f(x i32) => say "element is $x"
+  f(el i32) => say "element is $el"
 
   x ! f

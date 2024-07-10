@@ -4,8 +4,8 @@ ex35 is
   B(val bool) is
   C(val String) is
 
-  compose(f A -> B,
-          g B -> C) A -> C => a -> g (f a)
+  compose(f0 A -> B,
+          g0 B -> C) A -> C => a -> g0 (f0 a)
 
   f A -> B := a -> B (a.val > 3)
   g B -> C := b -> C (if b.val then "T" else "F")

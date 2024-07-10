@@ -1,6 +1,6 @@
 ex203 is
 
-  a := [0.0, 8.0, 15.0, 47.0, 11.0]
+  arr := [0.0, 8.0, 15.0, 47.0, 11.0]
 
   mean(a Sequence f64) => (sum a) / a.count.as_f64
 
@@ -10,6 +10,6 @@ ex203 is
 
   stddev(a Sequence f64) => f64.type.sqrt (stddev² a)
 
-  say "mean of $a is {mean a}"
-  say "stddev² of $a is {stddev² a}"
-  say "stddev of $a is {stddev a}"
+  say "mean of $arr is {mean arr}"
+  say "stddev² of $arr is {stddev² arr}"
+  say "stddev of $arr is {stddev arr}"

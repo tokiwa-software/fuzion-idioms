@@ -3,9 +3,9 @@ ex54 is
   x := [0, 8, 15, 47, 11]
 
   # using sum
-  s := sum x
-  say s
+  s0 := sum x
+  say s0
 
   # using fold with monoid i32.sum
-  s := x.fold i32.type.sum
-  say s
+  s1 := x.fold i32.type.sum
+  say s1

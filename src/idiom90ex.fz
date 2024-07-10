@@ -1,14 +1,14 @@
 ex90 is
 
-  Foo is
-    getX => x.get
+  foo is
+    get_x => x.get
     private x := mut 42
 
-    doubleX =>
+    double_x =>
       x <- 2 * x.get
 
-  f := Foo
-  say f.getX
+  f := foo
+  say f.get_x
 
-  f.doubleX
-  say f.getX
+  f.double_x
+  say f.get_x

@@ -4,8 +4,8 @@ ex245 is
     a := 42
     b := "Hello"
 
-  x := T1
-  say x
+  x0 := T1
+  say x0
 
   # output is much more useful if as_string is redefined
   T2 is
@@ -13,5 +13,5 @@ ex245 is
     b := "Hello"
     redef as_string => "T $a $b"
 
-  x := T2
-  say x
+  x1 := T2
+  say x1

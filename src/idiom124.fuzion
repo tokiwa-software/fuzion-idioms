@@ -1,4 +1,4 @@
-binary_search(a container.sorted_array T, x T) i32 =>
-  match a.find_key x
+binary_search(arr container.sorted_array T, x T) i32 =>
+  match arr.find_key x
     nil   => -1
     i i32 => i

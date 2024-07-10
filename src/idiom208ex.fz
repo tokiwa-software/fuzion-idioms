@@ -4,6 +4,6 @@ c := [1.1, 2.2, 3.3]
 d := [0.2, 0.4, 0.6]
 e := 3.1416
 
-a := array a.length (i -> e * (a[i] + b[i] * c[i] + f64.type.cos d[i]))
+arr := array a.length (i -> e * (a[i] + b[i] * c[i] + f64.type.cos d[i]))
 
-say a
+say arr

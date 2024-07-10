@@ -1,6 +1,6 @@
 ex29 is
 
   for i in -2..10 do
-    items := [0,1,2,3,4,5,6]
-    items := items.take i ++ items.drop i+1
+    items0 := [0,1,2,3,4,5,6]
+    items := items0.take i ++ items0.drop i+1
     say "dropping $i results in $items"

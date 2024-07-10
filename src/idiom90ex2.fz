@@ -1,14 +1,14 @@
 ex90illegal is
 
-  Foo is
-    getX => x.get
+  foo is
+    get_x => x.get
     private x := mut 42
 
-    doubleX is
+    double_x is
       x <- 2 * x.get
 
-  f := Foo
-  say f.getX
+  f := foo
+  say f.get_x
 
   f.x <- 666   # NYI: should cause an error, visibility not supported yet!
-  say f.getX
+  say f.get_x

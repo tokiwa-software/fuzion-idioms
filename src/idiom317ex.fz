@@ -9,9 +9,9 @@ ex317 is
   # ensures deterministic sequence of random output for testing
   simple_random 5945074330984974151 ()->
 
-    random_string(n) =>
-      if n = 0 ""
-      else     alphanum[random.next_i32 alphanum.length] + random_string n-1
+    random_string(n0) =>
+      if n0 = 0 ""
+      else     alphanum[random.next_i32 alphanum.length] + random_string n0-1
 
     n := 50
 
