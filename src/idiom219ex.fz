@@ -2,18 +2,18 @@ ex219 is
 
   s := "Hello         world"
 
-  t := s.split.as_string " "
-  say t
+  t0 := s.split.as_string " "
+  say t0
 
   # alternatively, using a monoid:
   filter_multi_space : Monoid String is
     redef infix ∙ (a, b String) => if b=" " && a.ends_with " " then a else a + b
     redef e => ""
 
-  t := s.as_codepoints
+  t1 := s.as_codepoints
         .map x->($x)
         .fold filter_multi_space
-  say t
+  say t1
 
   # alternatively, using a loop
   for

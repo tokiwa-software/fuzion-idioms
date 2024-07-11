@@ -2,5 +2,5 @@ ex166 is
 
   a := ["to", "be", "or"]
   b := ["not", "to", "be"]
-  a := a ++ b
-  say (a.as_string " ")
+  c := a ++ b
+  say (c.as_string " ")

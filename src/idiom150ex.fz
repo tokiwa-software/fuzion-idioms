@@ -1,5 +1,5 @@
 ex150 is
 
   p := "path/"
-  p := if p.ends_with "/" then p.substring 0 p.byte_length-1 else p
-  say p
+  p1 := if p.ends_with "/" then p.substring 0 p.byte_length-1 else p
+  say p1

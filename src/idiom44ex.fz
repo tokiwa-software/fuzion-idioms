@@ -1,7 +1,7 @@
 ex44 is
 
+  a := [0,1,2,3,4,5,6]
+  x := 999
   for i in -2..10 do
-    s := [0,1,2,3,4,5,6]
-    x := 999
-    s := s.take i ++ [x] ++ s.drop i
+    s := a.take i ++ [x] ++ a.drop i
     say "inserting at $i results in $s"

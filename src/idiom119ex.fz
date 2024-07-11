@@ -3,17 +3,17 @@ ex119 is
   # preserving order
   #
   x := [ $"b", "a", "b", "c" ]
-  x := for
+  x1 := for
          r list String := nil, if e ∈ s then r
                                         else cons e r
          s := container.set_of_ordered (list String).type.empty, s.add e
          e in x
-       else
+        else
          r.reverse
-  say x
+  say x1
 
   # not preserving order
   #
-  x := [ "b", "a", "b", "c" ]
-  x := container.set_of_ordered x
-  say x
+  x2 := [ "b", "a", "b", "c" ]
+  x3 := container.set_of_ordered x2
+  say x3

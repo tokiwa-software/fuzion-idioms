@@ -1,8 +1,8 @@
 ex195 is
 
-  a := array2 5 7 i,j->3.14
+  arr := array2 5 7 i,j->3.14
 
-  foo a
+  foo arr
 
   foo (a array2 f64) unit =>
     say "array size {a.length0}×{a.length1}"

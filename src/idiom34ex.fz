@@ -1,7 +1,7 @@
 idiom34ex is
 
   x := container.set_of_ordered (list String).type.empty
-  x := x.add "A"
-  x := x.add "B"
-  x := x.add "C"
-  say x
+  x1 := x.add "A"
+  x2 := x1.add "B"
+  x3 := x2.add "C"
+  say x3

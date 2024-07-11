@@ -11,5 +11,5 @@ ex189 is
 
   # alternatively, we can use `infix &` instead of `filter` and
   # `infix |` instead of `map`
-  y := x & P | T
-  say y
+  y1 := x & P | T
+  say y1

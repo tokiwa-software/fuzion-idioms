@@ -3,17 +3,17 @@ ex95 is
   path := "idiom95.testfile"
 
   # create the file
-  o := io.file.use unit path io.file.mode.write ()->
+  o0 := io.file.use unit path io.file.mode.write ()->
     io.file.open.write "hello".utf8
-  handle_error o
+  handle_error o0
 
   # size without error handling, will set x to choice type `outcome i64`
-  x := (io.file.stat path true).bind i64 x->x.size
-  say "the size of $path is $x"
+  x0 := (io.file.stat path true).bind i64 x->x.size
+  say "the size of $path is $x0"
 
   # size without error handling, will fail at precondition or panic in case of an error
-  x := (io.file.stat path true).val.size
-  say "the size of $path is $x"
+  x1 := (io.file.stat path true).val.size
+  say "the size of $path is $x1"
 
   # size with manual error handling
   match io.file.stat path true
@@ -22,8 +22,8 @@ ex95 is
     e error             => say e                         # error handling
 
   # delete the file
-  o := io.file.delete path
-  handle_error o
+  o1 := io.file.delete path
+  handle_error o1
 
   handle_error (e outcome T) =>
     if e!!

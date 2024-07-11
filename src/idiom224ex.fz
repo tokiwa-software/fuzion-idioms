@@ -1,10 +1,10 @@
 ex224 is
 
-  items := [0,1,2,3]
+  items0 := [0,1,2,3]
   x := 99
 
-  items := [x] ++ items
-  say items
+  items1 := [x] ++ items0
+  say items1
 
-  items := items.insert 0 x
-  say items
+  items2 := items1.insert 0 x
+  say items2

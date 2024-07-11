@@ -3,25 +3,33 @@ ex202 is
   a := [0, 8, 15, 47, 11]
 
   # using sum and map
-  sum := sum (a.map x->x*x)
-  say "sum is $sum"
+  sum_map =>
+    sum := sum (a.map x->x*x)
+    say "sum is $sum"
+  sum_map
 
   # using map and fold
-  sum := a.map x->x*x
-          .fold i32.type.sum
-  say "sum is $sum"
+  sum_map_fold =>
+    sum := a.map x->x*x
+            .fold i32.type.sum
+    say "sum is $sum"
+  sum_map_fold
 
   # using a loop
-  for
-    sum := 0, sum + q
-    v in a
-    q := v*v
-  else
-    say "sum is $sum"
+  sum_loop =>
+    for
+      sum := 0, sum + q
+      v in a
+      q := v*v
+    else
+      say "sum is $sum"
+  sum_loop
 
   # using a tail-recursive function
-  sum_of_squares (sum i32, s list i32) i32 =>
-    s ? nil    => sum
-      | c Cons => sum_of_squares (sum + c.head**2) c.tail
+  sum_tail_rec =>
+    sum_of_squares (sum i32, s list i32) i32 =>
+      s ? nil    => sum
+        | c Cons => sum_of_squares (sum + c.head**2) c.tail
 
-  say "sum is {sum_of_squares 0 a.as_list}"
+    say "sum is {sum_of_squares 0 a.as_list}"
+  sum_tail_rec

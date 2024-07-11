@@ -6,8 +6,8 @@ if m.has k
 else
   say "$k not found"
 
-k := "Wellensittich"
-if m.has k
-  say "$k was found"
+w := "Wellensittich"
+if m.has w
+  say "$w was found"
 else
-  say "$k not found"
+  say "$w not found"

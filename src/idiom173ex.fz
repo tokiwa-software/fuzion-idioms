@@ -8,11 +8,11 @@ format(x T : integer) String =>
         if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
         else if len%3 > 0          then len%3  # determine size of first group
         else                            3
-    
-    groups(start i32, str String) String =>
-        if start > (str.byte_length - 3)
+
+    groups(start i32, str0 String) String =>
+        if start > (str0.byte_length - 3)
         then ""
-        else "," + (str.substring start (start + 3)) + groups (start + 3) str
+        else "," + (str0.substring start (start + 3)) + groups (start + 3) str0
 
     (str.substring (0) (first)) + (groups first str)
 

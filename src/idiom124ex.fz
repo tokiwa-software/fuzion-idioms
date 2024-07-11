@@ -1,7 +1,7 @@
 ex124 is
 
-  binary_search(a container.sorted_array i32, x i32) i32 =>
-    match a.find_key x
+  binary_search(arr container.sorted_array i32, x i32) i32 =>
+    match arr.find_key x
       nil   => -1
       i i32 => i
 

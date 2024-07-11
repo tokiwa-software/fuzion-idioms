@@ -1,14 +1,14 @@
-m := (container.ordered_map [ "Hund", "Katze", "Maus" ]
-                            [ "dog",  "cat",  "mouse" ])
+map := (container.ordered_map [ "Hund", "Katze", "Maus" ]
+                              [ "dog",  "cat",  "mouse" ])
 
-v := "mouse"
-for x in m.values until v = x
-  say "$v was found"
+m := "mouse"
+for x in map.values until m = x
+  say "$m was found"
 else
-  say "$v not found"
+  say "$m not found"
 
-v := "axolotl"
-for x in m.values until v = x
-  say "$v was found"
+a := "axolotl"
+for x in map.values until a = x
+  say "$a was found"
 else
-  say "$v not found"
+  say "$a not found"

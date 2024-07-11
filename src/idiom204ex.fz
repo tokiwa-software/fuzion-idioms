@@ -41,5 +41,5 @@ ex204 is
   say "{b} {c}"
 
   d f64 := 5E-324
-  (e, f) := frexp d
-  say "{e} {f}"
+  (exp, fract) := frexp d
+  say "{exp} {fract}"
