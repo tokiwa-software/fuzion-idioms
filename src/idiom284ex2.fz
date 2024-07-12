@@ -2,15 +2,15 @@ ex284 is
 
   n := 5
 
-  # This is another approach defining the list
+  # Define a list of one element, cycle it then take n elements.
   a := (0 : nil).cycle.take n
   say a
 
-  # This is another approach defining the list
+  # First define a list with one element and a generator function for successive elements. Then take n elements.
   b := (0 :: x->x).take n
   say b
 
-  # This is another approach defining the list
+  # Recursive definition of the infinite list with only 0 as element.
   zeros => 0 : zeros
   c := zeros.take n
   say c
