@@ -1,4 +1,10 @@
-data :=
+ex235 is
+
+  s := "SGVsbG8gV29ybGQh"
+
+  data :=
     match encodings.base64.decode_str s
       arr array u8 => arr
       err error    => say err.msg; []
+
+  say (String.type.from_bytes data)
