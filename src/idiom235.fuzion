@@ -1,4 +1,6 @@
 data :=
     match encodings.base64.decode_str s
       arr array u8 => arr
-      err error    => say err.msg; []
+      err error    => # print the error message and assign empty output if s was not valid base64
+                      say err.msg
+                      []
