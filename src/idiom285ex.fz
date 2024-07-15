@@ -1,5 +1,6 @@
-a := f64.quiet_NaN
-b := f64.NaN
+ex285 is
+  a := f64.quiet_NaN
+  b := f64.NaN
 
-say "a is $a"
-say "b is $b"
+  say "a is $a"
+  say "b is $b"
