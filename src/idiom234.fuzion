@@ -1,0 +1,1 @@
+s := encodings.base64.encode_to_string data

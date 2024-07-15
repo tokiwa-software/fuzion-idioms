@@ -1,0 +1,7 @@
+ex234 is
+
+  data := "Hello World!".utf8.as_array
+
+  s := encodings.base64.encode_to_string data
+
+  say s
