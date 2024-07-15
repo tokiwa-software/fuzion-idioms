@@ -1,29 +1,30 @@
-format(x T : integer) String =>
+ex173 is
+  format(x T : integer) String =>
 
-    str:= x.as_string
+      str:= x.as_string
 
-    len := str.byte_length
+      len := str.byte_length
 
-    first :=
-        if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
-        else if len%3 > 0          then len%3  # determine size of first group
-        else                            3
+      first :=
+          if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
+          else if len%3 > 0          then len%3  # determine size of first group
+          else                            3
 
-    groups(start i32, str0 String) String =>
-        if start > (str0.byte_length - 3)
-        then ""
-        else "," + (str0.substring start (start + 3)) + groups (start + 3) str0
+      groups(start i32, str0 String) String =>
+          if start > (str0.byte_length - 3)
+          then ""
+          else "," + (str0.substring start (start + 3)) + groups (start + 3) str0
 
-    (str.substring (0) (first)) + (groups first str)
+      (str.substring (0) (first)) + (groups first str)
 
 
-numbers := [1, 42, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
+  numbers := [1, 42, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
 
-for n in numbers
-do say "$n -> {format n}"
+  for n in numbers
+  do say "$n -> {format n}"
 
-for n in numbers
-do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
+  for n in numbers
+  do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
 
-a := int i64.max
-say (format a*a)
+  a := int i64.max
+  say (format a*a)
