@@ -1,0 +1,11 @@
+ex235 is
+
+  s := "SGVsbG8gV29ybGQh"
+
+  data :=
+    match encodings.base64.decode_str s
+      arr array u8 => arr
+      err error    => panic "error while decoding: {err.msg}"
+
+
+  say (String.type.from_bytes data)
