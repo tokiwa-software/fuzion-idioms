@@ -1,1 +1,35 @@
-*** panic: heir 'error' not known by parent_factory
+
+error 1: FATAL FAULT `*** panic ***`: heir 'error' not known by parent_factory
+Call stack:
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1: $MODULE/fuzion/runtime/fault.fz:38:7:
+      fuzion.sys.fatal_fault kind msg
+------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fuzion.runtime.fault.cause#1: $MODULE/eff/fallible.fz:35:6:
+  => h e
+-----^
+panic.type.install_default.λ.call#1: $MODULE/panic.fz:36:18:
+    (panic (msg->fuzion.runtime.fault.cause ("*** panic ***", msg)) unit).default
+-----------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panic.cause#1: $MODULE/eff/fallible.fz:35:6:
+  => h e
+-----^
+panic#1: $MODULE/panic.fz:56:29:
+public panic(msg String) => panic.cause msg
+----------------------------^^^^^^^^^^^^^^^
+ex73.parent_factory#1: -:9:7:
+      panic "heir '$str' not known by parent_factory"
+------^^^^^
+ex73.loop: -:23:10:
+    h := parent_factory s
+---------^^^^^^^^^^^^^^
+ex73.loop: -:21:3:
+  for
+--^
+... repeated 2 times ...
+
+ex73: -:21:3:
+  for
+--^
+
+*** fatal errors encountered, stopping.
+one error.
