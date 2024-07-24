@@ -1,5 +1,5 @@
 ex130 is
-  public vertex(id i32): property.orderable is
+  vertex(id i32): property.orderable is
     # redefine `lteq` for parent feature's 'has_total_order' type feature
     fixed redef type.lteq    (a, b ex130.vertex) bool => a.id <= b.id
     fixed redef type.equality(a, b ex130.vertex) bool => a.id =  b.id
