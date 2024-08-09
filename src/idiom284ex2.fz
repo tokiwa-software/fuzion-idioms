@@ -1,0 +1,23 @@
+ex284 is
+
+  n := 5
+
+  # Define a list of one element, cycle it then take n elements.
+  a := (0 : nil).cycle.take n
+  say a
+
+  # First define a list with one element and a generator function for successive elements. Then take n elements.
+  b := (0 :: x->x).take n
+  say b
+
+  # Recursive definition of the infinite list with only 0 as element.
+  zeros => 0 : zeros
+  c := zeros.take n
+  say c
+
+
+  # The standard list type in Fuzion is Sequence, array inherits from Sequence,
+  # so the following does also work, but it doesn't have lazy evaluation
+  # so performance can be worse
+  d := array n i->0
+  say d
