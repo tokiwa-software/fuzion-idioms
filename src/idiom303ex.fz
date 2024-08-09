@@ -1,0 +1,4 @@
+ex303 is
+  a := array 6 i->42+i
+
+  say a
