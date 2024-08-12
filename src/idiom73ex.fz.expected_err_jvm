@@ -9,7 +9,7 @@ panic.cause#1
 panic#1
 ex73.parent_factory#1
 ex73.loop
-  ... repeated 4 times ...ex73
+ex73
 
 *** fatal errors encountered, stopping.
 one error.
