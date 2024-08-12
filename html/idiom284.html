@@ -1,7 +1,17 @@
-<h1>NYI: Idiom # 284: Create a zeroed list of integers</h1>
+<h1>Idiom # 284: Create a zeroed list of integers</h1>
 
 <p>See <a class="shylink" target="_blank" href="https://www.programming-idioms.org/idiom/284/create-a-zeroed-list-of-integers">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom284.fuzion"/>
+
+<h2>Runnable Example</h2>
+
+<p>Fuzion has lazy evaluation for lists, so if only a small part of the list is used, the following definition is more efficient than an array, for example.</p>
+
+<runcode file="../src/idiom284ex.fz"/>
+
+<p>Here are some more ways to achieve the same as well as definition using an array.</p>
+
+<runcode file="../src/idiom284ex2.fz"/>
