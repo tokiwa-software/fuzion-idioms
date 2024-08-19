@@ -7,7 +7,7 @@ ex196 is
     a[i] := 42
 
   mi : mutate is
-  mi.go ()->
+  mi.instate_self ()->
     a := (mi.array i64).type.new mi n 0
     a.indices ! i -> a[i] := i
 
