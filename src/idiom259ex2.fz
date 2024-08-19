@@ -1,7 +1,7 @@
 ex259 is
   strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
 
-  seperators := container.set_of_ordered String [",", "-", "_"]
+  seperators := container.set_of_ordered [",", "-", "_"]
 
   for s in strings do
 
