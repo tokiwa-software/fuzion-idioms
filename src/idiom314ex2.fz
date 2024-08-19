@@ -4,7 +4,7 @@ ex314a is
   # elements of this array can be mutated while the effect is installed
 
   mi : mutate is
-  mi.go ()->
+  mi.instate_self ()->
 
     x := (mutate.array i64).type.new mi 5 42
 

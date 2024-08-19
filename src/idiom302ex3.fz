@@ -3,7 +3,7 @@ ex302b is
   # Installing custom handler for the time.now effect
   # this produces deterministic output, which is also good for testing purpose
   (time.now ()->
-    time.date_time 2024 179 11 46 5 0).go ()->
+    time.date_time 2024 179 11 46 5 0).instate_self ()->
 
     now := time.now.get
     h := now.hour
