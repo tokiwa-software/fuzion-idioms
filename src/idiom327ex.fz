@@ -1,3 +1,6 @@
 ex327 is
+
     s := "hELlO"
-    say "{s.lower_case}"
+    t := s.lower_case
+
+    say "$t"

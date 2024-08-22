@@ -1,3 +1,6 @@
-convert_to_upper_case is
+ex328 is
+
     s := "helLo"
-    say "{s.upper_case}"
+    t := s.upper_case
+
+    say "$t"
