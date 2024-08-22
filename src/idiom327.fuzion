@@ -1,1 +1,1 @@
-s := s.lower_case
+t := s.lower_case
