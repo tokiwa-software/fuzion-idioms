@@ -1,0 +1,3 @@
+convert_to_upper_case is
+    s := "helLo"
+    say "{s.upper_case}"

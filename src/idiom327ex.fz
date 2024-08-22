@@ -1,0 +1,3 @@
+convert_to_lower_case is
+    s := "hELlO"
+    say "{s.lower_case}"
