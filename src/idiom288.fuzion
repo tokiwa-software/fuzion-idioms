@@ -1,2 +1,1 @@
-b := x.contains e
-b2 := e2 ∈ x
+b := e ∈ x
