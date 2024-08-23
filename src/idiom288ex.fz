@@ -1,0 +1,23 @@
+ex288 is
+
+    x := container.set_of_ordered [1,2,3,4,5]
+    e := 0
+    e2 := 1
+
+  // running the example using 'contains'
+
+    b := x.contains e
+    if b
+      say "the element e=$e exist in the set x=$x"
+    else
+      say "the element e=$e Does not exist in the set x=$x"
+
+    say "-------------------------------------------------------"
+
+  // running the example using '∈'
+
+    b2 := e2 ∈ x
+    if b2
+      say "the element e=$e exist in the set x=$x"
+    else
+      say "the element e=$e Does not exist in the set x=$x"
