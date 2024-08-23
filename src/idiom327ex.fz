@@ -1,6 +1,6 @@
 ex327 is
 
-    s := "hELlO"
-    t := s.lower_case
+  s := "hELlO"
+  t := s.lower_case
 
-    say "$t"
+  say "$t"

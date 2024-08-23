@@ -1,6 +1,6 @@
 ex328 is
 
-    s := "helLo"
-    t := s.upper_case
+  s := "helLo"
+  t := s.upper_case
 
-    say "$t"
+  say "$t"
