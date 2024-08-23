@@ -7,7 +7,7 @@ ex288 is
   // running the example using 'contains'
 
     b := x.contains e
-    if b=true
+    if b
       say "the element e=$e exist in the set x=$x"
     else
       say "the element e=$e Does not exist in the set x=$x"
