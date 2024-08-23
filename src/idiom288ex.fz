@@ -17,7 +17,7 @@ ex288 is
   // running the example using '∈'
 
     b2 := e2 ∈ x
-    if b2=true
+    if b2
       say "the element e=$e exist in the set x=$x"
     else
       say "the element e=$e Does not exist in the set x=$x"
