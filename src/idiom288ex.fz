@@ -14,7 +14,7 @@ ex288 is
 
     say "-------------------------------------------------------"
 
-  //running the example using '∈'
+  // running the example using '∈'
 
     b2 := e2 ∈ x
     if b2=true
