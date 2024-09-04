@@ -1,0 +1,7 @@
+ex276 is
+
+  x := container.set_of_ordered [5, 2, 4, 8]
+  say "$x"
+  e := 1
+  s := x.add e
+  say "$s"
