@@ -22,11 +22,6 @@ ex73.parent_factory#1: -:9:7:
 ex73.loop: -:23:10:
     h := parent_factory s
 ---------^^^^^^^^^^^^^^
-ex73.loop: -:21:3:
-  for
---^
-... repeated twice ...
-
 ex73: -:21:3:
   for
 --^
