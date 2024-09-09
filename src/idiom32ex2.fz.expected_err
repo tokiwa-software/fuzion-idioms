@@ -32,19 +32,9 @@ idiom32ex2.exp#3 i32: -:3:43:
 idiom32ex2.loop.loop: -:19:26:
       say "exp $i $j is {exp i j}"
 -------------------------^^^
-idiom32ex2.loop.loop: -:18:5:
-    for j in 0..15 do
-----^
-... repeated 13 times ...
-
 idiom32ex2.loop: -:18:5:
     for j in 0..15 do
 ----^
-idiom32ex2.loop: -:17:3:
-  for i in 0..15 do
---^
-... repeated 4 times ...
-
 idiom32ex2: -:17:3:
   for i in 0..15 do
 --^
