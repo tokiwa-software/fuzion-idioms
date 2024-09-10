@@ -1,5 +1,5 @@
 
-error 1: FATAL FAULT `precondition`: safety: (switch.this??)
+error 1: FATAL FAULT `precondition`: safety: switch.this??
 Call stack:
 fuzion.type.runtime.type.fault.type.install_default.λ.call#1: $MODULE/fuzion/runtime/fault.fz:38:7:
       fuzion.sys.fatal_fault kind msg
@@ -17,13 +17,13 @@ fuzion.runtime.precondition_fault#1: $MODULE/fuzion/runtime/pre_fault.fz:58:42:
 public precondition_fault(msg String) => pre_fault.cause msg
 -----------------------------------------^^^^^^^^^^^^^^^^^^^
 (option (Function unit)).pre get: $MODULE/switch.fz:71:5:
-    safety: (switch.this??) # NYI: REGRESSION: parantheses currently necessary, due to PR #2572
-----^^^^^^^^^^^^^^^^^^^^^^^
+    safety: switch.this??
+----^^^^^^^^^^^^^^^^^^^^^
 (option (Function unit)).precall get: $MODULE/switch.fz:70:3:
   pre
 --^^^
-    safety: (switch.this??) # NYI: REGRESSION: parantheses currently necessary, due to PR #2572
-----^^^^^^^^^^^^^^^^^^^^^^^
+    safety: switch.this??
+----^^^^^^^^^^^^^^^^^^^^^
 ex206.loop: -:15:58:
                             [foo, bar, baz, barfl])[str].get.call)
 ---------------------------------------------------------^^^
