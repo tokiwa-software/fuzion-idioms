@@ -32,9 +32,9 @@ envir.args.precall index [ ]: $MODULE/Sequence.fz:576:5:
 ----^^^
       debug: is_valid_index(i)
 ------^^^^^^^^^^^^^^^^^^^^^^^^
-ex60: -:3:18:
+ex60: -:3:8:
   x := envir.args[1]  # will cause error if called without cmd line argument
------------------^
+-------^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.
 one error.

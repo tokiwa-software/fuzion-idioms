@@ -24,12 +24,12 @@ i32.precall infix *: $MODULE/numeric.fz:59:5:
 ----^^^
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-square#1 i32: -:1:28:
+square#1 i32: -:1:26:
 square(x _ : integer) => x * x
----------------------------^
+-------------------------^^^^^
 loop: -:11:22:
   say "square $i is {square i}"
----------------------^^^^^^
+---------------------^^^^^^^^
 universe: -:10:1:
 for i in 100000 .. 100010 do
 ^
