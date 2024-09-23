@@ -24,7 +24,7 @@ i32.precall infix *: $MODULE/numeric.fz:59:5:
 ----^^^
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-square#1 i32: -:1:26:
+square#2 i32: -:1:26:
 square(x _ : integer) => x * x
 -------------------------^^^^^
 loop: -:11:22:

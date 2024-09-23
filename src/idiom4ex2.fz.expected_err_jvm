@@ -9,7 +9,7 @@ fuzion.runtime.pre_fault.cause#1
 fuzion.runtime.precondition_fault#1
 i32.pre infix *
 i32.precall infix *
-square#1 i32
+square#2 i32
 loop
 universe
 
