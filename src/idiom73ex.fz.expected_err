@@ -18,10 +18,10 @@ public panic(msg String) => panic.cause msg
 ----------------------------^^^^^^^^^^^^^^^
 ex73.parent_factory#1: -:9:7:
       panic "heir '$str' not known by parent_factory"
-------^^^^^
+------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ex73.loop: -:23:10:
     h := parent_factory s
----------^^^^^^^^^^^^^^
+---------^^^^^^^^^^^^^^^^
 ex73: -:21:3:
   for
 --^
