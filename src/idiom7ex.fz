@@ -9,4 +9,4 @@ ex7 is
     say "Item $i = $x"
 
   # using zip
-  say (items.zip i32 String 0.. x,i->"$i:$x")
+  say (items.zip 0.. x,i->"$i:$x")

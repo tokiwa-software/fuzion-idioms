@@ -2,10 +2,6 @@ ex254 is
 
   x := ["foo", "bar", "fooo", "foo", "bar", "foo"]
 
-  # NYI: With support for ? |, this would be
-  #
-  #  x¹ := x.map (e -> e="foo" ? "bar" | e)
-  #
-  x¹ := x.map (e -> if e="foo" then "bar" else e)
+  x¹ := x.map (e -> e="foo" ? "bar" : e)
 
   say x¹
