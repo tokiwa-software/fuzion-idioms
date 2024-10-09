@@ -3,12 +3,12 @@ ex222 is
   x0 := 5
   items := [1,2,3,4,5,6,7]
 
-  i0 := ((container.searchable_sequence items).index_of x0).or_else -1
+  i0 := (items.index_of x0).or_else -1
 
   say "found $x0 at index $i0"
 
   x1 := 55
 
-  i1 := ((container.searchable_sequence items).index_of x1).or_else -1
+  i1 := (items.index_of x1).or_else -1
 
   say "found $x1 at index $i1"
