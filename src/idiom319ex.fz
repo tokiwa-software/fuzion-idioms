@@ -4,3 +4,7 @@ g(start i32) : effect is
     # replace current effect instance with next value
     (g start+1).replace
     start
+
+(g 0).instate_self ()->
+  for _ in 1..10 do
+    say g.env.call
