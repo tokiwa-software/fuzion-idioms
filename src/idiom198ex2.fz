@@ -9,7 +9,7 @@ ex198a is
   my_exit : Exit_Handler is
     redef exit(code u8) void =>
       io.err.println "*** user defined exit handler diverting exit $code ***"
-      exit.type.abort
+      exit.abort
 
   exit my_exit ()->
     f

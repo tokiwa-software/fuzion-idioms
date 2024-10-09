@@ -1,5 +1,5 @@
 ex58 is
-  
+
   path := "path/to/file"
 
   # type parameter used by the io.file effects to
@@ -9,5 +9,5 @@ ex58 is
   x := io.file.use some_type (array u8) path io.file.mode.read (()->(io.file.open some_type).read)
 
   match x
-    content array => yak (String.type.from_bytes content) # logic in case of success
+    content array => yak (String.from_bytes content) # logic in case of success
     err error => say err # error handling logic

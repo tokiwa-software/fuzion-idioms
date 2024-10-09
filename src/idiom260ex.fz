@@ -1,4 +1,4 @@
 ex260 =>
-  items := (list String).type.empty
+  items := (list String).empty
 
   say items

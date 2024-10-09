@@ -15,4 +15,4 @@ ex6 =>
   # using map and a lambda
   items.map something
        # map is lazy! To see side effects, force execution, eg., using fold
-      .fold unit.type.monoid
+      .fold unit.monoid

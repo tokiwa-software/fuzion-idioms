@@ -1,6 +1,6 @@
 ex172 is
 
-  m := ((container.ps_map i32 String).type.new
+  m := ((container.ps_map i32 String).new
          [1,      2,      3,      4     ]
          ["eins", "zwei", "drei", "vier"])
   k := 5

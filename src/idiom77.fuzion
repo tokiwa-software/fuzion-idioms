@@ -1,2 +1,2 @@
 x := num.complex -2 3
-x := x * (num.complex i32).type.i
+x := x * (num.complex i32).i

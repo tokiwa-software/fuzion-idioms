@@ -3,7 +3,7 @@ sum := sum (a.map x->x*x)
 
 # using map and fold
 sum := a.map x->x*x
-        .fold i32.type.sum
+        .fold i32.sum
 
 # using a loop
 for

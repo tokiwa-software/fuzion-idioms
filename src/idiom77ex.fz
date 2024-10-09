@@ -1,5 +1,5 @@
 ex77 is
 
   x0 := num.complex -2 3
-  x1 := x0 * (num.complex i32).type.i
+  x1 := x0 * (num.complex i32).i
   say x1

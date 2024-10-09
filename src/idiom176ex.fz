@@ -3,4 +3,4 @@ ex176 is
   s := "46757a696f6e"
   a := array s.byte_length/2 (i -> (s.substring 2*i 2*i+2).parse_i32_hex.val.as_u8)
   say a
-  say (String.type.from_bytes a)
+  say (String.from_bytes a)

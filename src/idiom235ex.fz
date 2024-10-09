@@ -8,4 +8,4 @@ ex235 is
       err error    => panic "error while decoding: {err.msg}"
 
 
-  say (String.type.from_bytes data)
+  say (String.from_bytes data)
