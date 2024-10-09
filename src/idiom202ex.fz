@@ -11,7 +11,7 @@ ex202 is
   # using map and fold
   sum_map_fold =>
     sum := a.map x->x*x
-            .fold i32.type.sum
+            .fold i32.sum
     say "sum is $sum"
   sum_map_fold
 

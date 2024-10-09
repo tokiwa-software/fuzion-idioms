@@ -4,5 +4,5 @@ t := s
   .as_array
   .reverse
   .map String c->c
-  .fold String.type.concat
+  .fold String.concat
 say "$s -> $t"

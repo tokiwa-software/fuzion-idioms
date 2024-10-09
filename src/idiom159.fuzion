@@ -1,6 +1,6 @@
-Trie(
+trie(
   V type,
   c codepoint,
-  children container.ordered_map codepoint (Trie V),
+  children container.ordered_map codepoint (trie V),
   val option V)
 is

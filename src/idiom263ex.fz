@@ -1,6 +1,6 @@
 ex263 is
   log2 (n f64) f64 =>
-    f64.type.log n / f64.type.log 2
+    f64.log n / f64.log 2
 
   log2d (n f64) f64 =>
     (log2 n).floor
@@ -11,5 +11,5 @@ ex263 is
   for
     n in 1..12
   do
-    f := f64.type.from_u32 n.cast_to_u32
+    f := f64.from_u32 n.cast_to_u32
     say "{n} {log2d f} {log2u f}"

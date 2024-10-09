@@ -3,7 +3,7 @@ ex247 is
   mi : mutate is
   mi.instate_self ()->
 
-    x := (mutate.array (option i64)).type.new mi 100 nil
+    x := (mutate.array (option i64)).new mi 100 nil
     for i in x.indices do
       x[i] := i
 

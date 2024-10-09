@@ -1,6 +1,6 @@
 depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex =>
   match queue
-    nil => (list vertex).type.empty
+    nil => (list vertex).empty
     c Cons =>
       # already visited? => skip adding to result
       if visited.contains c.head

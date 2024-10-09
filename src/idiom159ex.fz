@@ -1,14 +1,14 @@
 ex159 is
 
-  Trie
+  trie
     (
     V type,
 
     # the codepoint of this tree node, '#' for root. Not strictly needed.
     cp codepoint,
 
-    # children of this node: maps codepoint at this position to sub-Trie
-    children container.ordered_map codepoint (Trie V),
+    # children of this node: maps codepoint at this position to sub-trie
+    children container.ordered_map codepoint (trie V),
 
     # value of this node if it contains a value
     val option V
@@ -16,33 +16,33 @@ ex159 is
 
   is
 
-    # create a new Trie by adding or replacing mapping (from => to)
+    # create a new trie by adding or replacing mapping (from => to)
     add(from String, to V) =>
       c := cp from
       n :=
         if from.codepoint_length = 1
-          ch := (children[c] ? nil => (container.ordered_map codepoint (Trie V)).type.empty
-                             | el Trie => el.children)
-          Trie c ch to
+          ch := (children[c] ? nil => (container.ordered_map codepoint (trie V)).empty
+                             | el trie => el.children)
+          trie c ch to
         else
-          el := (children[c] ? nil    => Trie V c
-                             | el0 Trie => el0)
+          el := (children[c] ? nil    => trie V c
+                             | el0 trie => el0)
           el.add (from.substring 1) to
-      Trie c (children.add c n) val
+      trie c (children.add c n) val
 
-    # find the value 's' is mapped to by this Trie
+    # find the value 's' is mapped to by this trie
     find(s String) option V =>
       if s.is_empty
         val
       else
         children[cp s] ? nil    => nil
-                       | t Trie => t.find (s.substring 1)
+                       | t trie => t.find (s.substring 1)
 
-  # convenience routine to create empty Trie for codepoint 'c'
-  Trie(V type, cp codepoint) => Trie V cp (container.ordered_map codepoint (Trie V)).type.empty nil
+  # convenience routine to create empty trie for codepoint 'c'
+  trie(V type, cp codepoint) => trie V cp (container.ordered_map codepoint (trie V)).empty nil
 
-  # convenience routine to create empty Trie
-  Trie(V type) => Trie V (cp "#")
+  # convenience routine to create empty trie
+  trie(V type) => trie V (cp "#")
 
   # convenience routine to get the first code point from a non-empty string
   cp (s String)
@@ -53,7 +53,7 @@ ex159 is
   # create a dictionary from English to German and fill it with vocabulatry from
   # "one" to "ten":
   #
-  e0 := Trie String
+  e0 := trie String
   e1 := e0.add "one"   "eins"
   e2 := e1.add "two"   "zwei"
   e3 := e2.add "three" "drei"

@@ -8,7 +8,7 @@ ex203 is
     m := mean a
     mean (a.map x->(x - m)**2)
 
-  stddev(a Sequence f64) => f64.type.sqrt (stddev² a)
+  stddev(a Sequence f64) => f64.sqrt (stddev² a)
 
   say "mean of $arr is {mean arr}"
   say "stddev² of $arr is {stddev² arr}"

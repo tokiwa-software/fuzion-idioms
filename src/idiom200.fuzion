@@ -1,1 +1,1 @@
-h := f64.type.sqrt (x**2 + y**2)
+h := f64.sqrt (x**2 + y**2)
