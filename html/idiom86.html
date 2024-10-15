@@ -8,7 +8,7 @@
 u64, etc.), there are two ways to check for overflow on multiplication.  First,
 the predicate <code>overflow_on_mul</code> checks if a multiplication of two
 values would overflow.  Next, there is a multiplication operator <code>infix
-*?</code> that performs overflow checking and returns a <code>num_option</code>
+*?</code> that performs overflow checking and returns an <code>option</code>
 that can be checked afterwards.</p>
 
 <p>Note that <code>infix *</code> would result in a runtime error in case of an

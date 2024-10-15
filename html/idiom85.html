@@ -8,7 +8,7 @@
 u64, etc.), there are two ways to check for overflow on addition.  First, the
 predicate <code>overflow_on_add</code> checks if an addition of two values would
 overflow.  Next, there is an addition operator <code>infix +?</code> that
-performs overflow checking and returns a <code>num_option</code> that can be
+performs overflow checking and returns an <code>option</code> that can be
   checked afterwards.</p>
 
 <p>Note that <code>infix +</code> would result in a runtime error in case of an
