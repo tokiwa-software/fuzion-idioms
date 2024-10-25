@@ -1,2 +1,2 @@
-time.nano.sleep (time.durations.seconds 30)
+time.nano.sleep (time.duration.seconds 30)
 _ := f 42

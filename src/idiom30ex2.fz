@@ -6,4 +6,4 @@ ex30 is
   (1..1000).map (i-> concur.thread.spawn (() -> f i))
     .for_each x->unit
 
-  time.nano.sleep (time.durations.s 2)
+  time.nano.sleep (time.duration.s 2)

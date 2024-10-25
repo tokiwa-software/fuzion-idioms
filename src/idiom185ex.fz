@@ -2,5 +2,5 @@ ex185 =>
 
   f(n i32) is
 
-  time.nano.sleep (time.durations.seconds 30)
+  time.nano.sleep (time.duration.seconds 30)
   f 42

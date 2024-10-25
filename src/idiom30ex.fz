@@ -6,4 +6,4 @@ ex30 is
   for i in 1..1000 do
     concur.thread.spawn (() -> f i)
 
-  time.nano.sleep (time.durations.s 2)
+  time.nano.sleep (time.duration.s 2)

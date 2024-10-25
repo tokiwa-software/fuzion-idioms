@@ -1,5 +1,5 @@
 ex45 is
 
   say "pausing..."
-  time.nano.sleep (time.durations.s 5)
+  time.nano.sleep (time.duration.s 5)
   say "...running!"
