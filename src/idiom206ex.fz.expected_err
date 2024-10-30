@@ -16,10 +16,10 @@ fuzion.runtime.pre_fault.cause#1: $MODULE/eff/fallible.fz:35:6:
 fuzion.runtime.precondition_fault#1: $MODULE/fuzion/runtime/pre_fault.fz:58:42:
 public precondition_fault(msg String) => pre_fault.cause msg
 -----------------------------------------^^^^^^^^^^^^^^^^^^^
-(option (Function unit)).pre get: $MODULE/switch.fz:71:5:
+(option (Function unit)).pre get: $MODULE/switch.fz:70:5:
     safety: switch.this??
 ----^^^^^^^^^^^^^^^^^^^^^
-(option (Function unit)).precall get: $MODULE/switch.fz:70:3:
+(option (Function unit)).precall get: $MODULE/switch.fz:69:3:
   pre
 --^^^
     safety: switch.this??

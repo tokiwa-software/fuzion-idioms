@@ -1,1 +1,1 @@
-if f64.is_NaN r1 then "This is a NaN" else "This is a number"
+if r1.is_NaN then "This is a NaN" else "This is a number"

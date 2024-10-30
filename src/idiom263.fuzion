@@ -1,5 +1,5 @@
 log2 (n f64) f64 =>
-  f64.log n / f64.log 2
+  n.log / (f64 2).log
 
 log2d (n f64) f64 =>
   (log2 n).floor

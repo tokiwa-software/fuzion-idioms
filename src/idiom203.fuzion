@@ -4,4 +4,4 @@ stddev²(a Sequence f64) =>
   m := mean a
   mean (a.map x->(x - m)**2)
 
-stddev(a Sequence f64) => f64.sqrt (stddev² a)
+stddev(a Sequence f64) => (stddev² a).sqrt
