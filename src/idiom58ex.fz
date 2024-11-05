@@ -6,8 +6,12 @@ ex58 is
   # distinguish different files
   some_type.
 
-  x := io.file.use some_type (array u8) path io.file.mode.read (()->(io.file.open some_type).read)
+  lm : mutate is
 
-  match x
-    content array => yak (String.from_bytes content) # logic in case of success
-    err error => say err # error handling logic
+  lm.instate_self ()->
+
+    x := io.file.use some_type (array u8) lm path io.file.mode.read (()->io.buffered.read_fully lm)
+
+    match x
+      content array => yak (String.from_bytes content) # logic in case of success
+      err error => say err # error handling logic
