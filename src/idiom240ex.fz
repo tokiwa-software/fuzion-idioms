@@ -12,7 +12,7 @@ ex240 is
          "15" ]
 
   s := a0.zip b0 x,y->(x,y)
-        .sort (a,b -> a.0 <= b.0)
+         .sort_by (a,b -> a.0 <= b.0)
   a1 := s.map v->v.0
   b1 := s.map v->v.1
 

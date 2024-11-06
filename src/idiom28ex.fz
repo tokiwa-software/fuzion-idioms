@@ -9,4 +9,4 @@ ex28 is
              item  8 "acht";
              item 15 "fünfzehn" ]
 
-  say (items.sort (a,b -> a.p <= b.p))
+  say (items.sort_by (a,b -> a.p <= b.p))

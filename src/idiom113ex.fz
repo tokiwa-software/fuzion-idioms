@@ -4,7 +4,7 @@ ex113 is
     [ "un",   "une",  "deux", "trois", "quatre" , "cinq" ]
     [ "ichi", "ichi", "ni",   "san"  , "shi/yon", "go"   ] )
 
-  items := mymap.items.sort (a,b -> a.1 <= b.1)
+  items := mymap.items.sort_by (a,b -> a.1 <= b.1)
   for i in items do
     (k,x) := i
     say "$k => $x"

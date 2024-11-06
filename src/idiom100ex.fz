@@ -7,9 +7,9 @@ ex100 is
              "fünfzehn" ]
 
   c (String, String) -> bool := a,b -> a.byte_length <= b.byte_length
-  say (items.sort c)
+  say (items.sort_by c)
 
   # passing the lambda directly to sort avoids
   # specifying its type:
   #
-  say (items.sort (a,b -> a.byte_length <= b.byte_length))
+  say (items.sort_by (a,b -> a.byte_length <= b.byte_length))
