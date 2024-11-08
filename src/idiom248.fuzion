@@ -1,1 +1,1 @@
-d := (if s then -1.0 else 1.0) * m * (2.0 ** e.as_f64)
+d := ((s ? u64.one << 63 : u64.zero) | (e << (f64.significand_bits - 1).as_u64) | m).cast_to_f64
