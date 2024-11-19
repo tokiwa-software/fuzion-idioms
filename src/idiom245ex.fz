@@ -1,17 +1,17 @@
 ex245 is
 
-  T1 is
-    a := 42
-    b := "Hello"
+  t1 is
+    _ := 42
+    _ := "Hello"
 
-  x0 := T1
+  x0 := t1
   say x0
 
   # output is much more useful if as_string is redefined
-  T2 is
+  t2 is
     a := 42
     b := "Hello"
     redef as_string => "T $a $b"
 
-  x1 := T2
+  x1 := t2
   say x1
