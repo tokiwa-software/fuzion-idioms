@@ -1,5 +1,5 @@
-depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) list vertex =>
-  match queue
+depth_first_traverse(queue Sequence vertex, visited container.Set vertex) Sequence vertex =>
+  match queue.as_list
     nil => (list vertex).empty
     c Cons =>
       # already visited? => skip adding to result
@@ -8,6 +8,6 @@ depth_first_traverse(queue list vertex, visited ref container.ps_set vertex) lis
       else
         neighbors := g.neighbors c.head
         # result is the current element, the neighbors and the rest of the visitation queue
-        [c.head].as_list ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
+        [c.head] ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 
-depth_first_traverse [v1].as_list (container.ps_sets vertex).empty | vertex -> say vertex
+(depth_first_traverse [v1] (container.ps_set vertex).empty) ! say
