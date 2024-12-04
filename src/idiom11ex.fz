@@ -2,5 +2,5 @@ x := ["red", "pink", "lilac", "purple", "rose", "lavender", "mauve", "violet", "
 
 for _ in 1..10 do
   c := x.drop (random.next_i32 x.length)
-        .head
+        .first
   say "color: $c"

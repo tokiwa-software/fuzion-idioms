@@ -31,8 +31,8 @@ ex130 is
             ]
   g := graph edges
 
-  depth_first_traverse(queue list vertex, visited container.Set vertex) list vertex =>
-    match queue
+  depth_first_traverse(queue Sequence vertex, visited container.Set vertex) Sequence vertex =>
+    match queue.as_list
       nil => (list vertex).empty
       c Cons =>
         # already visited? => skip adding to result
@@ -41,6 +41,6 @@ ex130 is
         else
           neighbors := g.neighbors c.head
           # result is the current element, the neighbors and the rest of the visitation queue
-          [c.head].as_list ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
+          [c.head] ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 
-  (depth_first_traverse [v1].as_list (container.ps_set vertex).empty) ! say
+  (depth_first_traverse [v1] (container.ps_set vertex).empty) ! say
