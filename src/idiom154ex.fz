@@ -3,7 +3,7 @@ ex154 is
   c1 := "#11ffaa"
   c2 := "#8822ee"
   c := for
-         t := "#", t + v.hex 2
+         t := $"#", t + v.hex 2
          i in 1..5 : 2
          a1 := (c1.substring i i+2).parse_i32_hex.val
          a2 := (c2.substring i i+2).parse_i32_hex.val
