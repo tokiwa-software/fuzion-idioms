@@ -1,36 +1,36 @@
 
 error 1: FATAL FAULT `precondition`: debug: (numeric.this *! other)
 Call stack:
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1: $MODULE/fuzion/runtime/fault.fz:38:7:
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:38:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.fault.cause#1: $MODULE/eff/fallible.fz:35:6:
+fuzion.runtime.fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
   => h e
 -----^
-fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1: $MODULE/fuzion/runtime/pre_fault.fz:39:7:
+fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/pre_fault.fz:39:7:
       fuzion.runtime.fault.cause ("precondition", msg)).default
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.pre_fault.cause#1: $MODULE/eff/fallible.fz:35:6:
+fuzion.runtime.pre_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
   => h e
 -----^
-fuzion.runtime.precondition_fault#1: $MODULE/fuzion/runtime/pre_fault.fz:58:42:
+fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:58:42:
 public precondition_fault(msg String) => pre_fault.cause msg
 -----------------------------------------^^^^^^^^^^^^^^^^^^^
-i32.pre infix *: $MODULE/numeric.fz:60:7:
+i32.pre infix *: {base.fum}/numeric.fz:60:7:
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-i32.precall infix *: $MODULE/numeric.fz:59:5:
+i32.precall infix *: {base.fum}/numeric.fz:59:5:
     pre
 ----^^^
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-square#2 i32: -:1:26:
+square#2 i32: {main.fum}/-:1:26:
 square(x _ : integer) => x * x
 -------------------------^^^^^
-loop: -:11:22:
+loop: {main.fum}/-:11:22:
   say "square $i is {square i}"
 ---------------------^^^^^^^^
-universe: -:10:1:
+universe: {main.fum}/-:10:1:
 for i in 100000 .. 100010 do
 ^
 
