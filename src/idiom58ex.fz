@@ -6,7 +6,7 @@ ex58 is
 
   lm.instate_self ()->
 
-    x := io.file.use (array u8) lm path io.file.mode.read (()->io.buffered.read_fully lm)
+    x := io.file.use (array u8) lm path io.file.mode.read ()->(io.buffered lm).read_fully
 
     match x
       content array => yak (String.from_bytes content) # logic in case of success

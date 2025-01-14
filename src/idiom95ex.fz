@@ -8,7 +8,7 @@ ex95 is
 
     # create the file
     o0 := io.file.use unit lm path io.file.mode.write ()->
-      _ := io.buffered.writer.env.write "hello".utf8
+      _ := (io.buffered lm).writer.env.write "hello".utf8
     handle_error o0
 
     # size without error handling, will set x to choice type `outcome i64`
