@@ -7,7 +7,7 @@ ex120 is
 
     # no error handling is performed here
     # program crashes if user does not type a number
-    _ := (io.stdin m).with  ()->
-      n := io.buffered.read_line m ? str String => str.parse_int.val | io.end_of_file => panic "end of file"
+    _ := (io.stdin.reader m) ! ()->
+      n := (io.buffered m).read_line ? str String => str.parse_int.val | io.end_of_file => panic "end of file"
 
       say "got $n"
