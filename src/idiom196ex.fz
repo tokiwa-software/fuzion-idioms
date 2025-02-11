@@ -3,7 +3,7 @@ ex196 is
   n i64 := 20
   m i64 := 13
 
-  foo (E type : effect, a container.Mutable_Array i64 E, i i64) =>
+  foo (E type : mutate, a container.Mutable_Array i64 E, i i64) =>
     a[i] := 42
 
   mi : mutate is

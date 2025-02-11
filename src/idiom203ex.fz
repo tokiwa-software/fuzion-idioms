@@ -2,14 +2,12 @@ ex203 is
 
   arr := [0.0, 8.0, 15.0, 47.0, 11.0]
 
-  mean(a Sequence f64) => (sum a) / a.count.as_f64
-
   stddev²(a Sequence f64) =>
-    m := mean a
-    mean (a.map x->(x - m)**2)
+    a.average >>= m->
+      (a.map x->(x - m)**2).average
 
-  stddev(a Sequence f64) => (stddev² a).sqrt
+  stddev(a Sequence f64) => (stddev² a) >>= (.sqrt)
 
-  say "mean of $arr is {mean arr}"
+  say "mean of $arr is {arr.average}"
   say "stddev² of $arr is {stddev² arr}"
   say "stddev of $arr is {stddev arr}"
