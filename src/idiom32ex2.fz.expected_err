@@ -24,8 +24,6 @@ i32.precall infix **: {base.fum}/numeric.fz:77:5:
 ----^^^
       debug: (numeric.this **! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      debug: (other ≥ numeric.this.zero)
-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 idiom32ex2.exp#3 i32: {main.fum}/-:3:41:
   exp     (T type : integer, x, n T) => x **  n
 ----------------------------------------^^^^^^^
