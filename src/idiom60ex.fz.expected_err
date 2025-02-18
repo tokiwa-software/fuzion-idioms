@@ -24,10 +24,10 @@ public precondition_fault(msg String) => pre_fault.cause msg
 --^^^
     safety: switch.this??
 ----^^^^^^^^^^^^^^^^^^^^^
-envir.args.index [ ]#1: {base.fum}/Sequence.fz:662:5:
+envir.args.index [ ]#1: {base.fum}/Sequence.fz:672:5:
     (nth i).get
 ----^^^^^^^^^^^
-envir.args.precall index [ ]: {base.fum}/Sequence.fz:659:5:
+envir.args.precall index [ ]: {base.fum}/Sequence.fz:669:5:
     pre
 ----^^^
       debug: is_valid_index(i)
