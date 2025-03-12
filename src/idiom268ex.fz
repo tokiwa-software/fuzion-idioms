@@ -8,7 +8,7 @@ ex268 is
         (vector.this.z*other.x - vector.this.x*other.z)
         (vector.this.x*other.y - vector.this.y*other.x)
 
-    redef as_string =>
+    public redef as_string =>
       "($x, $y, $z)"
 
   a := vector 1 0 0

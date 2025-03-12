@@ -11,7 +11,7 @@ ex245 is
   t2 is
     a := 42
     b := "Hello"
-    redef as_string => "T $a $b"
+    public redef as_string => "T $a $b"
 
   x1 := t2
   say x1
