@@ -2,7 +2,7 @@ node(T type,
      val T,
      children Sequence (node T)) is
 
-  redef as_string => (as_strings 0).as_string "\n"
+  public redef as_string => (as_strings 0).as_string "\n"
 
   as_strings(d i32) =>
     ["+-" + $val] ++ (children.flat_map String (c->c.as_strings d+1)).map s->"| $s"

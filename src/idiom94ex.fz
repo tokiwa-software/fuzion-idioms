@@ -2,7 +2,7 @@ ex94 =>
 
   x := "a string"
   y String := ref : String
-                redef utf8 => x.utf8
+                public redef utf8 => x.utf8
 
   say (type_of x)
   say (type_of y)
@@ -15,4 +15,3 @@ ex94 =>
   # For value instances `x`, this is equal to `type_of x`, but for `x`
   # with a  `ref` type `x.dynamic_type` gives the actual runtime type,
   # while `type_of x` results in the static compile-time type.
-
