@@ -2,7 +2,7 @@ ex99 is
 
   # using custom date handler so output is always the same
 
-  time.now.instate (time.now (()->time.date_time 2000 1 0 0 0 0)) ()->
+  time.now.instate (time.now (()->time.date_time 2000 1 1 0 0 0 0)) ()->
       d := time.now.get
-      x := "{d.year.as_string 4 10}-{d.month.as_string 2 10}-{d.day_of_month.as_string 2 10}"
+      x := "{d.year.as_string 4 10}-{d.month.as_string 2 10}-{d.day.as_string 2 10}"
       say x

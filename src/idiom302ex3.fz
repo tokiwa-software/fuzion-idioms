@@ -3,7 +3,7 @@ ex302b is
   # Installing custom handler for the time.now effect
   # this produces deterministic output, which is also good for testing purpose
   (time.now ()->
-    time.date_time 2024 179 11 46 5 0).instate_self ()->
+    time.date_time 2024 6 27 11 46 5 0).instate_self ()->
 
     now := time.now.get
     h := now.hour
@@ -16,7 +16,7 @@ ex302b is
     say """
         Hello World!
         This example was written on \
-        the {(now.day_of_month.as_string + "."
+        the {(now.day.as_string + "."
               + now.month.as_string + "."
               + now.year.as_string)}
         The local time was \
