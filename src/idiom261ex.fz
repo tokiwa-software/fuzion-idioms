@@ -1,6 +1,6 @@
 ex261 =>
 
-    date := time.date_time 2024 179 16 27 10 0
+    date := time.date_time 2024 6 27 16 27 10 0
     # replace the line above with this to get the current time
     # date := time.now.get
 
