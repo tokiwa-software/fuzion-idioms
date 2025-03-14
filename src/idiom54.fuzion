@@ -1,1 +1,1 @@
-s := sum x
+s := x.sum
