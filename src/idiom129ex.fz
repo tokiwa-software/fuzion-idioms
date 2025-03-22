@@ -12,8 +12,8 @@ ex129 is
     neighbors(v vertex) container.Set vertex =>
       for
         r container.Set vertex := (container.ps_set vertex).empty, if      (v = e.a) r.add e.b
-                                                                        else if (v = e.b) r.add e.a
-                                                                        else              r
+                                                                   else if (v = e.b) r.add e.a
+                                                                   else              r
         e in g.edges
       else
         r
