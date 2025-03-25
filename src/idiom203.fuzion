@@ -1,7 +1,3 @@
-mean(a Sequence f64) => (sum a) / a.count.as_f64
+m := data.average.get
 
-stddev²(a Sequence f64) =>
-  m := mean a
-  mean (a.map x->(x - m)**2)
-
-stddev(a Sequence f64) => (stddev² a).sqrt
+s := data.std_dev.get

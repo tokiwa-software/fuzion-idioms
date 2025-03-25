@@ -1,5 +1,5 @@
-# using sum and map
-sum := sum (a.map x->x*x)
+# using map and Sequence.sum
+sum := (a.map x->x*x).sum
 
 # using map and fold
 sum := a.map x->x*x

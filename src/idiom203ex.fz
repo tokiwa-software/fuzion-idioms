@@ -1,13 +1,11 @@
 ex203 is
 
-  arr := [0.0, 8.0, 15.0, 47.0, 11.0]
+  data := [0.0, 8.0, 15.0, 47.0, 11.0]
 
-  stddev²(a Sequence f64) =>
-    a.average >>= m->
-      (a.map x->(x - m)**2).average
+  m := data.average.get
 
-  stddev(a Sequence f64) => (stddev² a) >>= (.sqrt)
+  s := data.std_dev.get
 
-  say "mean of $arr is {arr.average}"
-  say "stddev² of $arr is {stddev² arr}"
-  say "stddev of $arr is {stddev arr}"
+  say "data is $data"
+  say "mean is $m"
+  say "standard deviation is $s"
