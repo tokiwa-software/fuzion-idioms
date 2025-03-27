@@ -2,7 +2,7 @@ ex120 is
   say "please type a number:"
 
   # NYI: CLEANUP: there should be no need for a mutate effect
-  m : mutate.
+  m : mutate is
   m.instate_self ()->
 
     # no error handling is performed here

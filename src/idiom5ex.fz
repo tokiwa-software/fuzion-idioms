@@ -1,6 +1,6 @@
 ex5 is
 
-  point(x, y f64).
+  point(x, y f64) is
 
   _ := point 3 4
   p2 := (3.0, 4.0)
