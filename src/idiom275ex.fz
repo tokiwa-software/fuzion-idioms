@@ -10,4 +10,4 @@ ex275 is
 
   say (s.as_codepoints
         .chunk 8
-        .map (x -> (x.foldf (+) "").parse_integer u8 2) )
+        .map (x -> (x.foldf "" (+)).parse_integer u8 2) )
