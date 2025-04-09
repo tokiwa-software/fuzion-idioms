@@ -2,8 +2,9 @@ ex60 is
 
   show_args =>
     say "got {envir.args.count} args:"
+    say "first arg is the program, skipping"
     for
-      i in 0..envir.args.count-1
+      i in 1..envir.args.count-1
       x := envir.args[i]
     do
       say "arg#$i is $x"
