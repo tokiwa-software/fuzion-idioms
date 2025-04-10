@@ -1,0 +1,6 @@
+#Check if it is a leap year
+leap_year := (2025 % 4 = 0 & (2025 % 100 != 0 || 2025 % 400 = 0))
+
+#Print true or false
+say leap_year
+
