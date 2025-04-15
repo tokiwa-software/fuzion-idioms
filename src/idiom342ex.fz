@@ -1,0 +1,7 @@
+# Check if it is a leap year
+leap_year(year i32) =>
+  (year % 4 = 0 & year % 100 != 0) |
+    ((year % 100 = 0) & (year % 400 = 0))
+
+# Print true or false
+say leap_year(2025)
