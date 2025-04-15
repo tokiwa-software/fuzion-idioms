@@ -1,0 +1,1 @@
+ways(n) => ways_memo.env.keep n _->

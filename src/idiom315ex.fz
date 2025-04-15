@@ -1,0 +1,18 @@
+ex315 is
+
+# Create a memoization effect that remembers functions of type i32 -> i32
+ways_memo : memoize.memoized i32 i32 is
+
+# Start a memoization effect and run the codeblock
+ways_memo ! () ->
+
+# Define a function 'ways' that returns how many ways there are to climb 'n' steps
+# Use memoization with 'env.keep' to store previously computed results
+  ways(n) => ways_memo.env.keep n _->
+
+# If n is 0 or 1, there is only 1 way to climb
+# Otherwise we can reach the current step either with a single or double step
+    if n <= 1 then 1 else ways n-1 + ways n-2
+
+# Print the number of ways for steps ranging from 5 to 8
+  (5..8).for_each (n -> say "ways($n steps) = {ways n}")

@@ -1,0 +1,4 @@
+ways(5 steps) = 8
+ways(6 steps) = 13
+ways(7 steps) = 21
+ways(8 steps) = 34
