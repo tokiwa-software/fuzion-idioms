@@ -1,11 +1,12 @@
 ex336 is
 
 # Define function 'exponent', which counts b^n
+# Note: Fuzion has a built-in operator `**`, so this function is for demonstration purposes
 exponent(b i32, n i32) =>
   if n = 0 then 1               # Any number with power of 0 is 1
   else b * exponent(b, n - 1)   # Recursion multiplication: b * b * ... *b
 
 # Print examples
-say "2^3 = {exponent(2, 3)}"    # 2 * 2 * 2 * 2 = 8
+say "2^3 = {exponent(2, 3)}"    # 2 * 2 * 2 = 8
 say "5^0 = {exponent(5, 0)}"    # = 1
 say "3^4 = {exponent(3, 4)}"    # 3 * 3 * 3 * 3 = 81
