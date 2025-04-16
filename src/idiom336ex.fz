@@ -3,9 +3,9 @@ ex336 is
 # Define function 'exponent', which counts b^n
 exponent(b i32, n i32) =>
   if n = 0 then 1               # Any number with power of 0 is 1
-  else b * exponent(b, n - 1)   # Multiplication: b * b * ... *b
+  else b * exponent(b, n - 1)   # Recursion multiplication: b * b * ... *b
 
 # Print examples
 say "2^3 = {exponent(2, 3)}"    # 2 * 2 * 2 * 2 = 8
 say "5^0 = {exponent(5, 0)}"    # = 1
-say " "
+say "3^4 = {exponent(3, 4)}"    # 3 * 3 * 3 * 3 = 81
