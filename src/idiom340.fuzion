@@ -1,4 +1,0 @@
-  if s.is_empty then       #Check if the string is empty
-    "Empty string"         #If it's empty, set the value to "Empty string"
-  else
-    s.substring_codepoint(s.codepoint_length - 1, s.codepoint_length) 
