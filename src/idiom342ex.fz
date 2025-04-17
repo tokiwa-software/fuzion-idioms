@@ -1,7 +1,13 @@
-# Check if it is a leap year
-leap_year(year i32) =>
-  (year % 4 = 0 & year % 100 != 0) |
-    ((year % 100 = 0) & (year % 400 = 0))
+ex342 is
+  
+  # Function that tests if it's a leap year or not
+  is_leap_year(year i32) =>
+    (year % 4 = 0 & year % 100 != 0) | 
+      (year % 100 = 0) & (year % 400 = 0)
+  
+  # Custom date_time provider so the output is always the same
+  time.now.instate (time.now ()->(time.date_time 2025 1 1 0 0 0 0)) ()->
 
-# Print true or false
-say leap_year(2025)
+    d := time.now.get
+
+    say "Year: {d.year}, leap year? {is_leap_year(d.year)}"
