@@ -1,6 +1,6 @@
 ex330 is
 
-  # Create a map with integers as keys and Millenniumproblems as values
+  # Create a map with integers as keys and Millennium Problems as values
   m := container.map_of [
     (1, "P=NP(?)"),
     (2, "The Hodge Conjecture"),
