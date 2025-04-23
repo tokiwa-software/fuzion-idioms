@@ -9,7 +9,7 @@ ways_memo : memoize.memoized i32 i32 is
 # Start a memoization effect and run the codeblock
 ways_memo ! () ->
 
-# Define a function 'ways' that returns how many ways there are to climb 'n' steps
+# Define a function 'm' that returns how many ways there are to climb 'n' steps
 # Use memoization with 'env.keep' to store previously computed results
   m(n) => 
     ways_memo.env.keep n _->
