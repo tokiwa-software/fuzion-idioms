@@ -1,6 +1,6 @@
 ex330 is
 
-  # Create a map with integers as keys and Millenniumproblems as values
+  # Create a map with integers as keys and Millennium Problems as values
   m := container.map_of [
     (1, "P=NP(?)"),
     (2, "The Hodge Conjecture"),
@@ -11,6 +11,6 @@ ex330 is
   # Collect all the values in the map into a list. No keys are used.  
   a := m.values
 
-  # Go throught the list and print each value  
+  # Go through the list and print each value  
   for v in a do
       say v
