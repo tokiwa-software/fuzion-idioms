@@ -2,24 +2,27 @@ ex315 is
 
 # Example 2 
 # Suited for situations where multiple memory areas or isolations are needed 
-# Create a memoization effect that remembers functions of type i32 -> i32
+# Defines a memoization effect that handles functions of type i32 -> i32
 
 ways_memo : memoize.memoized i32 i32 is
 
-# Start a memoization effect and run the codeblock
+# Main
 ways_memo ! () ->
 
-# Define a function 'm' that returns how many ways there are to climb 'n' steps
-# Use memoization with 'env.keep' to store previously computed results
+# Function 'm' returns cached result or delegates computation to 'f' if not found
   m(n) => 
     ways_memo.env.keep n _->
       f n
 
-# If n is 0 or 1, there is only 1 way to climb
-# Otherwise we can reach the current step either with a single or double step
+# Recursive function which returns Fibonacci value 
   f(n) =>
-    if n <= 1 then 1 else f n-1 + f n-2
+    say "working on with result for $n"
+    if n <= 1 then 1 else m n-1 + m n-2
 
-# Print the number of ways for steps ranging from 5 to 8
-  (5..8).for_each (n -> 
-    say "ways $n steps = {m n}")
+# First call:
+  say "First call:"
+  say "Result = {m 5}"
+
+# Second call: should reuse all values, no "working on..." should appear
+  say "\nSecond call:"
+  say "Result = {m 5}"
