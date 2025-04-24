@@ -2,7 +2,7 @@ ex340 is
 
 
 # Variable 'c' whose value depends on 's'
-s := "example"
+s := "withMultipleUnicodeCodepoints🏃🏿‍♀️"
 c := 
 
   if s.is_empty then       # Check if the string is empty
