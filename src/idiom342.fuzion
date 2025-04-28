@@ -1,8 +1,6 @@
   is_leap_year(year i32) =>
     (year % 4 = 0 & year % 100 != 0) | 
       (year % 100 = 0) & (year % 400 = 0)
-  
+      
 
-  time.now.instate (time.now ()->(time.date_time 2025 1 1 0 0 0 0)) ()->
-
-    d := time.now.get
+    is_leap_year time.now.get.year
