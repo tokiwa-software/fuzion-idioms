@@ -1,4 +1,11 @@
-ways 5 steps = 8
-ways 6 steps = 13
-ways 7 steps = 21
-ways 8 steps = 34
+First call:
+working on with result for 5
+working on with result for 4
+working on with result for 3
+working on with result for 2
+working on with result for 1
+working on with result for 0
+Result = 8
+
+Second call:
+Result = 8
