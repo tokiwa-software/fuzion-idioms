@@ -4,7 +4,7 @@ ex288 is
     e := 0
     e2 := 1
 
-  // running the example using 'contains'
+  # running the example using 'contains'
 
     b := x.contains e
     if b
@@ -14,7 +14,7 @@ ex288 is
 
     say "-------------------------------------------------------"
 
-  // running the example using '∈'
+  # running the example using '∈'
 
     b2 := e2 ∈ x
     if b2

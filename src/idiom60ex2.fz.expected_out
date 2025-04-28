@@ -1,13 +1,13 @@
 got 1 args:
-arg#0 is ex60
+first arg is the program, skipping
 
 got 3 args:
-arg#0 is cmd
+first arg is the program, skipping
 arg#1 is arg0
 arg#2 is arg1
 
 got 20 args:
-arg#0 is a0
+first arg is the program, skipping
 arg#1 is a1
 arg#2 is a2
 arg#3 is a3

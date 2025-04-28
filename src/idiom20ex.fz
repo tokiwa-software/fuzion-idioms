@@ -2,7 +2,7 @@ ex20 is
 
   search(m array2 i32, x i32) =>
     for
-      # (i,j) in m.index_pairs   // NYI: destructure syntax sugar still missing
+      # (i,j) in m.index_pairs   # NYI: destructure syntax sugar still missing
       ij in m.index_pairs
       i := ij.0
       j := ij.1
