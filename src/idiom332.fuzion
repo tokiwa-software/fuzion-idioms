@@ -1,6 +1,6 @@
 m := container.map_of
 
-keys := m.keys
+k := m.keys
 
 
-for k in keys do
+for a in k do
