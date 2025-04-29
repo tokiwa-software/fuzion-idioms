@@ -1,18 +1,18 @@
 ex322 is
 
-  # Create a map with integers as keys (1-4)
+# Create a map with integers as keys (1-4)
 
-  m := container.map_of [
-    (1, "P=NP(?)"),
-    (2, "The Hodge Conjecture"),
-    (3, "The Poincare Conjecture"),
-    (4, "The Riemann Hypothesis")
-  ]
+m := container.map_of [
+  (1, "P=NP(?)"),
+  (2, "The Hodge Conjecture"),
+  (3, "The Poincare Conjecture"),
+  (4, "The Riemann Hypothesis")
+]
 
-  # Create keys to a list
-  keys := m.keys
+# Create keys to a list
+k := m.keys
 
-  # Go through each key in a loop
-  for k in keys do
+# Go through each key in a loop
+for a in k do
 
-    say "Key: {k}"
+  say "Key: {a}"
