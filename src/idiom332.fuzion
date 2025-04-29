@@ -1,0 +1,6 @@
+m := container.map_of
+
+k := m.keys
+
+
+for a in k do
