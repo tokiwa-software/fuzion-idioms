@@ -1,11 +1,12 @@
 ex342 is
-  
-  # Function that tests if it's a leap year or not
-  is_leap_year(year i32) =>
-    (year % 4 = 0 & year % 100 != 0) | 
-      (year % 100 = 0) & (year % 400 = 0)
 
-  # Search the current year
-  yr := time.now.get.year
+# Function that tests if it's a leap year or not
+is_leap_year(year i32) =>
+  (year % 4 = 0 & year % 100 != 0) | 
+    (year % 100 = 0) & (year % 400 = 0)
 
-  say "Year: {yr}, leap year? {is_leap_year(yr)}"
+# Search the current year
+yr := time.now.get.year
+
+say "Year: {yr}, leap year? {is_leap_year yr}"
+
