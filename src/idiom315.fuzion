@@ -1,0 +1,3 @@
+m(n) : memoize => 
+  keep n _->        # Keep checks if the result is already stored in 'n' 
+    f n             # Otherwise it calculates f(n), stores it and returns the result

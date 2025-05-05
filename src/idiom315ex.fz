@@ -1,0 +1,16 @@
+ex315 is
+
+  # m(n) uses the memoize effect which reuses previously saved results
+  m(n) : memoize =>
+    keep n _->        # Keep checks if the result is already stored in 'n'
+      f n             # Otherwise it calculates f(n), stores it and returns the result
+
+
+  # If n is 0 or 1, there is only 1 way to climb
+  # Otherwise we can reach the current step either with a single or double step
+  f(n) =>
+    if n <= 1 then 1 else f n-1 + f n-2
+
+  # Print the number of ways for steps ranging from 5 to 8
+  (5..8).for_each (n ->
+    say "ways $n steps = {m n}")
