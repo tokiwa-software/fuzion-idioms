@@ -8,26 +8,24 @@
    'c' will be set depending on whether the string is empty or not.
 </p>
 
-<p>If 's' is empty, 'c' is set to "Empty string". Otherwise, the code uses <code>s.substring_codepoint</code> along with <code>s.codepoint_length - 1</code> to extract 
+<p>If 's' is empty, 'c' is set to "Empty string". Otherwise, the code uses <code>s.substring_codepoint</code> along with <code>s.codepoint_length - 1</code> to extract
 the last character of the string.
 </p>
 
-<p>This code example does not correctly handle characters that consist of multiple Unicode codepoints, such as some emojis or accented characters. 
+<p>This code example does not correctly handle characters that consist of multiple Unicode codepoints, such as some emojis or accented characters.
    These may be rendered incorrectly, possibly as question marks.
 </p>
 
-
 <runcode file="../src/idiom340.fuzion"/>
-<<<<<<< HEAD
+
 
 <h2>Runnable Example</h2>
 
 <runcode file=../src/idiom340ex.fz/>
+
 
 <h2>Runnable Example 2</h2>
 
 <p>Example what happens with multiple Unicode codepoints.</p>
 
 <runcode file=../src/idiom340ex2.fz/>
-=======
->>>>>>> main
