@@ -1,12 +1,15 @@
 ex342 is
 
-# Function that tests if it's a leap year or not
-is_leap_year(year i32) =>
-  (year % 4 = 0 & year % 100 != 0) | 
-    (year % 100 = 0) & (year % 400 = 0)
+  # Function that tests if it's a leap year or not
+  is_leap_year(year i32) =>
+    (year % 4 = 0 & year % 100 != 0) |
+      (year % 100 = 0) & (year % 400 = 0)
 
-# Search the current year
-yr := time.now.get.year
+  # Custom date_time provider for testing purpose, so that the output is always the same
+  # comment/remove for current year
+  time.now.instate (time.now ()->(time.date_time 2025 1 1 0 0 0 0)) ()->
 
-say "Year: {yr}, leap year? {is_leap_year yr}"
+    # Search the current year
+    yr := time.now.get.year
 
+    say "Year: {yr}, leap year? {is_leap_year yr}"
