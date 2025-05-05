@@ -1,28 +1,27 @@
+# Example 2
+# Results are not saved forever, but only as long as ways_memo is instated
 ex315 is
 
-# Example 2 
-# Suited for situations where multiple memory areas or isolations are needed 
 # Defines a memoization effect that handles functions of type i32 -> i32
-
 ways_memo : memoize.memoized i32 i32 is
 
 # Main
 ways_memo ! () ->
 
-# Function 'm' returns cached result or delegates computation to 'f' if not found
-  m(n) => 
+  # Function 'm' returns cached result or delegates computation to 'f' if not found
+  m(n) =>
     ways_memo.env.keep n _->
       f n
 
-# Recursive function which returns Fibonacci value 
+  # Recursive function which returns Fibonacci value
   f(n) =>
     say "working on with result for $n"
-    if n <= 1 then 1 else m n-1 + m n-2
+    if n <= 1 then 1 else f n-1 + f n-2
 
-# First call:
+  # First call:
   say "First call:"
   say "Result = {m 5}"
 
-# Second call: should reuse all values, no "working on..." should appear
+  # Second call: should reuse all values, no "working on..." should appear
   say "\nSecond call:"
   say "Result = {m 5}"

@@ -15,6 +15,7 @@
 
 <runcode file="../src/idiom315.fuzion"/>
 
+
 <h2>Running Example</h2>
 
 <runcode file="../src/idiom315ex.fz"/>
@@ -22,12 +23,13 @@
 
 <h2>Running Example</h2>
 
-<p>The following example <code>ways_memo</code> is a separate memoization element. Inside it, a function <code>(n)</code> is defined,
-  which uses the <code>ways_memo.env.keep</code> method to store and retrieve results. <code>(f)</code> is a regular recursive function.
+<p>The following example <code>ways_memo</code> is a separate memoization element. Inside it, a function <code>m</code> is defined,
+  which uses the <code>ways_memo.env.keep</code> method to store and retrieve results. <code>f</code> is a regular recursive function.
   This structure separates the memory (ways_memo) from the rest of the logic.
+</p>
+<p>
+  This example could be made more efficient by also memoizing the recursive calls.
+  For this, the calculations would need to happen directly in <code>m</code>, without a call to <code>f</code>.
 </p>
 
 <runcode file="../src/idiom315ex2.fz"/>
-
-
-
