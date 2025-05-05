@@ -1,0 +1,13 @@
+ex340 is
+
+  # Variable 'c' whose value depends on 's'
+  s := "example"
+  c :=
+    if s.is_empty then       # Check if the string is empty
+      "Empty string"         # If it's empty, set the value to "Empty string"
+    else
+      # If it's not empty, get the last character using codepoint indexing
+      s.substring_codepoint s.codepoint_length-1
+
+  # Print the value of the 'c'
+  say c
