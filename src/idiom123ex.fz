@@ -1,14 +1,26 @@
 ex123 is
 
-  # assert that n is lower than 10
-  assert_n_lt_10(n i32)
-    pre
-      n < 10
-  =>
-    say "assertion passed for: $n"
+  is_consistent := false
 
-  for i in 0..9 do
-    assert_n_lt_10 i
+  check is_consistent
 
-  for i in 0..10 do
-    assert_n_lt_10 i
+  # to control where and when the check is evaluated
+  # several condition qualifiers may be used.
+
+  # checked at run time, unless safety is turned off
+  check safety: is_consistent
+
+  # checked at run time if debugging is enabled
+  check debug: is_consistent
+
+  # checked at compile time, by static analysis tools
+  check analysis: is_consistent
+
+  # checked at run time.
+  check pedantic: is_consistent
+
+  # you may also define your own qualifier (checked at run time):
+  #
+  my_qualifier => true
+
+  check my_qualifier: is_consistent

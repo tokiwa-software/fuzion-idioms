@@ -1,0 +1,30 @@
+
+error 1: FATAL FAULT `check`: is_consistent
+Call stack:
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:38:7:
+      fuzion.sys.fatal_fault kind msg
+------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fuzion.runtime.fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+  => h e
+-----^
+fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/contract_fault.fz:39:7:
+      fuzion.runtime.fault.cause kind_and_msg).default
+------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fuzion.runtime.contract_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+  => h e
+-----^
+fuzion.type.runtime.type.check_fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/check_fault.fz:39:7:
+      fuzion.runtime.contract_fault.cause ("check", msg)).default
+------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fuzion.runtime.check_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+  => h e
+-----^
+fuzion.runtime.checkcondition_fault#1: {base.fum}/fuzion/runtime/check_fault.fz:58:44:
+public checkcondition_fault(msg String) => check_fault.cause msg
+-------------------------------------------^^^^^^^^^^^^^^^^^^^^^
+ex123: {main.fum}/-:5:9:
+  check is_consistent
+--------^^^^^^^^^^^^^
+
+*** fatal errors encountered, stopping.
+one error.
