@@ -1,0 +1,9 @@
+ex344 is
+
+  f := "idiom344.html"
+
+  ext := match f.find_last "."
+            nil => ""
+            n i32 => f.substring (n+1)
+
+  say ext
