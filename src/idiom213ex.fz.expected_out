@@ -1,0 +1,6 @@
+'ABCΞ' = 'XYZ' false
+'ABCΞ' = 'aBCξ' true
+'ABCΞ' = 'abcξ' true
+'XYZ' = 'aBCξ' false
+'XYZ' = 'abcξ' false
+'aBCξ' = 'abcξ' true

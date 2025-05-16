@@ -1,0 +1,5 @@
+for s1 in strings
+    i in 1..
+do
+  for s2 in strings.drop i do
+    b := s1.lower_case = s2.lower_case
