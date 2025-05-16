@@ -1,0 +1,4 @@
+lines := (lm.instate_self (outcome (list String)) ()->
+    io.file.use (list String) lm path io.file.mode.read ()->
+      data := (io.buffered lm).read_fully
+      String.from_bytes data .split "\n").val
