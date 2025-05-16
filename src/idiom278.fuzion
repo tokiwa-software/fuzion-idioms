@@ -1,0 +1,6 @@
+lm : mutate is
+
+line :=
+  lm ! ()->
+    (io.stdin.reader lm) ! ()->
+      (io.buffered lm).read_line
