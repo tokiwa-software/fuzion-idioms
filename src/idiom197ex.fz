@@ -1,0 +1,12 @@
+ex197 is
+
+  path := "src/idiom197ex.fz"
+
+  lm : mutate is
+
+  lines :=
+    lm ! ()->
+      io.file.use _ lm path io.file.mode.read ()->
+        (io.buffered lm).read_lines
+
+  say lines
