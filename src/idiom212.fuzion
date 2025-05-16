@@ -1,0 +1,5 @@
+lm : mutate is
+
+b := lm ! ()->
+
+  io.file.exists path
