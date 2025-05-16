@@ -1,0 +1,7 @@
+ex212 is
+
+  path := "/tmp"
+
+  b := io.file.exists path
+
+  say "$path exists: $b"
