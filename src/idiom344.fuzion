@@ -1,0 +1,5 @@
+# NYI: UNDER DEVELOPMENT: fuzions base library currently misses a file/path abstraction
+
+ext := match f.find_last "."
+          nil => ""
+          n i32 => f.substring (n+1)
