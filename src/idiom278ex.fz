@@ -1,0 +1,12 @@
+ex278 is
+
+  lm : mutate is
+
+  line :=
+    lm ! ()->
+      (io.stdin.reader lm) ! ()->
+        (io.buffered lm).read_line
+
+  match line
+    s String       => say "you entered '$s'"
+    io.end_of_file => say "EOF"
