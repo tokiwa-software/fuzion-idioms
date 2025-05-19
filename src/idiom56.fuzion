@@ -1,0 +1,5 @@
+_ := concur.thread_pool 8 ()->
+      for i in 1..1000 do
+        _ := concur.thread_pool.env.submit ()->(f i)
+
+say "Finished"
