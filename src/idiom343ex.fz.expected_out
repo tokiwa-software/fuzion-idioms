@@ -1,0 +1,7 @@
+idiom343_original_testfile.txt exists
+idiom343_moved_test_file.txt does NOT exist
+
+move file 'idiom343_original_testfile.txt' to 'idiom343_moved_test_file.txt'
+
+idiom343_original_testfile.txt does NOT exist
+idiom343_moved_test_file.txt exists
