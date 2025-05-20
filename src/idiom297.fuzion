@@ -1,0 +1,1 @@
+data1 := data.sort_by (s1, s2 -> s1.lower_case <= s2.lower_case)
