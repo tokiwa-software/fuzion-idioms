@@ -1,7 +1,7 @@
 
 error 1: FATAL FAULT `precondition`: safety: switch.this??
 Call stack:
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:38:7:
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:43:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 fuzion.runtime.fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
@@ -30,14 +30,14 @@ public precondition_fault(msg String) void => pre_fault.cause msg
 --^^^
     safety: switch.this??
 ----^^^^^^^^^^^^^^^^^^^^^
-envir.args.index [ ]#1: {base.fum}/Sequence.fz:672:5:
+envir.args.index [ ]#1: {base.fum}/Sequence.fz:686:5:
     (nth i).get
 ----^^^^^^^^^^^
-envir.args.precall index [ ]: {base.fum}/Sequence.fz:669:5:
+envir.args.precall index [ ]: {base.fum}/Sequence.fz:683:5:
     pre
 ----^^^
-      debug: is_valid_index(i)
-------^^^^^^^^^^^^^^^^^^^^^^^^
+      debug: is_valid_index i
+------^^^^^^^^^^^^^^^^^^^^^^^
 ex60: {main.fum}/-:3:8:
   x := envir.args[1]  # will cause error if called without cmd line argument
 -------^^^^^^^^^^^^^
