@@ -1,0 +1,10 @@
+ex358 is
+
+  x := "file"
+
+  for a in [0, 1, 1000] do
+
+    # NYI: formatting of numbers with grouped thousand not yet implemented
+    s := a = 1 ? "$a $x" : "$a {x}s"
+
+    say s
