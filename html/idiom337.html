@@ -1,7 +1,14 @@
-<h1>NYI: Idiom # 337 Convert string to integer, explicit base</h1>
+<h1>Idiom # 337 Convert string to integer, explicit base</h1>
 
 <p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/337/convert-string-to-integer-explicit-base">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
 <runcode file="../src/idiom337.fuzion"/>
+
+<h2>Runnable Example</h2>
+
+<p>The result type of <code>parse_i32</code> is <a href="https://fuzion-lang.dev/docs/base/outcome+(one+argument)/">outcome</a>. An error is returned when parsing fails.<br>
+   In this case <code>.val</code> will cause a precondition failure.</p>
+
+<runcode file=../src/idiom337ex.fz/>
