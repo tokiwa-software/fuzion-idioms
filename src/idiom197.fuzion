@@ -1,6 +1,6 @@
 # NYI UNDER DEVELOPMENT: we need a more succinct way to do things like this
 
-lines := (lm.instate_self (outcome (list String)) ()->
-    io.file.use (list String) lm path io.file.mode.read ()->
-      data := (io.buffered lm).read_fully
-      String.from_bytes data .split "\n").val
+lines :=
+  lm ! ()->
+    io.file.use _ lm path io.file.mode.read ()->
+      (io.buffered lm).read_lines
