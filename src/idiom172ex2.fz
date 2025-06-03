@@ -1,0 +1,19 @@
+ex172a is
+
+  lm : mutate is
+
+  lm ! ()->
+
+    # create an empty map
+    my_map := container.mutable_tree_map lm String String .empty
+
+    say my_map
+
+    for kv in [("one", "eins"), ("two", "zwei"), ("three", "drei")] do
+
+      (key,val) := kv
+
+      # add key value pair to map
+      my_map.put key val
+
+      say my_map
