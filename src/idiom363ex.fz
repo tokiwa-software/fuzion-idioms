@@ -1,0 +1,7 @@
+ex363 is
+
+  x := container.ps_set String .new ["foo", "bar", "123"]
+
+  y := x.as_list
+
+  say y
