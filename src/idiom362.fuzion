@@ -1,0 +1,2 @@
+s := a.map (x->x.contains " " ? "$q$x$q" : x)
+      .as_string d
