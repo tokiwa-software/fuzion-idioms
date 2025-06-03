@@ -1,0 +1,8 @@
+ex366 is
+
+  s := container.ps_set i32 .new [1, 3, 5, 7]
+  t := container.ps_set i32 .new [2, 4, 6]
+
+  b := s = t
+
+  say b
