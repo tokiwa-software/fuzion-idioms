@@ -18,10 +18,3 @@ ex240 is
 
   say a1
   say b1
-
-  # NYI: With more syntax sugar for tuples, this should be:
-  #
-  #  s := a.zip b x,y->(x,y)
-  #        .sort_by x->x.0
-  #  a := s.map v->v.0
-  #  b := s.map v->v.1
