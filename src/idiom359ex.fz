@@ -1,0 +1,9 @@
+ex359 is
+
+  a := 31
+  b := 7
+
+  q := a / b
+  r := a % b
+
+  say "q=$q r=$r"
