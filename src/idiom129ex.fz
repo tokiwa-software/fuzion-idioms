@@ -43,4 +43,4 @@ ex129 is
           # result is the current element, the rest of the visitation queue and the neighbors
           [c.head] ++ breadth_first_traverse (c.tail ++ neighbors) (visited.add c.head)
 
-  (breadth_first_traverse [v1] (container.ps_set vertex).empty) ! say
+  (breadth_first_traverse [v1] (container.ps_set vertex).empty).for_each say

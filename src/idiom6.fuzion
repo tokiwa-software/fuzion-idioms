@@ -2,8 +2,8 @@
 for x in items do
   something x
 
-# using a pipe and a lambda
-items ! something
+# using for_each and a lambda
+items.for_each something
 
 # using map and a lambda
 items.map something

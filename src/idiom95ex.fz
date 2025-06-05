@@ -1,34 +1,30 @@
 ex95 is
 
-  lm : mutate is
+  path := "idiom95.testfile"
 
-  lm.instate_self ()->
+  # create the file
+  o0 := io.file.use unit path io.file.mode.write ()->
+    _ := io.file.writer.write "hello".utf8
+  handle_error o0
 
-    path := "idiom95.testfile"
+  # size without error handling, will set x to choice type `outcome i64`
+  x0 := (io.file.stat path true).bind i64 x->x.size
+  say "the size of $path is $x0"
 
-    # create the file
-    o0 := io.file.use unit lm path io.file.mode.write ()->
-      _ := (io.buffered lm).writer.env.write "hello".utf8
-    handle_error o0
+  # size without error handling, will fail at precondition or panic in case of an error
+  x1 := (io.file.stat path true).val.size
+  say "the size of $path is $x1"
 
-    # size without error handling, will set x to choice type `outcome i64`
-    x0 := (io.file.stat path true).bind i64 x->x.size
-    say "the size of $path is $x0"
+  # size with manual error handling
+  match io.file.stat path true
+    d io.file.meta_data => x := d.size                   # logic in case of success
+                           say "the size of $path is $x"
+    e error             => say e                         # error handling
 
-    # size without error handling, will fail at precondition or panic in case of an error
-    x1 := (io.file.stat path true).val.size
-    say "the size of $path is $x1"
+  # delete the file
+  o1 := io.file.delete path
+  handle_error o1
 
-    # size with manual error handling
-    match io.file.stat path true
-      d io.file.meta_data => x := d.size                   # logic in case of success
-                             say "the size of $path is $x"
-      e error             => say e                         # error handling
-
-    # delete the file
-    o1 := io.file.delete path
-    handle_error o1
-
-    handle_error (e outcome T) =>
-      if e!!
-        panic $e.err
+  handle_error (e outcome T) =>
+    if e!!
+      panic $e.err
