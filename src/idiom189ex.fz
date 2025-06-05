@@ -1,6 +1,7 @@
 ex189 is
 
-  x := 0..                                 # all non-negative integers
+  # all non-negative integers
+  x := 0..
 
   P i32 -> bool   := i -> i %% 3   # divisible by 3
   T i32 -> String := i -> "{i}² = {i*i}"
@@ -9,7 +10,6 @@ ex189 is
         .map T
   say y
 
-  # alternatively, we can use `infix &` instead of `filter` and
-  # `infix |` instead of `map`
-  y1 := x & P | T
+  # alternatively, we can use `infix |` instead of `map`
+  y1 := x.filter P | T
   say y1

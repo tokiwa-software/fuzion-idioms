@@ -9,10 +9,10 @@ ex196 is
   mi : mutate is
   mi.instate_self ()->
     a := (mi.array i64).new mi n 0
-    a.indices ! i -> a[i] := i
+    a.indices.for_each (i -> a[i] := i)
 
     say a
 
-    ((i64 1)..m : 2) ! i -> foo a i
+    ((i64 1)..m : 2).for_each (i -> foo a i)
 
     say a

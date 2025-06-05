@@ -1,4 +1,4 @@
-mymap.items ! t -> say "{t.0} => {t.1}"
+mymap.items.for_each (t -> say "{t.0} => {t.1}")
 
 # NYI: with more syntactic sugar, this should become
 #

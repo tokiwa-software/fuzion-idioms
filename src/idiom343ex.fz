@@ -3,11 +3,8 @@ ex343 is
   path1 := "idiom343_original_testfile.txt"
   path2 := "idiom343_moved_test_file.txt"
 
-  lm : mutate is
-
   # create a testfile
-  _ := lm ! ()->
-    _ := io.file.use unit lm path1 io.file.mode.write ()->((io.buffered lm).writer.env.write "".utf8).error
+  _ := io.file.use unit path1 io.file.mode.write ()->(io.file.writer.write "".utf8).error
 
   say "$path1 {io.file.exists path1 ? "exists" : "does NOT exist"}"
   say "$path2 {io.file.exists path2 ? "exists" : "does NOT exist"}"
