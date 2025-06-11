@@ -1,1 +1,1 @@
-x ! f
+x.for_each f

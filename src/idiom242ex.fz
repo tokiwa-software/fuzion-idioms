@@ -4,4 +4,4 @@ ex242 is
 
   f(el i32) => say "element is $el"
 
-  x ! f
+  x.for_each f

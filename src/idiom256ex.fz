@@ -1,10 +1,10 @@
 ex256 is
 
-  # using pipe and partially applied call
-  (5..0 : -1) ! say
+  # using for_each and partially applied call
+  (5..0 : -1).for_each say
 
-  # using reverse, pipe and partially applied call
-  (0..5).reverse ! say
+  # using reverse, for_each and partially applied call
+  (0..5).reverse.for_each say
 
   # using a loop
   for x in 5..0 : -1 do

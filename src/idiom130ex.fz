@@ -43,4 +43,4 @@ ex130 is
           # result is the current element, the neighbors and the rest of the visitation queue
           [c.head] ++ depth_first_traverse (neighbors ++ c.tail) (visited.add c.head)
 
-  (depth_first_traverse [v1] (container.ps_set vertex).empty) ! say
+  (depth_first_traverse [v1] (container.ps_set vertex).empty).for_each say
