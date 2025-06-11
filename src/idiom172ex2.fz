@@ -11,7 +11,7 @@ ex172a is
 
     for kv in [("one", "eins"), ("two", "zwei"), ("three", "drei")] do
 
-      (key,val) := kv
+      key,val := kv
 
       # add key value pair to map
       my_map.put key val

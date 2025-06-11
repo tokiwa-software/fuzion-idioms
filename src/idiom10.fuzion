@@ -1,5 +1,5 @@
 shuffle(T type, seq Sequence T) =>
   if seq.count < 2 then seq else
-    (l,t) := seq.split_at (random.next_i32 seq.count)
-    (m,r) := t.split_at 1
+    l,t := seq.split_at (random.next_i32 seq.count)
+    m,r := t.split_at 1
     m ++ shuffle l++r

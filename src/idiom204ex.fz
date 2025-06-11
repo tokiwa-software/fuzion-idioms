@@ -37,9 +37,9 @@ ex204 is
       (bits3.cast_to_f64, e)
 
   a f64 := 3.14
-  (b, c) := frexp a
+  b, c := frexp a
   say "{b} {c}"
 
   d f64 := 5E-324
-  (exp, fract) := frexp d
+  exp, fract := frexp d
   say "{exp} {fract}"

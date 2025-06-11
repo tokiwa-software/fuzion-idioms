@@ -1,5 +1,5 @@
 ex249 is
 
-  (a, b, c) := (42, "hello", 5.0)
+  a, b, c := (42, "hello", 5.0)
 
   say "$a $b $c"

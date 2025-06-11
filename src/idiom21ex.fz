@@ -3,5 +3,5 @@ ex21 is
   a := 33
   b := 77
   say "a is $a b is $b"
-  (a¹,b¹) := (b,a)
+  a¹,b¹ := (b,a)
   say "a¹ is $a¹ b¹ is $b¹"

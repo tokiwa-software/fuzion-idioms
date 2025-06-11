@@ -2,7 +2,7 @@ ex220 is
 
   t := (2.5, "hello", -1)
 
-  (a,b,c) := t
+  a,b,c := t
   say "t consists of $a, $b, $c"
 
   p := t.0

@@ -9,6 +9,6 @@ ex308 is
                  (42, 10),]
 
   for t in test_pairs do
-    (n, b) := t
+    n, b := t
     s := n.as_string b.as_u32
     say "$n in base $b is $s"

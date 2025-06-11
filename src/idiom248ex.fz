@@ -9,7 +9,7 @@ ex248 is
 
   for t in test_vals do
 
-    (s,m,e) := t
+    s,m,e := t
 
     d := ((s ? u64.one << 63 : u64.zero) | (e << (f64.significand_bits - 1).as_u64) | m).cast_to_f64
 

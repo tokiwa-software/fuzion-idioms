@@ -6,5 +6,5 @@ ex113 is
 
   items := mymap.items.sort_by (a,b -> a.1 <= b.1)
   for i in items do
-    (k,x) := i
+    k,x := i
     say "$k => $x"
