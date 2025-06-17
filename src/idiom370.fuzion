@@ -1,0 +1,10 @@
+f(b i32) =>
+  suffix :=
+    if 9 < (b % 100) < 14
+      "th"
+    else
+      x := b % 10
+      x = 1 ? "st" : x = 2 ? "nd" : x = 3 ? "rd" : "th"
+  $b + suffix
+
+s := f a
