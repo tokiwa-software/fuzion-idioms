@@ -2,10 +2,6 @@ ex353 is
 
   items := [1,2,2,3,2,5]
 
-  is_sorted(T type : property.orderable, s Sequence T) =>
-    if s.count < 2 then true
-    else
-      (s.zip (s.drop 1) (x,y)->x<=y).fold1 (&&)
-
-  b := is_sorted items
+  b := items.is_sorted
+  
   say "$items is {b ? "sorted" : "unsorted"}"
