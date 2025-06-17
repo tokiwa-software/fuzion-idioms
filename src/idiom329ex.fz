@@ -1,0 +1,9 @@
+ex329 is
+  m := container.ordered_map 1..3 ["one", "two", "three"]
+
+  k := 9
+  v := m[k] # returns an option
+
+  match v
+    s String => say "Value for key '$k' in map m is '$s'"
+    nil      => say "Map m does not contain a value for key '$k'"
