@@ -1,0 +1,9 @@
+ex337 is
+
+  s := "cafe"
+
+  b := 16
+
+  i := s.parse_i32 b .val
+
+  say i
