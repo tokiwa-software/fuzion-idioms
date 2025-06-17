@@ -6,10 +6,10 @@ ex360 is
     if len = 0 then ""
     else if len = 1 then $b.first
     else
-      b1 := b.slice 0 (len - 1)
+      b1 := b.take (len - 1)
       b1.as_string ", " + " and " + b.last.as_string
 
   for i in 1..(aa.count) do
-    a := aa.slice 0 i
+    a := aa.take i
     s := f a
     say s
