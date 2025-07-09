@@ -1,0 +1,9 @@
+f(b Sequence T) String =>
+  len := b.count
+  if len = 0 then ""
+  else if len = 1 then $b.first
+  else
+    b1 := b.take (len - 1)
+    b1.as_string ", " + " and " + b.last.as_string
+
+s := f a
