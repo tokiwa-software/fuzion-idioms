@@ -1,0 +1,7 @@
+ex353 is
+
+  items := [1,2,2,3,2,5]
+
+  b := items.is_sorted
+  
+  say "$items is {b ? "sorted" : "unsorted"}"
