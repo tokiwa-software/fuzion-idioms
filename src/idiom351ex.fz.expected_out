@@ -1,1 +1,2 @@
+[(1, 7), (2, 8), (3, 9)]
 [instance[tuple i32 i32], instance[tuple i32 i32], instance[tuple i32 i32]]

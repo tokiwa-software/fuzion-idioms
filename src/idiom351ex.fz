@@ -5,4 +5,8 @@ ex351 is
 
   z := a.zip b tuple2
 
+  # printing a tuple currently requires this workaround
+  say (z.map x->"({x.0}, {x.1})")
+
+  # as_string on a tuple creates a generic output with the types
   say z
