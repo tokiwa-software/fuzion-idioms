@@ -1,0 +1,12 @@
+ex351 is
+
+  a := 1..3
+  b := 7..9
+
+  z := a.zip b tuple2
+
+  # printing a tuple currently requires this workaround
+  say (z.map x->"({x.0}, {x.1})")
+
+  # as_string on a tuple creates a generic output with the types
+  say z
