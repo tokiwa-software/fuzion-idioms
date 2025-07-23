@@ -5,6 +5,6 @@ ex259 is
 
   for s in strings do
 
-    parts := s.fields_func (∈ seperators)
+    parts := s.split_if (∈ seperators)
 
     say "\"$s\" : $parts"
