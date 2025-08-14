@@ -4,7 +4,7 @@ ex129 is
     public fixed redef type.lteq    (a, b ex129.vertex) bool => a.id <= b.id
     public fixed redef type.equality(a, b ex129.vertex) bool => a.id =  b.id
 
-    public redef as_string => "v$id"
+    public redef as_string String => "v$id"
 
   edge(a, b vertex) is
 

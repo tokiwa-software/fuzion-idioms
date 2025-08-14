@@ -16,7 +16,7 @@ is
   fixed type.equality(a, b ex40.vertex) bool => a.id =  b.id
 
   # string representation
-  redef as_string => "v$id"
+  redef as_string String => "v$id"
 
 # edge connecting 'a' and 'b'
 edge(a, b vertex) is
