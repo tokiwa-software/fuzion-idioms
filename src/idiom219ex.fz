@@ -7,7 +7,7 @@ ex219 is
 
   # alternatively, using a monoid:
   filter_multi_space : Monoid String is
-    public redef infix ∙ (a, b String) => if b=" " && a.ends_with " " then a else a + b
+    public redef infix ∙ (a, b String) String => if b=" " && a.ends_with " " then a else a + b
     public redef e String => ""
 
   t1 := s.as_codepoints
