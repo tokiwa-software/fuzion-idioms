@@ -1,15 +1,15 @@
 
 error 1: FATAL FAULT `*** panic ***`: heir 'error' not known by parent_factory
 Call stack:
-fuzion.sys.fatal_fault#2
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1
-fuzion.runtime.fault.cause#1
-panic.type.install_default.λ.call#1
-panic.cause#1
-panic#1
-ex73.parent_factory#1
-ex73.loop
-ex73
+fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/fault.fz:43
+fuzion.runtime.fault.cause#1 at {base.fum}/eff/fallible.fz:35
+panic.type.install_default.λ.call#1 at {base.fum}/panic.fz:36
+panic.cause#1 at {base.fum}/eff/fallible.fz:35
+panic#1 at {base.fum}/panic.fz:56
+ex73.parent_factory#1 at {main.fum}/-:9
+ex73.loop at {main.fum}/-:23
+ex73 at {main.fum}/-:21
 
 *** fatal errors encountered, stopping.
 one error.

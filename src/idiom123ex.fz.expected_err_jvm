@@ -1,15 +1,15 @@
 
 error 1: FATAL FAULT `check`: is_consistent
 Call stack:
-fuzion.sys.fatal_fault#2
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1
-fuzion.runtime.fault.cause#1
-fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1
-fuzion.runtime.contract_fault.cause#1
-fuzion.type.runtime.type.check_fault.type.install_default.λ.call#1
-fuzion.runtime.check_fault.cause#1
-fuzion.runtime.checkcondition_fault#1
-ex123
+fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/fault.fz:43
+fuzion.runtime.fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/contract_fault.fz:39
+fuzion.runtime.contract_fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.type.runtime.type.check_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/check_fault.fz:39
+fuzion.runtime.check_fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.runtime.checkcondition_fault#1 at {base.fum}/fuzion/runtime/check_fault.fz:58
+ex123 at {main.fum}/-:5
 
 *** fatal errors encountered, stopping.
 one error.

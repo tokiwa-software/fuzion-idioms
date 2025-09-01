@@ -1,19 +1,19 @@
 
 error 1: FATAL FAULT `precondition`: safety: switch.this??
 Call stack:
-fuzion.sys.fatal_fault#2
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1
-fuzion.runtime.fault.cause#1
-fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1
-fuzion.runtime.contract_fault.cause#1
-fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1
-fuzion.runtime.pre_fault.cause#1
-fuzion.runtime.precondition_fault#1
-(option String).pre get
-(option String).precall get
-envir.args.index [ ]#1
-envir.args.precall index [ ]
-ex60
+fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/fault.fz:43
+fuzion.runtime.fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/contract_fault.fz:39
+fuzion.runtime.contract_fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/pre_fault.fz:39
+fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
+fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
+(option String).pre get at {base.fum}/switch.fz:69
+(option String).precall get at {base.fum}/switch.fz:68
+envir.args.index [ ]#1 at {base.fum}/Sequence.fz:662
+envir.args.precall index [ ] at {base.fum}/Sequence.fz:659
+ex60 at {main.fum}/-:3
 
 *** fatal errors encountered, stopping.
 one error.
