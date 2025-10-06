@@ -1,8 +1,8 @@
 ex312 is
 
-  p := [1,2,3]
+  p Sequence i32 := [1,2,3]
   q := 1:(2:(3:(nil)))
 
-  b := p.as_equatable = q.as_equatable
+  b := p = q
 
   say b
