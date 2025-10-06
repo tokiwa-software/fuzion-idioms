@@ -8,6 +8,6 @@ ex275 is
        00101010\
        """
 
-  say (s.as_codepoints
+  say (s.codepoints
         .chunk 8
         .map (x -> (x.foldf "" (+)).parse_integer u8 2) )

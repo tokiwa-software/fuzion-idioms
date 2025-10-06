@@ -48,7 +48,7 @@ ex159 is
   cp (s String)
     pre
       debug: !s.is_empty
-   => s.as_codepoints.first.get
+   => s.codepoints.first.get
 
   # create a dictionary from English to German and fill it with vocabulatry from
   # "one" to "ten":

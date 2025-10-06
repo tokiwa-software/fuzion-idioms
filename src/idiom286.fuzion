@@ -1,5 +1,5 @@
 _ := for
-        c in s.as_codepoints
+        c in s.codepoints
         i := 0, i + 1
       do
         say "Char $i is $c"

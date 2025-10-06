@@ -1,6 +1,6 @@
 s := "café"
 t := s
-  .as_codepoints
+  .codepoints
   .as_array
   .reverse
   .as_strings

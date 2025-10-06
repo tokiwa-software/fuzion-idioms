@@ -10,7 +10,7 @@ ex219 is
     public redef infix ∙ (a, b String) String => if b=" " && a.ends_with " " then a else a + b
     public redef e String => ""
 
-  t1 := s.as_codepoints
+  t1 := s.codepoints
         .map x->($x)
         .fold filter_multi_space
   say t1
@@ -18,7 +18,7 @@ ex219 is
   # alternatively, using a loop
   for
     t := "", t + n
-    c in s.as_codepoints
+    c in s.codepoints
     n := if c = " " && t.ends_with c then "" else c
   else
     say t

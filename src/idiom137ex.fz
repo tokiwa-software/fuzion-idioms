@@ -1,12 +1,12 @@
 ex137 is
 
   is_digit(cp codepoint) =>
-    "012345689".as_codepoints ∃ digit -> digit = cp
+    "012345689".codepoints ∃ digit -> digit = cp
 
   s1 := "012345689"
-  b1 := s1.as_codepoints ∀ (x -> is_digit x)
+  b1 := s1.codepoints ∀ (x -> is_digit x)
   say b1
 
   s2 := "a012345689"
-  b2 := s2.as_codepoints ∀ (x -> is_digit x)
+  b2 := s2.codepoints ∀ (x -> is_digit x)
   say b2

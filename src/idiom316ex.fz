@@ -1,6 +1,6 @@
 ex316 is
 
-  x := "Hello World!".as_codepoints
+  x := "Hello World!".codepoints
 
   p codepoint -> bool := ="l"
 
