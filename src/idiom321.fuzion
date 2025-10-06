@@ -1,1 +1,1 @@
-c := s.as_codepoints[i]
+c := s.codepoints[i]

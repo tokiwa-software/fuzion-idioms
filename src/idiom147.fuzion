@@ -1,3 +1,3 @@
-t := s.as_codepoints
+t := s.codepoints
       .filter cp->cp.is_ascii
       .as_string ""
