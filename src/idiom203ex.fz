@@ -2,7 +2,7 @@ ex203 is
 
   data := [0.0, 8.0, 15.0, 47.0, 11.0]
 
-  m := data.average.get
+  m := data.mean.get
 
   s := data.std_dev.get
 
