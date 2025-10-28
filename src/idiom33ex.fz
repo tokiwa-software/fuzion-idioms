@@ -4,7 +4,7 @@ ex33 =>
 
   f(i) => i+1
 
-  x := concur.atomic 0
+  x := concur.atomic i32 .new 0
 
   _ := for y := x.read, x.read
        while !x.compare_and_set y (f y)
