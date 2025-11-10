@@ -9,5 +9,5 @@ ex58 is
     x := io.file.use (array u8) path io.file.mode.read ()->(io.buffered io.file.file_mutate).read_fully
 
     match x
-      content array => yak (String.from_bytes content) # logic in case of success
+      content array => yak (String.from content) # logic in case of success
       err error => say err # error handling logic

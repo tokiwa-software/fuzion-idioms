@@ -1,1 +1,1 @@
-String.from_bytes (io.file.read.read_all path)
+String.from (io.file.read.read_all path)
