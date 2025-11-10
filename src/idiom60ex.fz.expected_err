@@ -22,15 +22,15 @@ fuzion.runtime.pre_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
 fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:58:47:
 public precondition_fault(msg String) void => pre_fault.cause msg
 ----------------------------------------------^^^^^^^^^^^^^^^^^^^
-envir.args.pre index [ ]: {base.fum}/Sequence.fz:784:7:
+envir.args.pre index [ ]: {base.fum}/Sequence.fz:798:7:
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
-envir.args.precall index [ ]: {base.fum}/Sequence.fz:783:5:
+envir.args.precall index [ ]: {base.fum}/Sequence.fz:797:5:
     pre
 ----^^^
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
-ex60: {main.fum}/-:3:8:
+ex60: --CURDIR--/idioms/src/idiom60ex.fz:3:8:
   x := envir.args[1]  # will cause error if called without cmd line argument
 -------^^^^^^^^^^^^^
 
