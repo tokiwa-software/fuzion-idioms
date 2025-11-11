@@ -30,7 +30,7 @@ envir.args.precall index [ ]: {base.fum}/Sequence.fz:797:5:
 ----^^^
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
-ex60: --CURDIR--/idioms/src/idiom60ex.fz:3:8:
+ex60: {main.fum}/-:3:8:
   x := envir.args[1]  # will cause error if called without cmd line argument
 -------^^^^^^^^^^^^^
 
