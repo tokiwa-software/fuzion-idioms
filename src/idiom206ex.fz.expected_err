@@ -30,10 +30,10 @@ public precondition_fault(msg String) void => pre_fault.cause msg
 --^^^
     safety: switch.this??
 ----^^^^^^^^^^^^^^^^^^^^^
-ex206.loop: {main.fum}/-:15:58:
+ex206.loop: -:15:58:
                             [foo, bar, baz, barfl])[str].get.call)
 ---------------------------------------------------------^^^
-ex206: {main.fum}/-:8:3:
+ex206: -:8:3:
   for str in ["bar",
 --^
 

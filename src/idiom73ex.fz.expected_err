@@ -16,13 +16,13 @@ panic.cause#1: {base.fum}/eff/fallible.fz:35:6:
 panic#1: {base.fum}/panic.fz:56:34:
 public panic(msg String) void => panic.cause msg
 ---------------------------------^^^^^^^^^^^^^^^
-ex73.parent_factory#1: {main.fum}/-:9:7:
+ex73.parent_factory#1: -:9:7:
       panic "heir '$str' not known by parent_factory"
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ex73.loop: {main.fum}/-:23:10:
+ex73.loop: -:23:10:
     h := parent_factory s
 ---------^^^^^^^^^^^^^^^^
-ex73: {main.fum}/-:21:3:
+ex73: -:21:3:
   for
 --^
 

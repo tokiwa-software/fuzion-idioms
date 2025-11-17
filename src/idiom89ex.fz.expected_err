@@ -22,15 +22,15 @@ fuzion.runtime.pre_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
 fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:58:47:
 public precondition_fault(msg String) void => pre_fault.cause msg
 ----------------------------------------------^^^^^^^^^^^^^^^^^^^
-ex89.pre f: {main.fum}/-:5:7:
+ex89.pre f: -:5:7:
       debug: is_valid x
 ------^^^^^^^^^^^^^^^^^
-ex89.precall f: {main.fum}/-:4:5:
+ex89.precall f: -:4:5:
     pre
 ----^^^
       debug: is_valid x
 ------^^^^^^^^^^^^^^^^^
-ex89: {main.fum}/-:14:3:
+ex89: -:14:3:
   f 8
 --^^^
 

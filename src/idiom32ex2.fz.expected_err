@@ -30,16 +30,16 @@ i32.precall infix **: {base.fum}/numeric.fz:77:5:
 ----^^^
       debug: (numeric.this **! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-idiom32ex2.exp#3 i32: {main.fum}/-:3:41:
+idiom32ex2.exp#3 i32: -:3:41:
   exp     (T type : integer, x, n T) => x **  n
 ----------------------------------------^^^^^^^
-idiom32ex2.loop.loop: {main.fum}/-:19:26:
+idiom32ex2.loop.loop: -:19:26:
       say "exp $i $j is {exp i j}"
 -------------------------^^^^^^^
-idiom32ex2.loop: {main.fum}/-:18:5:
+idiom32ex2.loop: -:18:5:
     for j in 0..15 do
 ----^
-idiom32ex2: {main.fum}/-:17:3:
+idiom32ex2: -:17:3:
   for i in 0..15 do
 --^
 

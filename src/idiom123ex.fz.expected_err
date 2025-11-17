@@ -22,7 +22,7 @@ fuzion.runtime.check_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
 fuzion.runtime.checkcondition_fault#1: {base.fum}/fuzion/runtime/check_fault.fz:58:49:
 public checkcondition_fault(msg String) void => check_fault.cause msg
 ------------------------------------------------^^^^^^^^^^^^^^^^^^^^^
-ex123: {main.fum}/-:5:9:
+ex123: -:5:9:
   check is_consistent
 --------^^^^^^^^^^^^^
 
