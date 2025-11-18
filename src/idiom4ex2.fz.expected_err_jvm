@@ -11,8 +11,8 @@ fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
 i32.pre infix * at {base.fum}/numeric.fz:60
 i32.precall infix * at {base.fum}/numeric.fz:59
-square#2 i32 at {main.fum}/-:1
-loop at {main.fum}/-:11
+square#2 i32 at -:1
+loop at -:11
 universe at --builtin--:10
 
 *** fatal errors encountered, stopping.

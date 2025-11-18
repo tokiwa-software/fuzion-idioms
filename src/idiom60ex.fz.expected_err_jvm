@@ -11,7 +11,7 @@ fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
 envir.args.pre index [ ] at {base.fum}/Sequence.fz:798
 envir.args.precall index [ ] at {base.fum}/Sequence.fz:797
-ex60 at {main.fum}/-:3
+ex60 at -:3
 
 *** fatal errors encountered, stopping.
 one error.
