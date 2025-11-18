@@ -7,9 +7,9 @@ fuzion.runtime.fault.cause#1 at {base.fum}/eff/fallible.fz:35
 panic.type.install_default.λ.call#1 at {base.fum}/panic.fz:36
 panic.cause#1 at {base.fum}/eff/fallible.fz:35
 panic#1 at {base.fum}/panic.fz:56
-ex73.parent_factory#1 at {main.fum}/-:9
-ex73.loop at {main.fum}/-:23
-ex73 at {main.fum}/-:21
+ex73.parent_factory#1 at -:9
+ex73.loop at -:23
+ex73 at -:21
 
 *** fatal errors encountered, stopping.
 one error.

@@ -11,10 +11,10 @@ fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
 i32.pre infix ** at {base.fum}/numeric.fz:78
 i32.precall infix ** at {base.fum}/numeric.fz:77
-idiom32ex2.exp#3 i32 at {main.fum}/-:3
-idiom32ex2.loop.loop at {main.fum}/-:19
-idiom32ex2.loop at {main.fum}/-:18
-idiom32ex2 at {main.fum}/-:17
+idiom32ex2.exp#3 i32 at -:3
+idiom32ex2.loop.loop at -:19
+idiom32ex2.loop at -:18
+idiom32ex2 at -:17
 
 *** fatal errors encountered, stopping.
 one error.

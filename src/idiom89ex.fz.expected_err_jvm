@@ -9,9 +9,9 @@ fuzion.runtime.contract_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/pre_fault.fz:39
 fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
-ex89.pre f at {main.fum}/-:5
-ex89.precall f at {main.fum}/-:4
-ex89 at {main.fum}/-:14
+ex89.pre f at -:5
+ex89.precall f at -:4
+ex89 at -:14
 
 *** fatal errors encountered, stopping.
 one error.

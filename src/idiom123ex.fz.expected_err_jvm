@@ -9,7 +9,7 @@ fuzion.runtime.contract_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.type.runtime.type.check_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/check_fault.fz:39
 fuzion.runtime.check_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.checkcondition_fault#1 at {base.fum}/fuzion/runtime/check_fault.fz:58
-ex123 at {main.fum}/-:5
+ex123 at -:5
 
 *** fatal errors encountered, stopping.
 one error.
