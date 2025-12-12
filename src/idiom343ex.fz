@@ -4,7 +4,7 @@ ex343 is
   path2 := "idiom343_moved_test_file.txt"
 
   # create a testfile
-  _ := io.file.use unit path1 io.file.mode.write ()->(io.file.writer.write "".utf8).error
+  _ := io.file.use unit path1 io.file.mode.write (()-> io.file.writer.write "".utf8)
 
   say "$path1 {io.file.exists path1 ? "exists" : "does NOT exist"}"
   say "$path2 {io.file.exists path2 ? "exists" : "does NOT exist"}"
