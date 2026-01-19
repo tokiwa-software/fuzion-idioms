@@ -1,1 +1,3 @@
-String.from (io.file.read.read_all path)
+f := path.of "path/to/file"
+
+lines := io.file.read f

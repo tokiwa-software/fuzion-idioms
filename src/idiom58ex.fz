@@ -1,13 +1,9 @@
 ex58 is
 
-  path := "path/to/file"
+  f := path.of "path/to/file"
 
-  lm : mutate is
+  lines := io.file.read f
 
-  lm.instate_self ()->
-
-    x := io.file.use (array u8) path io.file.mode.read ()->(io.buffered io.file.file_mutate).read_fully
-
-    match x
-      content array => yak (String.from content) # logic in case of success
-      err error => say err # error handling logic
+  match lines
+    content String => yak content # logic in case of success
+    err error      => say err     # error handling logic
