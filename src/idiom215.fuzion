@@ -1,1 +1,1 @@
-c * ((m - s.codepoint_length).max 0) + s
+s.pad_left c m

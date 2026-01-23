@@ -3,5 +3,5 @@ ex215 is
   s := "融合слияниеذوب"
   c := "❗"
   m := 15
-  s2 := c * (max 0 m-s.codepoint_length) + s
+  s2 := s.pad_left c m
   say s2

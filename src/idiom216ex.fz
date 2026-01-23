@@ -2,7 +2,6 @@ ex216 is
 
   s := "融合слияниеذوب"
   c := "❗"
-  m := 15
-  p := c * ((max 0 (m - s.codepoint_length + 1)) / 2)
-  s2 := p + s + p
+  m := 16
+  s2 := s.pad_center c m
   say s2

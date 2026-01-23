@@ -1,6 +1,3 @@
 # NYI UNDER DEVELOPMENT: we need a more succinct way to do things like this
 
-lines :=
-  lm ! ()->
-    io.file.use _ lm path io.file.mode.read ()->
-      (io.buffered lm).read_lines
+lines := io.file.read path .bind (s->s.split "\n")

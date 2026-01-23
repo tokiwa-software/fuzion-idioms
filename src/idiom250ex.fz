@@ -1,8 +1,6 @@
 ex250 is
   m := container.map_of [(1, "red"), (2, "pink"), (3, "lilac"), (4, "purple"), (5, "rose")]
 
-  x := m.values
-        .drop (random.next_i32 m.size)
-        .first
+  x := m.values[random.next_i32 m.size]
 
   say x

@@ -1,1 +1,2 @@
-x := container.set_of_ordered (list T).empty  # T must inherit from has_total_order
+# T must inherit from property.orderable
+x := container.set_of_ordered (list T).empty

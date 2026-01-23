@@ -1,8 +1,9 @@
 ex12 is
 
-  squares := container.set_of_ordered ((1..100).map i->i*i)
+  # list of squares
+  list := (1..100).map i->i*i
   (1..100).for_each x->
-    if x ∈ squares
+    if list.contains x
       say "$x in squares"
     else
       say "$x not in squares"

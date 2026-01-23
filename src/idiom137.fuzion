@@ -1,5 +1,2 @@
-is_digit(cp codepoint) =>
-    "012345689".codepoints ∃ digit -> digit = codepoint
-
 s := "012345689"
-b := s.codepoints ∀ (x -> is_digit x)
+b := s.codepoints ∀ (.is_ascii_digit)

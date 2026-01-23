@@ -5,10 +5,10 @@ ex231 is
 
   s0 := bytes_ok
   b0 := String.from s0
-                  .codepoints_and_errors ∀ x -> x.ok
+              .codepoints_and_errors ∀ (.ok)
   say "utf8? $s0: $b0"
 
   s1 := bytes_not_ok
   b1 := String.from s1
-                  .codepoints_and_errors ∀ x -> x.ok
+              .codepoints_and_errors ∀ (.ok)
   say "utf8? $s1: $b1"

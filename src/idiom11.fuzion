@@ -1,2 +1,1 @@
-x.drop (random.next_i32 x.length)
- .first
+c := x[random.next_i32 x.length]

@@ -12,12 +12,12 @@ feuille(val String) => node val (list (node String)).empty
 t := node "C" [feuille "C++",
                feuille "C#" ,
                feuille "Go" ,
-               node "Java" [feuille "Scala",
-                            feuille "Kotlin"],
-               node "Perl" [feuille "Ruby",
-                            feuille "Raku"],
+               node "Java"   [feuille "Scala",
+                              feuille "Kotlin"],
+               node "Perl"   [feuille "Ruby",
+                              feuille "Raku"  ],
                node "Python" [feuille "Julia",
-                              feuille "Nim"  ]
+                              feuille "Nim"   ]
               ]
 
 say t

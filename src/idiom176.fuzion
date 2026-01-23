@@ -1,1 +1,2 @@
-a := array s.byte_length/2 (i -> (s.substring 2*i 2*i+2).parse_i32_hex.val.as_u8)
+# decoding requires uppercase characters
+a := encodings.base16.decode_str s.upper_case

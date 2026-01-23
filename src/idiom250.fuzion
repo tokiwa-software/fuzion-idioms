@@ -1,3 +1,1 @@
-x := m.values
-      .drop (random.next_i32 m.size)
-      .first
+x := m.values[random.next_i32 m.size]

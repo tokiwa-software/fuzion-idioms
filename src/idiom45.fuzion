@@ -1,1 +1,1 @@
-time.nano.sleep (s 5)
+time.nano.sleep (time.duration.s 5)

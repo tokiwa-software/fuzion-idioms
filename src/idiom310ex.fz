@@ -9,5 +9,5 @@ ex310 is
 
     for _ in 0..2 do
       a := rand_bytes.take n
-                    .as_array
+                     .as_array
       say a

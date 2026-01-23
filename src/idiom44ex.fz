@@ -1,7 +1,9 @@
 ex44 is
 
+  # inserting at an invalid index results in a precondition failure
+
   a := [0,1,2,3,4,5,6]
   x := 999
-  for i in -2..10 do
-    s := a.take i ++ [x] ++ a.drop i
+  for i in 0..7 do
+    s := a.insert i x
     say "inserting at $i results in $s"

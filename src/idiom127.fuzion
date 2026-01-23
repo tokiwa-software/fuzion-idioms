@@ -1,3 +1,3 @@
-# this will never be supported by Fuzion.  If needed, the developer is free to
+# This will never be supported by Fuzion.  If needed, the developer is free to
 # use tools like the C preprocessor for this, but it is highly recommended not
 # to do that.

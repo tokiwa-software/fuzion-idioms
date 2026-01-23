@@ -1,1 +1,9 @@
-error(code=2): failed opening file "path/to/file"
+ex58 is
+
+  f := path.of "src/idiom58ex.fz"
+
+  lines := io.file.read f
+
+  match lines
+    content String => yak content # logic in case of success
+    err error      => say err     # error handling logic

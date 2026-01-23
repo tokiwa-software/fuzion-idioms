@@ -2,7 +2,9 @@ ex36a is
 
   compose(A,B,C type,
           f0 A -> B,
-          g0 B -> C) => g0 ∘ f0
+          g0 B -> C)
+  =>
+    g0 ∘ f0
 
   f i32  -> bool   := a -> a > 3
   g bool -> String := b -> if b then "T" else "F"

@@ -1,7 +1,12 @@
-Strings extending over several lines are currently not well supported
-in Fuzion.  They can be constructed out of several shorter strings
-that are concatenated using 'infix +'.  Line feeds are inserted using
-a backslash followed by an 'n', i.e, '\n'.  Additionally, the string
-has to be enclosed in parentheses since operator expressions are
-limited to one line.
+Multi-line strings start and end with a fat quotation """. They mostly work just like 'normal' strings but have the following peculiarities.
 
+* A multi-line string is required to start in the first line following the fat quotation.
+* The first line of the multi-line string is the reference for the indentation to be used throughout the rest of the string.
+  Thus all lines of the multi-line strings have to indented at least as much as the first line.
+* A multi-line string may use interpolation with $ and {} just like 'normal' strings.
+* Arbitrary nesting of multi-line strings is allowed.
+* Trailing white space in multi-line strings is disallowed.
+* For adding white space at the beginning of the first line or at the end of lines use escape codes described above.
+* Line terminators in multi-line strings are normalized to LF unless CR is explicitly included by using the escape code CR.
+
+There are two special escape sequences in multi-line strings. A literal \ followed by a literal line feed or a literal carriage return cancels the newline. This is useful for splitting long strings over multiple lines in source code.

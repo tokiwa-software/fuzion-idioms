@@ -2,6 +2,6 @@ ex254 is
 
   x := ["foo", "bar", "fooo", "foo", "bar", "foo"]
 
-  x¹ := x.map (e -> e="foo" ? "bar" : e)
+  x¹ := x.replace ["foo"] ["bar"]
 
   say x¹

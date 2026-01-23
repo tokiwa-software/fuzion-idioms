@@ -1,8 +1,8 @@
 # a Bin_Tree_Node is a value plus left and right sub-trees
 #
 Bin_Tree_Node(T type : property.orderable,
-            val T,
-            left, right bin_tree T) ref
+              val T,
+              left, right bin_tree T) ref
 is
 
   # add element to this tree, return resulting tree
@@ -29,14 +29,14 @@ bin_tree(T type : property.orderable) : choice (Bin_Tree_Node T) nil is
   #
   add (v T) bin_tree T =>
     match bin_tree.this
-      nil           => Bin_Tree_Node v nil nil
+      nil             => Bin_Tree_Node v nil nil
       n Bin_Tree_Node => n.add v
 
   # print this tree
   #
   show unit =>
     match bin_tree.this
-      nil           =>
+      nil             =>
       n Bin_Tree_Node => n.show
 
 for

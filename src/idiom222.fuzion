@@ -1,1 +1,1 @@
-i := (items.index_of x).or_else -1
+i := items.index_of x .or_else -1
