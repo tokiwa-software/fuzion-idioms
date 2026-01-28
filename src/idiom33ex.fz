@@ -6,7 +6,7 @@ ex33 =>
 
   x := concur.atomic i32 .new 0
 
-  _ := for y := x.read, x.read
-       while !x.compare_and_set y (f y)
+  for y := x.read, x.read
+  while !x.compare_and_set y (f y)
 
   say x.read
