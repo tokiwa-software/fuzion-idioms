@@ -6,3 +6,6 @@ ex43 is
   for v in m until
     for i in v until i < 0
       say "Found $i"
+      true
+    else
+      false
