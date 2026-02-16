@@ -8,7 +8,7 @@ ex196 is
 
   mi : mutate is
   mi.instate_self ()->
-    a := (mi.array i64).new mi n 0
+    a := (mi.array i64).new n 0
     a.indices.for_each (i -> a[i] := i)
 
     say a
