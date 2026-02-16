@@ -6,7 +6,7 @@ ex314a is
   mi : mutate is
   mi.instate_self ()->
 
-    x := (mutate.array i64).new mi 5 42
+    x := (mi.array i64).new 5 42
 
     say x
 
