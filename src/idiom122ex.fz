@@ -1,17 +1,17 @@
 ex122 is
 
-  SPADES is
-  HEARTS is
-  DIAMONDS is
-  CLUBS is
-  Suit : choice SPADES HEARTS DIAMONDS CLUBS is
+  spades is
+  hearts is
+  diamonds is
+  clubs is
+  suit : choice spades hearts diamonds clubs is
 
-  f(s Suit) =>
+  f(s suit) =>
     say match s
-      SPADES => "got spades"
-      CLUBS  => "its clubs"
+      spades => "got spades"
+      clubs  => "its clubs"
       *      => "something else"
 
-  f SPADES
-  f HEARTS
-  f CLUBS
+  f spades
+  f hearts
+  f clubs

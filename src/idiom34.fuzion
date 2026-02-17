@@ -1,2 +1,2 @@
 # T must inherit from property.orderable
-x := container.set_of_ordered (list T).empty
+x := container.set_of_ordered (Sequence T).empty
