@@ -1,1 +1,1 @@
-io.file.stat.exists path
+b := io.file.exists fp

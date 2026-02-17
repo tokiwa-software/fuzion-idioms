@@ -1,7 +1,7 @@
 ex343 is
 
-  path1 := "idiom343_original_testfile.txt"
-  path2 := "idiom343_moved_test_file.txt"
+  path1 := path.of "idiom343_original_testfile.txt"
+  path2 := path.of "idiom343_moved_test_file.txt"
 
   # create a testfile
   _ := io.file.use unit path1 io.file.mode.write (()-> io.file.writer.write "".utf8)
