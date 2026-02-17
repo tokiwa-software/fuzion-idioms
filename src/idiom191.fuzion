@@ -1,2 +1,1 @@
-for e in a until e > x
-  f
+if a ∃ >x then f

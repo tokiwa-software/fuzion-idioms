@@ -1,6 +1,5 @@
-s := ("Strings extending over several lines are currently not well supported\n" +
-      "in Fuzion.  They can be constructed out of several shorter strings\n" +
-      "that are concatenated using 'infix +'.  Line feeds are inserted using\n" +
-      "a backslash followed by an 'n', i.e, '\\n'.  Additionally, the string\n" +
-      "has to be enclosed in parentheses since operator expressions are\n" +
-      "limited to one line.\n")
+s := """
+  This
+  is a
+  multiline
+  string."""

@@ -1,2 +1,1 @@
-p := c * (((m - s.codepoint_length + 1).max 0) / 2)
-p + s + p
+s.pad_center c m

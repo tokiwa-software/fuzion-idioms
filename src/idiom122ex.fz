@@ -1,0 +1,17 @@
+ex122 is
+
+  spades is
+  hearts is
+  diamonds is
+  clubs is
+  suit : choice spades hearts diamonds clubs is
+
+  f(s suit) =>
+    say match s
+      spades => "got spades"
+      clubs  => "its clubs"
+      *      => "something else"
+
+  f spades
+  f hearts
+  f clubs

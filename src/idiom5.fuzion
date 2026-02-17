@@ -1,1 +1,1 @@
-point(x, y f64).
+point(x, y f64) is

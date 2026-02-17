@@ -4,14 +4,14 @@ ex35 is
   B(val bool) is
   C(val String) is
 
-  compose(f0 A -> B,
-          g0 B -> C) A -> C => a -> g0 (f0 a)
+  compose(f A -> B, g B -> C) A -> C =>
+    a -> g (f a)
 
-  f A -> B := a -> B (a.val > 3)
-  g B -> C := b -> C (if b.val then "T" else "F")
+  my_f A -> B := a -> B (a.val > 3)
+  my_g B -> C := b -> C (if b.val then "T" else "F")
 
-  fog := compose f g
+  fog := compose my_f my_g
 
   say (fog (A 10)).val
-  say (fog (A 2)).val
-  say (fog (A 0)).val
+  say (fog (A  2)).val
+  say (fog (A  0)).val

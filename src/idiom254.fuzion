@@ -1,1 +1,1 @@
-x¹ := x.map (e -> if e="foo" then "bar" else e)
+x¹ := x.replace ["foo"] ["bar"]

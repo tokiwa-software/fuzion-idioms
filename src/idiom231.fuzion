@@ -1,2 +1,2 @@
-String isb := String.from s
-                         .codepoints_and_errors ∀ x -> x.ok
+b := String.from s
+           .codepoints_and_errors ∀ (.ok)

@@ -1,1 +1,5 @@
+# using ternary operator
+x := condition ? "a" : "b"
+
+# using if-else statement
 x := if condition then "a" else "b"

@@ -1,8 +1,8 @@
 # a Bin_Tree_Node is a value plus left and right sub-trees
 #
 Bin_Tree_Node(T type : has_total_order,
-            val T,
-            left, right bin_tree T) ref
+              val T,
+              left, right bin_tree T) ref
 is
 
 # a bin_tree is either a Bin_Tree_Node or an empty tree represented by nil

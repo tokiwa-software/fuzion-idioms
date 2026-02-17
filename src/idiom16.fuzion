@@ -1,6 +1,6 @@
 traverse (f T -> unit) unit =>
   match bin_tree.this
-    nil           =>
+    nil             =>
     n Bin_Tree_Node =>
       n.left.traverse f
       f n.val

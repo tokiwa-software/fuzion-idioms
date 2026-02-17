@@ -1,0 +1,1 @@
+[ex197 is, ,   path := path.of "src/idiom197ex.fz", ,   lines := io.file.read path .bind (s->s.split "\n"), ,   say lines, ]

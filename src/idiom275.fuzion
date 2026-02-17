@@ -1,3 +1,2 @@
-s.codepoints
- .chunk 8
- .map (x -> (x.foldf "" (+)).parse_integer u8 2)
+  a := s.chunk 8
+        .map (.parse_integer u8 2)
