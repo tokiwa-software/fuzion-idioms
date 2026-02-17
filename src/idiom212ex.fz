@@ -1,6 +1,6 @@
 ex212 is
 
-  path := "/tmp"
+  path := path.of "/tmp"
 
   b := io.file.exists path
 

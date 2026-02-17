@@ -1,6 +1,6 @@
 ex211 is
 
-  path := "path/to/dir"
+  path := path.of "path/to/dir"
   match io.dir.make path
     unit => say "$path was created successfully" # logic in case of success
     err error => say err # error handling logic
