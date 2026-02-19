@@ -1,6 +1,6 @@
 ex58 is
 
-  f := path.of "src/idiom58ex.fz"
+  f := path.of "path/to/file"
 
   lines := io.file.read f
 
