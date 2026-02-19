@@ -1,7 +1,9 @@
 ex197 is
 
-  path := path.of "src/idiom197ex.fz"
+  path := path.of "path/to/file"
 
   lines := io.file.read path .bind (.split "\n")
 
-  say lines
+  match lines
+    l Sequence String => say l   # logic in case of success
+    err error         => say err # error handling logic
