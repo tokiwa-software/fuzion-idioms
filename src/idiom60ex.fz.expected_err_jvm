@@ -9,8 +9,8 @@ fuzion.runtime.contract_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1 at {base.fum}/fuzion/runtime/pre_fault.fz:39
 fuzion.runtime.pre_fault.cause#1 at {base.fum}/eff/fallible.fz:35
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:58
-envir.args.pre index [ ] at {base.fum}/Sequence.fz:797
-envir.args.precall index [ ] at {base.fum}/Sequence.fz:796
+envir.args.pre index [ ] i32 at {base.fum}/Sequence.fz:814
+envir.args.precall index [ ] i32 at {base.fum}/Sequence.fz:813
 ex60 at -:3
 
 *** fatal errors encountered, stopping.
