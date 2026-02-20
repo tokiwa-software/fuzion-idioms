@@ -6,7 +6,7 @@ ex20 is
       ij in m.index_pairs
       i := ij.0
       j := ij.1
-    until m[i,j] = x
+    until m[_,i,j] = x
       option (i, j)
     else
       nil

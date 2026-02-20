@@ -5,4 +5,4 @@ ex26 is
 
   x := array2 m n i,j->3.14
 
-  say "x[3,5] is {x[3,5]}"
+  say "x[3,5] is {x[_,3,5]}"
