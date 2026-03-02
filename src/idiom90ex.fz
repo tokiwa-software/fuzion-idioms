@@ -1,14 +1,23 @@
 ex90 is
 
+  # a local mutate effect
+  #
+  lm : mutate is
+
   foo is
     get_x => x.get
-    private x := mut 42
+    x := lm.env.new 42
 
     double_x =>
       x <- 2 * x.get
 
-  f := foo
-  say f.get_x
+  # instantiating the local mutate
+  # to be able to use it in the lambda
+  #
+  lm ! ()->
 
-  f.double_x
-  say f.get_x
+    f := foo
+    say f.get_x
+
+    f.double_x
+    say f.get_x
