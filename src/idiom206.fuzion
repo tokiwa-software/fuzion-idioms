@@ -17,5 +17,5 @@
 # where 'switch' is a feature declared similar to
 #
 #  switch<T, U> (on T, m map<T, () -> U) =>
-#    m[on].unwrap.call
+#    m[on].or_panic.call
 #

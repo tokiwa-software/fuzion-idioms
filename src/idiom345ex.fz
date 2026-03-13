@@ -2,6 +2,6 @@ ex345 is
 
   s := "340282366920938463463374607431768211456"
 
-  i := s.parse_int.val
+  i := s.parse_int.or_panic
 
   say i

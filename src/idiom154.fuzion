@@ -1,8 +1,8 @@
 c := for
        t := "#", t + v.hex 2
        i in 1..5 : 2
-       a1 := (c1.substring i i+2).parse_i32_hex.val
-       a2 := (c2.substring i i+2).parse_i32_hex.val
+       a1 := (c1.substring i i+2).parse_i32_hex.or_panic
+       a2 := (c2.substring i i+2).parse_i32_hex.or_panic
        v := (a1 + a2) / 2
      else
        t

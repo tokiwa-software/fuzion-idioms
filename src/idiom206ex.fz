@@ -12,7 +12,7 @@ ex206 is
               "error" /* will cause a precondition failure! */]
   do
     ((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-                            [foo, bar, baz, barfl])[str].get.call)
+                            [foo, bar, baz, barfl])[str].or_panic.call)
 
 # NYI: better syntax, e.g.,
 #

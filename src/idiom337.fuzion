@@ -1,1 +1,1 @@
-i := s.parse_i32 b .val
+i := s.parse_i32 b .or_panic

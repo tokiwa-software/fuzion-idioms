@@ -5,7 +5,7 @@ ex296 is
 
   x2 := if !x.contains y then x
         else
-          i := (x.find_last y).get
+          i := (x.find_last y).or_panic
           x.substring(0, i) + (x.substring(i).replace(y, z))
 
   say x

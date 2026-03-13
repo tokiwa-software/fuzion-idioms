@@ -1,1 +1,1 @@
-foo := envir.vars.get "FOO" "none"
+foo := envir.vars.get "FOO" .or_default "none"

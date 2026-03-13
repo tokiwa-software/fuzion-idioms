@@ -4,6 +4,6 @@ ex337 is
 
   b := 16
 
-  i := s.parse_i32 b .val
+  i := s.parse_i32 b .or_panic
 
   say i
