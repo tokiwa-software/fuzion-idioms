@@ -10,7 +10,7 @@ ex247 is
     p i64 -> bool => i -> i %% 6
 
     for i in x.indices do
-      if !(p x[i].get)
+      if !(p x[i].or_panic)
         x[i] := nil
 
     say x

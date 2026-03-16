@@ -1,38 +1,27 @@
 
-error 1: FATAL FAULT `precondition`: safety: switch.this??
+error 1: FATAL FAULT `*** panic ***`: --nil--
 Call stack:
-fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:57:7:
+fuzion.type.runtime.type.fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/fault.fz:59:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 fuzion.runtime.fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
   => h e
 -----^
-fuzion.type.runtime.type.contract_fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/contract_fault.fz:39:7:
-      fuzion.runtime.fault.cause kind_and_msg).default
-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.contract_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+panic.type.install_default.λ.call#1: {base.fum}/panic.fz:36:18:
+    (panic (msg->fuzion.runtime.fault.cause ("*** panic ***", msg)) unit).default
+-----------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+panic.cause#1: {base.fum}/eff/fallible.fz:35:6:
   => h e
 -----^
-fuzion.type.runtime.type.pre_fault.type.install_default.λ.call#1: {base.fum}/fuzion/runtime/pre_fault.fz:39:7:
-      fuzion.runtime.contract_fault.cause ("precondition", msg)).default
-------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.pre_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
-  => h e
------^
-fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:58:47:
-public precondition_fault(msg String) void => pre_fault.cause msg
-----------------------------------------------^^^^^^^^^^^^^^^^^^^
-(option (Function unit)).pre get: {base.fum}/switch.fz:72:5:
-    safety: switch.this??
-----^^^^^^^^^^^^^^^^^^^^^
-(option (Function unit)).precall get: {base.fum}/switch.fz:71:3:
-  pre
---^^^
-    safety: switch.this??
-----^^^^^^^^^^^^^^^^^^^^^
+panic#1: {base.fum}/panic.fz:58:19:
+    msg String => panic.cause msg
+------------------^^^^^^^^^^^^^^^
+(option (Function unit)).or_panic: {base.fum}/switch.fz:175:14:
+      b B => panic $b
+-------------^^^^^^^^
 ex206.loop: -:15:58:
-                            [foo, bar, baz, barfl])[str].get.call)
----------------------------------------------------------^^^
+                            [foo, bar, baz, barfl])[str].or_panic.call)
+---------------------------------------------------------^^^^^^^^
 ex206: -:8:3:
   for str in ["bar",
 --^

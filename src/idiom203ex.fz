@@ -2,9 +2,9 @@ ex203 is
 
   data := [0.0, 8.0, 15.0, 47.0, 11.0]
 
-  m := data.mean.get
+  m := data.mean.or_panic
 
-  s := data.std_dev.get
+  s := data.std_dev.or_panic
 
   say "data is $data"
   say "mean is $m"

@@ -1,1 +1,1 @@
-i := s.parse_int.val
+i := s.parse_int.or_panic

@@ -12,7 +12,7 @@ ex95 is
   say "the size of $path is $x0"
 
   # size without error handling, will fail at precondition or panic in case of an error
-  x1 := (io.file.stat path true).val.size
+  x1 := (io.file.stat path true).or_panic.size
   say "the size of $path is $x1"
 
   # size with manual error handling

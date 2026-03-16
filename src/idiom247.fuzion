@@ -4,5 +4,5 @@
 # them to 'nil':
 #
 for i in x.indices do
-  if !(p x[i].get)
+  if !(p x[i].or_panic)
     x[i] := nil
