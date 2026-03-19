@@ -4,11 +4,11 @@ ex35a is
   B(val bool) is
   C(val String) is
 
-  f A -> B := a -> B (a.or_panic > 3)
-  g B -> C := b -> C (if b.or_panic then "T" else "F")
+  f A -> B := a -> B (a.val > 3)
+  g B -> C := b -> C (if b.val then "T" else "F")
 
   fog := g ∘ f
 
-  say (fog (A 10)).or_panic
-  say (fog (A 2)).or_panic
-  say (fog (A 0)).or_panic
+  say (fog (A 10)).val
+  say (fog (A 2)).val
+  say (fog (A 0)).val
