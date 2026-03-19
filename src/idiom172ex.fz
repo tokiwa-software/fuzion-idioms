@@ -6,7 +6,7 @@ ex172 is
   k := 5
   v := "fünf"
 
-  m¹ := m.add k v
+  m¹ := m.put k v
 
   say m
   say m¹
