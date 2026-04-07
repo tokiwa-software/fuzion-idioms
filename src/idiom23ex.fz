@@ -1,0 +1,6 @@
+number := 3.14159
+
+# Multiply by 100, floor it, then divide by 100
+rounded := (number * 100).floor / 100
+
+say rounded  # Output: 3.14

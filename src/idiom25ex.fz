@@ -1,0 +1,17 @@
+ready := concur.atomic bool .new false # creates a shared atomic boolean flag, initially false.
+value := concur.atomic String .new "" # creates a shared atomic string, initially empty.
+
+cnd := concur.sync.condition.new.or_panic # creates a condition variable used for waiting and signaling.
+
+thrd := concur.threads.spawn ()-> # spawns a new thread that will execute the following code block.
+  cnd.synchronized ()-> # checks the condition variable and waits until the ready flag is set to true.
+    while !ready.read
+      check cnd.wait
+  say value.read # once the ready flag is true, it reads and prints the value of the shared string.
+
+value.write "Alan" # the main thread writes "Alan" to the shared string variable.
+
+cnd.synchronized ()-> # the main thread acquires the lock on the condition variable to safely update the ready flag and signal the waiting thread.
+  ready.write true
+  check cnd.signal # wakes one waiting thread.
+thrd.join # waits for the spawned thread to finish before the main thread continues.
