@@ -1,1 +1,3 @@
 dir := os.cwd
+
+say dir
