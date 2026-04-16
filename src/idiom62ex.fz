@@ -23,7 +23,7 @@ ex62 is
   abc := "abcdefghijklmnopqrstuvwxyz"
   str := "the quick brown fox jumps over the lazy dog"
   for
-    i in 0..(abc.byte_length-1)
+    i in 0..(abc.byte_count-1)
   do
     s := abc.substring i i+1
     match str.find s

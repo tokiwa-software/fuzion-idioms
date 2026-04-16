@@ -3,7 +3,7 @@ ex173 is
 
       str:= x.as_string
 
-      len := str.byte_length
+      len := str.byte_count
 
       first :=
           if x < T.zero && len%3 = 1 then 4      # avoid separator right after minus
@@ -11,7 +11,7 @@ ex173 is
           else                            3
 
       groups(start i32, str0 String) String =>
-          if start > (str0.byte_length - 3)
+          if start > (str0.byte_count - 3)
           then ""
           else "," + (str0.substring start (start + 3)) + groups (start + 3) str0
 
