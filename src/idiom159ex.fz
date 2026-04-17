@@ -20,7 +20,7 @@ ex159 is
     add(from String, to V) =>
       c := cp from
       n :=
-        if from.codepoint_length = 1
+        if from.codepoint_count = 1
           ch := (children[c] ? nil => (container.ordered_map codepoint (trie V)).empty
                              | el trie => el.children)
           trie c ch to

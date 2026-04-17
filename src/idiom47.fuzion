@@ -1,2 +1,2 @@
-n := s.codepoint_length
+n := s.codepoint_count
 t := s.substring_codepoint n-5 n
