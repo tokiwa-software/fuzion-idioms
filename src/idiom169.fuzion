@@ -1,1 +1,1 @@
-n := s.codepoint_length
+n := s.codepoint_count

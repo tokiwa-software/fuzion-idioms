@@ -1,6 +1,6 @@
 ex46 is
 
   s := "🐖🐶🐣🐸🐝🐟🕷🐍"
-  for i in 0..s.codepoint_length do
+  for i in 0..s.codepoint_count do
     t := s.substring_codepoint 0 i
     say "'$t'"

@@ -31,4 +31,4 @@ ex62 is
       ix i32 =>
         m := "found '$s' at index $ix: "
         say (m + str)
-        say "{ "-" * (m.codepoint_length + ix) }^"
+        say "{ "-" * (m.codepoint_count + ix) }^"

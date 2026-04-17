@@ -1,9 +1,9 @@
 ex169 is
 
   s1 := "été"
-  n1 := s1.codepoint_length
+  n1 := s1.codepoint_count
   say "length of $s1 is $n1"
 
   s2 := "0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣"
-  n2 := s2.codepoint_length
+  n2 := s2.codepoint_count
   say "length of $s2 is $n2"
