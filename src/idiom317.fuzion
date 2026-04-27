@@ -6,6 +6,6 @@ alphanum := ["A","B","C","D","E","F","G","H","I","J","K","L","M",
 
 random_string(n) =>
   if n = 0 ""
-  else     alphanum[random.next_i32 alphanum.length] + random_string n-1
+  else     alphanum[random.env.next_i32 alphanum.length] + random_string n-1
 
 s := random_string n
