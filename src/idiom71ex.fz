@@ -1,2 +1,2 @@
 echo is
-  say ((envir.args.drop 1).fold (String.concat " "))
+  say ((envir.args.env.drop 1).fold (String.concat " "))

@@ -1,1 +1,1 @@
-c := x[random.next_i32 x.length]
+c := x[random.env.next_i32 x.length]

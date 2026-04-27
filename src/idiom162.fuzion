@@ -1,5 +1,5 @@
 for
-  arg in envir.args.drop 1
+  arg in envir.args.env.drop 1
 do
   if arg = "b"
     bat
