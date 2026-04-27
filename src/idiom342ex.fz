@@ -10,6 +10,6 @@ ex342 is
   time.now.instate (time.now ()->(time.date_time 2025 1 1 0 0 0 0)) ()->
 
     # Search the current year
-    yr := time.now.get.year
+    yr := time.now.env.get.year
 
     say "Year: {yr}, leap year? {is_leap_year yr}"

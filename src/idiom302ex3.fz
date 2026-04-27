@@ -5,7 +5,7 @@ ex302b is
   (time.now ()->
     time.date_time 2024 6 27 11 46 5 0).instate_self ()->
 
-    now := time.now.get
+    now := time.now.env.get
     h := now.hour
     m0 := now.minute
     s0 := now.second

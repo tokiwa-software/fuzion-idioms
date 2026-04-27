@@ -5,7 +5,7 @@ ex60 is
     say "first arg is the program, skipping"
     for
       i in 1..envir.args.env.count-1
-      x := envir.args[i]
+      x := envir.args.env[i]
     do
       say "arg#$i is $x"
     say ""
