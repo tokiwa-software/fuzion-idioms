@@ -3,5 +3,5 @@ ex61 =>
   # using custom date_time provider to make sure output
   # is always the same
   time.now.instate (time.now ()->(time.date_time 2000 1 1 0 0 0 0)) ()->
-    d := time.now.get
+    d := time.now.env.get
     say d
