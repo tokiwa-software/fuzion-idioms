@@ -1,2 +1,2 @@
-dir := (path.of envir.args[0]).parent.or_panic
+dir := (path.of envir.args.env[0]).parent.or_panic
 say "Program directory: {dir}"

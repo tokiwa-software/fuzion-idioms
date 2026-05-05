@@ -1,2 +1,2 @@
 for i in 1..1000 do
-  _ := concur.threads.spawn (() -> f i)
+  _ := concur.threads.env.spawn (() -> f i)
