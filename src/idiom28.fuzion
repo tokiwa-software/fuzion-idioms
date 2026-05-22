@@ -1,1 +1,1 @@
-items.sort a,b -> a.p <= b.p
+items.sort_by (.p)
