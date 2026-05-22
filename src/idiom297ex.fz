@@ -2,7 +2,7 @@ ex297 is
 
   data := ["b_low", "B_up", "A_up", "a_low", "C_up", "c_low", "d_low", "D_up"]
 
-  data1 := data.sort_by (s1, s2 -> s1.lower_case <= s2.lower_case)
+  data1 := data.sort_by (.lower_case)
 
   say data1
 

@@ -6,10 +6,10 @@ ex100 is
              "acht";
              "fünfzehn" ]
 
-  c (String, String) -> bool := a,b -> a.byte_count <= b.byte_count
+  c String -> i32 := .byte_count
   say (items.sort_by c)
 
   # passing the lambda directly to sort avoids
   # specifying its type:
   #
-  say (items.sort_by (a,b -> a.byte_count <= b.byte_count))
+  say (items.sort_by (.byte_count))

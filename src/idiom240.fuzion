@@ -1,4 +1,4 @@
-s := a.zip b x,y->(x,y)
-      .sort_by (x,y -> x.0 <= y.0)
-a := s.map v->v.0
-b := s.map v->v.1
+s := a0.zip b0 tuple
+      .sort_by (.0)
+a1 := s.map (.0)
+b1 := s.map (.1)
