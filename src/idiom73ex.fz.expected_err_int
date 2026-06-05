@@ -24,7 +24,15 @@ ex73.loop: -:23:10:
 ---------^^^^^^^^^^^^^^^^
 ex73: -:21:3:
   for
---^
+--^^^
+    s in ["A", "XYZ", "heir1", "heir2", "error"]
+----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    h := parent_factory s
+----^^^^^^^^^^^^^^^^^^^^^
+  do
+--^^
+    say "created $s: $h"
+----^^^^^^^^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.
 one error.

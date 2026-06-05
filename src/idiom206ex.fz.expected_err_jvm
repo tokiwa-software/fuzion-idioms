@@ -7,7 +7,7 @@ fuzion.runtime.fault.cause#1 at {base.fum}/eff/fallible.fz:35
 panic.type.default_value.(λ(msg->fuzion.runtime.fault.env.cause (...).call#1 at {base.fum}/panic.fz:39
 panic.cause#1 at {base.fum}/eff/fallible.fz:35
 panic#1 at {base.fum}/panic.fz:59
-(option (Function unit)).or_panic at {base.fum}/switch.fz:175
+(option (Function unit)).or_panic at {base.fum}/switch.fz:165
 ex206.loop at -:15
 ex206 at -:8
 
