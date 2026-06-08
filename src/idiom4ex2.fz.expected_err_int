@@ -38,7 +38,9 @@ loop: -:11:22:
 ---------------------^^^^^^^^
 universe: -:10:1:
 for i in 100000 .. 100010 do
-^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  say "square $i is {square i}"
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.
 one error.

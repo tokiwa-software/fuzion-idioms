@@ -16,7 +16,7 @@ panic.cause#1: {base.fum}/eff/fallible.fz:35:6:
 panic#1: {base.fum}/panic.fz:59:19:
     msg String => panic.cause msg
 ------------------^^^^^^^^^^^^^^^
-(option (Function unit)).or_panic: {base.fum}/switch.fz:175:14:
+(option (Function unit)).or_panic: {base.fum}/switch.fz:165:14:
       b B => panic $b
 -------------^^^^^^^^
 ex206.loop: -:15:58:
@@ -24,7 +24,21 @@ ex206.loop: -:15:58:
 ---------------------------------------------------------^^^^^^^^
 ex206: -:8:3:
   for str in ["bar",
---^
+--^^^^^^^^^^^^^^^^^^
+              "foo",
+--------------^^^^^^
+              "barfl",
+--------------^^^^^^^^
+              "baz",
+--------------^^^^^^
+              "error" /* will cause a precondition failure! */]
+--------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  do
+--^^
+    ((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
+----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            [foo, bar, baz, barfl])[str].or_panic.call)
+----------------------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.
 one error.
