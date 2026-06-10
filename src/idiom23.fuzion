@@ -1,2 +1,2 @@
-# Multiply by 100, floor it, divide by 100, then convert to String
-s := ((x * 100).floor / 100).as_string
+# Convert to String with exactly 2 decimal places
+s := x.as_string_decimals 2

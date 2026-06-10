@@ -1,5 +1,3 @@
-x := 3.14159
+x := 3.14563
 
-s := ((x * 100).floor / 100).as_string
-
-say s  # Output: 3.14
+say (x.as_string_decimals 2)  # Output: 3.15
