@@ -1,6 +1,6 @@
 ex56 is
 
-  f(x i32) => yak "$x "
+  f(x i32) => yap "$x "
 
   _ := concur.thread_pool 8 ()->
         for i in 1..1000 do
