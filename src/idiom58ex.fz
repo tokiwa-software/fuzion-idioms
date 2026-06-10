@@ -5,5 +5,5 @@ ex58 is
   lines := io.file.read f
 
   match lines
-    content String => yak content # logic in case of success
+    content String => yap content # logic in case of success
     err error      => say err     # error handling logic

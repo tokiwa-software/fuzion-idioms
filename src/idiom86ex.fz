@@ -8,15 +8,15 @@ ex86 is
 
   for x in 0x8000..0xe000 : 0x2000 do
     for y in 0x5800..0xe800 : 0x3000 do
-      yak "{x.hex} *° {y.hex} "
+      yap "{x.hex} *° {y.hex} "
       if multiply_will_overflow x y
-        yak "will overflow    "
+        yap "will overflow    "
       else
-        yak "will not overflow"
+        yap "will not overflow"
 
-      yak " sum is {(x *° y).hex}"
+      yap " sum is {(x *° y).hex}"
       if multiply_will_overflow2 x y
-        yak ", did overflow"
+        yap ", did overflow"
       else
-        yak ", did not overflow"
+        yap ", did not overflow"
       say ""
