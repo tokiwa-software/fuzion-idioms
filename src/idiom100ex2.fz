@@ -12,7 +12,7 @@ ex100 =>
   # define our own orderable feature based on `c` from above
   c_order(val) : property.orderable is
 
-    # compare c_order.this to b
+    # compare val to b.val
     cmp(b c_order.this)
     =>
       c val b.val
