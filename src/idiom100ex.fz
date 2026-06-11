@@ -1,4 +1,4 @@
-ex100 is
+ex100 =>
 
   items := [ "siebenundvierzig";
              "elf";
@@ -6,10 +6,5 @@ ex100 is
              "acht";
              "fünfzehn" ]
 
-  c String -> i32 := .byte_count
-  say (items.sort_by c)
-
-  # passing the lambda directly to sort avoids
-  # specifying its type:
-  #
-  say (items.sort_by (.byte_count))
+  # sort using the implicit order of `String`:
+  say items.sort

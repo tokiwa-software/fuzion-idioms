@@ -1,1 +1,12 @@
-items.sort_by c
+# many Fuzion types are orderable, so we can just sort them using
+items.sort
+
+# if, however, we have a comparator Function c that takes two arguments a and b
+# and returns a bool that is true iff a <= b, we can define an orderable feature
+# using `c` as follows
+c_order(val) : property.orderable is
+  cmp(b c_order.this) => c val b.val
+  public redef type.lteq(a, b c_order.this) bool => a.cmp b
+
+# and then sort using this order:
+items.sort_by c_order

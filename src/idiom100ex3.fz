@@ -1,0 +1,11 @@
+ex100 =>
+
+  items := [ "siebenundvierzig";
+             "elf";
+             "null";
+             "acht";
+             "fünfzehn" ]
+
+  # in most cases, we could instead just specify what orderable
+  # we would like to sort by. In this case, it is the `byte_count`:
+  say (items.sort_by (.byte_count))
