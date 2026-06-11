@@ -1,0 +1,31 @@
+ex100 is
+
+  items := [ "siebenundvierzig";
+             "elf";
+             "null";
+             "acht";
+             "fünfzehn" ]
+
+  # define order using byte_count
+  c(a, b String) => a.byte_count <= b.byte_count
+
+  # define our own orderable feature based on `c` from above
+  c_order(val) : property.orderable is
+
+    # compare val to b.val
+    cmp(b c_order.this)
+    =>
+      c val b.val
+
+    public redef type.lteq(a, b c_order.this) bool
+    =>
+      # compare a and b.
+      #
+      # Note that `c` is not visible from this type feature `lteq`, so
+      # we cannot do `c a b` unless `c` is moved to universe or we use
+      # `ex100.c` (which we cannot do here since this would re-run the
+      # example recursively).
+      a.cmp b
+
+  # and now sort by c_order
+  say (items.sort_by c_order)
