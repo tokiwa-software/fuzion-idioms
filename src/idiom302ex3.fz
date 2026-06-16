@@ -17,8 +17,8 @@ ex302b is
         Hello World!
         This example was written on \
         the $((now.day.as_string + "."
-              + now.month.as_string + "."
-              + now.year.as_string))
+               + now.month.as_string + "."
+               + now.year.as_string))
         The local time was \
         $h:$m:$s (CEST)\
         """
