@@ -5,4 +5,4 @@ for i in 1..10
     b := i.as_f64 * 4
     x := pick a b
 do
-  say "$x {if a <= x < b then "ok" else "not ok!"}"
+  say "$x $(if a <= x < b then "ok" else "not ok!")"

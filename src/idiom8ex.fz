@@ -10,4 +10,4 @@ ex8 is
 */
 
   for s in ["one", "two", "three"] do
-    say "$s maps to {x[s]}"
+    say "$s maps to $(x[s])"

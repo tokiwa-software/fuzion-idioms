@@ -20,8 +20,8 @@ ways_memo ! () ->
 
   # First call:
   say "First call:"
-  say "Result = {m 5}"
+  say "Result = $(m 5)"
 
   # Second call: should reuse all values, no "working on..." should appear
   say "\nSecond call:"
-  say "Result = {m 5}"
+  say "Result = $(m 5)"

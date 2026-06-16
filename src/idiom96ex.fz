@@ -4,5 +4,5 @@ ex96 is
     b := s.starts_with prefx
     b
 
-  say "{starts_with "Fuzion is great!" "Fuzion"}"
-  say "{starts_with "Fuzion is great!" "Java"}"
+  say "$(starts_with "Fuzion is great!" "Fuzion")"
+  say "$(starts_with "Fuzion is great!" "Java")"

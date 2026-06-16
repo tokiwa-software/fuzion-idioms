@@ -15,4 +15,4 @@ ex20 is
   (1..100 : 4).for_each x->
       match search data x
         nil     => say "$x not found"
-        t tuple => say "$x found at ({t.0},{t.1})"
+        t tuple => say "$x found at ($(t.0),$(t.1))"

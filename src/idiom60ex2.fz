@@ -1,7 +1,7 @@
 ex60 is
 
   show_args =>
-    say "got {envir.args.env.count} args:"
+    say "got $(envir.args.env.count) args:"
     say "first arg is the program, skipping"
     for
       i in 1..envir.args.env.count-1

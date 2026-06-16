@@ -12,4 +12,4 @@ ex263 is
     n in 1..12
   do
     f := f64.from_u32 n.cast_to_u32
-    say "{n} {log2d f} {log2u f}"
+    say "$(n) $(log2d f) $(log2u f)"

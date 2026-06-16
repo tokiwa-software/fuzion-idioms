@@ -7,6 +7,6 @@ exponent(b i32, n i32) =>
   else b * exponent(b, n - 1)   # Recursion multiplication: b * b * ... *b
 
 # Print examples
-say "2^3 = {exponent(2, 3)}"    # 2 * 2 * 2 = 8
-say "5^0 = {exponent(5, 0)}"    # = 1
-say "3^4 = {exponent(3, 4)}"    # 3 * 3 * 3 * 3 = 81
+say "2^3 = $(exponent(2, 3))"    # 2 * 2 * 2 = 8
+say "5^0 = $(exponent(5, 0))"    # = 1
+say "3^4 = $(exponent(3, 4))"    # 3 * 3 * 3 * 3 = 81

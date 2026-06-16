@@ -2,4 +2,4 @@ ex193 is
 
   a := num.matrix (array2 2 3 i,j->i+10*j)
   b := a.transpose
-  say "{a}ᵀ = {b}"
+  say "$(a)ᵀ = $(b)"

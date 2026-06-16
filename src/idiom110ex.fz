@@ -4,8 +4,8 @@ ex110 is
     blank := s.is_blank
     blank
 
-  say "{blank "abc"}"
-  say "{blank ""}"
-  say "{blank "   "}"
-  say "{blank "\t\n\r\f"}"
-  say "{blank "\t\n x\r\f "}"
+  say "$(blank "abc")"
+  say "$(blank "")"
+  say "$(blank "   ")"
+  say "$(blank "\t\n\r\f")"
+  say "$(blank "\t\n x\r\f ")"

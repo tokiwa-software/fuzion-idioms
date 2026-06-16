@@ -7,5 +7,5 @@ ex55 is
     say s1
     s2 := "$i"
     say s2
-    s3 := "{i+0*i}"
+    s3 := "$(i+0*i)"
     say s3

@@ -15,4 +15,4 @@ k := m.keys
 # Go through each key in a loop
 for a in k do
 
-  say "Key: {a}"
+  say "Key: $(a)"

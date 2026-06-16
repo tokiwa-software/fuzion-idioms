@@ -13,4 +13,4 @@ ex315 is
 
   # Print the number of ways for steps ranging from 5 to 8
   (5..8).for_each (n ->
-    say "ways $n steps = {m n}")
+    say "ways $n steps = $(m n)")

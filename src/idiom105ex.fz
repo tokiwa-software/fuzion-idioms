@@ -1,2 +1,2 @@
 s := envir.args.env.nth 0
-say "Executable: {s}"
+say "Executable: $(s)"

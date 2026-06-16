@@ -4,4 +4,4 @@ ex353 is
 
   b := items.is_sorted
   
-  say "$items is {b ? "sorted" : "unsorted"}"
+  say "$items is $(b ? "sorted" : "unsorted")"

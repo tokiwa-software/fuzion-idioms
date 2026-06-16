@@ -20,4 +20,4 @@ ex178b is
 
     b := r.is_inside p
 
-    say "Point $x,$y is {if b then "" else "not "}inside of rectangle $x1,$y1,$x2,$y2"
+    say "Point $x,$y is $(if b then "" else "not ")inside of rectangle $x1,$y1,$x2,$y2"

@@ -7,13 +7,13 @@ idiom32ex2 is
 
   for i in 0..15 do
     for j in 0..15 do
-      say "exp $i $j is {exp_wrap i j} {exp_max i j} {exp_check i j}"
+      say "exp $i $j is $(exp_wrap i j) $(exp_max i j) $(exp_check i j)"
 
   for i in -15 .. -1 do
     for j in 0..15 do
-      say "exp $i $j is {exp_wrap i j} {exp_max i j} {exp_check i j}"
+      say "exp $i $j is $(exp_wrap i j) $(exp_max i j) $(exp_check i j)"
 
   # using the standard exp will eventually cause an error:
   for i in 0..15 do
     for j in 0..15 do
-      say "exp $i $j is {exp i j}"
+      say "exp $i $j is $(exp i j)"

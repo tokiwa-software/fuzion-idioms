@@ -6,15 +6,15 @@ ex343 is
   # create a testfile
   _ := io.file.use unit path1 io.file.mode.write (()-> io.file.writer.write "".utf8)
 
-  say "$path1 {io.file.exists path1 ? "exists" : "does NOT exist"}"
-  say "$path2 {io.file.exists path2 ? "exists" : "does NOT exist"}"
+  say "$path1 $(io.file.exists path1 ? "exists" : "does NOT exist")"
+  say "$path2 $(io.file.exists path2 ? "exists" : "does NOT exist")"
 
   say "\nmove file '$path1' to '$path2'"
 
   _ := io.file.move path1 path2
 
-  say "\n$path1 {io.file.exists path1 ? "exists" : "does NOT exist"}"
-  say "$path2 {io.file.exists path2 ? "exists" : "does NOT exist"}"
+  say "\n$path1 $(io.file.exists path1 ? "exists" : "does NOT exist")"
+  say "$path2 $(io.file.exists path2 ? "exists" : "does NOT exist")"
 
   # cleanup
   _ := io.file.delete path2

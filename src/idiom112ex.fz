@@ -5,8 +5,8 @@ ex112 is
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )
 
   for k in map.keys.sort do
-    say "$k => {map[k]}"
+    say "$k => $(map[k])"
 
   # since map is already ordered_map, map.keys are already ordered
   for k in map.keys do
-    say "$k => {map[k]}"
+    say "$k => $(map[k])"

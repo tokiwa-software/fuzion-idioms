@@ -31,5 +31,5 @@ ex202 is
       s ? nil    => sum
         | c Cons => sum_of_squares (sum + c.head**2) c.tail
 
-    say "sum is {sum_of_squares 0 a.as_list}"
+    say "sum is $(sum_of_squares 0 a.as_list)"
   sum_tail_rec

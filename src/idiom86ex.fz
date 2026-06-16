@@ -8,13 +8,13 @@ ex86 is
 
   for x in 0x8000..0xe000 : 0x2000 do
     for y in 0x5800..0xe800 : 0x3000 do
-      yap "{x.hex} *° {y.hex} "
+      yap "$(x.hex) *° $(y.hex) "
       if multiply_will_overflow x y
         yap "will overflow    "
       else
         yap "will not overflow"
 
-      yap " sum is {(x *° y).hex}"
+      yap " sum is $((x *° y).hex)"
       if multiply_will_overflow2 x y
         yap ", did overflow"
       else
