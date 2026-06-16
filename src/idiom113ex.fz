@@ -5,4 +5,4 @@ ex113 is
     [ "ichi", "ichi", "ni",   "san"  , "shi/yon", "go"   ] )
 
   mymap.items.sort_by (.1)
-       .for_each (kv->say "{kv.0} => {kv.1}")
+       .for_each (kv->say "$(kv.0) => $(kv.1)")

@@ -12,4 +12,4 @@ ex342 is
     # Search the current year
     yr := time.now.env.get.year
 
-    say "Year: {yr}, leap year? {is_leap_year yr}"
+    say "Year: $(yr), leap year? $(is_leap_year yr)"

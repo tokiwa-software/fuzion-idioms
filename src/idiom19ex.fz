@@ -1,5 +1,5 @@
 x := ["A", "B", "C", "D"]
-say "using array: $x reversed is {x.reverse}"
+say "using array: $x reversed is $(x.reverse)"
 
 l := x.as_list
 r := l.reverse

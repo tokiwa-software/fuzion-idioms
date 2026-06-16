@@ -21,10 +21,10 @@ ex173 is
   numbers := [1, 42, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
 
   for n in numbers
-  do say "$n -> {format n}"
+  do say "$n -> $(format n)"
 
   for n in numbers
-  do n_neg := n*(-1); say "$n_neg -> {format n_neg}"
+  do n_neg := n*(-1); say "$n_neg -> $(format n_neg)"
 
   a := int i64.max
   say (format a*a)

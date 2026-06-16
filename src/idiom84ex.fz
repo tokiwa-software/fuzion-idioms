@@ -4,4 +4,4 @@ ex84 is
       c := i.ones_count
       _ in 1..10
   do
-    say "{i.hex} has $c one bits"
+    say "$(i.hex) has $c one bits"

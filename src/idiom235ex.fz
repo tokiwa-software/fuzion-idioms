@@ -5,7 +5,7 @@ ex235 is
   data :=
     match encodings.base64.decode_str s
       arr array u8 => arr
-      err error    => panic "error while decoding: {err.msg}"
+      err error    => panic "error while decoding: $(err.msg)"
 
 
   say (String.from data)

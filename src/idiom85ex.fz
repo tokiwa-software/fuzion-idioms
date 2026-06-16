@@ -8,13 +8,13 @@ ex85 is
 
   for x in 0x18000000..0x78000000 : 0x20000000 do
     for y in 0x18000000..0x78000000 : 0x30000000 do
-      yap "{x.hex} +° {y.hex} "
+      yap "$(x.hex) +° $(y.hex) "
       if adding_will_overflow x y
         yap "will overflow    "
       else
         yap "will not overflow"
 
-      yap " sum is {(x +° y).hex}"
+      yap " sum is $((x +° y).hex)"
       if adding_will_overflow2 x y
         yap ", did overflow"
       else

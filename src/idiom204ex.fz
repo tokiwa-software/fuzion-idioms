@@ -38,8 +38,8 @@ ex204 is
 
   a f64 := 3.14
   b, c := frexp a
-  say "{b} {c}"
+  say "$(b) $(c)"
 
   d f64 := 5E-324
   exp, fract := frexp d
-  say "{exp} {fract}"
+  say "$(exp) $(fract)"

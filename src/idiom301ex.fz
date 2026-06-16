@@ -8,4 +8,4 @@ ex301 is
   for
     i in 0..10
   do
-    say "fib $i = {fib i}"
+    say "fib $i = $(fib i)"

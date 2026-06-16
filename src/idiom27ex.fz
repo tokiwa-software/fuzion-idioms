@@ -6,4 +6,4 @@ ex27 is
 
   x := array3 m n p i,j,k->2.71
 
-  say "x[3,5,7] is {x[3,5,7]}"
+  say "x[3,5,7] is $(x[3,5,7])"
