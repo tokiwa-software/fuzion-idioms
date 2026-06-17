@@ -3,7 +3,7 @@ Multi-line strings start and end with a fat quotation """. They mostly work just
 * A multi-line string is required to start in the first line following the fat quotation.
 * The first line of the multi-line string is the reference for the indentation to be used throughout the rest of the string.
   Thus all lines of the multi-line strings have to indented at least as much as the first line.
-* A multi-line string may use interpolation with $ and {} just like 'normal' strings.
+* A multi-line string may use interpolation with $ and $() just like 'normal' strings.
 * Arbitrary nesting of multi-line strings is allowed.
 * Trailing white space in multi-line strings is disallowed.
 * For adding white space at the beginning of the first line or at the end of lines use escape codes described above.
