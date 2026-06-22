@@ -1,1 +1,1 @@
-elements.map e->e*c
+elements.map (*c)

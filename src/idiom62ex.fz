@@ -30,5 +30,5 @@ ex62 is
       nil => say "$s not found"
       ix i32 =>
         m := "found '$s' at index $ix: "
-        say (m + str)
+        say "$m$str"
         say "$( "-" * (m.codepoint_count + ix) )^"

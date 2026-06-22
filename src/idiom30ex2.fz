@@ -3,7 +3,8 @@ ex30 is
   f(i i32) =>
     say "**$i**"
 
-  (1..1000).map (i-> concur.threads.env.spawn (() -> f i))
+  (1..1000)
+    .map (i-> concur.threads.env.spawn (() -> f i))
     .for_each x->unit
 
   time.nano.env.sleep (time.duration.s 2)

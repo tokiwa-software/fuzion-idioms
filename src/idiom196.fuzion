@@ -11,4 +11,4 @@ mi.instate_self ()->
   a := (mi.array i32).new n 0
   a.indices.for_each (i -> a[i] := i)
 
-  (1..m : 2).for_each (i -> foo a i)
+  (1..m : 2).for_each (foo a)

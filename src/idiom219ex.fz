@@ -11,7 +11,7 @@ ex219 is
     public redef e String => ""
 
   t1 := s.codepoints
-        .map x->($x)
+        .map ($)
         .fold filter_multi_space
   say t1
 

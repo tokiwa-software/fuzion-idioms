@@ -5,7 +5,7 @@ ex90illegal is
     private x := mut 42
 
     double_x is
-      x <- 2 * x.get
+      x <- 2 * x
 
   f := foo
   say f.get_x

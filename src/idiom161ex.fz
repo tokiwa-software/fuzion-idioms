@@ -2,4 +2,4 @@ ex161 is
 
   elements := [1,2,3]
   c := 2
-  say (elements.map e->e*c)
+  say (elements.map (*c))

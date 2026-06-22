@@ -13,6 +13,6 @@ ex196 is
 
     say a
 
-    ((i64 1)..m : 2).for_each (i -> foo a i)
+    ((i64 1)..m : 2).for_each (foo a)
 
     say a

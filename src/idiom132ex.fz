@@ -1,4 +1,4 @@
 ex132 is
   f =>
     time.nano.env.sleep (time.duration.seconds 1)
-  say (time.stopwatch (() -> f))
+  say (time.stopwatch f)

@@ -9,7 +9,7 @@ ex90 is
     x := lm.env.new 42
 
     double_x =>
-      x <- 2 * x.get
+      x <- 2 * x
 
   # instantiating the local mutate
   # to be able to use it in the lambda

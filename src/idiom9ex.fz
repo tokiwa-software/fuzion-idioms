@@ -8,8 +8,8 @@ is
   # add element to this tree, return resulting tree
   #
   add (v T) bin_tree T =>
-    l := if (v < val) (left .add v) else left
-    r := if (v > val) (right.add v) else right
+    l := if v < val then left .add v else left
+    r := if v > val then right.add v else right
     Bin_Tree_Node val l r
 
 
