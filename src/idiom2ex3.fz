@@ -1,2 +1,2 @@
 (1..10)
-  .for_each (x -> say "Hello World")
+  .for_each (_ -> say "Hello World")

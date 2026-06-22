@@ -2,7 +2,7 @@ ex125 is
   foo =>
     time.nano.env.sleep (time.duration.seconds 1)
 
-  t := (time.stopwatch (() -> foo)).nanos
+  t := (time.stopwatch foo).nanos
 
   say t
 
