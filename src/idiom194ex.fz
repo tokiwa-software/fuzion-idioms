@@ -1,7 +1,7 @@
 ex194 is
 
   a := array2 5 5 i,j->i*10+j
-  n := 2
+  n i64 := 2
 
   l0 := a.length0
   l1 := a.length1
