@@ -1,1 +1,1 @@
-error: an error occurred while creating the following directory: "path/to/dir"
+error(code=2): an error occurred while creating the following directory: "path/to/dir"
