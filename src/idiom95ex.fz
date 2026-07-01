@@ -3,21 +3,20 @@ ex95 is
   path := path.of "idiom95.testfile"
 
   # create the file
-  o0 := io.file.use unit path io.file.mode.write ()->
-    _ := io.file.writer.write "hello".utf8
+  o0 := io.file.write path "hello"
   handle_error o0
 
   # size without error handling, will set x to choice type `outcome i64`
-  x0 := (io.file.stat path true).bind i64 x->x.size
+  x0 := (io.file.stat path true).bind u128 (.size.bytes)
   say "the size of $path is $x0"
 
   # size without error handling, will fail at precondition or panic in case of an error
-  x1 := (io.file.stat path true).or_panic.size
+  x1 := (io.file.stat path true).or_panic.size.bytes
   say "the size of $path is $x1"
 
   # size with manual error handling
   match io.file.stat path true
-    d io.file.meta_data => x := d.size                   # logic in case of success
+    d io.file.meta_data => x := d.size.bytes             # logic in case of success
                            say "the size of $path is $x"
     e error             => say e                         # error handling
 
@@ -25,6 +24,6 @@ ex95 is
   o1 := io.file.delete path
   handle_error o1
 
-  handle_error (e outcome T) =>
+  handle_error (e outcome _) =>
     if e!!
       panic $e.err
