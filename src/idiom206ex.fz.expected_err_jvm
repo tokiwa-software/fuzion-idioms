@@ -3,7 +3,7 @@ error 1: FATAL FAULT `*** panic ***`: --nil--
 Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
-panic#1 at {base.fum}/panic.fz:59
+panic#1 at {base.fum}/panic.fz:53
 (option (Function unit)).or_panic#1 at {base.fum}/switch.fz:171
 (option (Function unit)).or_panic at {base.fum}/switch.fz:163
 ex206.loop at -:15
