@@ -1,1 +1,1 @@
-x := (io.file.stat path true).bind i64 x->x.size
+x := (io.file.stat path true).bind u128 (.size.bytes)
