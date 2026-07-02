@@ -1,1 +1,1 @@
-x := (io.file.stat path true).or_panic.size
+x := (io.file.stat path true).or_panic.size.bytes
