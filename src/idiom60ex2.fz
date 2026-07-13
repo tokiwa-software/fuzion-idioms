@@ -1,11 +1,11 @@
 ex60 is
 
   show_args =>
-    say "got $(envir.args.env.count) args:"
+    say "got $(envir.Args.env.count) args:"
     say "first arg is the program, skipping"
     for
-      i in 1..envir.args.env.count-1
-      x := envir.args.env[i]
+      i in 1..envir.Args.env.count-1
+      x := envir.Args.env[i]
     do
       say "arg#$i is $x"
     say ""
@@ -14,8 +14,8 @@ ex60 is
   show_args
 
   # run show_args in a different environment using a different instance of the
-  # envir.args effect
-  (envir.args ["cmd","arg0","arg1"]).instate_self show_args
+  # envir.Args effect
+  (envir.Args ["cmd","arg0","arg1"]).instate_self show_args
 
   # run show_args in another environment
-  (envir.args (array 20 i->"a$i")).instate_self show_args
+  (envir.Args (array 20 i->"a$i")).instate_self show_args

@@ -2,7 +2,7 @@ ex186 is
 
   f =>
     say "perform exit:"
-    exit 0
+    Exit.env.exit 0
     say "** not reachable code **"
 
   f
