@@ -7,4 +7,4 @@ ex30 is
     .map (i-> concur.threads.env.spawn (() -> f i))
     .for_each x->unit
 
-  time.nano.env.sleep (time.duration.s 2)
+  time.Nano.env.sleep (time.duration.s 2)
