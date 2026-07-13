@@ -1,18 +1,18 @@
 ex69 is
 
   seed(s u64, f ()->unit) =>
-    simple_random s f
+    Random.simple s f
 
   show_random (msg String) =>
     for i in 0..5 do
-      say "$msg random is $(random.env.next_u32 100)"
+      say "$msg random is $(Random.env.next_u32 100)"
 
   show_random "default"
 
   seed 777 ()->
     show_random "seeded with 777"
 
-  time_seeded_random (()->
+  Random.time_seeded (()->
     show_random "seeded with time")
 
   seed 777 ()->

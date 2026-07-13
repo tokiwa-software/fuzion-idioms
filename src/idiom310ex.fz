@@ -2,8 +2,8 @@ ex310 is
 
   # Create a random provider with the given seed
   # ensures deterministic sequence of random output for testing
-  simple_random 3523248709069810085 ()->
-    rand_bytes => (random.env.next_u32 255).as_u8 : rand_bytes
+  Random.simple 3523248709069810085 ()->
+    rand_bytes => (Random.env.next_u32 255).as_u8 : rand_bytes
 
     n := 5
 

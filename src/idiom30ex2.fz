@@ -4,7 +4,7 @@ ex30 is
     say "**$i**"
 
   (1..1000)
-    .map (i-> concur.threads.env.spawn (() -> f i))
+    .map (i-> concur.Threads.env.spawn (() -> f i))
     .for_each x->unit
 
   time.Nano.env.sleep (time.duration.s 2)

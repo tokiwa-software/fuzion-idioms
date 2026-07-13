@@ -4,34 +4,34 @@ Call stack:
 fuzion.type.runtime.type.fault.type.default_value.(λkind_and_msg-> kind, msg := kind_and_m...).call#1: {base.fum}/fuzion/runtime/fault.fz:63:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
   => h e
 -----^
 fuzion.type.runtime.type.contract_fault.type.default_value.(λkind_and_msg-> fuzion.runtime.fault.en...).call#1: {base.fum}/fuzion/runtime/contract_fault.fz:42:7:
       fuzion.runtime.fault.env.cause kind_and_msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.contract_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+fuzion.runtime.contract_fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
   => h e
 -----^
 fuzion.type.runtime.type.pre_fault.type.default_value.(λmsg-> fuzion.runtime.contract_fault.en...).call#1: {base.fum}/fuzion/runtime/pre_fault.fz:42:7:
       fuzion.runtime.contract_fault.env.cause ("precondition", msg)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.pre_fault.cause#1: {base.fum}/eff/fallible.fz:35:6:
+fuzion.runtime.pre_fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
   => h e
 -----^
 fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:56:3:
   fuzion.runtime.pre_fault.env.cause msg
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-envir.args.pre index [ ] i32: {base.fum}/Sequence.fz:838:7:
+envir.type.Args.type.default_value.anonymous.pre index [ ] i32: {base.fum}/Sequence.fz:838:7:
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
-envir.args.precall index [ ] i32: {base.fum}/Sequence.fz:837:5:
+envir.type.Args.type.default_value.anonymous.precall index [ ] i32: {base.fum}/Sequence.fz:837:5:
     pre
 ----^^^
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
 ex60: -:3:8:
-  x := envir.args.env[1]  # will cause error if called without cmd line argument
+  x := envir.Args.env[1]  # will cause error if called without cmd line argument
 -------^^^^^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.

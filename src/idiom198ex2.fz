@@ -3,16 +3,18 @@ ex198a is
   f =>
     say "in f, perform exit:"
     x := u8 4
-    exit x
+    Exit.env.exit x
     say "** not reachable code **"
 
-  my_exit : Exit_Handler is
+  my_exit : Exit is
     public redef exit(code u8) void =>
       io.Err.env.println "*** user defined exit handler diverting exit $code ***"
-      exit.abort
+      Exit.abort
+    public redef finally unit =>
 
-  exit my_exit ()->
+
+  Exit.instate _ my_exit (()->
     f
-    say "** not reachable code **"
+    say "** not reachable code **") _->unit
 
   say "exit normally"
