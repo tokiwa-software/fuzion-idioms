@@ -4,6 +4,6 @@ ex30 is
     say "**$i**"
 
   for i in 1..1000 do
-    _ := concur.threads.env.spawn (() -> f i)
+    _ := concur.Threads.env.spawn (() -> f i)
 
   time.Nano.env.sleep (time.duration.s 2)

@@ -15,7 +15,13 @@ ex60 is
 
   # run show_args in a different environment using a different instance of the
   # envir.Args effect
-  (envir.Args ["cmd","arg0","arg1"]).instate_self show_args
+  envir.Args.instate (_ : envir.Args is
+                        public redef as_list list String =>
+                          ["cmd","arg0","arg1"].as_list)
+                     ()->show_args
 
   # run show_args in another environment
-  (envir.Args (array 20 i->"a$i")).instate_self show_args
+  envir.Args.instate (_ : envir.Args is
+                        public redef as_list list String =>
+                          (array 20 i->"a$i").as_list)
+                     ()->show_args

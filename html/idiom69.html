@@ -2,13 +2,12 @@
 
 <p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/69/seed-random-generator">programming-idioms.org</a>:</p>
 
-<p>Random numbers generators in Fuzion are effects.  To use a random number
-generator with a particular seed, we have to create an instance
-of <code>simple_random_provider</code> with the given seed and run code with this
-this effect in its environment.  The standard library
-feature <code>simple_random</code> creates such a random provider with the given
-seed and installs it as the environment for running the code provided with the
-function parameter <code>f</code>.
+<p>Random number generators in Fuzion are effects. To use a random number
+generator with a particular seed, we have to instate the effect
+<code>Random</code> with the given seed and run code with this effect in its
+environment. The standard library feature <code>Random.simple</code> creates
+such a random provider with the given seed and installs it as the environment
+for running the code provided with the function parameter <code>f</code>.
 
 <h2>Code</h2>
 

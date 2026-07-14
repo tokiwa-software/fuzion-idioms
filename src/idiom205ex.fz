@@ -1,5 +1,5 @@
-foo  := envir.vars.env.get "FOO"  .or_default "none"
-home := envir.vars.env.get "HOME" .or_default "/"
-path := envir.vars.env.get "PATH" .or_default "/bin"
+foo  := envir.Vars.env.get "FOO"  .or_default "none"
+home := envir.Vars.env.get "HOME" .or_default "/"
+path := envir.Vars.env.get "PATH" .or_default "/bin"
 
 say "$foo $home $path"
