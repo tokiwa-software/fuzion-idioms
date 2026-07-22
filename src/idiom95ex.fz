@@ -1,6 +1,6 @@
 ex95 is
 
-  path := path.of "idiom95.testfile"
+  path := io.path.of "idiom95.testfile"
 
   # create the file
   o0 := io.file.write path "hello"

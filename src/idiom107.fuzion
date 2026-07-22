@@ -1,1 +1,1 @@
-dir := (path.of envir.Args.env[0]).parent
+dir := (io.path.of envir.Args.env[0]).parent

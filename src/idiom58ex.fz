@@ -1,6 +1,6 @@
 ex58 is
 
-  f := path.of "path/to/file"
+  f := io.path.of "path/to/file"
 
   lines := io.file.read f
 
