@@ -1,7 +1,7 @@
 ex343 is
 
-  path1 := path.of "idiom343_original_testfile.txt"
-  path2 := path.of "idiom343_moved_test_file.txt"
+  path1 := io.path.of "idiom343_original_testfile.txt"
+  path2 := io.path.of "idiom343_moved_test_file.txt"
 
   # create a testfile
   _ := io.file.write path1 ""

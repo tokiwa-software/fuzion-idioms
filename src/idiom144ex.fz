@@ -1,6 +1,6 @@
 ex144 is
 
-  fp := path.of "path/to/file"
+  fp := io.path.of "path/to/file"
   b := io.file.exists fp
 
   if b
