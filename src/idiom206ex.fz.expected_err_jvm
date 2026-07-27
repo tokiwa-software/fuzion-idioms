@@ -1,5 +1,5 @@
 
-error 1: FATAL FAULT `*** panic ***`: --nil--
+error 1: FATAL FAULT `*** panic ***`: 'switch.or_panic' called on 'option (Function unit)' that is '--nil--'
 Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
