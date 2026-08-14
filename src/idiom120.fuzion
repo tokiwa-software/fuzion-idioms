@@ -1,1 +1,2 @@
-n := (io.buffered m).read_line ? str String => str.parse_int.or_panic | io.end_of_file => panic "end of file"
+io.buffered m .Reader.instate (io.stdin.reader m) ()->
+  n := (io.buffered m).read_line ? str String => str.parse_int.or_panic | io.end_of_file => panic "end of file"
