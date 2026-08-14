@@ -4,7 +4,7 @@ ex279 is
 
   lines :=
     lm ! ()->
-      (io.stdin.reader lm) ! ()->
+      io.buffered lm .Reader.instate (io.stdin.reader lm) ()->
         (io.buffered lm).read_lines
 
   say lines
