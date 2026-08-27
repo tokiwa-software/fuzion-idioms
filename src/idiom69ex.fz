@@ -1,19 +1,12 @@
 ex69 is
 
-  seed(s u64, f ()->unit) =>
-    Random.simple s f
+  # instate random effect with seed 42
+  #
+  # random numbers can be generated within the effect environment
+  # i.e. within the lambda `()->...`
+  #
+  Random.simple 42 ()->
 
-  show_random (msg String) =>
-    for i in 0..5 do
-      say "$msg random is $(Random.env.next_u32 100)"
-
-  show_random "default"
-
-  seed 777 ()->
-    show_random "seeded with 777"
-
-  Random.time_seeded (()->
-    show_random "seeded with time")
-
-  seed 777 ()->
-    show_random "seeded with 777"
+    for _ in 0..5 do
+      random_number := Random.env.next_u32 100
+      say random_number
