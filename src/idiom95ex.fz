@@ -25,5 +25,5 @@ ex95 is
   handle_error o1
 
   handle_error (e outcome _) =>
-    if e!!
+    if !e
       panic $e.err
