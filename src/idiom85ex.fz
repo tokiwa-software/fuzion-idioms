@@ -4,7 +4,7 @@ ex85 is
   adding_will_overflow(x, y i32) => x.overflow_on_add y
 
   # or using overflow-checking 'infix +?'
-  adding_will_overflow2(x, y i32) => (x +? y)!!
+  adding_will_overflow2(x, y i32) => !(x +? y)
 
   for x in 0x18000000..0x78000000 : 0x20000000 do
     for y in 0x18000000..0x78000000 : 0x30000000 do
