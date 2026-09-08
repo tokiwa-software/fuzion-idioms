@@ -1,7 +1,7 @@
 ex342 is
 
   # Function that tests if it's a leap year or not
-  is_leap_year(year i32) =>
+  is_leap_year(year i64) =>
     (year % 4 = 0 & year % 100 != 0) |
       (year % 100 = 0) & (year % 400 = 0)
 

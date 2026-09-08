@@ -1,4 +1,4 @@
-search(m array2 i32, x i32) =>
+search(m array2 i64, x i64) =>
   for
     # (i,j) in m.index_pairs   // NYI: destructure syntax sugar still missing
     ij in m.index_pairs

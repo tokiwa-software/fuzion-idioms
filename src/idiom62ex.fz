@@ -28,7 +28,7 @@ ex62 is
     s := abc.substring i i+1
     match str.find s
       nil => say "$s not found"
-      ix i32 =>
+      ix i64 =>
         m := "found '$s' at index $ix: "
         say "$m$str"
         say "$( "-" * (m.codepoint_count + ix) )^"

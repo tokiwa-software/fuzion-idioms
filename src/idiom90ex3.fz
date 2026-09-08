@@ -1,6 +1,6 @@
 ex90immutable is
 
-  foo (x i32) is
+  foo (x i64) is
     double_x => foo 2*x
 
   foo => foo 42

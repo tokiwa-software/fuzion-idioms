@@ -3,8 +3,8 @@ ex189 is
   # all non-negative integers
   x := 0..
 
-  P i32 -> bool   := i -> i %% 3   # divisible by 3
-  T i32 -> String := i -> "$(i)² = $(i*i)"
+  P i64 -> bool   := i -> i %% 3   # divisible by 3
+  T i64 -> String := i -> "$(i)² = $(i*i)"
 
   y := x.filter P
         .map T

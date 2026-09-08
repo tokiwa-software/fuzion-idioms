@@ -1,6 +1,6 @@
 ex35 is
 
-  A(val i32) is
+  A(val i64) is
   B(val bool) is
   C(val String) is
 

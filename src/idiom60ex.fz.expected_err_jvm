@@ -4,8 +4,8 @@ Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:56
-envir.type.Args.type.default_value.anonymous.pre index [ ] i32 at {base.fum}/Sequence.fz:838
-envir.type.Args.type.default_value.anonymous.precall index [ ] i32 at {base.fum}/Sequence.fz:837
+envir.type.Args.type.default_value.anonymous.pre index [ ] i64 at {base.fum}/Sequence.fz:838
+envir.type.Args.type.default_value.anonymous.precall index [ ] i64 at {base.fum}/Sequence.fz:837
 ex60 at -:3
 
 *** fatal errors encountered, stopping.

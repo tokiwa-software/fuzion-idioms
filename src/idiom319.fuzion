@@ -1,4 +1,4 @@
-g(start i32) : effect is
+g(start i64) : effect is
 
   call =>
     # replace current effect instance with next value

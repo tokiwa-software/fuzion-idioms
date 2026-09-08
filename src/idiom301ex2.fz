@@ -1,9 +1,9 @@
 ex301a is
 
-  fib(n i32)
+  fib(n i64)
     pre n >= 0
   =>
-    fib_acc(n1, n2, n0 i32) =>
+    fib_acc(n1, n2, n0 i64) =>
       if n0=0 then n1
       else fib_acc n2 (n1+n2) (n0-1)
 

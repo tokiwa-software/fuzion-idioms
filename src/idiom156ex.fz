@@ -1,6 +1,6 @@
 ex156 is
 
-  test(i i32) =>
+  test(i i64) =>
     s := i.dec 3
     say s
 

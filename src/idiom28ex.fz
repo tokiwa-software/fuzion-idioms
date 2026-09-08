@@ -1,6 +1,6 @@
 ex28 is
 
-  item (p i32, q String) is
+  item (p i64, q String) is
     public redef as_string String => "$p $q"
 
   items := [ item 47 "siebenundvierzig";

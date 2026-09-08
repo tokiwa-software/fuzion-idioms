@@ -1,6 +1,6 @@
 ex37 is
 
-  add (i32, i32) -> i32 := a, b -> a + b
-  add5 i32 -> i32 := a -> add 5 a
+  add (i64, i64) -> i64 := a, b -> a + b
+  add5 i64 -> i64 := a -> add 5 a
 
   say (add5 25)

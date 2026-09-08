@@ -1,10 +1,10 @@
 ex86 is
 
   # using feature will_overflow_on_mul:
-  multiply_will_overflow(x, y i32) => x.overflow_on_mul y
+  multiply_will_overflow(x, y i64) => x.overflow_on_mul y
 
   # or using overflow-checking 'infix *?'
-  multiply_will_overflow2(x, y i32) => !(x *? y)
+  multiply_will_overflow2(x, y i64) => !(x *? y)
 
   for x in 0x8000..0xe000 : 0x2000 do
     for y in 0x5800..0xe800 : 0x3000 do

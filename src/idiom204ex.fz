@@ -1,5 +1,5 @@
 ex204 is
-  frexp (f f64) tuple f64 i32 =>
+  frexp (f f64) tuple f64 i64 =>
     bits := f.cast_to_u64
     # bits is f in the following representation
     # seeeeeeeeeeeffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -17,7 +17,7 @@ ex204 is
     # 0000000000000000000000000000000000000000000000000000seeeeeeeeeee
     # AND this with mask
     # 00000000000000000000000000000000000000000000000000000eeeeeeeeeee
-    e := ((bits >> fract_bits) & mask).as_i32 - bias.as_i32 + 1
+    e := ((bits >> fract_bits) & mask).as_i64 - bias.as_i64 + 1
     # mask << fract_bits is
     # 0111111111110000000000000000000000000000000000000000000000000000
     # NOT this to get

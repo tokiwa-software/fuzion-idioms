@@ -11,7 +11,7 @@ ex202 is
   # using map and fold
   sum_map_fold =>
     sum := a.map x->x*x
-            .fold i32.sum
+            .fold i64.sum
     say "sum is $sum"
   sum_map_fold
 
@@ -27,7 +27,7 @@ ex202 is
 
   # using a tail-recursive function
   sum_tail_rec =>
-    sum_of_squares (sum i32, s list i32) i32 =>
+    sum_of_squares (sum i64, s list i64) i64 =>
       s ? nil    => sum
         | c Cons => sum_of_squares (sum + c.head**2) c.tail
 

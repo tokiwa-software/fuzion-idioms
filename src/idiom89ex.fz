@@ -1,12 +1,12 @@
 ex89 is
 
-  f(x i32) unit
+  f(x i64) unit
     pre
       debug: is_valid x
   =>
     say "got $x"
 
-  is_valid(i i32) => i ∈ 0..7
+  is_valid(i i64) => i ∈ 0..7
 
   f 0
   f 3

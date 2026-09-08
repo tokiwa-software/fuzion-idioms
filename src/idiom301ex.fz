@@ -1,5 +1,5 @@
 ex301 is
-  fib(n i32) i32
+  fib(n i64) i64
     pre n >= 0
   =>
     if n<2 then n
