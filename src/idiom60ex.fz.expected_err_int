@@ -22,10 +22,10 @@ fuzion.runtime.pre_fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
 fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:56:3:
   fuzion.runtime.pre_fault.env.cause msg
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-envir.type.Args.type.default_value.anonymous.pre index [ ] i32: {base.fum}/Sequence.fz:838:7:
+envir.type.Args.type.default_value.anonymous.pre index [ ] i64: {base.fum}/Sequence.fz:838:7:
       debug: is_valid_index i
 ------^^^^^^^^^^^^^^^^^^^^^^^
-envir.type.Args.type.default_value.anonymous.precall index [ ] i32: {base.fum}/Sequence.fz:837:5:
+envir.type.Args.type.default_value.anonymous.precall index [ ] i64: {base.fum}/Sequence.fz:837:5:
     pre
 ----^^^
       debug: is_valid_index i

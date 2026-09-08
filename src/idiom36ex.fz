@@ -6,7 +6,7 @@ ex36 is
   =>
     a -> g0 (f0 a)
 
-  f i32  -> bool   := a -> a > 3
+  f i64  -> bool   := a -> a > 3
   g bool -> String := b -> if b then "T" else "F"
 
   fog := compose f g

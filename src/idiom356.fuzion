@@ -1,1 +1,1 @@
-items := s.split.map (.parse_i32)
+items := s.split.map (.parse_i64)

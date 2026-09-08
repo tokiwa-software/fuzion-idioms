@@ -7,7 +7,7 @@ ex223 is
     else
       say "did not find it"
 
-  fill i32 -> String := i -> if i=666 then "rockstar programmer" else "n00b"
+  fill i64 -> String := i -> if i=666 then "rockstar programmer" else "n00b"
   find (array 0 fill)
   find (array 10 fill)
   find (array 100 fill)

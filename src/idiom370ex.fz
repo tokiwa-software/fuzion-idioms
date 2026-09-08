@@ -1,6 +1,6 @@
 ex370 is
 
-  f(b i32) =>
+  f(b i64) =>
     suffix :=
       if 9 < (b % 100) < 14
         "th"

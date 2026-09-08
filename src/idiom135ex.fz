@@ -4,7 +4,7 @@ ex135 is
 
   x := "b"
   items1 := match items.index_of x
-    i i32 => items.take i ++ items.drop i+1
+    i i64 => items.take i ++ items.drop i+1
     nil   => items
 
   say items1

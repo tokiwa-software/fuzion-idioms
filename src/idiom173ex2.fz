@@ -1,6 +1,6 @@
 ex173a is
-  format(x i32) String => # NYI: how to treat case i32.min? Trying to format it is a valid intent, but it fails becaus of abs()
-      abs(x0 i32) i32 =>
+  format(x i64) String => # NYI: how to treat case i64.min? Trying to format it is a valid intent, but it fails becaus of abs()
+      abs(x0 i64) i64 =>
           if x0 < 0 then -x0 else x0
 
       if abs(x) < 1E3

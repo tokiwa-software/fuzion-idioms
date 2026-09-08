@@ -1,1 +1,1 @@
-i := s.parse_i32_binary
+i := s.parse_i64_binary

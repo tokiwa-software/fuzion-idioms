@@ -1,1 +1,1 @@
-b := a.map (.parse_i32.or_panic)
+b := a.map (.parse_i64.or_panic)

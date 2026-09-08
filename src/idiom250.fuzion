@@ -1,1 +1,1 @@
-x := m.values[Random.env.next_i32 m.size]
+x := m.values[Random.env.next_i64 m.size]

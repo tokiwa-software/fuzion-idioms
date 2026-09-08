@@ -1,6 +1,6 @@
 ex30 is
 
-  f(i i32) =>
+  f(i i64) =>
     say "**$i**"
 
   for i in 1..1000 do

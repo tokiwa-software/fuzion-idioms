@@ -1,8 +1,8 @@
 ex264 =>
 
-  foo (two_dim_arr array2 i32) is
+  foo (two_dim_arr array2 i64) is
     say "$(two_dim_arr.length0), $(two_dim_arr.length1)"
 
-  a := array2 i32 _ 2 3 (x,y)->x*y
+  a := array2 i64 _ 2 3 (x,y)->x*y
 
   foo a

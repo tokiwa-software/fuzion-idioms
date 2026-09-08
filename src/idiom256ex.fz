@@ -11,7 +11,7 @@ ex256 is
     say x
 
   # using tail-recursion
-  f(n i32) =>
+  f(n i64) =>
     say n
     if n > 0
       f n-1
