@@ -1,1 +1,1 @@
-error(code=2): failed opening file "path/to/file"
+--error(code=2): failed opening file "path/to/file"--
