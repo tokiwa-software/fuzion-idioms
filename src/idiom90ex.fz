@@ -6,7 +6,7 @@ ex90 is
 
   foo is
     get_x => x.get
-    x := lm.env.new 42
+    x := lm.env.var 42
 
     double_x =>
       x <- 2 * x
