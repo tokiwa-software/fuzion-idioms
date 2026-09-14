@@ -3,5 +3,5 @@ ex218 is
 
   a := ["eins", "zwei", "drei"]
   b := ["drei", "vier", "fünf"]
-  c := container.set_of_ordered a ∩ container.set_of_ordered b
+  c := container.ps_set String .new a ∩ container.ps_set String .new b
   say c

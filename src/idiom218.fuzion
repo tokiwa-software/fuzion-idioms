@@ -1,1 +1,1 @@
-container.set_of_ordered a ∩ container.set_of_ordered b
+container.ps_set String .new a ∩ container.ps_set String .new b

@@ -1,1 +1,1 @@
-y := container.set_of_ordered x
+y := container.ps_set codepoint .new x

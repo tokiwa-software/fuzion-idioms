@@ -1,7 +1,7 @@
 ex255 is
 
-  x := container.set_of_ordered ["The", "quick", "brown", "fox",
-                                 "jumps", "over", "a", "lazy",
-                                 "dog."]
+  x := container.ps_set String .new ["The", "quick", "brown", "fox",
+                                     "jumps", "over", "a", "lazy",
+                                     "dog."]
 
   say x

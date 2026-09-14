@@ -1,1 +1,1 @@
-c := (container.set_of_ordered items).count
+c := (container.ps_set i64 .new items).count

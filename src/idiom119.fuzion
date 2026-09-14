@@ -3,11 +3,11 @@
 x := for
        r list String := nil, if e ∈ s then r
                                       else cons e r
-       s := container.set_of_ordered (Sequence String).empty, s.add e
+       s := container.ps_set String .new (Sequence String).empty, s.add e
        e in x
      else
        r.reverse
 
 # not preserving order
 #
-x := container.set_of_ordered x
+x := container.ps_set String .new x

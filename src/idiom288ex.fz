@@ -1,6 +1,6 @@
 ex288 is
 
-    x := container.set_of_ordered [1,2,3,4,5]
+    x := container.ps_set i64 .new [1,2,3,4,5]
     e := 0
     e2 := 1
 

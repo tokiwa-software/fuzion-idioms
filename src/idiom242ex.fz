@@ -1,6 +1,6 @@
 ex242 is
 
-  x := container.set_of_ordered [0, 8, 15, 47, 11]
+  x := container.ps_set i64 .new [0, 8, 15, 47, 11]
 
   f(el i64) => say "element is $el"
 
