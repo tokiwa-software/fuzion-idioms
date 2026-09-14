@@ -1,4 +1,4 @@
-m := container.ordered_map [ "Hund", "Katze", "Maus" ] [ "dog", "cat", "mouse" ]
+m := container.ordered_map String String .of [ "Hund", "Katze", "Maus" ] [ "dog", "cat", "mouse" ]
 
 k := "Katze"
 if m.has k

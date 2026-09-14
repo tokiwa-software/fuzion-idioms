@@ -1,5 +1,5 @@
-map := (container.ordered_map [ "Hund", "Katze", "Maus" ]
-                              [ "dog",  "cat",  "mouse" ])
+map := (container.ordered_map String String .of [ "Hund", "Katze", "Maus" ]
+                                                [ "dog",  "cat",  "mouse" ])
 
 m := "mouse"
 for x in map.values until m = x
