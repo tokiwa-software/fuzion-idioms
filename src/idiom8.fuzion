@@ -1,4 +1,4 @@
-x := container.map_of [("one", 1), ("two", 2)]
+x := container.ps_map String i64 .of [("one", 1), ("two", 2)]
 
 /* NYI: with better syntactic sugar, this should become
 

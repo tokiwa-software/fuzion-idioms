@@ -2,7 +2,7 @@ ex322 is
 
 # Create a map with integers as keys (1-4)
 
-m := container.map_of [
+m := container.ps_map i64 String .of [
   (1, "P=NP(?)"),
   (2, "The Hodge Conjecture"),
   (3, "The Poincare Conjecture"),

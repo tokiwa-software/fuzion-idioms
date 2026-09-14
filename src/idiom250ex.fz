@@ -1,5 +1,5 @@
 ex250 is
-  m := container.map_of [(1, "red"), (2, "pink"), (3, "lilac"), (4, "purple"), (5, "rose")]
+  m := container.ps_map i64 String .of [(1, "red"), (2, "pink"), (3, "lilac"), (4, "purple"), (5, "rose")]
 
   x := m.values[Random.env.next_i64 m.size.as_i64]
 
