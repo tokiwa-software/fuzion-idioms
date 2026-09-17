@@ -1,0 +1,8 @@
+ex25 is
+
+  chan := concur.Channel String
+
+  _ := concur.Threads.env.spawn ()->
+    chan <- "Alan"
+
+  say chan.next

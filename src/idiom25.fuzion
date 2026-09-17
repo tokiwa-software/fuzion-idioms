@@ -1,0 +1,3 @@
+chan := concur.Channel String
+# send "Alan" to Channel
+chan <- "Alan"
