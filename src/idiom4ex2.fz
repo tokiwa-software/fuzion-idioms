@@ -6,6 +6,6 @@ for i in 0 .. 10 do
 for i in u64 100000 .. 100010 do
   say "square $i is $(square i)"
 
-# using i32 with too large values causes a runtime error
-for i in 100000 .. 100010 do
+# using i64 with too large values causes a runtime error
+for i in 100000000000 .. 100000000010 do
   say "square $i is $(square i)"

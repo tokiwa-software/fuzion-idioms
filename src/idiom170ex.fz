@@ -1,9 +1,8 @@
 ex170 is
 
-  mymap := ((container.ps_map String String).new
-              ["one", "two", "three", "four", "five"]
-              ["一", "二", "三", "四", "五"]
-           )
+  mymap := (container.ps_map String String).of
+    ["one", "two", "three", "four", "five"]
+    ["一",   "二",  "三",    "四",   "五"  ]
 
   n := mymap.size
   say "size is $n"

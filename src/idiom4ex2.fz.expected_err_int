@@ -4,41 +4,41 @@ Call stack:
 fuzion.type.runtime.type.fault.type.default_value.(λkind_and_msg-> kind, msg := kind_and_m...).call#1: {base.fum}/fuzion/runtime/fault.fz:63:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
+fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
   => h e
 -----^
 fuzion.type.runtime.type.contract_fault.type.default_value.(λkind_and_msg-> fuzion.runtime.fault.en...).call#1: {base.fum}/fuzion/runtime/contract_fault.fz:42:7:
       fuzion.runtime.fault.env.cause kind_and_msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.contract_fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
+fuzion.runtime.contract_fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
   => h e
 -----^
 fuzion.type.runtime.type.pre_fault.type.default_value.(λmsg-> fuzion.runtime.contract_fault.en...).call#1: {base.fum}/fuzion/runtime/pre_fault.fz:42:7:
       fuzion.runtime.contract_fault.env.cause ("precondition", msg)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.pre_fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
+fuzion.runtime.pre_fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
   => h e
 -----^
 fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:56:3:
   fuzion.runtime.pre_fault.env.cause msg
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-i32.pre infix *: {base.fum}/numeric.fz:60:7:
+i64.pre infix *: {base.fum}/numeric.fz:60:7:
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-i32.precall infix *: {base.fum}/numeric.fz:59:5:
+i64.precall infix *: {base.fum}/numeric.fz:59:5:
     pre
 ----^^^
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-square#2 i32: -:1:26:
+square#2 i64: -:1:26:
 square(x _ : integer) => x * x
 -------------------------^^^^^
 loop: -:11:23:
   say "square $i is $(square i)"
 ----------------------^^^^^^^^
 universe: -:10:1:
-for i in 100000 .. 100010 do
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+for i in 100000000000 .. 100000000010 do
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   say "square $i is $(square i)"
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

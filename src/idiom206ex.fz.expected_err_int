@@ -1,30 +1,30 @@
 
-error 1: FATAL FAULT `*** panic ***`: 'switch.or_panic' called on 'option (Function unit)' that is '--nil--'
+error 1: FATAL FAULT `*** panic ***`: 'or_panic' called on 'option (Function unit)' that is '--nil--'
 Call stack:
 fuzion.type.runtime.type.fault.type.default_value.(λkind_and_msg-> kind, msg := kind_and_m...).call#1: {base.fum}/fuzion/runtime/fault.fz:63:7:
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:35:6:
+fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
   => h e
 -----^
 panic.type.default_value.(λ(msg->fuzion.runtime.fault.env.cause (...).call#1: {base.fum}/panic.fz:39:18:
     (panic (msg->fuzion.runtime.fault.env.cause ("*** panic ***", msg)) unit)
 -----------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-panic.cause#1: {base.fum}/flow/fallible.fz:35:6:
+panic.cause#1: {base.fum}/flow/fallible.fz:40:6:
   => h e
 -----^
 panic#1: {base.fum}/panic.fz:53:19:
     msg String => panic.env.cause msg
 ------------------^^^^^^^^^^^^^^^^^^^
-(option (Function unit)).or_panic#1: {base.fum}/switch.fz:171:14:
+(option (Function unit)).or_panic#1: {base.fum}/switch.fz:193:14:
       b B => panic (msg b)
 -------------^^^^^^^^^^^^^
-(option (Function unit)).or_panic: {base.fum}/switch.fz:163:5:
-    or_panic b->"'switch.or_panic' called on '$(switch.this.type.name)' that is '$b'"
-----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ex206.loop: -:15:58:
-                            [foo, bar, baz, barfl])[str].or_panic.call)
----------------------------------------------------------^^^^^^^^
+(option (Function unit)).or_panic: {base.fum}/switch.fz:185:5:
+    or_panic b->"'or_panic' called on '$(switch.this.type.name)' that is '$b'"
+----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ex206.loop: -:16:38:
+        [foo, bar, baz, barfl])[str].or_panic.call)
+-------------------------------------^^^^^^^^
 ex206: -:8:3:
   for str in ["bar",
 --^^^^^^^^^^^^^^^^^^
@@ -38,10 +38,12 @@ ex206: -:8:3:
 --------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   do
 --^^
-    ((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                            [foo, bar, baz, barfl])[str].or_panic.call)
-----------------------------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ((container.ordered_map String (Function unit) .of
+----^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ["foo",   "bar",   "baz",   "barfl"  ]
+--------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        [foo, bar, baz, barfl])[str].or_panic.call)
+--------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *** fatal errors encountered, stopping.
 one error.

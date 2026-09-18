@@ -1,25 +1,24 @@
-vertex(id i64) : has_total_order     # must be ordered such that we can add it to a Set
+vertex(id i64) : property.orderable     # must be ordered such that we can add it to a Set
 is
-
-  # extract neighbors from edges in given graph
-  neighbors(g graph) container.Set vertex =>
-    for
-      r := container.ps_set (list vertex).empty, if      (vertex.this = e.a) r.add e.b
-                                                 else if (vertex.this = e.b) r.add e.a
-                                                 else                        r
-      e in g.edges
-    else
-      r
-
-  # redefine `lteq` for parent feature's 'has_total_order' type feature
-  fixed type.lteq    (a, b ex40.vertex) bool => a.id <= b.id
-  fixed type.equality(a, b ex40.vertex) bool => a.id =  b.id
+  # redefine `lteq` for parent feature's 'property.orderable' type feature
+  public fixed redef type.lteq    (a, b ex40.vertex) bool => a.id <= b.id
+  public fixed redef type.equality(a, b ex40.vertex) bool => a.id =  b.id
 
   # string representation
-  redef as_string String => "v$id"
+  public redef as_string String => "v$id"
 
 # edge connecting 'a' and 'b'
 edge(a, b vertex) is
 
-# a graph is just a collection o edges
-graph(edges Sequence edge) is
+# a graph is just a collection of edges
+graph(edges0 Sequence edge) is
+
+  # extract neighbors from edges in given graph
+  neighbors(v vertex) container.Set vertex =>
+    for
+      r container.Set vertex := (container.ps_set vertex).empty, if      (v = e.a) r.add e.b
+                                                                 else if (v = e.b) r.add e.a
+                                                                 else    r
+      e in edges0
+    else
+      r

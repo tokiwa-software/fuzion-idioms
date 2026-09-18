@@ -1,5 +1,5 @@
-((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-                        [foo, bar, baz, barfl])[str].unwrap.call)
+((container.ordered_map String (Function unit) .of ["foo",   "bar",   "baz",   "barfl"  ]
+                                                   [foo, bar, baz, barfl])[str].or_panic.call)
 
 # NYI: This will need some syntax improvements:
 #

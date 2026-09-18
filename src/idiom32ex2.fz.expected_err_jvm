@@ -4,11 +4,11 @@ Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:56
-i32.pre infix ** at {base.fum}/numeric.fz:78
-i32.precall infix ** at {base.fum}/numeric.fz:77
-idiom32ex2.exp#3 i32 at -:3
+i64.pre infix ** at {base.fum}/numeric.fz:78
+i64.precall infix ** at {base.fum}/numeric.fz:77
+idiom32ex2.exp#3 i64 at -:3
 idiom32ex2.loop.loop at -:19
-idiom32ex2.loop at -:18
+idiom32ex2.loop at -:1
 idiom32ex2 at -:17
 
 *** fatal errors encountered, stopping.

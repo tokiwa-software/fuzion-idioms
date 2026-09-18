@@ -9,9 +9,9 @@ format(x T : integer) String =>
         else if len%3 > 0          then len%3  # determine size of first group
         else                            3
 
-    groups(start i64, str String) String =>
-        if start > (str.byte_count - 3)
+    groups(start i64, str0 String) String =>
+        if start > (str0.byte_count - 3)
         then ""
-        else "," + (str.substring start (start + 3)) + groups (start + 3) str
+        else "," + (str0.substring start (start + 3)) + groups (start + 3) str0
 
     (str.substring (0) (first)) + (groups first str)

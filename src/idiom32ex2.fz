@@ -1,19 +1,19 @@
 idiom32ex2 is
 
-  exp     (T type : integer, x, n T) => x **  n
+  exp      (T type : integer, x, n T) => x **  n
   exp_wrap (T type : num.wrap_around, x, n T) => x **° n
   exp_max  (T type : integer, x, n T) => x **^ n
   exp_check(T type : integer, x, n T) => x **? n
 
   for i in 0..15 do
-    for j in 0..15 do
+    for j in 0..20 do
       say "exp $i $j is $(exp_wrap i j) $(exp_max i j) $(exp_check i j)"
 
   for i in -15 .. -1 do
-    for j in 0..15 do
+    for j in 0..20 do
       say "exp $i $j is $(exp_wrap i j) $(exp_max i j) $(exp_check i j)"
 
   # using the standard exp will eventually cause an error:
   for i in 0..15 do
-    for j in 0..15 do
+    for j in 0..20 do
       say "exp $i $j is $(exp i j)"

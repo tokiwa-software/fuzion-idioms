@@ -3,5 +3,5 @@ traverse (f T -> unit) unit =>
     nil             =>
     n Bin_Tree_Node =>
       n.left.traverse f
-      f n.or_panic
+      f n.val
       n.right.traverse f

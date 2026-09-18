@@ -8,7 +8,7 @@ foo (E type : mutate, a E.array i64, i i64) ! E =>
 
 mi : mutate is
 mi.instate_self ()->
-  a := (mi.array i64).new n 0
+  a := (mi.array i64).new n _->0
   a.indices.for_each (i -> a[i] := i)
 
   (1..m : 2).for_each (foo a)

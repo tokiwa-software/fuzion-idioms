@@ -1,1 +1,1 @@
-m¹ := m.add k v
+m¹ := m.put k v
