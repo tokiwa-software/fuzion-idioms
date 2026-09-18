@@ -1,7 +1,7 @@
 foo a
 
 foo (a array2 f64) unit =>
-  say "array size {a.length0}×{a.length1}"
+  say "array size $(a.length0)×$(a.length1)"
 
   for
     s := 0.0, s + v * (i.as_f64 + 1) * (j.as_f64 + 1)

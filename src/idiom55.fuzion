@@ -3,4 +3,4 @@ s := $i
 # other alternatives with the same effect
 s := i.as_string
 s := "$i"
-s := "{i+0*i}"
+s := "$(i+0*i)"

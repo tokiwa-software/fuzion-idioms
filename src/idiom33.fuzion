@@ -1,4 +1,4 @@
-x := concur.atomic 0
+x := concur.atomic i64 .new 0
 
 for y := x.read, x.read
 while !x.compare_and_set y (f y)
