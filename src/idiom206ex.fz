@@ -11,8 +11,9 @@ ex206 is
               "baz",
               "error" /* will cause a precondition failure! */]
   do
-    ((container.ordered_map ["foo",   "bar",   "baz",   "barfl"  ]
-                            [foo, bar, baz, barfl])[str].or_panic.call)
+    ((container.ordered_map String (Function unit) .of
+        ["foo",   "bar",   "baz",   "barfl"  ]
+        [foo, bar, baz, barfl])[str].or_panic.call)
 
 # NYI: better syntax, e.g.,
 #

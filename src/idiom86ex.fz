@@ -6,8 +6,8 @@ ex86 is
   # or using overflow-checking 'infix *?'
   multiply_will_overflow2(x, y i64) => !(x *? y)
 
-  for x in 0x8000..0xe000 : 0x2000 do
-    for y in 0x5800..0xe800 : 0x3000 do
+  for x in 0x80000000..0xe0000000 : 0x20000000 do
+    for y in 0x58000000..0xe8000000 : 0x30000000 do
       yap "$(x.hex) *° $(y.hex) "
       if multiply_will_overflow x y
         yap "will overflow    "
