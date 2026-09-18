@@ -1,8 +1,18 @@
 ex25 is
 
+  # to create an open channel that may
+  # send an receive Strings
   chan := concur.Channel String
 
   _ := concur.Threads.env.spawn ()->
-    chan <- "Alan"
+    # receive "Alan"
+    say <-chan
+    # blocks until chan is closed, we then receive nil
+    say <-chan
 
-  say chan.next
+  chan <- "Alan"
+  chan.close
+
+  # we must not send anything to a closed Channel!
+  # this would result in a precondition failure
+  # chan <- "Wake"
