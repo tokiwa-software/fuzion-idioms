@@ -1,12 +1,12 @@
 
-error 1: FATAL FAULT `*** panic ***`: 'switch.or_panic' called on 'option (Function unit)' that is '--nil--'
+error 1: FATAL FAULT `*** panic ***`: 'or_panic' called on 'option (Function unit)' that is '--nil--'
 Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 panic#1 at {base.fum}/panic.fz:53
-(option (Function unit)).or_panic#1 at {base.fum}/switch.fz:171
-(option (Function unit)).or_panic at {base.fum}/switch.fz:163
-ex206.loop at -:15
+(option (Function unit)).or_panic#1 at {base.fum}/switch.fz:193
+(option (Function unit)).or_panic at {base.fum}/switch.fz:185
+ex206.loop at -:16
 ex206 at -:8
 
 *** fatal errors encountered, stopping.
