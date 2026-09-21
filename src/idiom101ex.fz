@@ -1,0 +1,4 @@
+#build: fz -jvm -modules=web,http,wolfssl -JLibraries=wolfssl idiom101ex.fz
+u := "https://example.com"
+s := web.get6 u
+say s
