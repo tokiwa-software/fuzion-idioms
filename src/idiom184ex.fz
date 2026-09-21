@@ -1,0 +1,9 @@
+tomorrow =>
+  t := (time.now.env.get + (time.duration.days 1)).as_string time.units.day
+  say t
+
+# real current time
+tomorrow
+
+# fixed "now" for a reproducible result: 2024-02-28 → 2024-02-29 (leap year)
+(time.now (()->time.date_time 2024 2 28 12 0 0 0)) ! tomorrow
