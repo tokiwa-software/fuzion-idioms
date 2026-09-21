@@ -8,7 +8,7 @@ ex25 is
     # receive "Alan"
     say "Hello, $(<-chan)"
     # blocks until chan is closed, we then receive nil
-    say <-chan
+    _ := <-chan
 
   chan <- "Alan"
   chan.close
