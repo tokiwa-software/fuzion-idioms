@@ -1,0 +1,3 @@
+u := "https://example.com"
+r := (web.get6 u).bind (s->io.file.write (io.path.of "result.txt") s)
+say r
