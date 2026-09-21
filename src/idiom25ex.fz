@@ -6,7 +6,7 @@ ex25 is
 
   _ := concur.Threads.env.spawn ()->
     # receive "Alan"
-    say <-chan
+    say "Hello, $(<-chan)"
     # blocks until chan is closed, we then receive nil
     say <-chan
 
