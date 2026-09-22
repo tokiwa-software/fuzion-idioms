@@ -1,4 +1,6 @@
-u       := "https://postman-echo.com/post"
-data    := "hello fuzion".utf8
-headers := container.ps_map String String .of [("Content-Type", "text/plain")]
-say (web.post6 u data headers)
+ex174 =>
+    u       := "https://postman-echo.com/post"
+    data    := "hello fuzion".utf8
+    headers := container.ps_map String String .of [("Content-Type", "text/plain")]
+
+    say <| web.post6 u data headers
