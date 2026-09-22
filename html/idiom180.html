@@ -1,7 +1,37 @@
-<h1>NYI: Idiom # 180: List files in directory</h1>
+<h1>Idiom # 180: List files in directory</h1>
 
-<p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/180/list-files-in-directory">programming-idioms.org</a>:</p>
+<p>See <a target="_blank"
+        href="https://www.programming-idioms.org/idiom/180/list-files-in-directory">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom180.fuzion"/>
+<runcode file="../src/idiom180.fuzion" />
+
+<p>
+    <code>io.dir.traverse</code> collects the entries of directory
+    <code>d</code> into a list. It starts with an empty <code>Sequence []</code> and appends
+    each entry <code>p</code>. Setting the argument to <code>false</code> disables
+    descending into subdirectories. The result <code>x</code> is an
+    <code>outcome (Sequence io.path)</code>, returning an <code>error</code> if
+    the directory fails to open.
+</p>
+
+<p>
+    The order of the entries is not defined, it depends on the file system.
+</p>
+
+<h2>Runnable Examples</h2>
+
+<p>
+    Using <code>io.dir.traverse</code>:
+</p>
+
+<runcode file="../src/idiom180ex.fz" />
+
+<p>
+    <code>io.dir.use</code> opens the directory and exposes its
+    entries via <code>io.dir.Read.env.next</code>. The loop then reads
+    entries until <code>next</code> returns nothing:
+</p>
+
+<runcode file="../src/idiom180ex2.fz" />

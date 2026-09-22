@@ -1,0 +1,13 @@
+ex180b =>
+    d := "."
+    x := io.dir.use (Sequence io.path) (io.path.of d) ()->
+      for
+        res Sequence io.path := [], res ++ [e.or_panic]
+      do
+        e option io.path :=
+            match io.dir.Read.env.next
+              p io.path => p
+              io.dir.no_more_entries => nil
+              error => nil
+      until !e then res
+    say x

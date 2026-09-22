@@ -1,2 +1,2 @@
 d := "."
-say <| io.dir.traverse (Sequence io.path) (io.path.of d) true [] ((r,p)->r ++ [p])
+say <| io.dir.traverse (Sequence io.path) (io.path.of d) false [] (r,p->r ++ [p])
