@@ -1,7 +1,30 @@
-<h1>NYI: Idiom # 111: Launch other program</h1>
+<h1>Idiom # 111: Launch other program</h1>
 
-<p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/111/launch-other-program">programming-idioms.org</a>:</p>
+<p>See <a target="_blank"
+        href="https://www.programming-idioms.org/idiom/111/launch-other-program">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom111.fuzion"/>
+<runcode file="../src/idiom111.fuzion" />
+
+<p>
+    <code>os.process.start</code> runs program <code>x</code> with
+    arguments <code>a</code> and <code>b</code>. It returns
+    <code>os.process outcome</code>, throwing an <code>error</code> if
+    the program fails to start(e.g., if it does not exist).
+    To wait for the program to finish and get its exit code, call
+    <code>wait</code> on the returned process.
+</p>
+
+<h2>Runnable Example</h2>
+
+<runcode file="../src/idiom111ex.fz" />
+
+<p>
+    The program's output goes to a pipe instead of the terminal. To read it,
+    <code>with_out</code> passes the process output to <code>io.buffered</code>,
+    which requires a <code>mutate</code> effect, here <code>lm</code>.
+    Then <code>read_string</code> reads the entire output.
+    Using <code>bind</code> ensures this happens only if the program was started successfully,
+    making <code>out</code> an <code>outcome String</code>.
+</p>
