@@ -6,6 +6,5 @@ ex190 is
 foo(a mutate.array f64, n i32) unit => native
 
 mutate ! ()->
-  a := mutate.array f64 .new 10 i->i.as_f64
+  a := mutate.array f64 .new 10 (.as_f64)
   foo a 10
-  say a
