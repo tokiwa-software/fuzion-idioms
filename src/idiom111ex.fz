@@ -1,8 +1,9 @@
-lm : mutate is
+ex111 =>
+  lm : mutate is
 
-x := "echo"
-out := (os.process.start x ["a", "b"]).bind p->
-  lm ! ()->
-    p.with_out String lm ()->
-      (io.buffered lm).read_string 1E9
-say out
+  x := "echo"
+  out := os.process.start x ["a", "b"] .bind p->
+    lm ! ()->
+      p.with_out String lm ()->
+        (io.buffered lm).read_string 1E9
+  say out
