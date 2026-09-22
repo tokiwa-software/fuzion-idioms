@@ -1,7 +1,35 @@
-<h1>NYI: Idiom # 101: Load from HTTP GET request into a string</h1>
+<h1>Idiom # 101: Load from HTTP GET request into a string</h1>
 
-<p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/101/load-from-http-get-request-into-a-string">programming-idioms.org</a>:</p>
+<p>See <a target="_blank"
+        href="https://www.programming-idioms.org/idiom/101/load-from-http-get-request-into-a-string">programming-idioms.org</a>:
+</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom101.fuzion"/>
+<runcode file="../src/idiom101.fuzion" />
+
+<p>
+    <code>web.get6</code> sends a GET requestto <code>u</code>
+    using IPv6 and returns the body of the response.
+    To connect via IPv4, use <code>web.get4</code>.
+</p>
+
+<p>
+    The result <code>s</code> is of type <code>outcome String</code>: it is
+    either the body of the response or an <code>error</code>, e.g., if the
+    connection fails or the server responds with a status code of 400 or
+    higher.
+</p>
+
+<h2>Runnable Example</h2>
+
+<runcode file="../src/idiom101ex.fz" />
+
+<p>
+    This example cannot be run online since it requires network access.
+    Module <code>web</code> is not part of the base library, and HTTPS
+    requires the native TLS library wolfSSL to be installed, so the example
+    is run as follows:
+</p>
+
+<pre>fz -jvm -modules=web -JLibraries=wolfssl idiom101ex.fz</pre>
