@@ -1,7 +1,32 @@
-<h1>NYI: Idiom # 184: Tomorrow</h1>
+<h1>Idiom # 184: Tomorrow</h1>
 
 <p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/184/tomorrow">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom184.fuzion"/>
+<runcode file="../src/idiom184.fuzion" />
+
+<p>
+    <code>time.now.env.get</code> returns the current date and time. Add
+    <code>time.duration.days 1</code> to get tomorrow and use
+    <code>as_string time.units.day</code> to keep the date only. Adding a
+    duration handles the end of a month or a year for you.
+</p>
+
+<p>
+    Note that <code>time.now</code> returns UTC. Fuzion does not support
+    time zones yet, so <code>t</code> may differ from your local date.
+</p>
+
+<h2>Runnable Example</h2>
+
+<runcode file="../src/idiom184ex.fz" />
+
+<p>
+    <code>time.now</code> is an effect that holds a function returning the
+    current date and time. Instating it with <code>!</code> replaces that
+    function, so <code>time.now.env.get</code> returns a fixed date instead
+    of the system time. The example prints <code>2024-02-29</code>, since
+    2024 is a leap year. Without instating <code>time.now</code>, the
+    default handler returns the current system time in UTC.
+</p>
