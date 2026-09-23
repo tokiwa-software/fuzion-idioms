@@ -1,7 +1,37 @@
-<h1>NYI: Idiom # 102: Load from HTTP GET request into a file</h1>
+<h1>Idiom # 102: Load from HTTP GET request into a file</h1>
 
-<p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/102/load-from-http-get-request-into-a-file">programming-idioms.org</a>:</p>
+<p>See <a target="_blank"
+        href="https://www.programming-idioms.org/idiom/102/load-from-http-get-request-into-a-file">programming-idioms.org</a>:
+</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom102.fuzion"/>
+<runcode file="../src/idiom102.fuzion" />
+
+<p>
+    <code>web.get6</code> sends a GET request to <code>u</code>
+    using IPv6 and returns the body of the response.
+    To connect via IPv4, use <code>web.get4</code>.
+</p>
+
+<p>
+    <code>web.get6</code> returns an <code>outcome String</code>.
+    Using <code>bind</code>, the body is passed to <code>io.file.write</code>
+    if the request was successful. <code>io.file.write</code> creates
+    the file <code>result.txt</code> and writes the body to it. The result
+    <code>r</code> is of type <code>outcome unit</code>: it is an
+    <code>error</code> if either the request or writing the file failed.
+</p>
+
+<h2>Runnable Example</h2>
+
+<runcode file="../src/idiom102ex.fz" />
+
+<p>
+    This example cannot be run online since it requires network access.
+    Module <code>web</code> is not part of the base library, and HTTPS
+    requires the native TLS library wolfSSL to be installed, so the example
+    is run as follows:
+</p>
+
+<pre>fz -jvm -modules=web -JLibraries=wolfssl idiom102ex.fz</pre>

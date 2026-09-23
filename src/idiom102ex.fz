@@ -1,0 +1,6 @@
+# build: fz -jvm -modules=web -JLibraries=wolfssl idiom102ex.fz
+ex102 =>
+
+    u := "https://example.com"
+    r := (web.get6 u).bind (s->io.file.write (io.path.of "result.txt") s)
+    say r
