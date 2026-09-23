@@ -1,0 +1,7 @@
+_ := concur.thread_pool unit 3 ()->
+  fut1 := concur.thread_pool.env.submit _ ()->f1
+  fut2 := concur.thread_pool.env.submit _ ()->f2
+  fut3 := concur.thread_pool.env.submit _ ()->f3
+  a1 := fut1.get
+  a2 := fut2.get
+  a3 := fut3.get
