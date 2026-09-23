@@ -1,0 +1,1 @@
+Module web is not part of the base library, and HTTPS requires the native TLS library wolfSSL to be installed
