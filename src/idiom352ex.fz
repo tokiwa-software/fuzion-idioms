@@ -1,0 +1,19 @@
+ex352 =>
+    f1 => 2 * 2
+    f2 => 1 + 1
+    f3 => 3 - 3
+
+    _ := concur.thread_pool unit 3 ()->
+      # submit returns immediately, the three tasks run concurrently
+      #
+      fut1 := concur.thread_pool.env.submit _ ()->f1
+      fut2 := concur.thread_pool.env.submit _ ()->f2
+      fut3 := concur.thread_pool.env.submit _ ()->f3
+
+      # get blocks until the result is available
+      #
+      a1 := fut1.get
+      a2 := fut2.get
+      a3 := fut3.get
+
+      say "$a1 $a2 $a3"
