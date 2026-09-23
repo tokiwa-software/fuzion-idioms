@@ -1,9 +1,12 @@
 ex140 =>
-    m := container.mutable_tree_map mutate String i64 .empty
-    m.put "one" 1
-    m.put "two" 2
+    lm : mutate is
+    lm ! ()->
 
-    k := "one"
-    say (m.remove k)        # out: 1 (removed value)
-    say (m.remove "three")  # out: --nil-- (nothing to remove, m unchanged)
-    say m                   # out: {"two": 2} (remaining map)
+        m := container.mutable_tree_map lm String i64 .empty
+        m.put "one" 1
+        m.put "two" 2
+
+        k := "one"
+        say (m.remove k)        # out: 1 (removed value)
+        say (m.remove "three")  # out: --nil-- (nothing to remove, m unchanged)
+        say m                   # out: {"two": 2} (remaining map)
