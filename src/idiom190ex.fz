@@ -1,0 +1,10 @@
+# declare external C function: void foo(double *a, int n);
+# build: fz -c -CFlags="-I$PWD -L$PWD" -CInclude=foo.h -CLink=foo idiom190ex.fz
+#
+ex190 is
+
+foo(a mutate.array f64, n i32) unit => native
+
+mutate ! ()->
+  a := mutate.array f64 .new 10 (.as_f64)
+  foo a 10

@@ -1,7 +1,54 @@
-<h1>NYI: Idiom # 190: Call an external C function</h1>
+<h1>Idiom # 190: Call an external C function</h1>
 
-<p>See <a target="_blank" href="https://www.programming-idioms.org/idiom/190/call-an-external-c-function">programming-idioms.org</a>:</p>
+<p>See <a target="_blank"
+        href="https://www.programming-idioms.org/idiom/190/call-an-external-c-function">programming-idioms.org</a>:</p>
 
 <h2>Code</h2>
 
-<runcode file="../src/idiom190.fuzion"/>
+<runcode file="../src/idiom190.fuzion" />
+
+<p>
+    A feature declared with <code>=> native</code> has no Fuzion
+    implementation. Instead, it says to compiler: "that function exists, but it's written in C; look for it by name",
+    here <code>foo</code>. We can also see that the return type of foo is unit (which is similar to void in C).
+    Also the Fuzion types map to C types:
+    <code>i32</code> to <code>int</code>, <code>unit</code> to <code>void</code>
+    and <code>mutate.array f64</code> to <code>double *</code>.
+</p>
+
+<p>
+    Since the C prototype takes a non-<code>const</code> pointer,
+    <code>foo</code> may modify the array. Mutable data in Fuzion is bound to a
+    <code>mutate</code> effect, which is instated by <code>mutate ! ()-&gt; ...</code> .
+</p>
+
+<h2>Runnable Example</h2>
+
+<runcode file="../src/idiom190ex.fz" />
+
+<p>
+    This example cannot be run online since it requires the C function
+    <code>foo</code> to be compiled and linked. The C source and header used:
+</p>
+
+<page file="../src/idiom190/foo.c" />
+<page file="../src/idiom190/foo.h" />
+
+<p>
+    The <code>Makefile</code> compiles <code>foo.c</code> into a static library <code>libfoo.a</code>
+    Then, fz -c compiles the example via the C backend with three options:<code>-CInclude</code> adds the foo prototype,
+    <code>-CLink</code> links the libfoo.a, and
+    <code>-CFlags</code> tells the C compiler to look for them in the current directory.
+    Finally, the program runs.
+</p>
+
+<page file="../src/idiom190/Makefile" />
+
+<p>
+    To try it yourself, clone the
+    <a target="_blank" href="https://github.com/tokiwa-software/fuzion-idioms">fuzion-idioms repository</a>
+    and run <code>make</code> in <code>src/idiom190</code>. The sample
+    implementation of <code>foo</code> prints the array like this:
+</p>
+
+<pre>0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0</pre>
