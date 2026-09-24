@@ -5,5 +5,6 @@ ex111 =>
   out := os.process.start x ["a", "b"] .bind p->
     lm ! ()->
       p.with_out String lm ()->
-        (io.buffered lm).read_string 1E9
+        (io.buffered lm).read_fully
+                        .bind(b->String.from b)
   say out
