@@ -4,7 +4,7 @@ Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 fuzion.runtime.checkcondition_fault#1 at {base.fum}/fuzion/runtime/check_fault.fz:56
-ex123 at -:5
+ex123 at idiom123ex.fz:5
 
 *** fatal errors encountered, stopping.
 one error.

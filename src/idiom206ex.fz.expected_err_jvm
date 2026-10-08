@@ -4,10 +4,10 @@ Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 panic#1 at {base.fum}/panic.fz:53
-(option (Function unit)).or_panic#1 at {base.fum}/switch.fz:193
-(option (Function unit)).or_panic at {base.fum}/switch.fz:185
-ex206.loop at -:16
-ex206 at -:8
+(option (Function unit)).or_panic#1 at {base.fum}/switch.fz:191
+(option (Function unit)).or_panic at {base.fum}/switch.fz:183
+ex206.loop at idiom206ex.fz:16
+ex206 at idiom206ex.fz:8
 
 *** fatal errors encountered, stopping.
 one error.
