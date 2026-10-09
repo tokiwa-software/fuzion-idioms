@@ -1,47 +1,47 @@
 
 error 1: FATAL FAULT `precondition`: debug: (numeric.this **! other)
 Call stack:
-fuzion.type.runtime.type.fault.type.default_value.(λkind_and_msg-> kind, msg := kind_and_m...).call#1: {base.fum}/fuzion/runtime/fault.fz:63:7:
+fuzion.type.runtime.type.fault.type.default_value.(λkind_and_msg-> kind, msg := kind_and_m...).call#1 at {base.fum}/fuzion/runtime/fault.fz:63:7
       fuzion.sys.fatal_fault kind msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
+fuzion.runtime.fault.cause#1 at {base.fum}/flow/fallible.fz:40:6
   => h e
 -----^
-fuzion.type.runtime.type.contract_fault.type.default_value.(λkind_and_msg-> fuzion.runtime.fault.en...).call#1: {base.fum}/fuzion/runtime/contract_fault.fz:42:7:
+fuzion.type.runtime.type.contract_fault.type.default_value.(λkind_and_msg-> fuzion.runtime.fault.en...).call#1 at {base.fum}/fuzion/runtime/contract_fault.fz:42:7
       fuzion.runtime.fault.env.cause kind_and_msg
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.contract_fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
+fuzion.runtime.contract_fault.cause#1 at {base.fum}/flow/fallible.fz:40:6
   => h e
 -----^
-fuzion.type.runtime.type.pre_fault.type.default_value.(λmsg-> fuzion.runtime.contract_fault.en...).call#1: {base.fum}/fuzion/runtime/pre_fault.fz:42:7:
+fuzion.type.runtime.type.pre_fault.type.default_value.(λmsg-> fuzion.runtime.contract_fault.en...).call#1 at {base.fum}/fuzion/runtime/pre_fault.fz:42:7
       fuzion.runtime.contract_fault.env.cause ("precondition", msg)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-fuzion.runtime.pre_fault.cause#1: {base.fum}/flow/fallible.fz:40:6:
+fuzion.runtime.pre_fault.cause#1 at {base.fum}/flow/fallible.fz:40:6
   => h e
 -----^
-fuzion.runtime.precondition_fault#1: {base.fum}/fuzion/runtime/pre_fault.fz:56:3:
+fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:56:3
   fuzion.runtime.pre_fault.env.cause msg
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-i64.pre infix **: {base.fum}/numeric.fz:78:7:
+i64.pre infix ** at {base.fum}/numeric.fz:75:7
       debug: (numeric.this **! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-i64.precall infix **: {base.fum}/numeric.fz:77:5:
+i64.precall infix ** at {base.fum}/numeric.fz:74:5
     pre
 ----^^^
       debug: (numeric.this **! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-idiom32ex2.exp#3 i64: -:3:42:
+idiom32ex2.exp#3 i64 at idiom32ex2.fz:3:42
   exp      (T type : integer, x, n T) => x **  n
 -----------------------------------------^^^^^^^
-idiom32ex2.loop.loop: -:19:27:
+idiom32ex2.loop.loop at idiom32ex2.fz:19:27
       say "exp $i $j is $(exp i j)"
 --------------------------^^^^^^^
-idiom32ex2.loop: -:18:5:
+idiom32ex2.loop at idiom32ex2.fz:18:5
     for j in 0..20 do
 ----^^^^^^^^^^^^^^^^^
       say "exp $i $j is $(exp i j)"
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-idiom32ex2: -:17:3:
+idiom32ex2 at idiom32ex2.fz:17:3
   for i in 0..15 do
 --^^^^^^^^^^^^^^^^^
     for j in 0..20 do

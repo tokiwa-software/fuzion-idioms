@@ -4,9 +4,9 @@ Call stack:
 fuzion.sys.fatal_fault#2 at {base.fum}/fuzion/sys.fz:55
 [..]
 fuzion.runtime.precondition_fault#1 at {base.fum}/fuzion/runtime/pre_fault.fz:56
-ex89.pre f at -:5
-ex89.precall f at -:4
-ex89 at -:14
+ex89.pre f at idiom89ex.fz:5
+ex89.precall f at idiom89ex.fz:4
+ex89 at idiom89ex.fz:14
 
 *** fatal errors encountered, stopping.
 one error.
