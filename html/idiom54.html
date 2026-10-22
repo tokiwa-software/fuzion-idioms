@@ -7,7 +7,7 @@
 <p>The simplest way is using the generic feature <code>Sequence.sum</code>
    that can be used on all Sequences with elements of type <code>numeric</code>.</p>
 
-<runcode file="../src/idiom54.fuzion"/>
+<runcode not_executable file="../src/idiom54.fuzion"/>
 
 <p>Using <code>fold</code> shows a more generic way: <code>fold</code> is the
 feature of choice to join elements of a set into a value of the element type.
@@ -15,7 +15,7 @@ For type <code>i64</code>, such operations are defined in the unit type returned
 by feature <code>i64</code>.  To build the sum, <code>i64.sum</code> is the
 operation to use.</p>
 
-<runcode file="../src/idiom54a.fuzion"/>
+<runcode not_executable file="../src/idiom54a.fuzion"/>
 
 <p>Mathematically speaking, such an operation is called a <i>monoid</i>.  This is
 why the type of the argument of <code>fold</code> is <code>Monoid</code>, while
