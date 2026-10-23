@@ -30,7 +30,7 @@ i64.precall infix * at {base.fum}/numeric.fz:56:5
 ----^^^
       debug: (numeric.this *! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-square#2 i64 at idiom4ex2.fz:1:26
+square#1 i64 at idiom4ex2.fz:1:26
 square(x _ : integer) => x * x
 -------------------------^^^^^
 loop at idiom4ex2.fz:11:23
