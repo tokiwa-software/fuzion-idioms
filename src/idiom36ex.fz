@@ -1,6 +1,6 @@
 ex36 is
 
-  compose(A,B,C type,
+  compose(A,B,C : Any,
           f0 A -> B,
           g0 B -> C) A -> C
   =>

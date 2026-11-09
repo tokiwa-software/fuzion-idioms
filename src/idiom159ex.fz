@@ -2,7 +2,7 @@ ex159 is
 
   trie
     (
-    V type,
+    V : Any,
 
     # the codepoint of this tree node, '#' for root. Not strictly needed.
     cp codepoint,
@@ -39,10 +39,10 @@ ex159 is
                        | t trie => t.find (s.substring 1)
 
   # convenience routine to create empty trie for codepoint 'c'
-  trie(V type, cp codepoint) => trie V cp (container.ordered_map codepoint (trie V)).empty nil
+  trie(V : Any, cp codepoint) => trie V cp (container.ordered_map codepoint (trie V)).empty nil
 
   # convenience routine to create empty trie
-  trie(V type) => trie V (cp "#")
+  trie(V : Any) => trie V (cp "#")
 
   # convenience routine to get the first code point from a non-empty string
   cp (s String)

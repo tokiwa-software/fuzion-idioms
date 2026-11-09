@@ -1,6 +1,6 @@
 ex143 is
 
-  iterate_alternatively(T type, a, b Sequence T, f T -> unit) unit =>
+  iterate_alternatively(T : Any, a, b Sequence T, f T -> unit) unit =>
     match a.as_list
       nil    => b.for_each f
       c Cons => f c.head; iterate_alternatively b c.tail f
