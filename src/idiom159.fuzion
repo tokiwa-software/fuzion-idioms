@@ -1,5 +1,5 @@
 trie(
-  V type,
+  V : Any,
   c codepoint,
   children container.ordered_map codepoint (trie V),
   val option V)

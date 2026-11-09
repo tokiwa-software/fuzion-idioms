@@ -1,6 +1,6 @@
 ex18 is
 
-  node(T type,
+  node(T : Any,
        val T,
        children Sequence (node T)) is
 

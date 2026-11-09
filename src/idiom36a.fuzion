@@ -1,4 +1,4 @@
-compose(A,B,C type,
+compose(A,B,C : Any,
         f A -> B,
         g B -> C) A -> C
 =>

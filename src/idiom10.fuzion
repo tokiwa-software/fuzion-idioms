@@ -1,4 +1,4 @@
-shuffle(T type, seq Sequence T) =>
+shuffle(T : Any, seq Sequence T) =>
   if seq.count < 2 then seq else
     l,t := seq.split_at (Random.env.next_i64 seq.count)
     m,r := t.split_at 1
