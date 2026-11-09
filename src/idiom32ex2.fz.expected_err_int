@@ -31,8 +31,8 @@ i64.precall infix ** at {base.fum}/numeric.fz:74:5
       debug: (numeric.this **! other)
 ------^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 idiom32ex2.exp#3 i64 at idiom32ex2.fz:3:42
-  exp      (T type : integer, x, n T) => x **  n
------------------------------------------^^^^^^^
+  exp      (T : integer, x, n T) => x **  n
+------------------------------------^^^^^^^
 idiom32ex2.loop.loop at idiom32ex2.fz:19:27
       say "exp $i $j is $(exp i j)"
 --------------------------^^^^^^^
