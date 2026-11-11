@@ -2,7 +2,4 @@
 adding_will_overflow(x, y i64) => x.overflow_on_add y
 
 # or using overflow-checking 'infix +?'
-adding_will_overflow2(x, y i64)
-=> match x +? y
-  nil   => say "$x + $y: overflow!"
-  r i64 => say "$x + $y: ok, result is $r"
+adding_will_overflow2(x, y i64) => !(x +? y)

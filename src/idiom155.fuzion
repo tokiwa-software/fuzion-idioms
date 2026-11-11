@@ -1,1 +1,1 @@
-io.file.delete path
+io.file.delete filepath

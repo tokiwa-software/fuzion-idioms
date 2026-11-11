@@ -1,1 +1,1 @@
-x := array2 m n i,j->0.0
+x := array2 m n i,j->3.14

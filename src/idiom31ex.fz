@@ -1,6 +1,6 @@
 ex31 is
 
-  f(n i64) => if n = 0 1 else n * f n-1
+  f(i i64) => if i = 0 1 else i * f i-1
 
   (1..10).for_each n->
     say "f $n is $(f n)"

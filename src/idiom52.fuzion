@@ -1,1 +1,1 @@
-for x in m.values until v = x
+for x in m.values until v = x then true else false

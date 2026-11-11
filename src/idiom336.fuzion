@@ -1,1 +1,1 @@
-b * exponent(b, n - 1)
+x := b ** n

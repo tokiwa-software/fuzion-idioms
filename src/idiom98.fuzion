@@ -1,1 +1,1 @@
-time.date_time.from_seconds ts
+d := time.date_time.from_seconds ts
