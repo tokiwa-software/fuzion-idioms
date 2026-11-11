@@ -1,6 +1,6 @@
 ex180b =>
-    d := "."
-    x := io.dir.use (Sequence io.path) (io.path.of d) ()->
+    d := io.path.of "."
+    x := io.dir.use (Sequence io.path) d ()->
       for
         res Sequence io.path := [], res ++ e
       do
