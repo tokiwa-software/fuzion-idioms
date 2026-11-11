@@ -1,1 +1,1 @@
-a * b / (a.gcd b)
+x := a * b / (a.gcd b)

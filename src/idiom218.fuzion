@@ -1,1 +1,1 @@
-container.ps_set String .new a ∩ container.ps_set String .new b
+c := container.ps_set String .new a ∩ container.ps_set String .new b

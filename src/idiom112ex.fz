@@ -1,12 +1,12 @@
 ex112 is
 
-  map := (container.ordered_map String String .of
+  mymap := (container.ordered_map String String .of
     [ "un", "deux", "trois", "quatre", "cinq" ]
     [ "ichi", "ni", "san"  , "yon"   , "go"   ] )
 
-  for k in map.keys.sort do
-    say "$k => $(map[k])"
+  for k in mymap.keys.sort do
+    say "$k => $(mymap[k])"
 
-  # since map is already ordered_map, map.keys are already ordered
-  for k in map.keys do
-    say "$k => $(map[k])"
+  # since mymap is already ordered_map, mymap.keys are already ordered
+  for k in mymap.keys do
+    say "$k => $(mymap[k])"

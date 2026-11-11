@@ -4,6 +4,6 @@ ex316 is
 
   p codepoint -> bool := ="l"
 
-  c := x.filter(p).count
+  c := x.filter p .count
 
   say c

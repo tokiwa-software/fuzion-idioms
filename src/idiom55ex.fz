@@ -1,8 +1,8 @@
 ex55 is
 
   for i in [0, 8, 15, 47, 11] do
-    s0 := $i
-    say s0
+    s := $i
+    say s
     s1 := i.as_string
     say s1
     s2 := "$i"

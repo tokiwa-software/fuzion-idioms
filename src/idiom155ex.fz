@@ -1,6 +1,6 @@
 ex155 is
 
-  path := io.path.of "path/to/file"
-  match io.file.delete path
-    _ unit => say "$path has been successfully deleted" # logic in case of success
+  filepath := io.path.of "path/to/file"
+  match io.file.delete filepath
+    _ unit => say "$filepath has been successfully deleted" # logic in case of success
     err error => say err # error handling logic

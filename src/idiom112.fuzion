@@ -1,2 +1,2 @@
-for k in map.keys.sort do
-  say "$k => $(map[k])"
+for k in mymap.keys.sort do
+  say "$k => $(mymap[k])"

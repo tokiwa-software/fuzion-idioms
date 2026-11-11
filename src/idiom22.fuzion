@@ -1,1 +1,1 @@
-"123".parse_i32
+i := s.parse_i32

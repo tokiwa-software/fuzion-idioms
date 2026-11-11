@@ -1,5 +1,5 @@
-f(n i64) => if n = 0 1 else n * f n-1
+f(i i64) => if i = 0 1 else i * f i-1
 
 /* or */
 
-f(n i64) => n = 0 ? 1 : n * f n-1   // NYI
+f(i i64) => i = 0 ? 1 : i * f i-1   // NYI

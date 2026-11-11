@@ -1,8 +1,7 @@
 ex96 is
 
-  starts_with(s, prefx String) =>
-    b := s.starts_with prefx
-    b
+  s := "Fuzion is great!"
 
-  say "$(starts_with "Fuzion is great!" "Fuzion")"
-  say "$(starts_with "Fuzion is great!" "Java")"
+  for prefx in ["Fuzion", "Java"] do
+    b := s.starts_with prefx
+    say b

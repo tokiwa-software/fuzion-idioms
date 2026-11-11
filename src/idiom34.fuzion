@@ -1,2 +1,2 @@
 # T must inherit from property.orderable
-x := container.ps_set String .new (Sequence T).empty
+x := container.ps_set T .new (Sequence T).empty

@@ -1,3 +1,6 @@
-for v in m until
-  for i in v until i < 0
-    say "Found $i"
+for row in m until
+  for v in row until v < 0
+    say "Found $v"
+    true
+  else
+    false

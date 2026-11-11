@@ -1,4 +1,4 @@
-t := if s.ends_with p
-       s.substring 0 s.byte_count-p.byte_count
+t := if s.ends_with w
+       s.substring 0 s.byte_count-w.byte_count
      else
        s

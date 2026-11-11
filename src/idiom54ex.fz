@@ -3,8 +3,8 @@ ex54 is
   x := [0, 8, 15, 47, 11]
 
   # using sum
-  s0 := x.sum
-  say s0
+  s := x.sum
+  say s
 
   # using fold with monoid i64.sum
   s1 := x.fold i64.sum
