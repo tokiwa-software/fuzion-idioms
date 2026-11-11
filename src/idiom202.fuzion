@@ -1,8 +1,8 @@
 # using map and Sequence.sum
-sum := (a.map x->x*x).sum
+sum := a.map (**2) .sum
 
 # using map and fold
-sum := a.map x->x*x
+sum := a.map (**2)
         .fold i64.sum
 
 # using a loop

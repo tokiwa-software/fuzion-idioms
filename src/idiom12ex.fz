@@ -1,7 +1,7 @@
 ex12 is
 
   # list of squares
-  list := (1..100).map i->i*i
+  list := (1..100).map (**2)
   (1..100).for_each x->
     if list.contains x
       say "$x in squares"

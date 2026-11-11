@@ -1,2 +1,1 @@
-# NYI: UNDER DEVELOPMENT: formatting for floating points missing
-s := "$((x * 1000).as_i64.as_f64 / 10.0)%"
+s := "$((x * 100).as_string_decimals 1)%"

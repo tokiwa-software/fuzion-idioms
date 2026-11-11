@@ -4,10 +4,7 @@
 
 <h2>Code</h2>
 
-<p>There is no feature in Fuzion's strings to reverse the characters, so we have
-to do it manually: First, the string that is usually represented as utf8 is
-converted to an array of codepoints.  This array is then reversed and folded
-back into a string using string's concat monoid.</p>
+<p>Reverse the string's codepoints and join them back into a string.</p>
 
 <runcode not_executable file="../src/idiom41.fuzion"/>
 

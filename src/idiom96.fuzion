@@ -1,1 +1,2 @@
+# `prefix` is a Fuzion keyword, so the argument uses a different name.
 b := s.starts_with prefx

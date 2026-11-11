@@ -1,13 +1,13 @@
 m := container.ordered_map String String .of [ "Hund", "Katze", "Maus" ] [ "dog", "cat", "mouse" ]
 
 v := "cat"
-if (for x in m.values until v = x then true else false)
+if m.values ∃ (=v)
   say "$v was found"
 else
   say "$v not found"
 
 b := "budgie"
-if (for x in m.values until b = x then true else false)
+if m.values ∃ (=b)
   say "$b was found"
 else
   say "$b not found"

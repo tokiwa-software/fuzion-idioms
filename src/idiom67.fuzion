@@ -2,5 +2,4 @@ binom(n, k int) =>
   factorial n / (factorial k * factorial n-k)
 
 factorial(x int) =>
-  (int 1 .. x)
-    .reduce (int 1) (r,t -> r * t)
+  (int 1 .. x).product
