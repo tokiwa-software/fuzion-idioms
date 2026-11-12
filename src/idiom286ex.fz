@@ -1,8 +1,6 @@
 ex286 is
   s := "Hello 🌏!"
 
-  for
-    c in s.codepoints
-    i := 0, i + 1
-  do
+  for entry in s.codepoints.indexed do
+    i, c := entry
     say "Char $i is $c"

@@ -1,1 +1,1 @@
-c := x.filter p .count
+c := x.count p

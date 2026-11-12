@@ -1,12 +1,6 @@
 # preserving order
 #
-x := for
-       r list String := nil, if e ∈ s then r
-                                      else cons e r
-       s := container.ps_set String .new (Sequence String).empty, s.add e
-       e in x
-     else
-       r.reverse
+x := x.unique
 
 # not preserving order
 #

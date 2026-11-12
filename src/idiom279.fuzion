@@ -1,6 +1,1 @@
-lm : mutate is
-
-lines :=
-  lm ! ()->
-    io.buffered lm .Reader.instate (io.stdin.reader lm) ()->
-      (io.buffered lm).read_lines
+lines := io.stdin.read_lines

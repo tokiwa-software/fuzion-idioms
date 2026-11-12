@@ -1,3 +1,3 @@
-for e in items.reverse.indexed do
+for e in items.indexed.reverse do
   i, x := e
   say "$i = $x"

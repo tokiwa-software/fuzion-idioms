@@ -2,4 +2,5 @@ c :=
   if s.is_empty then
     "Empty string"
   else
+    # result in precondition failure if s is empty
     s.substring_codepoint s.codepoint_count-1

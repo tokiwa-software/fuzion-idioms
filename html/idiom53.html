@@ -4,7 +4,11 @@
 
 <h2>Code</h2>
 
-<p><code>fold</code> is the feature of choice to join elements of a set into a
+<p>Use <code>as_string</code> to join the elements with a separator:</p>
+
+<runcode not_executable file="../src/idiom53a.fuzion"/>
+
+<p>Alternatively, <code>fold</code> joins elements of a sequence into a
   value of the element type.  For type string, such operations are defined in feature
 <code>strings</code>.  For concatenation with a separator, <code>strings.concat
 sep</code> is the operation to use.</p>
@@ -16,11 +20,11 @@ why the type of the argument of <code>fold</code> is <code>Monoid</code>, while
 the operations declared in <code>strings</code> inherit
   from <code>Monoid</code>.</p>
 
-<p>Since joining the elements of a list into a string using a given separator is a common operation, there is a convenience function to do this directly.</p>
-
-<runcode not_executable file="../src/idiom53a.fuzion"/>
-
 <h2>Runnable Example</h2>
+
+<p>Using <code>as_string</code>.</p>
+
+<runcode file="../src/idiom53ex2.fz"/>
 
 <p>Using <code>fold</code>.</p>
 

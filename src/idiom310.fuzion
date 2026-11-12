@@ -1,4 +1,5 @@
-rand_bytes => (Random.env.next_u32 255).as_u8 : rand_bytes
+# The upper bound is exclusive; 256 includes every possible byte.
+rand_bytes => (Random.env.next_u32 256).as_u8 : rand_bytes
 
 a := rand_bytes.take n
                .as_array

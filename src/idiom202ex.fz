@@ -4,13 +4,13 @@ ex202 is
 
   # using map and Sequence.sum
   sum_map =>
-    sum := (a.map x->x*x).sum
+    sum := a.map (**2) .sum
     say "sum is $sum"
   sum_map
 
   # using map and fold
   sum_map_fold =>
-    sum := a.map x->x*x
+    sum := a.map (**2)
             .fold i64.sum
     say "sum is $sum"
   sum_map_fold
