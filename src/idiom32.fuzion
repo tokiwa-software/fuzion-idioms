@@ -1,4 +1,4 @@
-# for an explict type like i32
+# for an explicit type like i32
 #
 exp(x, n i32) => x**n
 

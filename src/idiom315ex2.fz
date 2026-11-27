@@ -15,7 +15,7 @@ ways_memo ! () ->
 
   # Recursive function which returns Fibonacci value
   f(n) =>
-    say "working on with result for $n"
+    say "working on result for $n"
     if n <= 1 then 1 else f n-1 + f n-2
 
   # First call:

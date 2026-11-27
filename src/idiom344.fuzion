@@ -1,4 +1,4 @@
-# NYI: UNDER DEVELOPMENT: fuzions base library currently misses a file/path abstraction
+# NYI: UNDER DEVELOPMENT: Fuzion's base library currently misses a file/path abstraction
 
 ext := match f.find_last "."
           nil => ""

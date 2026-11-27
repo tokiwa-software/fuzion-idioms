@@ -5,7 +5,7 @@ ex322 is
 m := container.ps_map i64 String .of [
   (1, "P=NP(?)"),
   (2, "The Hodge Conjecture"),
-  (3, "The Poincare Conjecture"),
+  (3, "The Poincaré Conjecture"),
   (4, "The Riemann Hypothesis")
 ]
 

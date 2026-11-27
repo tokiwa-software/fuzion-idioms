@@ -1,5 +1,5 @@
 ex75 is
-  a := int 2147483647             # is the eighth Mersenne prime, equal to 231^-1
+  a := int 2147483647             # is the eighth Mersenne prime, equal to 2^31 - 1
   b := int 2305843009213693951    # another Mersenne prime
   x := a * b / (a.gcd b)
 

@@ -5,7 +5,7 @@
 <h2>Code</h2>
 
 <p>Since variables in Fuzion are usually immutable, we cannot re-assign new
-values, and, in particular, we cannot swap two values. Instead, we can declared
+values, and, in particular, we cannot swap two values. Instead, we can declare
 two new variables <code>a¹</code> and <code>b¹</code> and assign the swapped
 values to these:</p>
 
@@ -23,6 +23,6 @@ the <code>&lt;-</code> operator.</p>
 
 <p>The following code uses mutable values. Note that this renders the code
 impure, i.e., analyzing the code for <i>Effects!</i> will show that this
-required the <code>mutate</code> effect.<p>
+requires the <code>mutate</code> effect.</p>
 
 <runcode file="../src/idiom21ex2.fz"/>

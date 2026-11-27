@@ -1,6 +1,6 @@
 ex117 is
 
-  x := [ "⚽", "🕿", "✀", "rubic's cube"]
+  x := [ "⚽", "🕿", "✀", "Rubik's Cube"]
 
   n := x.length
   say n

@@ -1,4 +1,4 @@
-# fuzion arrays are immutable, we need to use mutate.array instead
+# Fuzion arrays are immutable, we need to use mutate.array instead
 
 n := 20
 m := 13

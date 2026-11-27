@@ -4,7 +4,7 @@
 # NYI: This will need some syntax improvements:
 #
 #      1. better syntax for inline maps
-#      2. better syntax for inline funtions
+#      2. better syntax for inline functions
 #      3. automatic unwrap and call
 #
 # example:

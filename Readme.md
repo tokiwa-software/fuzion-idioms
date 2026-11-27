@@ -10,11 +10,10 @@ They are published at the Fuzion language portal here: [https://fuzion-lang.dev/
 
 #### Some conventions we are using when creating the idioms
 
-- If the idioms text says _"Reverse the order of the elements of the list x"_ we use x as the feature name in our implemenation.
-- For the idioms to be automatially checked by CI we record the idiomXXXex.fz-files
+- If the idiom's text says _"Reverse the order of the elements of the list x"_ we use x as the feature name in our implementation.
+- For the idioms to be automatically checked by CI we record the idiomXXXex.fz-files
   - e.g. <code>$FUZION_HOME/bin/record_simple_example any fz /home/not_synced/flang_dev/idioms/src/idiom23ex.fz</code>
-  - idioms that should not be checked by CI need a idiomXXXex.fz.skip file
-- The idiomXXX.fuzion files contain just the idiomatic way the express the idiom in Fuzion, typically you will get an error when trying to run those.
+  - idioms that should not be checked by CI need an idiomXXXex.fz.skip file
+- The idiomXXX.fuzion files contain just the idiomatic way to express the idiom in Fuzion; typically you will get an error when trying to run those.
 - The idiomXXXex.fz files contain full runnable examples.
-- The html files contain a link the idiom on programming-idioms.org, they reference the idiomXXX.fuzion idiomXXXex.fz files and explanations of peculiarties of the idioms implementation.
-
+- The HTML files contain a link to the idiom on programming-idioms.org, references to the idiomXXX.fuzion and idiomXXXex.fz files, and explanations of peculiarities of the idiom's implementation.
