@@ -3,7 +3,7 @@
 
 # Equality is something that must be defined for a particular feature by
 # implementing `equatable`, e.g., strings define equality as equality of all the
-# bytes in the utf8 stream associated to a string.  A heir feauture of string
+# bytes in the UTF-8 stream associated with a string.  An heir feature of string
 # may, however, define equality differently, it may even inherit repeatedly from
 # `equatable` and rename 'infix =' to have several, different ways to partition
 # instances into equivalence classes.

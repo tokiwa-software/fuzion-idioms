@@ -1,10 +1,10 @@
 ex259 is
   strings := ["a-b_c,d", "-a--cc_,eee,ffff_", "---", ",_-", "abcd", ""]
 
-  seperators := container.ps_set String .new [",", "-", "_"]
+  separators := container.ps_set String .new [",", "-", "_"]
 
   for s in strings do
 
-    parts := s.split_if (∈ seperators)
+    parts := s.split_if (∈ separators)
 
     say "\"$s\" : $parts"

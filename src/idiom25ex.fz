@@ -1,7 +1,7 @@
 ex25 is
 
   # to create an open channel that may
-  # send an receive Strings
+  # send and receive Strings
   chan := concur.Channel String
 
   _ := concur.Threads.env.spawn ()->

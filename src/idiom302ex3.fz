@@ -1,7 +1,7 @@
 ex302b is
 
   # Installing custom handler for the time.now effect
-  # this produces deterministic output, which is also good for testing purpose
+  # this produces deterministic output, which is useful for testing
   (time.now ()->
     time.date_time 2024 6 27 11 46 5 0).instate_self ()->
 

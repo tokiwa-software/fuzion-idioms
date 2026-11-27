@@ -8,9 +8,9 @@ ex288 is
 
     b := x.contains e
     if b
-      say "the element e=$e exist in the set x=$x"
+      say "the element e=$e exists in the set x=$x"
     else
-      say "the element e=$e Does not exist in the set x=$x"
+      say "the element e=$e does not exist in the set x=$x"
 
     say "-------------------------------------------------------"
 
@@ -18,6 +18,6 @@ ex288 is
 
     b2 := e2 ∈ x
     if b2
-      say "the element e=$e exist in the set x=$x"
+      say "the element e2=$e2 exists in the set x=$x"
     else
-      say "the element e=$e Does not exist in the set x=$x"
+      say "the element e2=$e2 does not exist in the set x=$x"
